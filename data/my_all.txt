@@ -1,0 +1,106 @@
+# MPL MY S18, read from mlbbhub.com/mpl/my/drafts (page read 14 Nov 2026; 40 matches, 105 games; verified drafts cover 40 of 64 completed matches). date|first-listed team|its 5 bans|second team|its 5 bans|winner  (first-listed treated as blue side: sides alternate every game)
+2026-11-01|TR|Kimmy,Freya,Zetian,Uranus,Esmeralda|SRG|Aulus,Marcel,Zhuxin,Carmilla,Atlas|SRG
+2026-11-01|SRG|Aulus,Kimmy,Marcel,Barats,Carmilla|TR|Freya,Nolan,Zetian,Lylia,Valir|TR
+2026-11-01|TR|Kimmy,Freya,Nolan,Uranus,Thamuz|SRG|Aulus,Marcel,Zhuxin,Fanny,Claude|SRG
+2026-11-01|SRG|Aulus,Kimmy,Fanny,Paquito,Claude|TR|Freya,Nolan,Selena,Zetian,Lylia|TR
+2026-11-01|SRG|Aulus,Kimmy,Kalea,Harley,Carmilla|TR|Freya,Nolan,Masha,Uranus,Esmeralda|SRG
+2026-11-01|TR|Kimmy,Freya,Nolan,Uranus,Esmeralda|SRG|Aulus,Marcel,Zhuxin,Claude,Fanny|TR
+2026-11-01|TR|Kimmy,Freya,Atlas,Uranus,Alice|SRG|Masha,Kalea,Marcel,Rafaela,Valentina|SRG
+2026-10-31|TR|Nolan,Atlas,Valir,Fanny,Yi Sun-shin|VMS|Aulus,Marcel,Alice,Valentina,Zetian|VMS
+2026-10-31|VMS|Aulus,Marcel,Alice,Fanny,Paquito|TR|Freya,Nolan,Valir,Arlott,Dyrroth|TR
+2026-10-31|VMS|Aulus,Marcel,Kalea,Valentina,Selena|TR|Freya,Nolan,Masha,Barats,Hirara|TR
+2026-10-31|TR|Nolan,Valir,Freya,Fanny,Arlott|VMS|Aulus,Marcel,Alice,Zhuxin,Kimmy|VMS
+2026-10-31|VMS|Aulus,Marcel,Fanny,Obsidia,Esmeralda|TR|Nolan,Freya,Valir,Paquito,Hirara|TR
+2026-10-31|TR|Nolan,Valir,Masha,Gloo,Minotaur|VMS|Aulus,Marcel,Zhuxin,Esmeralda,Phoveus|TR
+2026-10-30|VMS|Aulus,Kimmy,Paquito,Rafaela,Lylia|BTRM|Freya,Marcel,Atlas,Carmilla,Esmeralda|VMS
+2026-10-30|BTRM|Atlas,Marcel,Fanny,Obsidia,Bruno|VMS|Freya,Paquito,Aulus,Rafaela,Estes|VMS
+2026-10-30|VMS|Aulus,Paquito,Kimmy,Lylia,Rafaela|BTRM|Freya,Marcel,Atlas,Arlott,Esmeralda|BTRM
+2026-10-30|BTRM|Fanny,Atlas,Kalea,Lylia,Zetian|VMS|Freya,Paquito,Masha,Phoveus,Yu Zhong|VMS
+2026-10-30|SRG|Kimmy,Aulus,Marcel,Chou,Obsidia|TR|Masha,Kalea,Nolan,Eudora,Zhuxin|SRG
+2026-10-30|TR|Nolan,Obsidia,Masha,Esmeralda,Phoveus|SRG|Aulus,Marcel,Kalea,Gatotkaca,Harley|SRG
+2026-10-30|SRG|Kimmy,Aulus,Marcel,Esmeralda,Phoveus|TR|Masha,Kalea,Atlas,Thamuz,Dyrroth|SRG
+2026-10-29|TR|Obsidia,Nolan,Masha,Yve,Lylia|VMS|Freya,Marcel,Kalea,Mathilda,Paquito|TR
+2026-10-29|VMS|Bruno,Atlas,Selena,Esmeralda,Brody|TR|Gloo,Fanny,Kalea,Masha,Belerick|TR
+2026-10-29|VMS|Esmeralda,Marcel,Nolan,Gloo,Obsidia|TR|Masha,Kalea,Freya,Fanny,Yi Sun-shin|TR
+2026-10-29|SRG|Aulus,Kimmy,Kalea,Carmilla,Claude|BTRM|Freya,Nolan,Masha,Esmeralda,Uranus|SRG
+2026-10-29|SRG|Aulus,Kimmy,Kalea,Carmilla,Claude|BTRM|Freya,Obsidia,Masha,Zetian,Valir|SRG
+2026-10-29|SRG|Aulus,Kimmy,Kalea,Carmilla,Zhuxin|BTRM|Freya,Obsidia,Masha,Barats,Dyrroth|SRG
+2026-10-28|FL|Paquito,Esmeralda,Zhuxin,Kimmy,Arlott|VMS|Freya,Nolan,Atlas,Zetian,Lylia|VMS
+2026-10-28|FL|Fanny,Esmeralda,Masha,Eudora,Arlott|VMS|Freya,Rafaela,Kalea,Alice,Yu Zhong|VMS
+2026-10-28|FL|Fanny,Masha,Atlas,Gatotkaca,Belerick|VMS|Freya,Marcel,Rafaela,Brody,Lylia|FL
+2026-10-28|VMS|Marcel,Obsidia,Rafaela,Esmeralda,Brody|FL|Fanny,Freya,Kalea,Arlott,Aulus|VMS
+2026-10-28|iG|Esmeralda,Paquito,Kalea,Barats,Cici|BTRM|Freya,Alice,Masha,Yu Zhong,Chou|iG
+2026-10-28|iG|Esmeralda,Paquito,Kalea,Barats,Estes|BTRM|Freya,Alice,Masha,Obsidia,Minotaur|BTRM
+2026-10-28|iG|Esmeralda,Paquito,Kalea,Estes,Yu Zhong|BTRM|Freya,Alice,Masha,Obsidia,Harith|BTRM
+2026-10-28|iG|Esmeralda,Kalea,Aulus,Dyrroth,Brody|BTRM|Freya,Alice,Masha,Estes,Mathilda|BTRM
+2026-10-18|VMS|Kalea,Esmeralda,Carmilla,Alice,Cici|AC|Masha,Freya,Marcel,Sora,Phoveus|AC
+2026-10-18|BTRM|Carmilla,Aulus,Zhuxin,Rafaela,Alice|RRQ Tora|Masha,Atlas,Freya,Claude,Moskov|BTRM
+2026-10-18|RRQ Tora|Marcel,Atlas,Esmeralda,Phoveus,Eudora|BTRM|Masha,Aulus,Carmilla,Gloo,Gatotkaca|BTRM
+2026-10-17|AC|Fanny,Atlas,Zhuxin,Marcel,Phoveus|TR|Masha,Hirara,Carmilla,Eudora,Dyrroth|AC
+2026-10-17|TR|Cici,Carmilla,Nolan,Uranus,Esmeralda|AC|Masha,Freya,Atlas,Marcel,Gatotkaca|TR
+2026-10-17|AC|Fanny,Atlas,Zhuxin,Marcel,Gloo|TR|Masha,Carmilla,Kalea,Dyrroth,X.Borg|AC
+2026-10-17|BTRM|Zhuxin,Esmeralda,Hirara,Valentina,Selena|FL|Masha,Atlas,Marcel,Uranus,Paquito|BTRM
+2026-10-17|BTRM|Zhuxin,Esmeralda,Selena,Obsidia,Fanny|FL|Masha,Atlas,Marcel,Cici,Hylos|FL
+2026-10-17|BTRM|Zhuxin,Selena,Kalea,Marcel,Obsidia|FL|Masha,Atlas,Esmeralda,Phoveus,Alice|FL
+2026-10-17|iG|Carmilla,Freya,Atlas,Dyrroth,Luo Yi|SRG|Alice,Masha,Aulus,Kalea,Gloo|SRG
+2026-10-16|iG|Cici,Carmilla,Nolan,Paquito,Minotaur|FL|Masha,Freya,Aulus,Phoveus,Hilda|iG
+2026-10-16|iG|Carmilla,Nolan,Cici,Dyrroth,Esmeralda|FL|Masha,Freya,Alice,Phoveus,Hylos|iG
+2026-10-16|VMS|Obsidia,Esmeralda,Carmilla,Barats,Phoveus|SRG|Masha,Freya,Aulus,Alice,Arlott|VMS
+2026-10-16|SRG|Fanny,Selena,Nolan,Paquito,Lukas|VMS|Masha,Freya,Obsidia,Valentina,Esmeralda|VMS
+2026-10-08|FL|Masha,Atlas,Valentina,Eudora,Zhuxin|SRG|Aulus,Carmilla,Freya,Claude,Lukas|SRG
+2026-10-08|SRG|Aulus,Carmilla,Minotaur,Fanny,Paquito|FL|Masha,Hirara,Obsidia,Dyrroth,Uranus|SRG
+2026-09-20|BTRM|Selena,Guinevere,Chou,Yu Zhong,Benedetta|iG|Hirara,Esmeralda,Freya,Eudora,Carmilla|iG
+2026-09-20|iG|Hirara,Esmeralda,Carmilla,Uranus,Barats|BTRM|Freya,Paquito,Guinevere,Chou,Hilda|BTRM
+2026-09-20|SRG|Atlas,Barats,Carmilla,Selena,Lylia|TR|Freya,Hirara,Paquito,Bruno,Clint|TR
+2026-09-20|TR|Atlas,Paquito,Nolan,Clint,Bruno|SRG|Freya,Selena,Valentina,Barats,Gloo|SRG
+2026-09-12|SRG|Marcel,Paquito,Rafaela,Eudora,Ruby|RRQ Tora|Freya,Uranus,Selena,Miya,Brody|SRG
+2026-09-12|RRQ Tora|Uranus,Rafaela,Selena,Valentina,Chou|SRG|Freya,Paquito,Atlas,Ruby,Cecilion|RRQ Tora
+2026-09-04|RRQ Tora|Fanny,Uranus,Lylia,Atlas,Gloo|SRG|Melissa,Barats,Selena,Freya,Miya|SRG
+2026-08-30|iG|Esmeralda,Selena,Novaria,Moskov,Obsidia|FL|Freya,Melissa,Rafaela,Belerick,Gatotkaca|FL
+2026-08-30|FL|Atlas,Mathilda,Marcel,Zhuxin,Novaria|iG|Freya,Melissa,Selena,Moskov,Brody|FL
+2026-08-30|RRQ Tora|Atlas,Fanny,Uranus,Brody,Esmeralda|AC|Freya,Paquito,Melissa,Lylia,Miya|RRQ Tora
+2026-08-30|AC|Atlas,Rafaela,Mathilda,Miya,Paquito|RRQ Tora|Freya,Melissa,Fanny,Lylia,Carmilla|AC
+2026-08-30|RRQ Tora|Fanny,Angela,Uranus,Brody,Leomord|AC|Freya,Melissa,Hirara,Miya,Carmilla|AC
+2026-08-29|BTRM|Fanny,Melissa,Atlas,Harley,Gloo|VMS|Paquito,Freya,Rafaela,Mathilda,Marcel|BTRM
+2026-08-29|VMS|Rafaela,Barats,Atlas,Ruby,Mathilda|BTRM|Fanny,Freya,Melissa,Gloo,Gatotkaca|VMS
+2026-08-29|FL|Mathilda,Marcel,Fanny,Claude,Brody|TR|Freya,Atlas,Melissa,Esmeralda,Yi Sun-shin|TR
+2026-08-29|TR|Atlas,Rafaela,Selena,Kaja,Mathilda|FL|Freya,Melissa,Fanny,Novaria,Vexana|TR
+2026-08-29|AC|Fanny,Atlas,Hirara,Gloo,Carmilla|SRG|Freya,Paquito,Melissa,Harley,Brody|SRG
+2026-08-28|BTRM|Marcel,Mathilda,Fanny,Selena,Eudora|TR|Freya,Paquito,Belerick,Claude,Moskov|TR
+2026-08-28|TR|Mathilda,Atlas,Belerick,Ixia,Valentina|BTRM|Freya,Marcel,Melissa,Carmilla,Uranus|BTRM
+2026-08-28|BTRM|Mathilda,Marcel,Atlas,Gatotkaca,Carmilla|TR|Freya,Paquito,Hirara,Suyou,Leomord|TR
+2026-08-28|VMS|Marcel,Novaria,Fanny,Clint,Obsidia|RRQ Tora|Freya,Melissa,Atlas,Dyrroth,Ruby|RRQ Tora
+2026-08-28|RRQ Tora|Atlas,Fanny,Harley,Esmeralda,Uranus|VMS|Freya,Melissa,Marcel,Miya,Moskov|VMS
+2026-08-28|VMS|Rafaela,Marcel,Mathilda,Atlas,Gatotkaca|RRQ Tora|Freya,Melissa,Fanny,Dyrroth,Ruby|VMS
+2026-08-23|FL|Rafaela,Atlas,Moskov,Zhuxin,Selena|SRG|Freya,Paquito,Marcel,Mathilda,Brody|SRG
+2026-08-23|SRG|Atlas,Selena,Marcel,Valentina,Carmilla|FL|Freya,Melissa,Paquito,Hanabi,Obsidia|SRG
+2026-08-23|TR|Atlas,Uranus,Belerick,Harley,Yi Sun-shin|AC|Freya,Melissa,Marcel,Eudora,Selena|TR
+2026-08-23|AC|Paquito,Marcel,Fanny,Ixia,Valentina|TR|Freya,Atlas,Melissa,Belerick,Harley|TR
+2026-08-22|AC|Atlas,Novaria,Fanny,Aurora,Valentina|iG|Freya,Marcel,Rafaela,Hilda,Uranus|AC
+2026-08-22|AC|Atlas,Novaria,Fanny,Esmeralda,Dyrroth|iG|Freya,Rafaela,Alice,Belerick,Zhuxin|AC
+2026-08-22|TR|Atlas,Uranus,Fanny,Carmilla,Esmeralda|VMS|Freya,Marcel,Melissa,Mathilda,Gatotkaca|TR
+2026-08-22|VMS|Marcel,Uranus,Belerick,Minotaur,Mathilda|TR|Freya,Fanny,Atlas,Carmilla,Alice|VMS
+2026-08-22|TR|Atlas,Fanny,Barats,Esmeralda,Alice|VMS|Freya,Marcel,Melissa,Ling,Hirara|VMS
+2026-08-21|BTRM|Atlas,Melissa,Freya,Gloo,Minotaur|SRG|Marcel,Novaria,Uranus,Cecilion,Valentina|BTRM
+2026-08-21|SRG|Atlas,Barats,Marcel,Valentina,Novaria|BTRM|Freya,Paquito,Melissa,Fanny,Yi Sun-shin|SRG
+2026-08-21|BTRM|Atlas,Rafaela,Freya,Pharsa,Selena|SRG|Marcel,Paquito,Mathilda,Hanzo,Gatotkaca|SRG
+2026-08-21|iG|Belerick,Valentina,Fanny,Masha,Alice|VMS|Freya,Paquito,Hirara,Selena,Sora|VMS
+2026-08-21|VMS|Marcel,Uranus,Hirara,Paquito,Harley|iG|Freya,Melissa,Fanny,Atlas,Gloo|iG
+2026-08-21|iG|Belerick,Novaria,Fanny,Pharsa,Aurora|VMS|Freya,Marcel,Uranus,Hilda,Valentina|iG
+2026-08-16|iG|Atlas,Uranus,Esmeralda,Brody,Alice|RRQ Tora|Freya,Fanny,Barats,Lylia,Selena|iG
+2026-08-16|RRQ Tora|Atlas,Fanny,Uranus,Brody,Eudora|iG|Freya,Hirara,Melissa,Mathilda,Marcel|iG
+2026-08-16|TR|Atlas,Paquito,Melissa,Harley,Nolan|SRG|Freya,Marcel,Uranus,Mathilda,Gloo|SRG
+2026-08-16|SRG|Atlas,Marcel,Barats,Esmeralda,Brody|TR|Freya,Hirara,Melissa,Khufra,Badang|SRG
+2026-08-15|FL|Uranus,Atlas,Hirara,Novaria,Eudora|BTRM|Freya,Marcel,Belerick,Chou,Alice|FL
+2026-08-15|FL|Uranus,Hirara,Atlas,Mathilda,Brody|BTRM|Freya,Selena,Marcel,Nolan,Esmeralda|BTRM
+2026-08-15|FL|Uranus,Hirara,Atlas,Gatotkaca,Belerick|BTRM|Freya,Selena,Melissa,Lylia,Brody|BTRM
+2026-08-15|RRQ Tora|Marcel,Fanny,Atlas,Mathilda,Brody|TR|Freya,Hirara,Uranus,Guinevere,Harley|TR
+2026-08-15|TR|Uranus,Atlas,Melissa,Harley,Rafaela|RRQ Tora|Freya,Fanny,Marcel,Selena,Eudora|TR
+2026-08-15|SRG|Atlas,Marcel,Barats,Gloo,Mathilda|iG|Melissa,Freya,Fanny,Zhuxin,Brody|SRG
+2026-08-15|iG|Atlas,Belerick,Barats,Khufra,Selena|SRG|Freya,Marcel,Paquito,Eudora,Zhuxin|SRG
+2026-08-14|BTRM|Uranus,Melissa,Marcel,Claude,Alice|AC|Freya,Hirara,Paquito,Brody,Nolan|BTRM
+2026-08-14|BTRM|Melissa,Uranus,Marcel,Eudora,Esmeralda|AC|Freya,Hirara,Barats,Brody,Phoveus|AC
+2026-08-14|AC|Hirara,Barats,Atlas,Brody,Claude|BTRM|Freya,Marcel,Paquito,Fanny,Ling|BTRM
+2026-08-14|VMS|Marcel,Selena,Atlas,Moskov,Nolan|FL|Fanny,Hirara,Melissa,Zhuxin,Barats|VMS
+2026-08-14|FL|Fanny,Hirara,Marcel,Brody,Barats|VMS|Melissa,Freya,Selena,Moskov,Harith|FL
+2026-08-14|VMS|Marcel,Selena,Uranus,Esmeralda,Harley|FL|Fanny,Hirara,Freya,Zhuxin,Barats|VMS

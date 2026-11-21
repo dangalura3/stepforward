@@ -1,0 +1,134 @@
+hero,role,lanes,confidence,notes,source_url
+Aamon,Assassin,Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/aamon;https://mlbbhub.com/heroes
+Akai,Tank,Roam?|Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified; page lists Roamer with Jungler as also played",https://mlbbhub.com/heroes/akai;https://mlbbhub.com/heroes
+Aldous,Fighter,EXP?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/aldous;https://mlbbhub.com/heroes
+Alice,Tank,EXP|Jungle,high,"MLBBHub also lists Mage; MPL ID S18 picks n=44: EXP 33, Jungle 11",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/alice;https://mlbbhub.com/heroes
+Alpha,Fighter,Jungle|EXP,high,"MPL ID S18 picks n=16: Jungle 13, EXP 3",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Alucard,Fighter,Jungle?,low,"MLBBHub also lists Assassin; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/alucard;https://mlbbhub.com/heroes
+Angela,Support,Mid|Roam?,medium,"MPL ID S18 picks n=3: Mid 3; hero page lanes: Roam, Mid (agrees with pro picks); hero page primary is Roam but pro picks were mostly Mid",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/angela;https://mlbbhub.com/heroes
+Argus,Fighter,Gold?|EXP?,low,MPL ID S18 picks n=2: Gold 2; CONFLICT: pro picks Gold vs hero page EXP,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/argus;https://mlbbhub.com/heroes
+Arlott,Fighter,EXP,medium,MLBBHub also lists Assassin; MPL ID S18 picks n=11: EXP 11,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Atlas,Tank,Roam|EXP,high,"MPL ID S18 picks n=56: Roam 38, EXP 18",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Aulus,Fighter,Jungle|EXP,high,"MPL ID S18 picks n=63: Jungle 46, EXP 10, Gold 7; minor lanes below 15% share: Gold 7",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Aurora,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/aurora;https://mlbbhub.com/heroes
+Badang,Fighter,Roam|EXP,high,"MPL ID S18 picks n=19: Roam 16, EXP 3",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Balmond,Fighter,Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/balmond;https://mlbbhub.com/heroes
+Bane,Fighter,Jungle?|EXP?,low,"MLBBHub also lists Mage; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/bane;https://mlbbhub.com/heroes
+Barats,Tank,EXP,high,MLBBHub also lists Fighter; MPL ID S18 picks n=41: EXP 41,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Baxia,Tank,Jungle?|Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified; page lists Jungler with Roamer as also played",https://mlbbhub.com/heroes/baxia;https://mlbbhub.com/heroes
+Beatrix,Marksman,Gold?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/beatrix;https://mlbbhub.com/heroes
+Belerick,Tank,Roam|EXP,high,"MPL ID S18 picks n=72: Roam 53, EXP 19",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Benedetta,Assassin,EXP?,low,"MLBBHub also lists Fighter; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/benedetta;https://mlbbhub.com/heroes
+Brody,Marksman,Gold,high,MPL ID S18 picks n=28: Gold 28,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Bruno,Marksman,Gold,medium,MPL ID S18 picks n=4: Gold 4; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/bruno;https://mlbbhub.com/heroes
+Carmilla,Support,Roam|EXP,high,"MLBBHub also lists Tank; MPL ID S18 picks n=45: Roam 33, EXP 12",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Cecilion,Mage,Mid,high,MPL ID S18 picks n=15: Mid 15,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Chang'e,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/change;https://mlbbhub.com/heroes
+Chip,Support,Roam,medium,MLBBHub also lists Tank; MPL ID S18 picks n=7: Roam 7,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Chou,Fighter,Gold|Roam,high,"MPL ID S18 picks n=20: Gold 12, Roam 8",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Cici,Fighter,Gold|EXP,high,"MPL ID S18 picks n=53: Gold 35, EXP 18",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Claude,Marksman,Gold,high,MPL ID S18 picks n=65: Gold 65,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Clint,Marksman,Gold,medium,MPL ID S18 picks n=9: Gold 9,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Cyclops,Mage,Mid?|Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified; page lists Mid Lane with Jungler as also played",https://mlbbhub.com/heroes/cyclops;https://mlbbhub.com/heroes
+Diggie,Support,Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/diggie;https://mlbbhub.com/heroes
+Dyrroth,Fighter,EXP,medium,MPL ID S18 picks n=10: EXP 10,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Edith,Tank,EXP?|Roam?,low,"MLBBHub also lists Marksman; MPL ID S18 picks n=1: EXP 1; hero page lanes: EXP, Roam (agrees with pro picks)",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/edith;https://mlbbhub.com/heroes
+Esmeralda,Tank,EXP|Gold,high,"MLBBHub also lists Mage; MPL ID S18 picks n=34: EXP 28, Gold 6",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/esmeralda;https://mlbbhub.com/heroes
+Estes,Support,Roam,medium,"MPL ID S18 picks n=3: Roam 2, Mid 1; other single-game lanes: Mid 1; hero page lanes: Roam (agrees with pro picks)",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/estes;https://mlbbhub.com/heroes
+Eudora,Mage,Mid,high,"MPL ID S18 picks n=51: Mid 50, Roam 1",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Fanny,Assassin,Jungle,high,MPL ID S18 picks n=22: Jungle 22,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Faramis,Support,Mid,medium,MLBBHub also lists Mage; MPL ID S18 picks n=2: Mid 2; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/faramis;https://mlbbhub.com/heroes
+Floryn,Support,Roam?|Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified; page lists Roamer with Mid Lane as also played",https://mlbbhub.com/heroes/floryn;https://mlbbhub.com/heroes
+Franco,Tank,Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/franco;https://mlbbhub.com/heroes
+Fredrinn,Fighter,Jungle,medium,MLBBHub also lists Tank; MPL ID S18 picks n=3: Jungle 3; hero page lanes: Jungle (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/fredrinn;https://mlbbhub.com/heroes
+Freya,Fighter,EXP|Gold,high,"MPL ID S18 picks n=54: EXP 34, Gold 20; hero page also lists Jungle (0 pro picks)",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/freya;https://mlbbhub.com/heroes
+Gatotkaca,Tank,Roam,high,MLBBHub also lists Fighter; MPL ID S18 picks n=30: Roam 30,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Gloo,Tank,Roam,high,"MPL ID S18 picks n=44: Roam 43, EXP 1",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Gord,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/gord;https://mlbbhub.com/heroes
+Granger,Marksman,Gold?,low,MPL ID S18 picks n=1: Gold 1; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/granger;https://mlbbhub.com/heroes
+Grock,Tank,Roam?,low,"MLBBHub also lists Fighter; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/grock;https://mlbbhub.com/heroes
+Guinevere,Fighter,Jungle?|EXP?,low,"MPL ID S18 picks n=3: Jungle 2, EXP 1; other single-game lanes: EXP 1; CONFLICT: pro picks Jungle vs hero page EXP",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/guinevere;https://mlbbhub.com/heroes
+Gusion,Assassin,Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified; page body text also says mid lane or jungle (prose, not a lane field)",https://mlbbhub.com/heroes/gusion;https://mlbbhub.com/heroes
+Hanabi,Marksman,Gold,medium,MPL ID S18 picks n=4: Gold 4; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/hanabi;https://mlbbhub.com/heroes
+Hanzo,Assassin,Jungle,medium,MPL ID S18 picks n=4: Jungle 4; hero page lanes: Jungle (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/hanzo;https://mlbbhub.com/heroes
+Harith,Mage,Gold,medium,MPL ID S18 picks n=5: Gold 5,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Harley,Assassin,Jungle,high,"MLBBHub also lists Mage; MPL ID S18 picks n=18: Jungle 17, EXP 1; hero page also lists Mid (0 pro picks)",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/harley;https://mlbbhub.com/heroes
+Hayabusa,Assassin,Jungle,medium,MPL ID S18 picks n=6: Jungle 6,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Helcurt,Assassin,Jungle?|Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/helcurt;https://mlbbhub.com/heroes
+Hilda,Fighter,EXP|Roam?,medium,"MLBBHub also lists Tank; MPL ID S18 picks n=4: EXP 3, Roam 1; other single-game lanes: Roam 1; hero page lanes: Roam, EXP (agrees with pro picks); hero page primary is Roam but pro picks were mostly EXP",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/hilda;https://mlbbhub.com/heroes
+Hirara,Assassin,Jungle,high,MPL ID S18 picks n=94: Jungle 94,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Hylos,Tank,Roam,high,"MPL ID S18 picks n=21: Roam 19, EXP 2",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Irithel,Marksman,Gold?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/irithel;https://mlbbhub.com/heroes
+Ixia,Marksman,Gold?,low,MPL ID S18 picks n=1: Gold 1; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/ixia;https://mlbbhub.com/heroes
+Jawhead,Fighter,EXP?|Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/jawhead;https://mlbbhub.com/heroes
+Johnson,Tank,Roam?,low,"MLBBHub also lists Support; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/johnson;https://mlbbhub.com/heroes
+Joy,Assassin,EXP?|Gold?|Jungle?,low,"MPL ID S18 picks n=2: EXP 1, Gold 1; CONFLICT: pro picks EXP, Gold vs hero page Jungle",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/joy;https://mlbbhub.com/heroes
+Julian,Assassin,Jungle?,low,"MLBBHub also lists Fighter; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/julian;https://mlbbhub.com/heroes
+Kadita,Mage,Mid,medium,MLBBHub also lists Assassin; MPL ID S18 picks n=2: Mid 2; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/kadita;https://mlbbhub.com/heroes
+Kagura,Mage,Mid,medium,MPL ID S18 picks n=2: Mid 2; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/kagura;https://mlbbhub.com/heroes
+Kaja,Support,Roam,medium,MPL ID S18 picks n=3: Roam 3; hero page lanes: Roam (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/kaja;https://mlbbhub.com/heroes
+Kalea,Support,Roam|EXP,high,"MLBBHub also lists Fighter; MPL ID S18 picks n=21: Roam 16, EXP 5",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Karina,Assassin,Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/karina;https://mlbbhub.com/heroes
+Karrie,Marksman,Gold,medium,MPL ID S18 picks n=2: Gold 2; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/karrie;https://mlbbhub.com/heroes
+Khaleed,Fighter,Roam,medium,MPL ID S18 picks n=5: Roam 5,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Khufra,Tank,Roam,medium,MPL ID S18 picks n=2: Roam 2; hero page lanes: Roam (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/khufra;https://mlbbhub.com/heroes
+Kimmy,Marksman,Mid,high,"MLBBHub also lists Mage; MPL ID S18 picks n=48: Mid 42, Gold 6; minor lanes below 15% share: Gold 6",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Lancelot,Assassin,Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/lancelot;https://mlbbhub.com/heroes
+Lapu-Lapu,Fighter,EXP?,low,"MPL ID S18 picks n=1: EXP 1; hero page lanes: EXP (agrees with pro picks); page body says ""not really a fighter"" despite Fighter header class",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/lapu-lapu;https://mlbbhub.com/heroes
+Layla,Marksman,Gold?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/layla;https://mlbbhub.com/heroes
+Leomord,Fighter,Jungle,medium,MPL ID S18 picks n=4: Jungle 4; hero page lanes: Jungle (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/leomord;https://mlbbhub.com/heroes
+Lesley,Marksman,Gold,medium,MLBBHub also lists Assassin; MPL ID S18 picks n=2: Gold 2; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/lesley;https://mlbbhub.com/heroes
+Ling,Assassin,Jungle?,low,MPL ID S18 picks n=1: Jungle 1; hero page lanes: Jungle (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/ling;https://mlbbhub.com/heroes
+Lolita,Support,Roam?,low,"MLBBHub also lists Tank; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/lolita;https://mlbbhub.com/heroes
+Lukas,Fighter,EXP,high,"MPL ID S18 picks n=19: EXP 15, Jungle 2, Gold 2",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Lunox,Mage,Mid,medium,MPL ID S18 picks n=5: Mid 5,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/lunox;https://mlbbhub.com/heroes
+Luo Yi,Mage,Mid?,low,MPL ID S18 picks n=1: Mid 1; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/luo-yi;https://mlbbhub.com/heroes
+Lylia,Mage,Mid,high,"MPL ID S18 picks n=32: Mid 30, Roam 2",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Marcel,Support,Roam,high,MPL ID S18 picks n=34: Roam 34,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Martis,Fighter,Jungle?|EXP?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/martis;https://mlbbhub.com/heroes
+Masha,Fighter,Roam|EXP|Gold,medium,"MLBBHub also lists Tank; MPL ID S18 picks n=24: Roam 15, EXP 5, Gold 4; reworked in 2.2.16; season picks mix pre- and post-rework games; hero page lists EXP primary, Roam and Gold also played; recent BTR/TLID scoreboards show Roam",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/masha;https://mlbbhub.com/heroes
+Mathilda,Support,Roam,high,"MLBBHub also lists Assassin; MPL ID S18 picks n=23: Roam 20, Mid 3; minor lanes below 15% share: Mid 3",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Melissa,Marksman,Gold,high,MPL ID S18 picks n=34: Gold 34,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Minotaur,Tank,Roam|EXP,high,"MLBBHub also lists Support; MPL ID S18 picks n=43: Roam 33, EXP 10",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Minsitthar,Fighter,Gold?|EXP?|Roam?,low,"MPL ID S18 picks n=1: Gold 1; CONFLICT: pro picks Gold vs hero page EXP, Roam",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/minsitthar;https://mlbbhub.com/heroes
+Miya,Marksman,Gold,high,MPL ID S18 picks n=27: Gold 27,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Moskov,Marksman,Gold,high,MPL ID S18 picks n=34: Gold 34,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Nana,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/nana;https://mlbbhub.com/heroes
+Natalia,Assassin,Jungle?|Roam?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/natalia;https://mlbbhub.com/heroes
+Natan,Marksman,Gold?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/natan;https://mlbbhub.com/heroes
+Nolan,Assassin,Jungle,high,MPL ID S18 picks n=70: Jungle 70,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Novaria,Mage,Mid,high,MPL ID S18 picks n=22: Mid 22,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Obsidia,Marksman,Gold,high,MPL ID S18 picks n=47: Gold 47,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Odette,Mage,Mid,medium,MPL ID S18 picks n=2: Mid 2; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/odette;https://mlbbhub.com/heroes
+Paquito,Fighter,Jungle|Gold,high,"MLBBHub also lists Assassin; MPL ID S18 picks n=98: Jungle 57, Gold 36, EXP 5; minor lanes below 15% share: EXP 5",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Pharsa,Mage,Mid,medium,MPL ID S18 picks n=6: Mid 6,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Phoveus,Fighter,EXP,high,MPL ID S18 picks n=17: EXP 17,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Popol and Kupa,Marksman,Jungle?|Gold?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/popol-and-kupa;https://mlbbhub.com/heroes
+Rafaela,Support,Roam|Mid,high,"MPL ID S18 picks n=38: Roam 20, Mid 18",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Roger,Fighter,Jungle?,low,"MLBBHub also lists Marksman; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/roger;https://mlbbhub.com/heroes
+Ruby,Fighter,EXP|Roam,medium,"MPL ID S18 picks n=14: EXP 8, Roam 4, Gold 2",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Saber,Assassin,Jungle,medium,MPL ID S18 picks n=6: Jungle 6,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Selena,Assassin,Mid,high,MLBBHub also lists Mage; MPL ID S18 picks n=49: Mid 49,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Silvanna,Fighter,EXP?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/silvanna;https://mlbbhub.com/heroes
+Sora,Fighter,EXP,high,"MLBBHub also lists Assassin; MPL ID S18 picks n=21: EXP 20, Gold 1",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Sun,Fighter,EXP?|Jungle?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/sun;https://mlbbhub.com/heroes
+Suyou,Assassin,Jungle,high,MLBBHub also lists Fighter; MPL ID S18 picks n=24: Jungle 24,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Terizla,Fighter,EXP,medium,MLBBHub also lists Tank; MPL ID S18 picks n=6: EXP 6,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Thamuz,Fighter,EXP?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/thamuz;https://mlbbhub.com/heroes
+Tigreal,Tank,Roam?,low,MPL ID S18 picks n=1: Roam 1; hero page lanes: Roam (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/tigreal;https://mlbbhub.com/heroes
+Uranus,Tank,EXP,high,MPL ID S18 picks n=55: EXP 55,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Vale,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/vale;https://mlbbhub.com/heroes
+Valentina,Mage,Mid,high,"MPL ID S18 picks n=43: Mid 40, EXP 2, Roam 1",https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Valir,Mage,Mid,medium,MPL ID S18 picks n=13: Mid 13,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Vexana,Mage,Mid,medium,MPL ID S18 picks n=2: Mid 2; hero page lanes: Mid (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/vexana;https://mlbbhub.com/heroes
+Wanwan,Marksman,Gold,medium,MPL ID S18 picks n=2: Gold 2; hero page lanes: Gold (agrees with pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/wanwan;https://mlbbhub.com/heroes
+X.Borg,Fighter,EXP?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/x-borg;https://mlbbhub.com/heroes
+Xavier,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/xavier;https://mlbbhub.com/heroes
+Yi Sun-shin,Assassin,Jungle,high,MLBBHub also lists Marksman; MPL ID S18 picks n=15: Jungle 15; hero page also lists Gold (0 pro picks),https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes/yi-sun-shin;https://mlbbhub.com/heroes
+Yin,Fighter,Jungle?|EXP?,low,"MLBBHub also lists Assassin; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/yin;https://mlbbhub.com/heroes
+Yu Zhong,Fighter,EXP,medium,MPL ID S18 picks n=8: EXP 8,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Yve,Mage,Mid,medium,MPL ID S18 picks n=9: Mid 9,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Zetian,Mage,Mid,high,MPL ID S18 picks n=21: Mid 21,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Zhask,Mage,Mid?,low,"no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/zhask;https://mlbbhub.com/heroes
+Zhuxin,Mage,Mid,high,MPL ID S18 picks n=59: Mid 59,https://mlbbhub.com/mpl/id/stats;https://mlbbhub.com/heroes
+Zilong,Fighter,EXP?,low,"MLBBHub also lists Assassin; no MPL ID S18 picks; lanes from MLBBHub hero page (casual/ranked), not pro-verified",https://mlbbhub.com/heroes/zilong;https://mlbbhub.com/heroes

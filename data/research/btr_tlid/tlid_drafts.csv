@@ -1,0 +1,358 @@
+game_id,date,stage,series,game_no,blue_team,red_team,winner,step_no,action_team,side,action,hero,player,role,patch,source_url
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,Team Liquid ID,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,Team Liquid ID,,pick,Gloo,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,GEEK,,pick,Phoveus,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,GEEK,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,GEEK,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,GEEK,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G1,2026-08-15,Regular Season,Team Liquid ID vs GEEK,1,,,GEEK,,GEEK,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G2,2026-08-15,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,Team Liquid ID,,pick,Kaja,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,Team Liquid ID,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,GEEK,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,GEEK,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,GEEK,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,GEEK,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1038-G3,2026-08-15,Regular Season,Team Liquid ID vs GEEK,3,,,Team Liquid ID,,GEEK,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,Team Liquid ID,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,Team Liquid ID,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,DEWA,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,DEWA,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,DEWA,,pick,Claude,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,DEWA,,pick,Gloo,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G1,2026-08-16,Regular Season,Team Liquid ID vs DEWA,1,,,Team Liquid ID,,DEWA,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,Team Liquid ID,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,Team Liquid ID,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,Team Liquid ID,,pick,Zetian,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,DEWA,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,DEWA,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,DEWA,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,DEWA,,pick,Phoveus,,,,https://mlbbhub.com/mpl/id/drafts
+1041-G2,2026-08-16,Regular Season,Team Liquid ID vs DEWA,2,,,Team Liquid ID,,DEWA,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,Team Liquid ID,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,Team Liquid ID,,pick,Hanzo,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,NAVI,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,NAVI,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,NAVI,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,NAVI,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G1,2026-08-21,Regular Season,Team Liquid ID vs NAVI,1,,,NAVI,,NAVI,,pick,Ling,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,Team Liquid ID,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,Team Liquid ID,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,NAVI,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,NAVI,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,NAVI,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,NAVI,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1044-G2,2026-08-21,Regular Season,Team Liquid ID vs NAVI,2,,,NAVI,,NAVI,,pick,Gloo,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Claude,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Hanzo,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G1,2026-08-22,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Zetian,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1046-G2,2026-08-22,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Gloo,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Brody,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G1,2026-08-29,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,Team Liquid ID,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,Team Liquid ID,,pick,Brody,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,ONIC,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,ONIC,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,ONIC,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,ONIC,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G2,2026-08-29,Regular Season,Team Liquid ID vs ONIC,2,,,ONIC,,ONIC,,pick,Claude,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,Team Liquid ID,,pick,Harley,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,Team Liquid ID,,pick,Suyou,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,ONIC,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,ONIC,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,ONIC,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,ONIC,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1054-G3,2026-08-29,Regular Season,Team Liquid ID vs ONIC,3,,,Team Liquid ID,,ONIC,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,Team Liquid ID,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,Team Liquid ID,,pick,Brody,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,Team Liquid ID,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,AE,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,AE,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,AE,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,AE,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G1,2026-08-30,Regular Season,Team Liquid ID vs AE,1,,,,,AE,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,Team Liquid ID,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,AE,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,AE,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,AE,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,AE,,pick,Chip,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G2,2026-08-30,Regular Season,Team Liquid ID vs AE,2,,,,,AE,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,Team Liquid ID,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,Team Liquid ID,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,Team Liquid ID,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,AE,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,AE,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,AE,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,AE,,pick,Chip,,,,https://mlbbhub.com/mpl/id/drafts
+1059-G3,2026-08-30,Regular Season,Team Liquid ID vs AE,3,,,,,AE,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Miya,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G1,2026-09-04,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Claude,,,,https://mlbbhub.com/mpl/id/drafts
+1061-G2,2026-09-04,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G1,2026-09-12,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Novaria,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Vexana,,,,https://mlbbhub.com/mpl/id/drafts
+1070-G2,2026-09-12,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,Team Liquid ID,,pick,Kimmy,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,Team Liquid ID,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,Team Liquid ID,,pick,Belerick,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,Team Liquid ID,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,GEEK,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,GEEK,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,GEEK,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,GEEK,,pick,Miya,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G1,2026-09-13,Regular Season,Team Liquid ID vs GEEK,1,,,Team Liquid ID,,GEEK,,pick,Brody,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Kimmy,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,Team Liquid ID,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Melissa,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1073-G2,2026-09-13,Regular Season,Team Liquid ID vs GEEK,2,,,Team Liquid ID,,GEEK,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Minotaur,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Valentina,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G1,2026-09-19,Regular Season,Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1080-G2,2026-09-19,Regular Season,Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Guinevere,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,Team Liquid ID,,pick,Lukas,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Gloo,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G1,2026-09-20,Regular Season,Team Liquid ID vs EVOS,1,,,,,EVOS,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Guinevere,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Cecilion,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,Team Liquid ID,,pick,Bruno,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G2,2026-09-20,Regular Season,Team Liquid ID vs EVOS,2,,,,,EVOS,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,Team Liquid ID,,pick,Guinevere,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,Team Liquid ID,,pick,Lukas,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,Team Liquid ID,,pick,Fredrinn,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,EVOS,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,EVOS,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,EVOS,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,EVOS,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1083-G3,2026-09-20,Regular Season,Team Liquid ID vs EVOS,3,,,,,EVOS,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,Team Liquid ID,,pick,Lukas,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,Team Liquid ID,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,Team Liquid ID,,pick,Badang,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,AE,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,AE,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,AE,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,AE,,pick,Valentina,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G1,2026-10-04,Regular Season,Team Liquid ID vs AE,1,,,Team Liquid ID,,AE,,pick,Minotaur,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,Team Liquid ID,,pick,Lukas,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,Team Liquid ID,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,Team Liquid ID,,pick,Miya,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,AE,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,AE,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,AE,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,AE,,pick,Uranus,,,,https://mlbbhub.com/mpl/id/drafts
+1089-G2,2026-10-04,Regular Season,Team Liquid ID vs AE,2,,,Team Liquid ID,,AE,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Minotaur,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,Team Liquid ID,,pick,Mathilda,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Valentina,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Zetian,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G1,2026-10-09,Regular Season,Team Liquid ID vs RRQ,1,,,Team Liquid ID,,RRQ,,pick,Phoveus,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Rafaela,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Valentina,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1095-G2,2026-10-09,Regular Season,Team Liquid ID vs RRQ,2,,,Team Liquid ID,,RRQ,,pick,Zetian,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Carmilla,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Alice,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,Team Liquid ID,,pick,Kimmy,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Hirara,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Obsidia,,,,https://mlbbhub.com/mpl/id/drafts
+1107-G1,2026-10-18,Regular Season,Team Liquid ID vs ONIC,1,,,Team Liquid ID,,ONIC,,pick,Barats,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Kalea,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,Team Liquid ID,,pick,Aulus,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Nolan,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Zetian,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G1,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,1,,,Team Liquid ID,,BTR,,pick,Valir,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Eudora,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Chou,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,Team Liquid ID,,pick,Alice,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Cici,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G2,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,2,,,Team Liquid ID,,BTR,,pick,Atlas,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,Team Liquid ID,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,Team Liquid ID,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,Team Liquid ID,,pick,Selena,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,BTR,,pick,Kalea,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,BTR,,pick,Marcel,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,BTR,,pick,Valentina,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G3,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,3,,,BTR,,BTR,,pick,Moskov,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,Team Liquid ID,,pick,Fanny,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,Team Liquid ID,,pick,Esmeralda,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,Team Liquid ID,,pick,Paquito,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,Team Liquid ID,,pick,Alice,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,Team Liquid ID,,pick,Harley,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,BTR,,pick,Masha,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,BTR,,pick,Kalea,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,BTR,,pick,Freya,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,BTR,,pick,Lylia,,,,https://mlbbhub.com/mpl/id/drafts
+1111-G4,2026-11-05,Playoffs - Round 2 (Upper Bracket),Team Liquid ID vs BTR,4,,,Team Liquid ID,,BTR,,pick,Zhuxin,,,,https://mlbbhub.com/mpl/id/drafts
+1085-G1,2026-09-20,Regular Season,Team Liquid ID vs DEWA,1,,,,,,,,,,,,https://mlbbhub.com/mpl/id/match/1085
+1085-G2,2026-09-20,Regular Season,Team Liquid ID vs DEWA,2,,,,,,,,,,,,https://mlbbhub.com/mpl/id/match/1085
+1085-G3,2026-09-20,Regular Season,Team Liquid ID vs DEWA,3,,,,,,,,,,,,https://mlbbhub.com/mpl/id/match/1085
+1093-G1,2026-10-04,Regular Season,Team Liquid ID vs NAVI,1,,,,,,,,,,,,https://mlbbhub.com/mpl/id/match/1093
+1093-G2,2026-10-04,Regular Season,Team Liquid ID vs NAVI,2,,,,,,,,,,,,https://mlbbhub.com/mpl/id/match/1093
+UBF-NAVI-GUNKNOWN,2026-11-06,Playoffs - Upper Bracket Final,Team Liquid ID vs NAVI,,,,,,,,,,,,,https://mlbbhub.com/mpl/id/playoffs
+1107-G2,2026-10-18,Regular Season,Team Liquid ID vs ONIC,2,,,,,,,,,,,,https://mlbbhub.com/mpl/id/drafts

@@ -1,0 +1,862 @@
+game_id,date,stage,series,game_no,blue_team,red_team,winner,step_no,action_team,side,action,hero,player,role,patch,confidence,source_url
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,1,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,2,TLID,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,3,TLID,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,4,TLID,blue,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,5,TLID,blue,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,1,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,2,BTR,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,3,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,4,BTR,red,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,5,BTR,red,ban,Valir,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,TLID,blue,pick,Freya,Aran,EXP,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,TLID,blue,pick,Hirara,Kevinn,Jungle,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,TLID,blue,pick,Lylia,Drichel,Mid,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,TLID,blue,pick,Masha,Lyoni,Roam,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,TLID,blue,pick,Harith,Keven,Gold,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,BTR,red,pick,Uranus,Shogun,EXP,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,BTR,red,pick,Alice,Nnael,Jungle,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,BTR,red,pick,Kimmy,Morenooo,Mid,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,BTR,red,pick,Gatotkaca,Finn,Roam,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G1,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,1,TLID,BTR,TLID,,BTR,red,pick,Cici,EMANN,Gold,,inferred,https://mlbbhub.com/mpl/id/match/1111
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,1,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,2,BTR,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,3,BTR,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,4,BTR,blue,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,5,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,1,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,2,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,3,TLID,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,4,TLID,red,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G2,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,2,BTR,TLID,TLID,5,TLID,red,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,1,BTR,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,2,BTR,blue,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,3,BTR,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,4,BTR,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,5,BTR,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,1,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,2,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,4,TLID,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G3,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,3,BTR,TLID,BTR,5,TLID,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,1,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,2,TLID,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,3,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,4,TLID,blue,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,5,TLID,blue,ban,Harley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,2,BTR,red,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,3,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,4,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1111-G4,2026-11-05,Playoffs Round 2 Match 2 (Bo5),TLID vs BTR,4,TLID,BTR,TLID,5,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,1,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,2,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,3,BTR,blue,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,4,BTR,blue,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,5,BTR,blue,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,1,EVOS,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,2,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,3,EVOS,red,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,4,EVOS,red,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,5,EVOS,red,ban,Valir,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,BTR,blue,pick,Yu Zhong,Shogun,EXP,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,BTR,blue,pick,Nolan,Nnael,Jungle,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,BTR,blue,pick,Kimmy,Morenooo,Mid,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,BTR,blue,pick,Masha,Finn,Roam,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,BTR,blue,pick,Esmeralda,EMANN,Gold,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,EVOS,red,pick,Dyrroth,Rendyyy,,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,EVOS,red,pick,Suyou,Alberttt,,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,EVOS,red,pick,Lylia,Ryzaa,,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,EVOS,red,pick,Kalea,Muezza,,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G1,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,1,BTR,EVOS,BTR,,EVOS,red,pick,Paquito,Erlan,,,inferred,https://mlbbhub.com/mpl/id/match/1109
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,1,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,2,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,3,BTR,blue,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,4,BTR,blue,ban,Estes,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,5,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,1,EVOS,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,2,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,3,EVOS,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,4,EVOS,red,ban,Faramis,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G2,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,2,BTR,EVOS,EVOS,5,EVOS,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,1,EVOS,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,2,EVOS,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,3,EVOS,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,4,EVOS,blue,ban,Alpha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,5,EVOS,blue,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,1,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,2,BTR,red,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,3,BTR,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,4,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G3,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,3,EVOS,BTR,EVOS,5,BTR,red,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,1,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,2,BTR,blue,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,3,BTR,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,4,BTR,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,5,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,1,EVOS,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,2,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,3,EVOS,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,4,EVOS,red,ban,Dyrroth,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G4,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,4,BTR,EVOS,BTR,5,EVOS,red,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,1,EVOS,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,2,EVOS,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,3,EVOS,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,4,EVOS,blue,ban,Valir,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,5,EVOS,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,2,BTR,red,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,3,BTR,red,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,4,BTR,red,ban,Dyrroth,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1109-G5,2026-11-04,Playoffs Round 1 Match 2 (Bo5),BTR vs EVOS,5,EVOS,BTR,BTR,5,BTR,red,ban,Lesley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,1,NAVI,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,2,NAVI,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,3,NAVI,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,4,NAVI,blue,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,5,NAVI,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,2,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,3,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,4,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G1,2026-10-18,Regular Season,NAVI vs BTR,1,NAVI,BTR,BTR,5,BTR,red,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,1,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,2,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,3,BTR,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,4,BTR,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,5,BTR,blue,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,1,NAVI,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,2,NAVI,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,3,NAVI,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,4,NAVI,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1106-G2,2026-10-18,Regular Season,NAVI vs BTR,2,BTR,NAVI,BTR,5,NAVI,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,1,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,2,TLID,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,3,TLID,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,4,TLID,blue,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,5,TLID,blue,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,1,ONIC,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,2,ONIC,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,3,ONIC,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,4,ONIC,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G1,2026-10-18,Regular Season,ONIC vs TLID,1,TLID,ONIC,TLID,5,ONIC,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,1,EVOS,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,2,EVOS,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,3,EVOS,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,4,EVOS,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,5,EVOS,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,2,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,3,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,4,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G1,2026-10-17,Regular Season,BTR vs EVOS,1,EVOS,BTR,BTR,5,BTR,red,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,1,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,2,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,3,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,4,BTR,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,5,BTR,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,1,EVOS,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,2,EVOS,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,3,EVOS,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,4,EVOS,red,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G2,2026-10-17,Regular Season,BTR vs EVOS,2,BTR,EVOS,EVOS,5,EVOS,red,ban,Dyrroth,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,1,EVOS,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,2,EVOS,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,3,EVOS,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,4,EVOS,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,5,EVOS,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,2,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,3,BTR,red,ban,Kalea,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,4,BTR,red,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1103-G3,2026-10-17,Regular Season,BTR vs EVOS,3,EVOS,BTR,BTR,5,BTR,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,1,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,2,BTR,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,3,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,4,BTR,blue,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,5,BTR,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,1,DEWA,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,2,DEWA,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,3,DEWA,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,4,DEWA,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G1,2026-10-11,Regular Season,DEWA vs BTR,1,BTR,DEWA,BTR,5,DEWA,red,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,1,DEWA,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,2,DEWA,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,3,DEWA,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,4,DEWA,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,5,DEWA,blue,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,2,BTR,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,3,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,4,BTR,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1099-G2,2026-10-11,Regular Season,DEWA vs BTR,2,DEWA,BTR,BTR,5,BTR,red,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,1,RRQ,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,2,RRQ,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,3,RRQ,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,4,RRQ,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,5,RRQ,blue,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,1,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,2,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,4,TLID,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G1,2026-10-09,Regular Season,RRQ vs TLID,1,RRQ,TLID,TLID,5,TLID,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,1,RRQ,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,2,RRQ,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,3,RRQ,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,4,RRQ,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,5,RRQ,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,1,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,2,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,4,TLID,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1095-G2,2026-10-09,Regular Season,RRQ vs TLID,2,RRQ,TLID,TLID,5,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,1,AE,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,2,AE,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,3,AE,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,4,AE,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,5,AE,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,2,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,3,BTR,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,4,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G1,2026-10-08,Regular Season,AE vs BTR,1,AE,BTR,AE,5,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,1,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,2,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,3,BTR,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,4,BTR,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,5,BTR,blue,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,1,AE,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,2,AE,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,3,AE,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,4,AE,red,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1092-G2,2026-10-08,Regular Season,AE vs BTR,2,BTR,AE,AE,5,AE,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,1,NAVI,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,2,NAVI,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,3,NAVI,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,4,NAVI,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,5,NAVI,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,1,TLID,red,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,2,TLID,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,3,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,4,TLID,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G1,2026-10-08,Regular Season,NAVI vs TLID,1,NAVI,TLID,NAVI,5,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,1,NAVI,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,2,NAVI,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,3,NAVI,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,4,NAVI,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,5,NAVI,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,1,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,2,TLID,red,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,3,TLID,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,4,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1093-G2,2026-10-08,Regular Season,NAVI vs TLID,2,NAVI,TLID,NAVI,5,TLID,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,1,TLID,blue,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,2,TLID,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,3,TLID,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,4,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,5,TLID,blue,ban,Badang,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,1,AE,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,2,AE,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,3,AE,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,4,AE,red,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G1,2026-10-04,Regular Season,AE vs TLID,1,TLID,AE,TLID,5,AE,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,1,TLID,blue,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,2,TLID,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,3,TLID,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,4,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,5,TLID,blue,ban,Miya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,1,AE,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,2,AE,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,3,AE,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,4,AE,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1089-G2,2026-10-04,Regular Season,AE vs TLID,2,TLID,AE,TLID,5,AE,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,2,BTR,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,3,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,4,BTR,blue,ban,Alpha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,5,BTR,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,1,RRQ,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,2,RRQ,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,3,RRQ,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,4,RRQ,red,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G1,2026-10-03,Regular Season,BTR vs RRQ,1,BTR,RRQ,BTR,5,RRQ,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,1,RRQ,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,2,RRQ,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,3,RRQ,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,4,RRQ,blue,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,5,RRQ,blue,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,2,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,3,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,4,BTR,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G2,2026-10-03,Regular Season,BTR vs RRQ,2,RRQ,BTR,RRQ,5,BTR,red,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,2,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,3,BTR,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,4,BTR,blue,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,5,BTR,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,1,RRQ,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,2,RRQ,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,3,RRQ,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,4,RRQ,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1087-G3,2026-10-03,Regular Season,BTR vs RRQ,3,BTR,RRQ,BTR,5,RRQ,red,ban,Alice,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,1,GEEK,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,2,GEEK,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,3,GEEK,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,4,GEEK,blue,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,5,GEEK,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,1,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,2,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,3,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,4,BTR,red,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G1,2026-10-02,Regular Season,GEEK vs BTR,1,GEEK,BTR,BTR,5,BTR,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,2,BTR,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,3,BTR,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,4,BTR,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,5,BTR,blue,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,1,GEEK,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,2,GEEK,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,3,GEEK,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,4,GEEK,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G2,2026-10-02,Regular Season,GEEK vs BTR,2,BTR,GEEK,GEEK,5,GEEK,red,ban,Cici,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,1,GEEK,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,2,GEEK,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,3,GEEK,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,4,GEEK,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,5,GEEK,blue,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,1,BTR,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,2,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,3,BTR,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,4,BTR,red,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1084-G3,2026-10-02,Regular Season,GEEK vs BTR,3,GEEK,BTR,BTR,5,BTR,red,ban,Arlott,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,1,DEWA,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,2,DEWA,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,3,DEWA,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,4,DEWA,blue,ban,Cecilion,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,5,DEWA,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,1,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,2,TLID,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,4,TLID,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G1,2026-10-02,Regular Season,DEWA vs TLID,1,DEWA,TLID,TLID,5,TLID,red,ban,Arlott,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,1,DEWA,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,2,DEWA,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,3,DEWA,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,4,DEWA,blue,ban,Miya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,5,DEWA,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,1,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,2,TLID,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,4,TLID,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G2,2026-10-02,Regular Season,DEWA vs TLID,2,DEWA,TLID,DEWA,5,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,1,DEWA,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,2,DEWA,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,3,DEWA,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,4,DEWA,blue,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,5,DEWA,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,1,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,2,TLID,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,3,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,4,TLID,red,ban,Arlott,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1085-G3,2026-10-02,Regular Season,DEWA vs TLID,3,DEWA,TLID,DEWA,5,TLID,red,ban,Saber,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,1,ONIC,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,2,ONIC,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,3,ONIC,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,4,ONIC,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,5,ONIC,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,3,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,4,BTR,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G1,2026-09-20,Regular Season,BTR vs ONIC,1,ONIC,BTR,ONIC,5,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,1,ONIC,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,2,ONIC,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,3,ONIC,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,4,ONIC,blue,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,5,ONIC,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,3,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,4,BTR,red,ban,Harley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1082-G2,2026-09-20,Regular Season,BTR vs ONIC,2,ONIC,BTR,ONIC,5,BTR,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,1,EVOS,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,2,EVOS,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,3,EVOS,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,4,EVOS,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,5,EVOS,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,1,TLID,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,2,TLID,red,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,3,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,4,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G1,2026-09-20,Regular Season,EVOS vs TLID,1,EVOS,TLID,TLID,5,TLID,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,1,TLID,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,2,TLID,blue,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,3,TLID,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,4,TLID,blue,ban,Cecilion,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,5,TLID,blue,ban,Bruno,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,1,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,2,EVOS,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,3,EVOS,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,4,EVOS,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G2,2026-09-20,Regular Season,EVOS vs TLID,2,TLID,EVOS,EVOS,5,EVOS,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,1,EVOS,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,2,EVOS,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,3,EVOS,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,4,EVOS,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,5,EVOS,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,1,TLID,red,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,2,TLID,red,ban,Aulus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,3,TLID,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,4,TLID,red,ban,Lukas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1083-G3,2026-09-20,Regular Season,EVOS vs TLID,3,EVOS,TLID,EVOS,5,TLID,red,ban,Fredrinn,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,1,TLID,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,2,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,3,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,4,TLID,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,5,TLID,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,3,BTR,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,4,BTR,red,ban,Valentina,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G1,2026-09-19,Regular Season,BTR vs TLID,1,TLID,BTR,TLID,5,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,1,TLID,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,2,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,3,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,4,TLID,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,5,TLID,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,3,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,4,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1080-G2,2026-09-19,Regular Season,BTR vs TLID,2,TLID,BTR,TLID,5,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,1,GEEK,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,2,GEEK,blue,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,3,GEEK,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,4,GEEK,blue,ban,Miya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,5,GEEK,blue,ban,Brody,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,1,TLID,red,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,2,TLID,red,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,3,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,4,TLID,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G1,2026-09-13,Regular Season,GEEK vs TLID,1,GEEK,TLID,TLID,5,TLID,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,1,TLID,blue,ban,Kimmy,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,2,TLID,blue,ban,Masha,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,3,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,4,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,5,TLID,blue,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,1,GEEK,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,2,GEEK,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,3,GEEK,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,4,GEEK,red,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1073-G2,2026-09-13,Regular Season,GEEK vs TLID,2,TLID,GEEK,TLID,5,GEEK,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,1,TLID,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,2,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,3,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,4,TLID,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,5,TLID,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,2,BTR,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,3,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,4,BTR,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G1,2026-09-12,Regular Season,TLID vs BTR,1,TLID,BTR,TLID,5,BTR,red,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,1,BTR,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,2,BTR,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,3,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,4,BTR,blue,ban,Vexana,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,5,BTR,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,1,TLID,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,2,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,3,TLID,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,4,TLID,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1070-G2,2026-09-12,Regular Season,TLID vs BTR,2,BTR,TLID,TLID,5,TLID,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,1,AE,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,2,AE,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,3,AE,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,4,AE,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,5,AE,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,2,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,4,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G1,2026-09-06,Regular Season,BTR vs AE,1,AE,BTR,AE,5,BTR,red,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,1,AE,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,2,AE,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,3,AE,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,4,AE,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,5,AE,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,4,BTR,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1067-G2,2026-09-06,Regular Season,BTR vs AE,2,AE,BTR,AE,5,BTR,red,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,1,BTR,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,2,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,3,BTR,blue,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,4,BTR,blue,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,5,BTR,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,1,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,2,EVOS,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,3,EVOS,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,4,EVOS,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G1,2026-09-05,Regular Season,EVOS vs BTR,1,BTR,EVOS,BTR,5,EVOS,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,1,EVOS,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,2,EVOS,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,3,EVOS,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,4,EVOS,blue,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,5,EVOS,blue,ban,Ruby,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,2,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,3,BTR,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,4,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G2,2026-09-05,Regular Season,EVOS vs BTR,2,EVOS,BTR,EVOS,5,BTR,red,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,1,EVOS,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,2,EVOS,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,3,EVOS,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,4,EVOS,blue,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,5,EVOS,blue,ban,Minotaur,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,2,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,3,BTR,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,4,BTR,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1063-G3,2026-09-05,Regular Season,EVOS vs BTR,3,EVOS,BTR,EVOS,5,BTR,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,1,TLID,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,2,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,3,TLID,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,4,TLID,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,5,TLID,blue,ban,Miya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,1,RRQ,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,2,RRQ,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,3,RRQ,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,4,RRQ,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G1,2026-09-04,Regular Season,TLID vs RRQ,1,TLID,RRQ,TLID,5,RRQ,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,1,RRQ,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,2,RRQ,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,3,RRQ,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,4,RRQ,blue,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,5,RRQ,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,1,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,2,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,3,TLID,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,4,TLID,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1061-G2,2026-09-04,Regular Season,TLID vs RRQ,2,RRQ,TLID,TLID,5,TLID,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,1,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,2,TLID,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,3,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,4,TLID,blue,ban,Brody,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,5,TLID,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,1,AE,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,2,AE,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,3,AE,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,4,AE,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G1,2026-08-30,Regular Season,TLID vs AE,1,TLID,AE,AE,5,AE,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,1,AE,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,2,AE,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,3,AE,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,4,AE,blue,ban,Chip,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,5,AE,blue,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,1,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,2,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,3,TLID,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,4,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G2,2026-08-30,Regular Season,TLID vs AE,2,AE,TLID,TLID,5,TLID,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,1,AE,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,2,AE,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,3,AE,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,4,AE,blue,ban,Chip,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,5,AE,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,1,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,2,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,3,TLID,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,4,TLID,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1059-G3,2026-08-30,Regular Season,TLID vs AE,3,AE,TLID,TLID,5,TLID,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,1,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,2,TLID,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,3,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,4,TLID,blue,ban,Brody,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,5,TLID,blue,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,1,ONIC,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,2,ONIC,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,3,ONIC,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,4,ONIC,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G1,2026-08-29,Regular Season,TLID vs ONIC,1,TLID,ONIC,TLID,5,ONIC,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,1,ONIC,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,2,ONIC,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,3,ONIC,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,4,ONIC,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,5,ONIC,blue,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,1,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,2,TLID,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,3,TLID,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,4,TLID,red,ban,Brody,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G2,2026-08-29,Regular Season,TLID vs ONIC,2,ONIC,TLID,ONIC,5,TLID,red,ban,Obsidia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,1,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,2,TLID,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,3,TLID,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,4,TLID,blue,ban,Harley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,5,TLID,blue,ban,Suyou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,1,ONIC,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,2,ONIC,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,3,ONIC,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,4,ONIC,red,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1054-G3,2026-08-29,Regular Season,TLID vs ONIC,3,TLID,ONIC,TLID,5,ONIC,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,1,RRQ,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,2,RRQ,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,3,RRQ,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,4,RRQ,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,5,RRQ,blue,ban,Harley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,2,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,3,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,4,BTR,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G1,2026-08-29,Regular Season,RRQ vs BTR,1,RRQ,BTR,BTR,5,BTR,red,ban,Chip,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,1,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,2,BTR,blue,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,3,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,4,BTR,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,5,BTR,blue,ban,Chip,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,1,RRQ,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,2,RRQ,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,3,RRQ,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,4,RRQ,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G2,2026-08-29,Regular Season,RRQ vs BTR,2,BTR,RRQ,RRQ,5,RRQ,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,1,RRQ,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,2,RRQ,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,3,RRQ,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,4,RRQ,blue,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,5,RRQ,blue,ban,Carmilla,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,2,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,4,BTR,red,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1056-G3,2026-08-29,Regular Season,RRQ vs BTR,3,RRQ,BTR,BTR,5,BTR,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,1,NAVI,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,2,NAVI,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,3,NAVI,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,4,NAVI,blue,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,5,NAVI,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,2,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,3,BTR,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,4,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G1,2026-08-28,Regular Season,BTR vs NAVI,1,NAVI,BTR,BTR,5,BTR,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,1,NAVI,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,2,NAVI,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,3,NAVI,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,4,NAVI,blue,ban,Harley,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,5,NAVI,blue,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,2,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,3,BTR,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,4,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1052-G2,2026-08-28,Regular Season,BTR vs NAVI,2,NAVI,BTR,BTR,5,BTR,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,1,ONIC,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,2,ONIC,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,3,ONIC,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,4,ONIC,blue,ban,Vexana,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,5,ONIC,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,2,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,4,BTR,red,ban,Badang,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G1,2026-08-23,Regular Season,ONIC vs BTR,1,ONIC,BTR,BTR,5,BTR,red,ban,Chou,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,1,ONIC,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,2,ONIC,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,3,ONIC,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,4,ONIC,blue,ban,Badang,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,5,ONIC,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,2,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,3,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,4,BTR,red,ban,Ruby,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G2,2026-08-23,Regular Season,ONIC vs BTR,2,ONIC,BTR,ONIC,5,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,1,ONIC,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,2,ONIC,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,3,ONIC,blue,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,4,ONIC,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,5,ONIC,blue,ban,Gatotkaca,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,2,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,4,BTR,red,ban,Vexana,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1050-G3,2026-08-23,Regular Season,ONIC vs BTR,3,ONIC,BTR,BTR,5,BTR,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,1,EVOS,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,2,EVOS,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,3,EVOS,blue,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,4,EVOS,blue,ban,Hanzo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,5,EVOS,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,1,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,2,TLID,red,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,3,TLID,red,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,4,TLID,red,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G1,2026-08-22,Regular Season,TLID vs EVOS,1,EVOS,TLID,TLID,5,TLID,red,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,1,TLID,blue,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,2,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,3,TLID,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,4,TLID,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,5,TLID,blue,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,1,EVOS,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,2,EVOS,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,3,EVOS,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,4,EVOS,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1046-G2,2026-08-22,Regular Season,TLID vs EVOS,2,TLID,EVOS,TLID,5,EVOS,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,1,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,2,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,3,TLID,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,4,TLID,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,5,TLID,blue,ban,Hanzo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,1,NAVI,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,2,NAVI,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,3,NAVI,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,4,NAVI,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G1,2026-08-21,Regular Season,TLID vs NAVI,1,TLID,NAVI,NAVI,5,NAVI,red,ban,Ling,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,1,NAVI,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,2,NAVI,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,3,NAVI,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,4,NAVI,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,5,NAVI,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,1,TLID,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,2,TLID,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,3,TLID,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,4,TLID,red,ban,Rafaela,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1044-G2,2026-08-21,Regular Season,TLID vs NAVI,2,NAVI,TLID,NAVI,5,TLID,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,1,DEWA,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,2,DEWA,blue,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,3,DEWA,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,4,DEWA,blue,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,5,DEWA,blue,ban,Miya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,2,BTR,red,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,3,BTR,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,4,BTR,red,ban,Lunox,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G1,2026-08-21,Regular Season,BTR vs DEWA,1,DEWA,BTR,BTR,5,BTR,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,2,BTR,blue,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,3,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,4,BTR,blue,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,5,BTR,blue,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,1,DEWA,red,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,2,DEWA,red,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,3,DEWA,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,4,DEWA,red,ban,Moskov,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1045-G2,2026-08-21,Regular Season,BTR vs DEWA,2,BTR,DEWA,BTR,5,DEWA,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,1,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,2,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,3,TLID,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,4,TLID,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,5,TLID,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,1,DEWA,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,2,DEWA,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,3,DEWA,red,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,4,DEWA,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G1,2026-08-16,Regular Season,TLID vs DEWA,1,TLID,DEWA,TLID,5,DEWA,red,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,1,DEWA,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,2,DEWA,blue,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,3,DEWA,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,4,DEWA,blue,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,5,DEWA,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,1,TLID,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,2,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,3,TLID,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,4,TLID,red,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1041-G2,2026-08-16,Regular Season,TLID vs DEWA,2,DEWA,TLID,TLID,5,TLID,red,ban,Zetian,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,2,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,3,BTR,blue,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,4,BTR,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,5,BTR,blue,ban,Vexana,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,1,GEEK,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,2,GEEK,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,3,GEEK,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,4,GEEK,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,5,GEEK,red,ban,Hanabi,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,BTR,blue,pick,Uranus,Shogun,EXP,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,BTR,blue,pick,Hayabusa,Nnael,Jungle,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,BTR,blue,pick,Novaria,Morenooo,Mid,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,BTR,blue,pick,Mathilda,Finn,Roam,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,BTR,blue,pick,Ixia,EMANN,Gold,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,GEEK,red,pick,Barats,MarceL,,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,GEEK,red,pick,Ling,Nazara,,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,GEEK,red,pick,Kimmy,Aboyy,,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,GEEK,red,pick,Kaja,AudyTzy,,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G1,2026-08-16,Regular Season,BTR vs GEEK,1,BTR,GEEK,BTR,,GEEK,red,pick,Brody,KennzySkie,,,inferred,https://mlbbhub.com/mpl/id/match/1042
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,1,GEEK,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,2,GEEK,blue,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,3,GEEK,blue,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,4,GEEK,blue,ban,Novaria,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,5,GEEK,blue,ban,Claude,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,1,BTR,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,2,BTR,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,3,BTR,red,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,4,BTR,red,ban,Kaja,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G2,2026-08-16,Regular Season,BTR vs GEEK,2,GEEK,BTR,GEEK,5,BTR,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,1,BTR,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,2,BTR,blue,ban,Chip,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,3,BTR,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,4,BTR,blue,ban,Guinevere,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,5,BTR,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,1,GEEK,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,2,GEEK,red,ban,Fanny,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,3,GEEK,red,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,4,GEEK,red,ban,Hayabusa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1042-G3,2026-08-16,Regular Season,BTR vs GEEK,3,BTR,GEEK,BTR,5,GEEK,red,ban,Nolan,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,1,GEEK,blue,ban,Phoveus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,2,GEEK,blue,ban,Barats,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,3,GEEK,blue,ban,Hirara,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,4,GEEK,blue,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,5,GEEK,blue,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,1,TLID,red,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,2,TLID,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,3,TLID,red,ban,Belerick,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,4,TLID,red,ban,Mathilda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,5,TLID,red,ban,Gloo,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,GEEK,blue,pick,Freya,MarceL,,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,GEEK,blue,pick,Nolan,Nazara,,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,GEEK,blue,pick,Eudora,Aboyy,,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,GEEK,blue,pick,Kaja,AudyTzy,,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,GEEK,blue,pick,Brody,KennzySkie,,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,TLID,red,pick,Uranus,Aran,EXP,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,TLID,red,pick,Paquito,Kevinn,Jungle,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,TLID,red,pick,Novaria,Drichel,Mid,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,TLID,red,pick,Minotaur,Lyoni,Roam,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G1,2026-08-15,Regular Season,TLID vs GEEK,1,GEEK,TLID,GEEK,,TLID,red,pick,Melissa,Keven,Gold,,inferred,https://mlbbhub.com/mpl/id/match/1038
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,1,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,2,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,3,TLID,blue,ban,Eudora,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,4,TLID,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,5,TLID,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,1,GEEK,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,2,GEEK,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,3,GEEK,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,4,GEEK,red,ban,Selena,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G2,2026-08-15,Regular Season,TLID vs GEEK,2,TLID,GEEK,TLID,5,GEEK,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,1,TLID,blue,ban,Paquito,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,2,TLID,blue,ban,Atlas,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,3,TLID,blue,ban,Kaja,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,4,TLID,blue,ban,Uranus,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,5,TLID,blue,ban,Esmeralda,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,1,GEEK,red,ban,Freya,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,2,GEEK,red,ban,Marcel,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,3,GEEK,red,ban,Melissa,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,4,GEEK,red,ban,Zhuxin,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1038-G3,2026-08-15,Regular Season,TLID vs GEEK,3,TLID,GEEK,TLID,5,GEEK,red,ban,Lylia,,,,inferred,https://mlbbhub.com/mpl/id/drafts
+S18-1107-G2,2026-10-18,Regular Season,ONIC vs TLID,2,,,TLID,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/drafts
+S18-1112-G1,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,1,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-G2,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,2,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-G3,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,3,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-G4,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,4,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-G5,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,5,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,AE,,pick,Barats,Nino,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,AE,,pick,Suyou,Yazukee,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,AE,,pick,Eudora,Hijumee,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,AE,,pick,Khaleed,alekk,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,AE,,pick,Freya,Arfy,,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,BTR,,pick,Uranus,Shogun,EXP,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,BTR,,pick,Nolan,Nnael,Jungle,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,BTR,,pick,Valir,Morenooo,Mid,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,BTR,,pick,Marcel,Finn,Roam,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-1112-GX,2026-11-06,Playoffs Lower Bracket Semi Finals (Bo5),AE vs BTR,,,,,,BTR,,pick,Paquito,EMANN,Gold,,unknown,https://mlbbhub.com/mpl/id/match/1112
+S18-NAVI-TLID-20261106-G1,2026-11-06,Playoffs Upper Bracket Final (Bo5),NAVI vs TLID,1,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/playoffs
+S18-NAVI-TLID-20261106-G2,2026-11-06,Playoffs Upper Bracket Final (Bo5),NAVI vs TLID,2,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/playoffs
+S18-NAVI-TLID-20261106-G3,2026-11-06,Playoffs Upper Bracket Final (Bo5),NAVI vs TLID,3,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/playoffs
+S18-NAVI-TLID-20261106-G4,2026-11-06,Playoffs Upper Bracket Final (Bo5),NAVI vs TLID,4,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/playoffs
+S18-NAVI-TLID-20261106-G5,2026-11-06,Playoffs Upper Bracket Final (Bo5),NAVI vs TLID,5,,,,,,,,,,,,unknown,https://mlbbhub.com/mpl/id/playoffs

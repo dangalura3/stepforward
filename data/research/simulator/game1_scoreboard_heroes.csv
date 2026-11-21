@@ -1,0 +1,46 @@
+match_id,match_date,stage,series_result,team,player,hero_as_shown,hero,source_url,note
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,TLID,Aran,Freya,Freya,https://mlbbhub.com/mpl/id/match/1111,Game 1 tab highlighted (screenshot); crown beside TLID
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,TLID,Kevinn,Hirara,Hirara,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,TLID,Drichel,Lylia,Lylia,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,TLID,Lyoni,Masha,Masha,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,TLID,Keven,Harith,Harith,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,BTR,Shogun,Uranus,Uranus,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,BTR,Nnael,Alice,Alice,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,BTR,Morenooo,Kimmy,Kimmy,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,BTR,Finn,Gatotkaca,Gatotkaca,https://mlbbhub.com/mpl/id/match/1111,
+1111,2026-11-05,Playoffs R2 M2,TLID 3-1 BTR,BTR,EMANN,cici,Cici,https://mlbbhub.com/mpl/id/match/1111,
+1113,2026-11-06,Playoffs Upper Bracket Final,NAVI 3-2 TLID,TLID,Aran,Belerick,Belerick,https://mlbbhub.com/mpl/id/match/1113,Game 1 assumed = default tab (not separately verified)
+1113,2026-11-06,Playoffs Upper Bracket Final,NAVI 3-2 TLID,TLID,Kevinn,Aulus,Aulus,https://mlbbhub.com/mpl/id/match/1113,
+1113,2026-11-06,Playoffs Upper Bracket Final,NAVI 3-2 TLID,TLID,Drichel,Wu/Zetian,Zetian,https://mlbbhub.com/mpl/id/match/1113,Site shows Zetian as Wu/Zetian
+1113,2026-11-06,Playoffs Upper Bracket Final,NAVI 3-2 TLID,TLID,Lyoni,Masha,Masha,https://mlbbhub.com/mpl/id/match/1113,
+1113,2026-11-06,Playoffs Upper Bracket Final,NAVI 3-2 TLID,TLID,Keven,cici,Cici,https://mlbbhub.com/mpl/id/match/1113,
+1112,2026-11-06,Playoffs Lower Bracket Semifinal,AE 2-3 BTR,BTR,Shogun,Uranus,Uranus,https://mlbbhub.com/mpl/id/match/1112,Game 1 assumed = default tab (not separately verified)
+1112,2026-11-06,Playoffs Lower Bracket Semifinal,AE 2-3 BTR,BTR,Nnael,Nolan,Nolan,https://mlbbhub.com/mpl/id/match/1112,
+1112,2026-11-06,Playoffs Lower Bracket Semifinal,AE 2-3 BTR,BTR,Morenooo,Valir,Valir,https://mlbbhub.com/mpl/id/match/1112,
+1112,2026-11-06,Playoffs Lower Bracket Semifinal,AE 2-3 BTR,BTR,Finn,Marcel,Marcel,https://mlbbhub.com/mpl/id/match/1112,
+1112,2026-11-06,Playoffs Lower Bracket Semifinal,AE 2-3 BTR,BTR,EMANN,Paquito,Paquito,https://mlbbhub.com/mpl/id/match/1112,
+1109,2026-11-04,Playoffs R1 M2,BTR 3-2 EVOS,BTR,Shogun,Yu Zhong,Yu Zhong,https://mlbbhub.com/mpl/id/match/1109,Game 1 assumed = default tab (not separately verified)
+1109,2026-11-04,Playoffs R1 M2,BTR 3-2 EVOS,BTR,Nnael,Nolan,Nolan,https://mlbbhub.com/mpl/id/match/1109,
+1109,2026-11-04,Playoffs R1 M2,BTR 3-2 EVOS,BTR,Morenooo,Kimmy,Kimmy,https://mlbbhub.com/mpl/id/match/1109,
+1109,2026-11-04,Playoffs R1 M2,BTR 3-2 EVOS,BTR,Finn,Masha,Masha,https://mlbbhub.com/mpl/id/match/1109,
+1109,2026-11-04,Playoffs R1 M2,BTR 3-2 EVOS,BTR,EMANN,Esmeralda,Esmeralda,https://mlbbhub.com/mpl/id/match/1109,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,TLID,Aran,Belerick,Belerick,https://mlbbhub.com/mpl/id/match/1080,Game 1 assumed = default tab (not separately verified)
+1080,2026-09-19,Regular season,TLID 2-0 BTR,TLID,Kevinn,Hirara,Hirara,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,TLID,Drichel,Zhuxin,Zhuxin,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,TLID,Lyoni,Gatotkaca,Gatotkaca,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,TLID,Keven,Claude,Claude,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,BTR,Shogun,Carmilla,Carmilla,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,BTR,Nnael,Paquito,Paquito,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,BTR,Morenooo,Rafaela,Rafaela,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,BTR,Finn,Kalea,Kalea,https://mlbbhub.com/mpl/id/match/1080,
+1080,2026-09-19,Regular season,TLID 2-0 BTR,BTR,EMANN,Brody,Brody,https://mlbbhub.com/mpl/id/match/1080,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,TLID,Aran,Minotaur,Minotaur,https://mlbbhub.com/mpl/id/match/1070,Game 1 assumed = default tab (not separately verified)
+1070,2026-09-12,Regular season,TLID 2-0 BTR,TLID,Kevinn,Paquito,Paquito,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,TLID,Drichel,Wu/Zetian,Zetian,https://mlbbhub.com/mpl/id/match/1070,Site shows Zetian as Wu/Zetian
+1070,2026-09-12,Regular season,TLID 2-0 BTR,TLID,Lyoni,Gloo,Gloo,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,TLID,Keven,Melissa,Melissa,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,BTR,Shogun,Barats,Barats,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,BTR,Nnael,Guinevere,Guinevere,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,BTR,Morenooo,Selena,Selena,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,BTR,Finn,Carmilla,Carmilla,https://mlbbhub.com/mpl/id/match/1070,
+1070,2026-09-12,Regular season,TLID 2-0 BTR,BTR,EMANN,Clint,Clint,https://mlbbhub.com/mpl/id/match/1070,

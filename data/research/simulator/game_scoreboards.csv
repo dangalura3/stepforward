@@ -1,0 +1,541 @@
+match_id,game_no,date,series,team,side,player,lane,hero,k,d,a,team_result,duration,source_url
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Aran,EXP,Minotaur,0,3,7,W,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Kevinn,JUNGLE,Paquito,3,2,4,W,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Drichel,MID,Zetian,1,0,7,W,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Lyoni,ROAM,Gloo,2,2,7,W,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Keven,GOLD,Melissa,3,1,5,W,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Shogun,EXP,Barats,1,2,4,L,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Guinevere,4,2,3,L,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Morenooo,MID,Selena,0,1,7,L,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Finn,ROAM,Carmilla,0,2,4,L,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Clint,3,2,0,L,12:48,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Aran,EXP,Minotaur,2,3,12,W,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Kevinn,JUNGLE,Paquito,5,2,8,W,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Drichel,MID,Rafaela,1,2,10,W,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Lyoni,ROAM,Carmilla,1,2,11,W,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),TLID,,Keven,GOLD,Miya,7,2,6,W,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Shogun,EXP,Hylos,0,5,11,L,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Hirara,2,3,8,L,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Morenooo,MID,Selena,3,3,5,L,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,Finn,ROAM,Gloo,0,3,7,L,19:08,https://mlbbhub.com/mpl/id/match/1070
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Granger,6,2,3,L,19:08,https://mlbbhub.com/mpl/id/match/1070
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Aran,EXP,Belerick,2,1,8,W,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Kevinn,JUNGLE,Hirara,8,0,7,W,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Drichel,MID,Zhuxin,5,0,13,W,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Lyoni,ROAM,Gatotkaca,0,0,17,W,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Keven,GOLD,Claude,4,0,7,W,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Shogun,EXP,Carmilla,1,4,0,L,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Paquito,0,5,1,L,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Morenooo,MID,Rafaela,0,1,1,L,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Finn,ROAM,Kalea,0,7,1,L,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Brody,0,2,0,L,12:30,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Aran,EXP,Belerick,2,2,7,W,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Kevinn,JUNGLE,Hirara,6,0,10,W,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Drichel,MID,Zetian,2,0,12,W,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Lyoni,ROAM,Gatotkaca,1,0,10,W,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),TLID,,Keven,GOLD,Miya,6,0,7,W,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Shogun,EXP,Kalea,0,3,2,L,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Paquito,1,5,1,L,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Morenooo,MID,Selena,1,2,1,L,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,Finn,ROAM,Minotaur,0,3,1,L,10:03,https://mlbbhub.com/mpl/id/match/1080
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Cici,0,4,1,L,10:03,https://mlbbhub.com/mpl/id/match/1080
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Lutpi,EXP,Alice,2,3,11,W,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kairi,JUNGLE,Nolan,4,2,10,W,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Killuaa,MID,Cecilion,11,3,8,W,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kiboy,ROAM,Carmilla,1,4,16,W,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kelra,GOLD,Miya,2,1,13,W,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Shogun,EXP,Barats,1,4,8,L,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Hayabusa,7,4,4,L,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Morenooo,MID,Valentina,0,6,12,L,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Finn,ROAM,Minotaur,1,6,5,L,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Obsidia,4,0,8,L,20:10,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Lutpi,EXP,Sora,1,1,12,W,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kairi,JUNGLE,Yi Sun-shin,3,0,11,W,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Killuaa,MID,Cecilion,4,0,11,W,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kiboy,ROAM,Carmilla,1,2,15,W,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),ONIC,,Kelra,GOLD,Obsidia,7,0,4,W,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Shogun,EXP,Lukas,1,6,2,L,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Nolan,1,2,2,L,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Morenooo,MID,Novaria,1,1,2,L,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,Finn,ROAM,Minotaur,0,5,1,L,16:44,https://mlbbhub.com/mpl/id/match/1082
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Moskov,0,2,1,L,16:44,https://mlbbhub.com/mpl/id/match/1082
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Vell,EXP,Badang,2,2,4,L,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Rendyyy,JUNGLE,Harley,2,2,5,L,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Ryzaa,MID,Kimmy,1,1,3,L,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,EgaTzy,ROAM,Hylos,0,6,7,L,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Erlan,GOLD,Freya,3,2,0,L,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Aran,EXP,Minotaur,1,1,11,W,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Paquito,4,1,6,W,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Drichel,MID,Zhuxin,5,2,6,W,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Belerick,1,2,9,W,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Keven,GOLD,Claude,2,2,9,W,21:06,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Vell,EXP,Aulus,7,1,4,W,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Rendyyy,JUNGLE,Lukas,4,4,5,W,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Ryzaa,MID,Valentina,4,3,9,W,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,EgaTzy,ROAM,Carmilla,0,6,12,W,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Erlan,GOLD,Moskov,3,1,6,W,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Aran,EXP,Minotaur,0,3,11,L,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Nolan,5,4,3,L,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Drichel,MID,Novaria,2,4,6,L,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Atlas,0,4,10,L,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Keven,GOLD,Claude,7,3,2,L,22:03,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Vell,EXP,Hilda,2,1,7,W,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Rendyyy,JUNGLE,Alice,3,0,8,W,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Ryzaa,MID,Cecilion,4,3,9,W,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,EgaTzy,ROAM,Carmilla,2,1,11,W,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),EVOS,,Erlan,GOLD,Obsidia,5,1,4,W,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Aran,EXP,Minotaur,1,1,3,L,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Harley,3,4,3,L,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Drichel,MID,Valentina,1,2,5,L,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Belerick,1,5,4,L,13:48,https://mlbbhub.com/mpl/id/match/1083
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),TLID,,Keven,GOLD,Claude,0,4,4,L,13:48,https://mlbbhub.com/mpl/id/match/1083
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,MarceL,EXP,Arlott,3,4,8,L,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Maykidss,JUNGLE,Alice,5,2,6,L,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Aboyy,MID,Kimmy,2,3,8,L,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Frenzyy,ROAM,Minotaur,0,4,11,L,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,KennzySkie,GOLD,Freya,3,4,4,L,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Shogun,EXP,Lukas,3,3,11,W,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Nnael,JUNGLE,Aulus,3,5,7,W,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Morenooo,MID,Zhuxin,4,1,10,W,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Finn,ROAM,Gloo,0,3,13,W,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,EMANN,GOLD,Cici,7,1,8,W,17:24,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,MarceL,EXP,Arlott,1,3,10,W,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Maykidss,JUNGLE,Aulus,8,4,5,W,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Aboyy,MID,Faramis,1,2,12,W,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Frenzyy,ROAM,Minotaur,0,2,14,W,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,KennzySkie,GOLD,Obsidia,7,3,3,W,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Shogun,EXP,Alice,0,4,6,L,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Nnael,JUNGLE,Hirara,5,5,6,L,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Morenooo,MID,Angela,3,3,10,L,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Finn,ROAM,Gloo,1,3,7,L,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,EMANN,GOLD,Lesley,5,2,4,L,16:31,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,MarceL,EXP,Freya,2,3,1,L,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Maykidss,JUNGLE,Aulus,1,5,2,L,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Aboyy,MID,Lylia,1,3,4,L,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,Frenzyy,ROAM,Belerick,0,2,3,L,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),GEEK,,KennzySkie,GOLD,Obsidia,1,1,1,L,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Shogun,EXP,Lukas,1,2,10,W,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Nnael,JUNGLE,Hirara,7,0,6,W,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Morenooo,MID,Selena,3,1,9,W,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,Finn,ROAM,Mathilda,1,2,12,W,15:07,https://mlbbhub.com/mpl/id/match/1084
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),BTR,,EMANN,GOLD,Claude,2,0,8,W,15:07,https://mlbbhub.com/mpl/id/match/1084
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,QINN,EXP,Alpha,0,4,1,L,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Hazle,JUNGLE,Yi Sun-shin,1,3,0,L,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Octa,MID,Zhuxin,0,1,1,L,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Shanee,ROAM,Minotaur,0,3,1,L,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Maybeee,GOLD,Cici,0,3,1,L,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Aran,EXP,Atlas,2,1,8,W,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Nolan,4,0,4,W,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Drichel,MID,Yve,6,0,4,W,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Carmilla,0,0,9,W,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Keven,GOLD,Miya,2,0,3,W,10:12,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,QINN,EXP,Alpha,3,1,8,W,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Hazle,JUNGLE,Lukas,7,3,6,W,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Octa,MID,Valentina,1,0,10,W,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Shanee,ROAM,Mathilda,0,1,13,W,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Maybeee,GOLD,Claude,3,0,7,W,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Aran,EXP,Cici,0,3,1,L,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Alice,3,3,2,L,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Drichel,MID,Zhuxin,1,4,1,L,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Carmilla,0,3,5,L,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Keven,GOLD,Moskov,1,1,2,L,15:18,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,QINN,EXP,Alice,1,1,4,W,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Hazle,JUNGLE,Fanny,6,1,2,W,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Octa,MID,Selena,3,0,2,W,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Shanee,ROAM,Carmilla,0,1,9,W,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),DEWA,,Maybeee,GOLD,Claude,4,0,7,W,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Aran,EXP,Atlas,1,1,1,L,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Kevinn,JUNGLE,Nolan,1,5,1,L,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Drichel,MID,Valentina,0,3,3,L,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Lyoni,ROAM,Marcel,1,2,2,L,14:11,https://mlbbhub.com/mpl/id/match/1085
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),TLID,,Keven,GOLD,Obsidia,0,3,2,L,14:11,https://mlbbhub.com/mpl/id/match/1085
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Shogun,EXP,Esmeralda,7,3,10,W,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Nnael,JUNGLE,Aulus,4,3,20,W,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Morenooo,MID,Eudora,5,2,15,W,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Finn,ROAM,Minotaur,1,5,20,W,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,EMANN,GOLD,Chou,10,2,10,W,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Joshua,EXP,Dyrroth,2,7,12,L,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Faviannn,JUNGLE,Paquito,4,5,9,L,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Hajirin,MID,Lunox,3,5,11,L,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Said,ROAM,Rafaela,0,4,9,L,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Arthur,GOLD,Freya,6,6,6,L,19:25,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Shogun,EXP,Freya,2,3,10,L,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Nnael,JUNGLE,Fanny,5,6,7,L,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Morenooo,MID,Selena,6,1,9,L,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Finn,ROAM,Minotaur,1,3,17,L,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,EMANN,GOLD,Chou,7,3,5,L,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Joshua,EXP,Phoveus,2,4,10,W,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Faviannn,JUNGLE,Paquito,5,3,4,W,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Hajirin,MID,Rafaela,0,5,9,W,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Said,ROAM,Badang,3,5,9,W,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Arthur,GOLD,Aulus,6,4,6,W,22:09,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Shogun,EXP,Lukas,4,1,5,W,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Nnael,JUNGLE,Aulus,4,1,5,W,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Morenooo,MID,Valentina,0,2,9,W,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,Finn,ROAM,Gloo,1,3,8,W,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),BTR,,EMANN,GOLD,Obsidia,3,1,4,W,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Joshua,EXP,Phoveus,1,3,3,L,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Faviannn,JUNGLE,Nolan,1,1,3,L,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Hajirin,MID,Kimmy,2,2,4,L,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Said,ROAM,Minotaur,2,3,5,L,16:43,https://mlbbhub.com/mpl/id/match/1087
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),RRQ,,Arthur,GOLD,Paquito,2,3,2,L,16:43,https://mlbbhub.com/mpl/id/match/1087
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Aran,EXP,Masha,5,2,8,W,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Kevinn,JUNGLE,Nolan,7,2,6,W,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Drichel,MID,Zetian,2,1,13,W,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Lyoni,ROAM,Belerick,2,1,14,W,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Keven,GOLD,Claude,4,1,10,W,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),AE,,Nino,EXP,Atlas,0,6,5,L,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),AE,,Yazukee,JUNGLE,Alpha,3,6,3,L,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),AE,,Hijumee,MID,Zhuxin,4,4,3,L,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),AE,,alekk,ROAM,Rafaela,0,2,5,L,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),AE,,Arfy,GOLD,Moskov,0,2,3,L,19:05,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Aran,EXP,Masha,2,0,5,W,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Kevinn,JUNGLE,Nolan,4,0,7,W,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Drichel,MID,Zetian,4,0,6,W,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Lyoni,ROAM,Gloo,2,4,8,W,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),TLID,,Keven,GOLD,Claude,0,0,8,W,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),AE,,Nino,EXP,Badang,0,4,1,L,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),AE,,Yazukee,JUNGLE,Suyou,1,3,1,L,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),AE,,Hijumee,MID,Zhuxin,2,2,1,L,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),AE,,alekk,ROAM,Atlas,0,2,3,L,13:24,https://mlbbhub.com/mpl/id/match/1089
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),AE,,Arfy,GOLD,Obsidia,1,1,1,L,13:24,https://mlbbhub.com/mpl/id/match/1089
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),AE,,Nino,EXP,Freya,4,6,6,W,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),AE,,Yazukee,JUNGLE,Hirara,4,3,8,W,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),AE,,Hijumee,MID,Kimmy,2,4,10,W,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),AE,,alekk,ROAM,Estes,0,4,8,W,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),AE,,Arfy,GOLD,Paquito,4,2,5,W,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Shogun,EXP,Lukas,6,5,5,L,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Aulus,3,1,12,L,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Morenooo,MID,Valentina,5,2,7,L,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Finn,ROAM,Atlas,1,5,12,L,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Chou,4,1,8,L,19:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),AE,,Nino,EXP,Freya,3,3,2,W,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),AE,,Yazukee,JUNGLE,Aulus,0,2,6,W,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),AE,,Hijumee,MID,Cecilion,1,0,6,W,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),AE,,alekk,ROAM,Hylos,2,0,6,W,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),AE,,Arfy,GOLD,Paquito,3,3,1,W,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Shogun,EXP,Lukas,1,3,2,L,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Nnael,JUNGLE,Nolan,3,0,3,L,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Morenooo,MID,Valentina,2,0,4,L,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),BTR,,Finn,ROAM,Mathilda,1,3,3,L,13:26,https://mlbbhub.com/mpl/id/match/1092
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),BTR,,EMANN,GOLD,Chou,1,3,3,L,13:26,https://mlbbhub.com/mpl/id/match/1092
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Karss,EXP,Alice,2,1,11,W,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Joshuaa,JUNGLE,Aulus,7,1,5,W,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Jiizee,MID,Zhuxin,2,1,11,W,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Aprho,ROAM,Gatotkaca,1,2,13,W,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Zeonn,GOLD,Cici,3,0,5,W,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Aran,EXP,Masha,2,1,3,L,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Kevinn,JUNGLE,Paquito,0,5,5,L,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Drichel,MID,Kimmy,2,2,3,L,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Lyoni,ROAM,Estes,0,4,4,L,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Keven,GOLD,Freya,1,3,0,L,13:58,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Karss,EXP,Alice,1,0,11,W,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Joshuaa,JUNGLE,Aulus,11,5,4,W,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Jiizee,MID,Valir,0,1,9,W,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Aprho,ROAM,Gloo,2,4,7,W,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),NAVI,,Zeonn,GOLD,Cici,2,2,6,W,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Aran,EXP,Freya,3,5,5,L,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Kevinn,JUNGLE,Nolan,4,5,4,L,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Drichel,MID,Valentina,1,1,5,L,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Lyoni,ROAM,Masha,4,2,4,L,21:20,https://mlbbhub.com/mpl/id/match/1093
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),TLID,,Keven,GOLD,Claude,0,3,4,L,21:20,https://mlbbhub.com/mpl/id/match/1093
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Joshua,EXP,Freya,3,4,5,L,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Faviannn,JUNGLE,Fanny,2,3,5,L,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Hajirin,MID,Zhuxin,0,3,8,L,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Said,ROAM,Hylos,1,4,7,L,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Arthur,GOLD,Paquito,3,3,2,L,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Aran,EXP,Esmeralda,5,0,5,W,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Kevinn,JUNGLE,Lukas,7,2,10,W,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Drichel,MID,Kimmy,0,4,15,W,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Lyoni,ROAM,Atlas,1,3,16,W,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Keven,GOLD,Cici,4,1,11,W,14:22,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Joshua,EXP,Lukas,2,4,9,L,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Faviannn,JUNGLE,Alpha,3,3,5,L,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Hajirin,MID,Cecilion,5,3,11,L,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Said,ROAM,Carmilla,3,5,14,L,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),RRQ,,Arthur,GOLD,Chou,4,3,7,L,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Aran,EXP,Freya,4,2,13,W,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Kevinn,JUNGLE,Alice,4,4,11,W,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Drichel,MID,Zhuxin,2,2,15,W,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Lyoni,ROAM,Atlas,1,7,13,W,13:56,https://mlbbhub.com/mpl/id/match/1095
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),TLID,,Keven,GOLD,Cici,7,2,5,W,13:56,https://mlbbhub.com/mpl/id/match/1095
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Shogun,EXP,Freya,6,5,12,W,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Nnael,JUNGLE,Alpha,5,5,7,W,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Morenooo,MID,Valentina,2,7,14,W,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Finn,ROAM,Gloo,3,4,14,W,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,EMANN,GOLD,Cici,5,2,10,W,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,QINN,EXP,Arlott,6,6,10,L,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Hazle,JUNGLE,Aulus,8,3,13,L,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Octa,MID,Eudora,2,4,14,L,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Shanee,ROAM,Hylos,1,6,17,L,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Maybeee,GOLD,Esmeralda,6,2,11,L,18:56,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Shogun,EXP,Freya,4,1,2,W,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Nnael,JUNGLE,Aulus,4,1,7,W,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Morenooo,MID,Kimmy,3,0,8,W,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,Finn,ROAM,Marcel,2,1,10,W,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),BTR,,EMANN,GOLD,Ruby,2,1,7,W,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,QINN,EXP,Joy,1,1,1,L,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Hazle,JUNGLE,Alpha,1,4,1,L,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Octa,MID,Selena,2,2,2,L,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Shanee,ROAM,Carmilla,0,6,3,L,13:08,https://mlbbhub.com/mpl/id/match/1099
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),DEWA,,Maybeee,GOLD,Cici,0,2,2,L,13:08,https://mlbbhub.com/mpl/id/match/1099
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Rendyyy,EXP,Alice,2,4,0,L,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Alberttt,JUNGLE,Aulus,0,2,1,L,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Ryzaa,MID,Eudora,0,1,1,L,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,EgaTzy,ROAM,Badang,0,2,2,L,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Erlan,GOLD,Freya,0,1,1,L,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Shogun,EXP,Phoveus,2,2,6,W,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Nnael,JUNGLE,Nolan,3,0,5,W,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Morenooo,MID,Zhuxin,1,0,9,W,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Finn,ROAM,Marcel,0,0,10,W,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,EMANN,GOLD,Cici,4,0,5,W,15:37,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Rendyyy,EXP,Esmeralda,2,3,10,W,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Alberttt,JUNGLE,Saber,4,3,8,W,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Ryzaa,MID,Kimmy,3,1,6,W,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,EgaTzy,ROAM,Kalea,1,3,11,W,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Erlan,GOLD,Cici,5,2,5,W,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Shogun,EXP,Freya,2,2,5,L,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Nnael,JUNGLE,Nolan,5,3,5,L,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Morenooo,MID,Selena,3,1,6,L,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Finn,ROAM,Hylos,0,6,9,L,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,EMANN,GOLD,Sora,2,3,4,L,16:00,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Rendyyy,EXP,Cici,1,2,2,L,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Alberttt,JUNGLE,Saber,1,1,3,L,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Ryzaa,MID,Selena,0,1,3,L,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,EgaTzy,ROAM,Minotaur,1,2,2,L,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),EVOS,,Erlan,GOLD,Aulus,1,2,0,L,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Shogun,EXP,Phoveus,0,1,6,W,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Nnael,JUNGLE,Nolan,4,0,3,W,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Morenooo,MID,Zhuxin,2,0,6,W,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,Finn,ROAM,Gatotkaca,0,2,4,W,21:55,https://mlbbhub.com/mpl/id/match/1103
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),BTR,,EMANN,GOLD,Freya,2,1,6,W,21:55,https://mlbbhub.com/mpl/id/match/1103
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Karss,EXP,Freya,2,4,2,L,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Joshuaa,JUNGLE,Hirara,1,4,1,L,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Jiizee,MID,Eudora,0,4,3,L,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Aprho,ROAM,Khufra,1,4,2,L,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Zeonn,GOLD,Cici,1,2,0,L,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Shogun,EXP,Alice,3,2,9,W,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Nnael,JUNGLE,Nolan,5,1,9,W,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Morenooo,MID,Selena,2,1,14,W,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Finn,ROAM,Marcel,0,0,16,W,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,EMANN,GOLD,Kimmy,8,1,5,W,11:26,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Karss,EXP,Esmeralda,4,2,5,L,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Joshuaa,JUNGLE,Aulus,1,3,5,L,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Jiizee,MID,Kimmy,3,3,6,L,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Aprho,ROAM,Carmilla,0,5,8,L,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),NAVI,,Zeonn,GOLD,Cici,3,3,5,L,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Shogun,EXP,Sora,4,5,7,W,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Nnael,JUNGLE,Alpha,3,2,10,W,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Morenooo,MID,Valir,4,1,6,W,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,Finn,ROAM,Marcel,2,1,10,W,23:00,https://mlbbhub.com/mpl/id/match/1106
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),BTR,,EMANN,GOLD,Freya,3,2,4,W,23:00,https://mlbbhub.com/mpl/id/match/1106
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Aran,EXP,Atlas,0,1,9,W,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Kevinn,JUNGLE,Aulus,4,1,5,W,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Drichel,MID,Zhuxin,3,0,9,W,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Lyoni,ROAM,Gloo,3,1,8,W,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Keven,GOLD,Cici,4,0,8,W,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Lutpi,EXP,Terizla,1,4,2,L,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kairi,JUNGLE,Nolan,1,3,1,L,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Killuaa,MID,Zetian,1,3,1,L,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kiboy,ROAM,Marcel,0,2,3,L,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kelra,GOLD,Paquito,0,2,3,L,14:47,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Aran,EXP,Freya,1,1,3,W,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Kevinn,JUNGLE,Aulus,6,3,4,W,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Drichel,MID,Zhuxin,1,1,10,W,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Lyoni,ROAM,Marcel,1,2,7,W,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),TLID,,Keven,GOLD,Bruno,2,0,5,W,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Lutpi,EXP,Cici,0,1,5,L,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kairi,JUNGLE,Hirara,3,2,2,L,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Killuaa,MID,Kimmy,3,2,4,L,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kiboy,ROAM,Carmilla,0,5,5,L,12:25,https://mlbbhub.com/mpl/id/match/1107
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),ONIC,,Kelra,GOLD,Paquito,1,1,2,L,12:25,https://mlbbhub.com/mpl/id/match/1107
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Shogun,EXP,Yu Zhong,3,9,7,W,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Nnael,JUNGLE,Nolan,2,2,12,W,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Morenooo,MID,Kimmy,4,4,10,W,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Finn,ROAM,Masha,4,3,12,W,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,EMANN,GOLD,Esmeralda,6,0,9,W,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Rendyyy,EXP,Dyrroth,1,6,8,L,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Alberttt,JUNGLE,Suyou,9,2,6,L,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Ryzaa,MID,Lylia,3,3,11,L,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Muezza,ROAM,Kalea,2,5,14,L,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Erlan,GOLD,Paquito,3,3,8,L,19:39,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Shogun,EXP,Phoveus,1,4,6,L,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Nnael,JUNGLE,Nolan,3,8,4,L,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Morenooo,MID,Valir,6,1,4,L,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Finn,ROAM,Mathilda,1,4,10,L,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,EMANN,GOLD,Cici,1,4,6,L,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Rendyyy,EXP,Alice,0,3,6,W,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Alberttt,JUNGLE,Aulus,8,2,8,W,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Ryzaa,MID,Kimmy,2,4,11,W,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Muezza,ROAM,Gloo,2,3,12,W,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Erlan,GOLD,Lesley,9,0,7,W,26:01,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Shogun,EXP,Freya,2,2,2,L,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Nnael,JUNGLE,Aulus,1,2,1,L,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Morenooo,MID,Zhuxin,1,3,1,L,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Finn,ROAM,Kalea,0,6,2,L,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,EMANN,GOLD,Moskov,0,3,3,L,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Rendyyy,EXP,Cici,6,0,6,W,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Alberttt,JUNGLE,Alice,5,1,11,W,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Ryzaa,MID,Lylia,3,1,10,W,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Muezza,ROAM,Masha,1,2,12,W,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Erlan,GOLD,Paquito,1,0,3,W,14:11,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Shogun,EXP,Yu Zhong,2,2,3,W,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Nnael,JUNGLE,Fanny,3,1,5,W,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Morenooo,MID,Selena,2,1,6,W,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Finn,ROAM,Kalea,1,2,9,W,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,EMANN,GOLD,Cici,6,0,6,W,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Rendyyy,EXP,Esmeralda,1,4,1,L,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Alberttt,JUNGLE,Suyou,4,3,1,L,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Ryzaa,MID,Kagura,0,0,4,L,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Muezza,ROAM,Badang,0,5,4,L,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Erlan,GOLD,Kimmy,1,2,1,L,16:36,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Shogun,EXP,Esmeralda,2,0,8,W,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Nnael,JUNGLE,Nolan,4,1,4,W,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Morenooo,MID,Novaria,1,0,9,W,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,Finn,ROAM,Gloo,0,3,7,W,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),BTR,,EMANN,GOLD,Cici,4,2,3,W,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Rendyyy,EXP,Sora,1,3,2,L,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Alberttt,JUNGLE,Aulus,0,2,5,L,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Ryzaa,MID,Lylia,2,1,2,L,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Muezza,ROAM,Atlas,0,4,5,L,14:57,https://mlbbhub.com/mpl/id/match/1109
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),EVOS,,Erlan,GOLD,Paquito,3,1,0,L,14:57,https://mlbbhub.com/mpl/id/match/1109
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Aran,EXP,Freya,2,0,5,W,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Kevinn,JUNGLE,Hirara,3,3,8,W,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Drichel,MID,Lylia,4,0,9,W,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Lyoni,ROAM,Masha,2,1,8,W,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Keven,GOLD,Harith,2,0,4,W,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Shogun,EXP,Uranus,0,2,2,L,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Nnael,JUNGLE,Alice,0,4,3,L,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Morenooo,MID,Kimmy,2,2,0,L,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Finn,ROAM,Gatotkaca,0,4,1,L,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,EMANN,GOLD,Cici,2,1,1,L,13:23,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Aran,EXP,Kalea,0,0,7,W,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Kevinn,JUNGLE,Aulus,5,0,3,W,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Drichel,MID,Zhuxin,0,0,8,W,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Lyoni,ROAM,Marcel,0,3,8,W,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Keven,GOLD,Bruno,3,2,4,W,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Shogun,EXP,Carmilla,1,3,1,L,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Nnael,JUNGLE,Nolan,3,3,1,L,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Morenooo,MID,Selena,0,0,3,L,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Finn,ROAM,Masha,1,0,3,L,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,EMANN,GOLD,Claude,0,2,3,L,14:20,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Aran,EXP,Yu Zhong,1,3,2,L,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Kevinn,JUNGLE,Hirara,0,3,3,L,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Drichel,MID,Zhuxin,2,1,1,L,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Lyoni,ROAM,Atlas,0,4,3,L,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Keven,GOLD,Cici,0,1,2,L,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Shogun,EXP,Alice,4,1,4,W,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Nnael,JUNGLE,Nolan,1,0,8,W,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Morenooo,MID,Valir,3,1,7,W,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Finn,ROAM,Gloo,1,0,8,W,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,EMANN,GOLD,Paquito,3,1,3,W,16:59,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Aran,EXP,Atlas,0,3,7,W,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Kevinn,JUNGLE,Nolan,6,2,4,W,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Drichel,MID,Zetian,4,1,6,W,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Lyoni,ROAM,Marcel,0,2,12,W,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),TLID,,Keven,GOLD,Harith,3,0,3,W,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Shogun,EXP,Yu Zhong,2,5,1,L,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Nnael,JUNGLE,Yi Sun-shin,3,4,2,L,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Morenooo,MID,Novaria,1,1,5,L,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,Finn,ROAM,Gloo,1,2,5,L,22:51,https://mlbbhub.com/mpl/id/match/1111
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),BTR,,EMANN,GOLD,Cici,1,1,2,L,22:51,https://mlbbhub.com/mpl/id/match/1111
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Nino,EXP,Barats,0,7,5,W,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Yazukee,JUNGLE,Suyou,10,4,6,W,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Hijumee,MID,Eudora,5,5,14,W,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,alekk,ROAM,Khaleed,2,6,7,W,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Arfy,GOLD,Freya,10,1,4,W,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Shogun,EXP,Uranus,3,6,9,L,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Nnael,JUNGLE,Nolan,13,2,4,L,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Morenooo,MID,Valir,1,5,14,L,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Finn,ROAM,Marcel,2,8,16,L,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,EMANN,GOLD,Paquito,4,6,8,L,21:28,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Nino,EXP,Yu Zhong,1,5,2,L,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Yazukee,JUNGLE,Aulus,4,5,2,L,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Hijumee,MID,Zhuxin,1,4,3,L,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,alekk,ROAM,Khaleed,0,6,2,L,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Arfy,GOLD,Paquito,1,4,2,L,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Shogun,EXP,Freya,9,1,6,W,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Nnael,JUNGLE,Nolan,7,2,6,W,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Morenooo,MID,Yve,4,2,13,W,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Finn,ROAM,Gloo,1,1,17,W,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,EMANN,GOLD,Chou,3,1,9,W,9:04,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Nino,EXP,Carmilla,0,3,2,L,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Yazukee,JUNGLE,Aulus,1,4,0,L,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Hijumee,MID,Kimmy,0,4,0,L,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,alekk,ROAM,Hylos,1,6,0,L,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Arfy,GOLD,Paquito,0,6,2,L,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Shogun,EXP,Yu Zhong,7,0,8,W,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Nnael,JUNGLE,Nolan,7,1,8,W,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Morenooo,MID,Zhuxin,6,0,11,W,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Finn,ROAM,Atlas,1,0,18,W,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,EMANN,GOLD,Chou,2,1,7,W,11:34,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Nino,EXP,Phoveus,2,0,6,W,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Yazukee,JUNGLE,Nolan,6,1,6,W,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Hijumee,MID,Zhuxin,4,0,11,W,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,alekk,ROAM,Badang,1,0,11,W,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Arfy,GOLD,Obsidia,6,1,4,W,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Shogun,EXP,Freya,0,4,1,L,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Nnael,JUNGLE,Suyou,0,4,0,L,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Morenooo,MID,Zetian,0,1,2,L,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Finn,ROAM,Atlas,1,5,0,L,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,EMANN,GOLD,Paquito,1,5,1,L,13:30,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Nino,EXP,Esmeralda,2,3,3,L,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Yazukee,JUNGLE,Suyou,1,5,0,L,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Hijumee,MID,Valir,1,5,2,L,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,alekk,ROAM,Khaleed,1,2,3,L,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),AE,,Arfy,GOLD,Harith,2,4,2,L,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Shogun,EXP,Alice,2,1,10,W,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Nnael,JUNGLE,Nolan,6,2,6,W,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Morenooo,MID,Yve,4,3,9,W,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,Finn,ROAM,Gloo,3,0,14,W,17:39,https://mlbbhub.com/mpl/id/match/1112
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),BTR,,EMANN,GOLD,Cici,4,1,9,W,17:39,https://mlbbhub.com/mpl/id/match/1112
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Aran,EXP,Belerick,1,3,12,W,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Kevinn,JUNGLE,Aulus,4,2,10,W,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Drichel,MID,Zetian,1,0,14,W,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Lyoni,ROAM,Masha,4,1,4,W,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Keven,GOLD,Cici,6,0,8,W,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Karss,EXP,Freya,0,3,2,L,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Joshuaa,JUNGLE,Suyou,4,2,1,L,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Jiizee,MID,Valir,1,2,5,L,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Aprho,ROAM,Atlas,0,6,6,L,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Zeonn,GOLD,Chou,1,3,1,L,19:06,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Aran,EXP,Yu Zhong,2,5,3,L,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Kevinn,JUNGLE,Alice,3,6,2,L,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Drichel,MID,Valir,0,3,6,L,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Lyoni,ROAM,Masha,2,3,2,L,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Keven,GOLD,Cici,0,4,3,L,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Karss,EXP,Uranus,4,0,14,W,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Joshuaa,JUNGLE,Aulus,3,4,9,W,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Jiizee,MID,Kimmy,10,1,7,W,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Aprho,ROAM,Gatotkaca,1,2,16,W,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Zeonn,GOLD,Freya,3,0,7,W,17:57,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Aran,EXP,Belerick,3,0,4,W,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Kevinn,JUNGLE,Hirara,2,0,8,W,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Drichel,MID,Estes,0,2,9,W,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Lyoni,ROAM,Masha,3,2,4,W,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Keven,GOLD,Kimmy,3,2,5,W,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Karss,EXP,Freya,1,3,0,L,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Joshuaa,JUNGLE,Nolan,2,3,2,L,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Jiizee,MID,Selena,0,2,3,L,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Aprho,ROAM,Atlas,0,1,2,L,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Zeonn,GOLD,Claude,3,2,0,L,14:13,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Aran,EXP,Freya,0,4,3,L,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Kevinn,JUNGLE,Hirara,2,1,2,L,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Drichel,MID,Zhuxin,1,3,3,L,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Lyoni,ROAM,Atlas,0,6,2,L,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Keven,GOLD,Claude,2,2,0,L,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Karss,EXP,Masha,1,2,7,W,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Joshuaa,JUNGLE,Suyou,9,1,5,W,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Jiizee,MID,Kimmy,2,1,9,W,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Aprho,ROAM,Marcel,1,1,11,W,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Zeonn,GOLD,Bruno,3,0,8,W,14:05,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Aran,EXP,Carmilla,1,2,5,L,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Kevinn,JUNGLE,Hirara,2,0,5,L,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Drichel,MID,Kimmy,3,1,4,L,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Lyoni,ROAM,Masha,1,5,4,L,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),TLID,,Keven,GOLD,Cici,2,1,4,L,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Karss,EXP,Freya,3,3,3,W,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Joshuaa,JUNGLE,Nolan,1,3,5,W,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Jiizee,MID,Lylia,0,2,7,W,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Aprho,ROAM,Gatotkaca,1,1,6,W,27:08,https://mlbbhub.com/mpl/id/match/1113
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),NAVI,,Zeonn,GOLD,Bruno,4,0,3,W,27:08,https://mlbbhub.com/mpl/id/match/1113

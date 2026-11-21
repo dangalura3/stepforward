@@ -1,0 +1,55 @@
+match_id,game_no,date,series,blue_team,red_team,winner,duration,kills_blue,kills_red,source_url,team_left,kills_left,team_right,kills_right
+1070,1,2026-09-12,TLID 2-0 BTR (Regular season),,,TLID,12:48,,,https://mlbbhub.com/mpl/id/match/1070,TLID,9,BTR,8
+1070,2,2026-09-12,TLID 2-0 BTR (Regular season),,,TLID,19:08,,,https://mlbbhub.com/mpl/id/match/1070,TLID,16,BTR,11
+1080,1,2026-09-19,TLID 2-0 BTR (Regular season),,,TLID,12:30,,,https://mlbbhub.com/mpl/id/match/1080,TLID,19,BTR,1
+1080,2,2026-09-19,TLID 2-0 BTR (Regular season),,,TLID,10:03,,,https://mlbbhub.com/mpl/id/match/1080,TLID,17,BTR,2
+1082,1,2026-09-20,ONIC 2-0 BTR (Regular season),,,ONIC,20:10,,,https://mlbbhub.com/mpl/id/match/1082,ONIC,20,BTR,13
+1082,2,2026-09-20,ONIC 2-0 BTR (Regular season),,,ONIC,16:44,,,https://mlbbhub.com/mpl/id/match/1082,ONIC,16,BTR,3
+1083,1,2026-09-20,EVOS 2-1 TLID (Regular season),,,TLID,21:06,,,https://mlbbhub.com/mpl/id/match/1083,EVOS,8,TLID,13
+1083,2,2026-09-20,EVOS 2-1 TLID (Regular season),,,EVOS,22:03,,,https://mlbbhub.com/mpl/id/match/1083,EVOS,18,TLID,14
+1083,3,2026-09-20,EVOS 2-1 TLID (Regular season),,,EVOS,13:48,,,https://mlbbhub.com/mpl/id/match/1083,EVOS,16,TLID,6
+1084,1,2026-10-02,GEEK 1-2 BTR (Regular season),,,BTR,17:24,,,https://mlbbhub.com/mpl/id/match/1084,GEEK,13,BTR,17
+1084,2,2026-10-02,GEEK 1-2 BTR (Regular season),,,GEEK,16:31,,,https://mlbbhub.com/mpl/id/match/1084,GEEK,17,BTR,14
+1084,3,2026-10-02,GEEK 1-2 BTR (Regular season),,,BTR,15:07,,,https://mlbbhub.com/mpl/id/match/1084,GEEK,5,BTR,14
+1085,1,2026-10-02,DEWA 2-1 TLID (Regular season),,,TLID,10:12,,,https://mlbbhub.com/mpl/id/match/1085,DEWA,1,TLID,14
+1085,2,2026-10-02,DEWA 2-1 TLID (Regular season),,,DEWA,15:18,,,https://mlbbhub.com/mpl/id/match/1085,DEWA,14,TLID,5
+1085,3,2026-10-02,DEWA 2-1 TLID (Regular season),,,DEWA,14:11,,,https://mlbbhub.com/mpl/id/match/1085,DEWA,14,TLID,3
+1087,1,2026-10-03,BTR 2-1 RRQ (Regular season),,,BTR,19:25,,,https://mlbbhub.com/mpl/id/match/1087,BTR,27,RRQ,15
+1087,2,2026-10-03,BTR 2-1 RRQ (Regular season),,,RRQ,22:09,,,https://mlbbhub.com/mpl/id/match/1087,BTR,21,RRQ,16
+1087,3,2026-10-03,BTR 2-1 RRQ (Regular season),,,BTR,16:43,,,https://mlbbhub.com/mpl/id/match/1087,BTR,12,RRQ,8
+1089,1,2026-10-04,TLID 2-0 AE (Regular season),,,TLID,19:05,,,https://mlbbhub.com/mpl/id/match/1089,TLID,20,AE,7
+1089,2,2026-10-04,TLID 2-0 AE (Regular season),,,TLID,13:24,,,https://mlbbhub.com/mpl/id/match/1089,TLID,12,AE,4
+1092,1,2026-10-08,AE 2-0 BTR (Regular season),,,AE,19:26,,,https://mlbbhub.com/mpl/id/match/1092,AE,14,BTR,19
+1092,2,2026-10-08,AE 2-0 BTR (Regular season),,,AE,13:26,,,https://mlbbhub.com/mpl/id/match/1092,AE,9,BTR,8
+1093,1,2026-10-08,NAVI 2-0 TLID (Regular season),,,NAVI,13:58,,,https://mlbbhub.com/mpl/id/match/1093,NAVI,15,TLID,5
+1093,2,2026-10-08,NAVI 2-0 TLID (Regular season),,,NAVI,21:20,,,https://mlbbhub.com/mpl/id/match/1093,NAVI,16,TLID,12
+1095,1,2026-10-09,RRQ 0-2 TLID (Regular season),,,TLID,14:22,,,https://mlbbhub.com/mpl/id/match/1095,RRQ,9,TLID,17
+1095,2,2026-10-09,RRQ 0-2 TLID (Regular season),,,TLID,13:56,,,https://mlbbhub.com/mpl/id/match/1095,RRQ,17,TLID,18
+1099,1,2026-10-11,BTR 2-0 DEWA (Regular season),,,BTR,18:56,,,https://mlbbhub.com/mpl/id/match/1099,BTR,21,DEWA,23
+1099,2,2026-10-11,BTR 2-0 DEWA (Regular season),,,BTR,13:08,,,https://mlbbhub.com/mpl/id/match/1099,BTR,15,DEWA,4
+1103,1,2026-10-17,EVOS 1-2 BTR (Regular season W9),,,BTR,15:37,,,https://mlbbhub.com/mpl/id/match/1103,EVOS,2,BTR,10
+1103,2,2026-10-17,EVOS 1-2 BTR (Regular season W9),,,EVOS,16:00,,,https://mlbbhub.com/mpl/id/match/1103,EVOS,15,BTR,12
+1103,3,2026-10-17,EVOS 1-2 BTR (Regular season W9),,,BTR,21:55,,,https://mlbbhub.com/mpl/id/match/1103,EVOS,4,BTR,8
+1106,1,2026-10-18,NAVI 0-2 BTR (Regular season W9),,,BTR,11:26,,,https://mlbbhub.com/mpl/id/match/1106,NAVI,5,BTR,18
+1106,2,2026-10-18,NAVI 0-2 BTR (Regular season W9),,,BTR,23:00,,,https://mlbbhub.com/mpl/id/match/1106,NAVI,11,BTR,16
+1107,1,2026-10-18,TLID 2-0 ONIC (Regular season W9),,,TLID,14:47,,,https://mlbbhub.com/mpl/id/match/1107,TLID,14,ONIC,3
+1107,2,2026-10-18,TLID 2-0 ONIC (Regular season W9),,,TLID,12:25,,,https://mlbbhub.com/mpl/id/match/1107,TLID,11,ONIC,7
+1109,1,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),,,BTR,19:39,,,https://mlbbhub.com/mpl/id/match/1109,BTR,19,EVOS,18
+1109,2,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),,,EVOS,26:01,,,https://mlbbhub.com/mpl/id/match/1109,BTR,12,EVOS,21
+1109,3,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),,,EVOS,14:11,,,https://mlbbhub.com/mpl/id/match/1109,BTR,4,EVOS,16
+1109,4,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),,,BTR,16:36,,,https://mlbbhub.com/mpl/id/match/1109,BTR,14,EVOS,6
+1109,5,2026-11-04,BTR 3-2 EVOS (Playoffs R1 M2),,,BTR,14:57,,,https://mlbbhub.com/mpl/id/match/1109,BTR,11,EVOS,6
+1111,1,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),,,TLID,13:23,,,https://mlbbhub.com/mpl/id/match/1111,TLID,13,BTR,4
+1111,2,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),,,TLID,14:20,,,https://mlbbhub.com/mpl/id/match/1111,TLID,8,BTR,5
+1111,3,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),,,BTR,16:59,,,https://mlbbhub.com/mpl/id/match/1111,TLID,3,BTR,12
+1111,4,2026-11-05,TLID 3-1 BTR (Playoffs R2 M2),,,TLID,22:51,,,https://mlbbhub.com/mpl/id/match/1111,TLID,13,BTR,8
+1112,1,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),,,AE,21:28,,,https://mlbbhub.com/mpl/id/match/1112,AE,27,BTR,23
+1112,2,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),,,BTR,9:04,,,https://mlbbhub.com/mpl/id/match/1112,AE,7,BTR,24
+1112,3,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),,,BTR,11:34,,,https://mlbbhub.com/mpl/id/match/1112,AE,2,BTR,23
+1112,4,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),,,AE,13:30,,,https://mlbbhub.com/mpl/id/match/1112,AE,19,BTR,2
+1112,5,2026-11-06,AE 2-3 BTR (Playoffs Lower Bracket Semifinal),,,BTR,17:39,,,https://mlbbhub.com/mpl/id/match/1112,AE,7,BTR,19
+1113,1,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),,,TLID,19:06,,,https://mlbbhub.com/mpl/id/match/1113,TLID,16,NAVI,6
+1113,2,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),,,NAVI,17:57,,,https://mlbbhub.com/mpl/id/match/1113,TLID,7,NAVI,21
+1113,3,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),,,TLID,14:13,,,https://mlbbhub.com/mpl/id/match/1113,TLID,11,NAVI,6
+1113,4,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),,,NAVI,14:05,,,https://mlbbhub.com/mpl/id/match/1113,TLID,5,NAVI,16
+1113,5,2026-11-06,NAVI 3-2 TLID (Playoffs Upper Bracket Final),,,NAVI,27:08,,,https://mlbbhub.com/mpl/id/match/1113,TLID,9,NAVI,9

@@ -1,0 +1,24 @@
+{
+ "n": 54,
+ "correct": {
+  "team record only": 33,
+  "hero evidence only": 30,
+  "composition only": 31,
+  "composition + style": 31,
+  "hero + composition": 34,
+  "everything": 31
+ },
+ "brier": {
+  "team record only": 13.45446708434163,
+  "hero evidence only": 13.585999448953642,
+  "composition only": 12.589537685992182,
+  "composition + style": 12.565966854782062,
+  "hero + composition": 12.530526212851314,
+  "everything": 12.705260501827729
+ },
+ "traitsRows": 134,
+ "short": "58% of 24",
+ "long": "57% of 30",
+ "bestTemp": 0.4,
+ "bestBrier": 0.23758561487386864
+}

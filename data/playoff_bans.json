@@ -1,0 +1,1414 @@
+{
+ "ph": [
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 1,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Kalea",
+    "Kimmy",
+    "Yu Zhong",
+    "Obsidia"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Barats",
+    "Hylos"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 2,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Chou",
+    "Marcel",
+    "Cici",
+    "Harith"
+   ],
+   "t2": "FLCN",
+   "b2": [
+    "Freya",
+    "Masha",
+    "Hirara",
+    "Dyrroth",
+    "Barats"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 3,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Kalea",
+    "Nolan",
+    "Harith",
+    "Kimmy"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Lylia",
+    "Zetian"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 4,
+   "t1": "FLCN",
+   "b1": [
+    "Freya",
+    "Zhuxin",
+    "Nolan",
+    "Lylia",
+    "Zetian"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Paquito",
+    "Esmeralda",
+    "Atlas",
+    "Chou",
+    "Carmilla"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 5,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Kimmy",
+    "Barats",
+    "Yu Zhong",
+    "Cici"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Marcel",
+    "Kalea",
+    "Saber"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-25",
+   "series": "FLCN vs RORA (GF)",
+   "game": 6,
+   "t1": "RORA",
+   "b1": [
+    "Esmeralda",
+    "Paquito",
+    "Chou",
+    "Cici",
+    "Harith"
+   ],
+   "t2": "FLCN",
+   "b2": [
+    "Freya",
+    "Masha",
+    "Estes",
+    "Arlott",
+    "Mathilda"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 1,
+   "t1": "TLPH",
+   "b1": [
+    "Esmeralda",
+    "Hirara",
+    "Kimmy",
+    "Valentina",
+    "Uranus"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Eudora",
+    "Lylia"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 2,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Atlas",
+    "Esmeralda",
+    "Cici",
+    "Marcel"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Masha",
+    "Kimmy",
+    "Nolan",
+    "Barats",
+    "Uranus"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 3,
+   "t1": "TLPH",
+   "b1": [
+    "Hirara",
+    "Esmeralda",
+    "Kimmy",
+    "Zhuxin",
+    "Uranus"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Atlas",
+    "Zetian",
+    "Harith"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 4,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Atlas",
+    "Esmeralda",
+    "Harith",
+    "Uranus"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Masha",
+    "Kimmy",
+    "Freya",
+    "Valentina",
+    "Yve"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 5,
+   "t1": "TLPH",
+   "b1": [
+    "Kalea",
+    "Hirara",
+    "Kimmy",
+    "Obsidia",
+    "Harith"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Eudora",
+    "Pharsa"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 6,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Atlas",
+    "Esmeralda",
+    "Uranus",
+    "Carmilla"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Masha",
+    "Kalea",
+    "Freya",
+    "Marcel",
+    "Gatotkaca"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-24",
+   "series": "TLPH vs RORA (LB Final)",
+   "game": 7,
+   "t1": "TLPH",
+   "b1": [
+    "Valentina",
+    "Esmeralda",
+    "Kalea",
+    "Hirara",
+    "Aulus"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Marcel",
+    "Cici"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "FLCN vs RORA (UB Final)",
+   "game": 1,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Nolan",
+    "Kalea",
+    "Saber",
+    "Fanny"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Chou",
+    "Mathilda"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "FLCN vs RORA (UB Final)",
+   "game": 2,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Chou",
+    "Atlas",
+    "Alice",
+    "Uranus"
+   ],
+   "t2": "FLCN",
+   "b2": [
+    "Freya",
+    "Nolan",
+    "Kimmy",
+    "X.Borg",
+    "Harith"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "FLCN vs RORA (UB Final)",
+   "game": 3,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Kimmy",
+    "Atlas",
+    "Zhuxin",
+    "Zetian"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Eudora",
+    "Rafaela"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "FLCN vs RORA (UB Final)",
+   "game": 4,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Kalea",
+    "Chou",
+    "Dyrroth",
+    "Selena"
+   ],
+   "t2": "FLCN",
+   "b2": [
+    "Freya",
+    "Kimmy",
+    "Masha",
+    "Mathilda",
+    "Rafaela"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "FLCN vs RORA (UB Final)",
+   "game": 5,
+   "t1": "FLCN",
+   "b1": [
+    "Esmeralda",
+    "Kimmy",
+    "Nolan",
+    "Obsidia",
+    "Clint"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Eudora",
+    "Rafaela"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "ONIC vs TLPH (LB R)",
+   "game": 1,
+   "t1": "TLPH",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Cici",
+    "Obsidia",
+    "Claude"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Paquito",
+    "Marcel",
+    "Alice"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "ONIC vs TLPH (LB R)",
+   "game": 2,
+   "t1": "ONIC",
+   "b1": [
+    "Esmeralda",
+    "Paquito",
+    "Atlas",
+    "Lukas",
+    "Arlott"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Kalea",
+    "Barats",
+    "Alice"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-23",
+   "series": "ONIC vs TLPH (LB R)",
+   "game": 3,
+   "t1": "TLPH",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Kalea",
+    "Rafaela",
+    "Marcel"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Paquito",
+    "Freya",
+    "Atlas",
+    "Nolan",
+    "Harley"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "ONIC vs FLCN (UB R)",
+   "game": 1,
+   "t1": "FLCN",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Kalea",
+    "Lylia",
+    "Selena"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Aulus",
+    "Harley",
+    "Saber"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "ONIC vs FLCN (UB R)",
+   "game": 2,
+   "t1": "ONIC",
+   "b1": [
+    "Zhuxin",
+    "Nolan",
+    "Aulus",
+    "Hylos",
+    "Kimmy"
+   ],
+   "t2": "FLCN",
+   "b2": [
+    "Freya",
+    "Atlas",
+    "Lylia",
+    "Harley",
+    "Alice"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "ONIC vs FLCN (UB R)",
+   "game": 3,
+   "t1": "FLCN",
+   "b1": [
+    "Atlas",
+    "Lylia",
+    "Zhuxin",
+    "Obsidia",
+    "Esmeralda"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Marcel",
+    "Valentina",
+    "Kimmy"
+   ],
+   "winner": "FLCN"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "RORA vs TLPH (UB R)",
+   "game": 1,
+   "t1": "TLPH",
+   "b1": [
+    "Marcel",
+    "Valentina",
+    "Obsidia",
+    "Gloo",
+    "Brody"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Atlas",
+    "Freya",
+    "Lylia",
+    "Eudora"
+   ],
+   "winner": "TLPH"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "RORA vs TLPH (UB R)",
+   "game": 2,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Atlas",
+    "Cici",
+    "Uranus",
+    "Lylia"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Marcel",
+    "Freya",
+    "Zhuxin",
+    "Obsidia",
+    "Fanny"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "RORA vs TLPH (UB R)",
+   "game": 3,
+   "t1": "TLPH",
+   "b1": [
+    "Marcel",
+    "Valentina",
+    "Obsidia",
+    "Gatotkaca",
+    "Barats"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Atlas",
+    "Paquito",
+    "Arlott",
+    "Kalea"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-22",
+   "series": "RORA vs TLPH (UB R)",
+   "game": 4,
+   "t1": "RORA",
+   "b1": [
+    "Paquito",
+    "Atlas",
+    "Esmeralda",
+    "Lylia",
+    "Pharsa"
+   ],
+   "t2": "TLPH",
+   "b2": [
+    "Masha",
+    "Kimmy",
+    "Freya",
+    "Obsidia",
+    "Cici"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "ONIC vs TNC (R1)",
+   "game": 1,
+   "t1": "ONIC",
+   "b1": [
+    "Zhuxin",
+    "Esmeralda",
+    "Atlas",
+    "Marcel",
+    "Badang"
+   ],
+   "t2": "TNC",
+   "b2": [
+    "Carmilla",
+    "Lukas",
+    "Valentina",
+    "Selena",
+    "Lylia"
+   ],
+   "winner": "TNC"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "ONIC vs TNC (R1)",
+   "game": 2,
+   "t1": "TNC",
+   "b1": [
+    "Carmilla",
+    "Esmeralda",
+    "Freya",
+    "Barats",
+    "Lukas"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Atlas",
+    "Valentina",
+    "Nolan",
+    "Harley"
+   ],
+   "winner": "ONIC"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "ONIC vs TNC (R1)",
+   "game": 3,
+   "t1": "ONIC",
+   "b1": [
+    "Zhuxin",
+    "Aulus",
+    "Esmeralda",
+    "Fanny",
+    "Harley"
+   ],
+   "t2": "TNC",
+   "b2": [
+    "Carmilla",
+    "Masha",
+    "Marcel",
+    "Alice",
+    "Barats"
+   ],
+   "winner": "ONIC"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "ONIC vs TNC (R1)",
+   "game": 4,
+   "t1": "TNC",
+   "b1": [
+    "Carmilla",
+    "Esmeralda",
+    "Valentina",
+    "Cici",
+    "Alice"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Aulus",
+    "Marcel",
+    "Obsidia",
+    "Hirara"
+   ],
+   "winner": "TNC"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "ONIC vs TNC (R1)",
+   "game": 5,
+   "t1": "ONIC",
+   "b1": [
+    "Zhuxin",
+    "Atlas",
+    "Valentina",
+    "Obsidia",
+    "Uranus"
+   ],
+   "t2": "TNC",
+   "b2": [
+    "Carmilla",
+    "Freya",
+    "Marcel",
+    "Alice",
+    "Dyrroth"
+   ],
+   "winner": "ONIC"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "RORA vs OMG (R1)",
+   "game": 1,
+   "t1": "RORA",
+   "b1": [
+    "Esmeralda",
+    "Atlas",
+    "Marcel",
+    "Cici",
+    "Uranus"
+   ],
+   "t2": "OMG",
+   "b2": [
+    "Rafaela",
+    "Masha",
+    "Nolan",
+    "Alice",
+    "Dyrroth"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "RORA vs OMG (R1)",
+   "game": 2,
+   "t1": "OMG",
+   "b1": [
+    "Rafaela",
+    "Atlas",
+    "Esmeralda",
+    "Uranus",
+    "Zetian"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Carmilla",
+    "Freya",
+    "Eudora",
+    "Selena"
+   ],
+   "winner": "OMG"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "RORA vs OMG (R1)",
+   "game": 3,
+   "t1": "RORA",
+   "b1": [
+    "Kalea",
+    "Aulus",
+    "Freya",
+    "Brody",
+    "Hirara"
+   ],
+   "t2": "OMG",
+   "b2": [
+    "Masha",
+    "Rafaela",
+    "Atlas",
+    "Fanny",
+    "Dyrroth"
+   ],
+   "winner": "OMG"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "RORA vs OMG (R1)",
+   "game": 4,
+   "t1": "OMG",
+   "b1": [
+    "Rafaela",
+    "Atlas",
+    "Fanny",
+    "Alice",
+    "Barats"
+   ],
+   "t2": "RORA",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Aulus",
+    "Lylia",
+    "Uranus"
+   ],
+   "winner": "RORA"
+  },
+  {
+   "date": "2026-10-21",
+   "series": "RORA vs OMG (R1)",
+   "game": 5,
+   "t1": "RORA",
+   "b1": [
+    "Aulus",
+    "Marcel",
+    "Freya",
+    "Uranus",
+    "Selena"
+   ],
+   "t2": "OMG",
+   "b2": [
+    "Rafaela",
+    "Atlas",
+    "Masha",
+    "Badang",
+    "Gatotkaca"
+   ],
+   "winner": "RORA"
+  }
+ ],
+ "id": [
+  {
+   "date": "2026-11-04",
+   "series": "AE vs ONIC (R1)",
+   "game": 1,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Valentina",
+    "Harley",
+    "Uranus",
+    "Arlott"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Freya",
+    "Paquito",
+    "Masha",
+    "Lylia",
+    "Zetian"
+   ],
+   "winner": "ONIC"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "AE vs ONIC (R1)",
+   "game": 2,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Alice",
+    "Atlas",
+    "Marcel",
+    "Valentina"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Freya",
+    "Paquito",
+    "Masha",
+    "Esmeralda",
+    "Hirara"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "AE vs ONIC (R1)",
+   "game": 3,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Alice",
+    "Zetian",
+    "Lylia"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Freya",
+    "Paquito",
+    "Clint",
+    "Uranus"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "AE vs ONIC (R1)",
+   "game": 4,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Alice",
+    "Esmeralda",
+    "Harley",
+    "Zetian"
+   ],
+   "t2": "ONIC",
+   "b2": [
+    "Masha",
+    "Paquito",
+    "Freya",
+    "Clint",
+    "Lylia"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "BTR vs EVOS (R1)",
+   "game": 1,
+   "t1": "BTR",
+   "b1": [
+    "Carmilla",
+    "Zhuxin",
+    "Alice",
+    "Aulus",
+    "Cici"
+   ],
+   "t2": "EVOS",
+   "b2": [
+    "Marcel",
+    "Freya",
+    "Chou",
+    "Valentina",
+    "Valir"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "BTR vs EVOS (R1)",
+   "game": 2,
+   "t1": "BTR",
+   "b1": [
+    "Carmilla",
+    "Zhuxin",
+    "Kalea",
+    "Estes",
+    "Paquito"
+   ],
+   "t2": "EVOS",
+   "b2": [
+    "Marcel",
+    "Freya",
+    "Masha",
+    "Faramis",
+    "Lylia"
+   ],
+   "winner": "EVOS"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "BTR vs EVOS (R1)",
+   "game": 3,
+   "t1": "EVOS",
+   "b1": [
+    "Marcel",
+    "Esmeralda",
+    "Fanny",
+    "Alpha",
+    "Chou"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Carmilla",
+    "Kimmy",
+    "Nolan",
+    "Hirara",
+    "Phoveus"
+   ],
+   "winner": "EVOS"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "BTR vs EVOS (R1)",
+   "game": 4,
+   "t1": "BTR",
+   "b1": [
+    "Carmilla",
+    "Alice",
+    "Lylia",
+    "Obsidia",
+    "Paquito"
+   ],
+   "t2": "EVOS",
+   "b2": [
+    "Marcel",
+    "Freya",
+    "Masha",
+    "Dyrroth",
+    "Chou"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-04",
+   "series": "BTR vs EVOS (R1)",
+   "game": 5,
+   "t1": "EVOS",
+   "b1": [
+    "Marcel",
+    "Fanny",
+    "Selena",
+    "Valir",
+    "Valentina"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Masha",
+    "Kalea",
+    "Alice",
+    "Dyrroth",
+    "Lesley"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "NAVI vs AE (R2)",
+   "game": 1,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Marcel",
+    "Esmeralda",
+    "Phoveus",
+    "Obsidia"
+   ],
+   "t2": "AE",
+   "b2": [
+    "Aulus",
+    "Masha",
+    "Freya",
+    "Alice",
+    "Arlott"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "NAVI vs AE (R2)",
+   "game": 2,
+   "t1": "NAVI",
+   "b1": [
+    "Esmeralda",
+    "Kalea",
+    "Kimmy",
+    "Hirara",
+    "Carmilla"
+   ],
+   "t2": "AE",
+   "b2": [
+    "Aulus",
+    "Marcel",
+    "Valentina",
+    "Estes",
+    "Lylia"
+   ],
+   "winner": "NAVI"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "NAVI vs AE (R2)",
+   "game": 3,
+   "t1": "NAVI",
+   "b1": [
+    "Marcel",
+    "Kalea",
+    "Atlas",
+    "Phoveus",
+    "Obsidia"
+   ],
+   "t2": "AE",
+   "b2": [
+    "Aulus",
+    "Esmeralda",
+    "Nolan",
+    "Khaleed",
+    "Valentina"
+   ],
+   "winner": "NAVI"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "NAVI vs AE (R2)",
+   "game": 4,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Masha",
+    "Freya",
+    "Cici",
+    "Sora"
+   ],
+   "t2": "AE",
+   "b2": [
+    "Aulus",
+    "Paquito",
+    "Esmeralda",
+    "Gloo",
+    "Atlas"
+   ],
+   "winner": "NAVI"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "TLID vs BTR (R2)",
+   "game": 1,
+   "t1": "TLID",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Eudora",
+    "Kalea",
+    "Aulus"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Zhuxin",
+    "Nolan",
+    "Paquito",
+    "Zetian",
+    "Valir"
+   ],
+   "winner": "TLID"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "TLID vs BTR (R2)",
+   "game": 2,
+   "t1": "TLID",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Eudora",
+    "Chou",
+    "Alice"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Paquito",
+    "Lylia",
+    "Freya",
+    "Cici",
+    "Atlas"
+   ],
+   "winner": "TLID"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "TLID vs BTR (R2)",
+   "game": 3,
+   "t1": "BTR",
+   "b1": [
+    "Freya",
+    "Kalea",
+    "Marcel",
+    "Valentina",
+    "Moskov"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Fanny",
+    "Esmeralda",
+    "Masha",
+    "Lylia",
+    "Selena"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-05",
+   "series": "TLID vs BTR (R2)",
+   "game": 4,
+   "t1": "TLID",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Paquito",
+    "Alice",
+    "Harley"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Masha",
+    "Kalea",
+    "Freya",
+    "Lylia",
+    "Zhuxin"
+   ],
+   "winner": "TLID"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "AE vs BTR (LB SF)",
+   "game": 1,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Esmeralda",
+    "Zhuxin",
+    "Selena",
+    "Alice"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Masha",
+    "Kalea",
+    "Atlas",
+    "Gloo",
+    "Hilda"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "AE vs BTR (LB SF)",
+   "game": 2,
+   "t1": "AE",
+   "b1": [
+    "Masha",
+    "Marcel",
+    "Selena",
+    "Obsidia",
+    "Valir"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Atlas",
+    "Kalea",
+    "Esmeralda",
+    "Suyou",
+    "Hirara"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "AE vs BTR (LB SF)",
+   "game": 4,
+   "t1": "AE",
+   "b1": [
+    "Fanny",
+    "Masha",
+    "Yve",
+    "Uranus",
+    "Sora"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Kalea",
+    "Esmeralda",
+    "Eudora",
+    "Gloo",
+    "Marcel"
+   ],
+   "winner": "AE"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "AE vs BTR (LB SF)",
+   "game": 5,
+   "t1": "AE",
+   "b1": [
+    "Chou",
+    "Fanny",
+    "Masha",
+    "Selena",
+    "Claude"
+   ],
+   "t2": "BTR",
+   "b2": [
+    "Kalea",
+    "Zhuxin",
+    "Freya",
+    "Badang",
+    "Atlas"
+   ],
+   "winner": "BTR"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "NAVI vs TLID (UB Final)",
+   "game": 1,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Marcel",
+    "Nolan",
+    "Lylia",
+    "Valentina"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Paquito",
+    "Esmeralda",
+    "Zhuxin",
+    "Alice",
+    "Hirara"
+   ],
+   "winner": "TLID"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "NAVI vs TLID (UB Final)",
+   "game": 2,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Marcel",
+    "Nolan",
+    "Zetian",
+    "Lylia"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Paquito",
+    "Esmeralda",
+    "Zhuxin",
+    "Atlas",
+    "Belerick"
+   ],
+   "winner": "NAVI"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "NAVI vs TLID (UB Final)",
+   "game": 3,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Aulus",
+    "Marcel",
+    "Phoveus",
+    "Gloo"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Paquito",
+    "Esmeralda",
+    "Zhuxin",
+    "Chou",
+    "Uranus"
+   ],
+   "winner": "TLID"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "NAVI vs TLID (UB Final)",
+   "game": 4,
+   "t1": "NAVI",
+   "b1": [
+    "Esmeralda",
+    "Kalea",
+    "Aulus",
+    "Gloo",
+    "Hilda"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Paquito",
+    "Cici",
+    "Lylia",
+    "Nolan",
+    "Obsidia"
+   ],
+   "winner": "NAVI"
+  },
+  {
+   "date": "2026-11-06",
+   "series": "NAVI vs TLID (UB Final)",
+   "game": 5,
+   "t1": "NAVI",
+   "b1": [
+    "Kalea",
+    "Marcel",
+    "Aulus",
+    "Belerick",
+    "Atlas"
+   ],
+   "t2": "TLID",
+   "b2": [
+    "Paquito",
+    "Esmeralda",
+    "Zhuxin",
+    "Chou",
+    "Uranus"
+   ],
+   "winner": "NAVI"
+  }
+ ]
+}

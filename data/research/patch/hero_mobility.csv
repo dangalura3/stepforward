@@ -1,0 +1,53 @@
+hero,dash_count,punishes_dash,evidence,source_url,confidence
+Freya,3+,no,mlbbhub: 'Freya's skills all have movement components'; 1v9 names Leap of Faith and Spirit Combo. Exact count not verified,https://mlbbhub.com/counter/freya,medium
+Atlas,unknown,partial,mlbbhub implies his 2nd skill is an interruptible set-up skill (knock-back stops it); unclear if it is a dash. Has heavy CC (ult groups enemies) so can punish dashers after engage,https://mlbbhub.com/counter/atlas,low
+Hirara,2,no,mlbbhub: chain-stuns cancel 'the dashes Hirara relies on'; has an untargetable effect. Exact count unverified,https://mlbbhub.com/counter/hirara,low
+Paquito,3+,no,mlbbhub says Khufra CC 'locks down Paquito's mobility' and Paquito's 'mobility and burst'. Count from general knowledge (punch-dash skills),https://mlbbhub.com/counter/paquito,low
+Fanny,3+,no,vcgamers 2022: skill 2 and ult are dash skills; cable skills; Tigreal/Franco CC dangerous to her dash. S1 count from general knowledge,https://www.vcgamers.com/news/en/hero-dash-ml-expert-escape-and-deal-damage/,medium
+Marcel,unknown,partial,mlbbhub kit text: hard CC pins Freya/Fanny/Dyrroth. No skill text found. Dash count unknown,https://mlbbhub.com/counter/fanny,none
+Nolan,unknown,no,No source found; kit not verified,,none
+Carmilla,unknown,partial,mlbbhub kit text: crowd control locks down Freya/Fanny/Hirara mobility. No skill text found,https://mlbbhub.com/counter/freya,none
+Uranus,0,no,General game knowledge only; not verified against a skill page,,low
+Zhuxin,unknown,no,No source found,,none
+Esmeralda,1,no,General game knowledge only; not verified against a skill page (believed one dash-type skill),,low
+Selena,1,no,vcgamers 2022: dash comes from Abyss mode (entered via ult),https://www.vcgamers.com/news/en/hero-dash-ml-expert-escape-and-deal-damage/,medium-low
+Masha,unknown,no,No source found,,none
+Belerick,0,no,General game knowledge only; not verified against a skill page,,low
+Aulus,1,no,General game knowledge only; not verified against a skill page,,low
+Gloo,1,partial,mlbbhub (Thai prose): S2 'Spread' - if the wave hits a goo puddle Gloo dashes to it and pulls the enemy along; combo immobilises enemies,https://mlbbhub.com/th/heroes/gloo,medium
+Melissa,unknown,no,No source found,,none
+Eudora,0,no,General game knowledge only; not verified against a skill page,,low
+Barats,unknown,no,No source found,,none
+Rafaela,unknown,no,No source found,,none
+Obsidia,unknown,no,No source found,,none
+Claude,1,no,General game knowledge only; not verified against a skill page (Art of Thievery dash),,low
+Valentina,unknown,no,No source found,,none
+Alice,unknown,no,No source found; 1v9 text implies Mathilda gives Alice a 'safe dash',https://1v9.gg/blog/mobile-legends-mlbb-best-heroes-to-duo-with-alice,none
+Mathilda,2,no,vcgamers 2022: ult has a dash effect and can stun; skill 2 gives shields and speed. S1 guiding wind dash from general knowledge,https://www.vcgamers.com/news/en/hero-dash-ml-expert-escape-and-deal-damage/,medium-low
+Cici,unknown,no,No source found,,none
+Minotaur,unknown,partial,mlbbhub kit text: hard CC pins Freya/Fanny/Hirara. No skill text found,https://mlbbhub.com/counter/fanny,none
+Lylia,0,no,General game knowledge only; not verified against a skill page,,low
+Kimmy,unknown,no,No source found,,none
+Novaria,unknown,no,No source found,,none
+Moskov,unknown,partial,mlbbhub Atlas page: Moskov knock-back CC can interrupt Atlas's 2nd skill (acts as displacement counterplay). Own dash count unknown,https://mlbbhub.com/counter/atlas,low
+Gatotkaca,unknown,no,No source found,,none
+Brody,unknown,no,No source found,,none
+Miya,0,no,General game knowledge only; not verified against a skill page,,low
+Suyou,unknown,no,No source found,,none
+Sora,unknown,no,No source found,,none
+Hylos,unknown,no,No source found,,none
+Kalea,unknown,no,No source found,,none
+Zetian,unknown,no,No source found,,none
+Chou,3+,partial,"vcgamers 2022: ult dashes while dealing damage, skill 2 used to move/escape. One Esports 2025: S2 Shunpo gives CC immunity; S1/S3 knock up/back. Third dash from general knowledge",https://www.vcgamers.com/news/en/hero-dash-ml-expert-escape-and-deal-damage/,medium
+Badang,unknown,no,No source found,,none
+Lukas,unknown,partial,mlbbhub Fanny page: durability tanks Fanny's opener. No skill text found,https://mlbbhub.com/counter/fanny,none
+Harley,unknown,no,No source found,,none
+Phoveus,2,yes,"One Esports (2024-07-29, revamp): passive 'next Basic Attack charges at the target, knocking them back' (1 charge); ult Infernal Pursuit/Judgment 'leap and slam' on a marked target (2 leap). Passive Astaros' Gaze reduces his skill cooldowns whenever an enemy hero blinks, dashes or is displaced near him; S2 Dark Wave pulls and knocks enemies airborne",https://www.oneesports.gg/mobile-legends/new-phoveus-skills/,high
+Alpha,unknown,no,No source found,,none
+Cecilion,0,no,General game knowledge only; not verified against a skill page,,low
+Yi Sun-Shin,unknown,no,No source found,,none
+Ruby,unknown,no,No source found,,none
+Valir,0,partial,"One Esports Atlas article (2025-01): Burst Fireball and Searing Torrent are ranged, ult Vengeance Flame cleanses CC. mlbbhub groups Valir with Moskov as knock-back CC. Dash count from general knowledge",https://www.oneesports.gg/mobile-legends/best-heroes-counter-atlas/,low
+Arlott,unknown,no,No source found,,none
+Dyrroth,2,no,mlbbhub counter text repeatedly refers to 'the dashes Dyrroth relies on to get in and out' (plural). Exact count unverified,https://mlbbhub.com/counter/dyrroth,low
+Benedetta,3+,no,"vcgamers 2022: ult slashes forward, S1 shadows dash forward, 'almost all' skills have dash/blink effects",https://www.vcgamers.com/news/en/hero-dash-ml-expert-escape-and-deal-damage/,medium
