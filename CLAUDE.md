@@ -15,6 +15,7 @@ The owner is a beginner. Explain changes in plain, simple English ("explain like
 - `src/sim.js`     draft engine: order, apply/undo, lane feasibility, ban and pick prediction
 - `src/comp.js`    composition rating and win probability
 - `src/bt.js`      Bayesian Bradley-Terry team strength and series maths
+- `src/explain.js`  "Explain this draft": plain-English paragraph from on-screen numbers (templates only, no LLM, no network)
 - `src/index.template.html`  the whole UI (HTML + CSS + JS in one file; the build injects the modules)
 - `scripts/build.js`         builds the page from the template and `data/`
 - `data/`          games, research notes, tuned results. Provenance is in `docs/`

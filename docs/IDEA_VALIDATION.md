@@ -107,12 +107,12 @@
 **Test A - Does the model beat chance? 🧪 (done)** Walk-forward on real games: for each game the model only sees earlier games.
 | Result | Value |
 |---|---|
-| Real ban is the model's #1 guess | ~24% (random ≈ 1%) |
-| Real ban is in the model's top 5 | ~51% (random ≈ 4%), on 270 playoff bans |
+| Real ban is the model's #1 guess | ~23% (random ≈ 1%), on the last 800 ban steps |
+| Real ban is in the model's top 5 | ~49% (random ≈ 5%); on the 270 playoff ban steps alone about 24% and 53% |
 | Adding playoff data from MPL ID + PH + MY improved the log-score | −3.520 → −3.365 → −3.317 |
 | Win prediction (54 games) | about a coin flip - *not* a selling point |
 Source: `data/results/*.json`, `site/formulas.html`.
-**Pass line:** top-5 ≥ 40% → **passed** (about 51%). *Honest note: I chose the 40% line after seeing earlier results, so treat it as a sanity floor, not a pre-registered test.*
+**Pass line:** top-5 ≥ 40% → **passed** (about 49%). *Honest note: I chose the 40% line after seeing earlier results, so treat it as a sanity floor, not a pre-registered test.*
 
 **Test B - Can a stranger use it? ✍️ (do this)** Ask 5 people (fans) to open the live link on their phone and, without help, record 3 bans. Watch, do not explain.
 | Tester | Finished 3 bans without help? | Time | What confused them | Quote |

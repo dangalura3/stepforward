@@ -52,7 +52,7 @@ flowchart LR
 
 | Test | Result (held-out, walk-forward) |
 |---|---|
-| Ban top-1 / top-5, MPL ID + PH + MY playoff prior | ~24% / ~51% (random ≈ 1% / 4%) |
+| Ban top-1 / top-5, last 800 Season-18 ban steps | ~23% / ~49% (random ≈ 1% / 5%); on the 270 playoff steps alone ~24% / ~53% |
 | Log-score with no / ID+PH / ID+PH+MY playoff prior | −3.520 → −3.365 → −3.317 (higher is better) |
 | Win prediction, 54 games | Best logistic 0.676 vs coin flip 0.693 log-loss; 95% range includes "no skill" |
 

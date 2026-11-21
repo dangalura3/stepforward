@@ -25,9 +25,11 @@ StepForward guesses what a **Mobile Legends: Bang Bang (MLBB)** pro team will **
 
 | Test | Result | Random guess |
 |---|---|---|
-| Real ban is the model's #1 guess | ~24% | ~1% |
-| Real ban is in the model's top 5 | ~51% | ~4% |
-| Win prediction (54 games) | about a coin flip | 50% |
+| Real ban is the model's #1 guess | ~23% | ~1% |
+| Real ban is in the model's top 5 | ~49% | ~5% |
+| Win prediction (54 games) | 31 of 54 right (57%): about a coin flip | 50% |
+
+*Ban rows: the last 800 ban steps of Season 18, each predicted only from earlier games (could be 3-4 points higher or lower). On the 270 playoff ban steps alone it was about 24% and 53%. The same numbers appear in the app under "How accurate is it?".*
 
 Details, formulas and confidence ranges: `site/formulas.html`. The AI is statistics and machine learning (no LLM): recency-weighted team frequencies shrunk toward a league prior, Bayesian Bradley-Terry team strength, and a logistic win model.
 
@@ -54,7 +56,7 @@ python -m pytest -q                 # 22 tests
 |---|---|
 | `spec.md` | AI capability, inputs, outputs, testable acceptance criteria, architecture summary |
 | `docs/` | Validation report, PRD, architecture, reflection, demo script, submission checklist |
-| `src/` | `model.js`, `sim.js`, `comp.js`, `bt.js` and the UI template |
+| `src/` | `model.js`, `sim.js`, `comp.js`, `bt.js`, `explain.js` and the UI template |
 | `scripts/build.js` | Builds `site/index.html` |
 | `data/` | Game records, research notes, tuned parameters, accuracy results |
 | `engine/` | Python logistic regression / CatBoost engine and tests |

@@ -42,7 +42,7 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 | AC-1 | The default draft has 20 steps: 10 bans and 10 picks; blue bans first. | `tests/sim.test.js` - "draft order…" |
 | AC-2 | A hero can be used only once per draft; Undo frees it. | `tests/sim.test.js` - "a hero can only be used once", "undo…" |
 | AC-3 | A ban prediction is sorted from most to least likely, probabilities sum to 1 (±1e-6), and used heroes are never listed. | `tests/sim.test.js` - "ban prediction is a sorted probability list…" |
-| AC-4 | **Accuracy floor:** on the last 40 real games (each predicted only from games before it), the real ban is in the model's top 5 at least 30% of the time (random is ~4%; measured ~50%). | `tests/sim.test.js` - "walk-forward…" |
+| AC-4 | **Accuracy floor:** on the last 40 real games (each predicted only from games before it), the real ban is in the model's top 5 at least 30% of the time (random is ~4%; measured ~49%). | `tests/sim.test.js` - "walk-forward…" |
 | AC-5 | The lane check rejects five heroes that cannot cover five distinct lanes. | `tests/sim.test.js` - "lane feasibility…" |
 | AC-6 | Series maths is correct: fair coin = 50%, one game left = single-game chance, longer series favour the better team. | `tests/stats.test.js` |
 | AC-7 | The Bradley-Terry fit ranks a team that wins 80% of games above its opponent with P > 0.9. | `tests/stats.test.js` |
@@ -53,6 +53,8 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 | AC-12 | **Quick-pick:** when it is a team's turn, a box appears directly under that team's active slot with the top suggestions; one tap records the hero and moves to the next step; typing a name + Enter records it and keeps focus in the box. | Manual script in `docs/SUBMISSION_CHECKLIST.md` (Playwright run on the original build: full 20-step draft by taps only, desktop and 400 px) |
 | AC-13 | No sideways scrolling on a 400 px wide phone screen. | Manual (Playwright check on the original build) |
 | AC-14 | The app never claims more accuracy than measured: the win model is labelled "about a coin flip". | Manual review of `formulas.html` and the verdict text |
+| AC-15 | The main page states the AI capability ("classification and ranking") and has a collapsible "How accurate is it?" box whose numbers are read from `data/results/` (not typed by hand) and which says picks are not yet tested. | `tests/data.test.js` (built page contains both), manual look at the box |
+| AC-16 | **Explain this draft:** the button shows a short paragraph built only from the on-screen numbers, ends with "This is a prediction, not a promise.", says "Start the draft first." when there is no prediction, and updates after every ban, pick or Undo. | `tests/explain.test.js` (text rules), Playwright run at 1280 px and 375 px |
 
 ## 5. Architecture (summary - full notes in `docs/ARCHITECTURE.md`)
 
