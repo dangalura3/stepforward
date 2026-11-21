@@ -10,7 +10,7 @@ Legend: ✅ done in this repo · 🟡 done as a draft, you must review/add · �
 | **PRD Quality** | All 6 components; specific features with testable acceptance criteria | `docs/PRD.md` (problem, users, goals/metrics, features + AC, scope, risks/timeline) | 🟡 compare with your course's PRD template and rename sections if its 6 components differ |
 | **Spec & Architecture** | All 5 spec elements; testable criteria; `CLAUDE.md` and `.cursorrules` present | `spec.md` (capability, inputs, outputs, 14 acceptance criteria, architecture), `docs/ARCHITECTURE.md`, `CLAUDE.md`, `.cursorrules` | ✅ |
 | **Working Application** | Live URL; core AI feature works; clean UI; no broken flows | https://stepforward-mlbb-draft-simulator.netlify.app/ | 🟡 redeploy the new version, then open it on a phone and run section C |
-| **CI/CD & Engineering Quality** | GitHub Actions; no hardcoded secrets; meaningful commits; README complete | `.github/workflows/ci.yml`, secret-scan test, 11 commits, `README.md` | ⬜ push the repo, add the two Netlify secrets, confirm green check |
+| **CI/CD & Engineering Quality** | GitHub Actions; no hardcoded secrets; meaningful commits; README complete | `.github/workflows/ci.yml`, secret-scan test, 12 commits, `README.md` | ⬜ push the repo, add the two Netlify secrets, confirm green check |
 
 ## B. Core deliverables
 

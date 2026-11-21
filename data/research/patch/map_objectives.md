@@ -106,7 +106,7 @@ I found no published stat on average game length before vs after 28 Sep, none on
 ## 4. First-pass hero table for MPL ID S18 most picked or banned heroes
 
 ### Takeaway
-Only 9 of the 52 requested heroes have any fetched hero-specific evidence for the three scores (and only 5 have two or more scores filled); the rest are "unknown" in the CSV by design. I did not score from memory. Full table with evidence and URLs: `/home/claude/research_notes/MLBB patch and matchup knowledge/hero_objective_traits.csv`.
+Only 9 of the 52 requested heroes have any fetched hero-specific evidence for the three scores (and only 5 have two or more scores filled); the rest are "unknown" in the CSV by design. I did not score from memory. Full table with evidence and URLs: `(workspace path removed)`.
 
 ### Cited Findings
 Scale 0 to 3. "unknown" means no fetched source addresses it. Scores marked "interpretive" convert qualitative text to numbers and carry low confidence.

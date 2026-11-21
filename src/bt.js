@@ -1,5 +1,5 @@
 // Bayesian Bradley-Terry team strength with a blue-side bonus, fitted in the browser by a simple random-walk Metropolis sampler.
-// Mirrors /home/claude/analysis/s2_strength_series.py. results: [{a, b, win: 'a'|'b', blue: 'a'|'b'|null}]
+// Same model as the Python analysis used during research (not included in this repo). results: [{a, b, win: 'a'|'b', blue: 'a'|'b'|null}]
 (function (root) {
   'use strict';
   function rng(seed) { var s = seed >>> 0; return function () { s += 0x6D2B79F5; var t = Math.imul(s ^ (s >>> 15), 1 | s); t ^= t + Math.imul(t ^ (t >>> 7), 61 | t); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
