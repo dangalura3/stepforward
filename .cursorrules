@@ -1,0 +1,22 @@
+# Cursor rules for StepForward (same intent as CLAUDE.md)
+
+You are helping a beginner build a static MLBB draft predictor. Keep answers short and in plain English.
+
+Project facts
+- Static site. Models run in the browser. Source in src/, data in data/, output in site/.
+- Build: `npm run build`. Test: `npm test`. Python engine: `cd engine && python -m pytest -q`.
+
+Always
+- Edit src/ and data/, then rebuild. Never hand-edit site/index.html.
+- Keep src/*.js dependency-free, ES5 style, wrapped in an IIFE, exporting to window or module.exports.
+- Add or update a test in tests/ for every behaviour change.
+- Cite the source of any new fact in data/ or docs/. Never make up numbers.
+- Say plainly when the model is no better than chance (win prediction is about 50/50).
+- Check the page at 400 px width: no horizontal scroll.
+
+Never
+- Put API keys, tokens or passwords in any file. Use environment variables / GitHub Secrets.
+- Scrape websites or add copied game art.
+- Add npm packages unless the owner agrees.
+
+Commit style: feat: / fix: / docs: / test: / ci: / chore:
