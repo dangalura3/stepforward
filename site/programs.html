@@ -1,0 +1,1400 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StepForward - Analysis programs</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"><meta name="theme-color" content="#070a12"><style>
+:root{--bg:#fafaf8;--fg:#1c1c1a;--dim:#5d5d58;--line:#dcdcd4;--card:#fff;--acc:#1f4fd1;--soft:#eef2fd}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ececE6;--dim:#a2a29a;--line:#34342f;--card:#1e1e1b;--acc:#8fb0ff;--soft:#232a3d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:20px 16px 60px}h1{font-size:26px;margin:.2em 0}h2{font-size:20px;margin:1.8em 0 .4em;padding-top:.6em;border-top:1px solid var(--line)}h3{font-size:16px;margin:1.3em 0 .3em}
+p,li{max-width:70ch}.dim{color:var(--dim)}.kid{background:var(--soft);border-left:3px solid var(--acc);padding:8px 12px;border-radius:4px;margin:.6em 0}
+pre.eq{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 12px;overflow-x:auto;font:13.5px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:.5em 0}
+.sc{overflow-x:auto;margin:.6em 0}table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--soft);font-weight:600}td.n{text-align:right;white-space:nowrap}
+code{font:13px ui-monospace,Menlo,Consolas,monospace;background:var(--soft);padding:1px 4px;border-radius:3px}.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:0 8px;font-size:12px}
+nav a{margin-right:12px;color:var(--acc)}
+
+details{border:1px solid var(--line);border-radius:6px;background:var(--card);margin:.5em 0;padding:0 10px}summary{cursor:pointer;padding:8px 0;font-weight:600}pre.code{margin:0 0 10px;padding:10px;background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:auto;font:12.5px/1.45 ui-monospace,Menlo,Consolas,monospace;max-height:520px}.nav{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:10px}.nav a{color:var(--acc);text-decoration:none}.nav a.on{font-weight:700;text-decoration:underline}
+html:root{--bg:#070a12;--fg:#eaf0ff;--dim:#94a3c6;--line:rgba(120,150,230,.22);--card:rgba(15,22,40,.8);--acc:#6db6ff;--soft:rgba(68,166,255,.13);color-scheme:dark}html{background:#070a12}body{background:radial-gradient(900px 460px at 6% -8%,rgba(68,166,255,.22),transparent 65%),radial-gradient(900px 460px at 96% -6%,rgba(255,79,109,.18),transparent 65%),#070a12;background-attachment:fixed;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}h1,h2,h3{font-family:"Rajdhani","Barlow Condensed","Arial Narrow",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em}h1{font-size:clamp(28px,6vw,44px);background:linear-gradient(95deg,#fff 10%,#8cc4ff 50%,#ff7a92 95%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 20px rgba(90,150,255,.3))}h2{border-top:1px solid var(--line);color:#fff}.nav{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:10px 14px;backdrop-filter:blur(10px)}.nav a{color:var(--acc);border-bottom:1px solid transparent}.nav a:hover{color:#fff}.nav a.on{color:#ffc94d;text-decoration:none;border-bottom:2px solid #ffc94d;font-weight:700}.kid{background:var(--soft);border-left:3px solid #ffc94d;border-radius:8px}details,pre.eq,pre.code,.sc,table{border-radius:10px}details,pre.eq,pre.code{background:var(--card);border:1px solid var(--line);box-shadow:0 8px 26px rgba(0,0,0,.35)}table{background:var(--card)}th{background:rgba(255,255,255,.04);color:#9fb2de}th,td{border-color:rgba(120,150,230,.16)}summary::marker{color:#ffc94d}code{background:rgba(122,77,255,.18);color:#d8ccff}a{color:var(--acc)}.tag{border-color:rgba(255,201,77,.4);color:#ffc94d}::selection{background:rgba(122,77,255,.5)}</style></head><body><main><div class="nav"><a href="index.html">Simulator</a><a href="habits.html">Coach and analyst habits</a><a href="formulas.html">Formulas and accuracy</a><a href="programs.html" class="on">Analysis programs</a></div><h1>Analysis programs</h1><p class="dim">Every program used to build and check the simulator. Click a name to read the code. Paths inside the scripts point to the folders on my workspace, so they need the data files to run; they are here so the method can be inspected.</p>
+<div class="kid"><b>In plain words.</b> A program here is a small recipe the computer follows. Some recipes test an idea on old games ("would this guess have worked?"). Others are the engine inside the simulator itself.</div>
+<h2>Python engine package</h2>
+<p>A separate, tested Python package (CatBoost, NumPy, SciPy) for draft win-probability and best-pick suggestions: <code>logistic.py</code> (loss, gradient, L-BFGS), <code>features.py</code> (multi-hot, target encoding, synergy and counter matrices, role balance), <code>decay.py</code> (patch decay), <code>engine.py</code>, <code>recommend.py</code> (top 3 by ΔP). 22 unit tests pass. The CatBoost backend could not be trained here; the SciPy logistic backend runs and is tested. <a href="mlbb_draft_engine.zip">Download the package (zip)</a>, which has its own README.</p><h2>Research stage (Python)</h2><div class="sc"><table><thead><tr><th>Program</th><th>What it does</th><th>Data</th><th>Main result</th></tr></thead><tbody><tr><td>s1_win_models.py</td><td>Compares win models on the 54 Season 18 games with full scoreboards, leaving one game out each time.</td><td>Hero, composition and team data</td><td>Log-loss and accuracy per model; none beats a coin flip</td></tr><tr><td>s2_strength_series.py</td><td>Bayesian Bradley-Terry team strength with a blue-side bonus, and best-of-5 / best-of-7 series odds with uncertainty.</td><td>Season 18 results</td><td>Team strengths and series win chances with ranges</td></tr><tr><td>s3_ban_models.py</td><td>Compares ban-forecast recipes out-of-sample: each game predicted only from earlier games.</td><td>Ban lists</td><td>Which recipe (decay, side, head-to-head, shrinkage) wins</td></tr><tr><td>s3b_ban_tune.py</td><td>Wider tuning search; tunes on early games and looks at later games once.</td><td>Ban lists</td><td>Chosen settings (decay 0.7, side 0.6, head-to-head 4, k 4)</td></tr><tr><td>s4_pick_models.py</td><td>Scores pick models by probability: each game removed from its own evidence.</td><td class="n">54 games x 2 team lineups</td><td>League pick rate vs team pool vs ban shift</td></tr><tr><td>s5_logistic_winmodel.py</td><td>Logistic regression (cross-entropy plus L2, exact gradient) for the win model; each series tested by a model that never saw it.</td><td class="n">54 games with lineups</td><td>Cannot beat a coin flip; 95% range includes zero</td></tr><tr><td>s5_phase_shift.py</td><td>Do playoff drafts differ from regular-season drafts?</td><td>Ban and pick lists</td><td>Yes, playoff bans differ (for example Masha, Esmeralda, Fanny)</td></tr></tbody></table></div><details><summary>s1_win_models.py <span class="dim" style="font-weight:400">· 69 lines</span></summary><p class="dim">Compares win models on the 54 Season 18 games with full scoreboards, leaving one game out each time.</p><pre class="code">"""Part 1: how well can a draft + team-strength model predict who wins? Leave-one-game-out on the 54 Season 18 games with full scoreboards."""
+import json, numpy as np, pandas as pd
+from scipy import stats
+from sklearn.linear_model import LogisticRegression
+rng=np.random.default_rng(7)
+rows=json.load(open('comp_features.json')); df=pd.DataFrame(rows)
+games=sorted(df.game.unique(), key=lambda g:(df[df.game==g].date.iloc[0], g))
+A,B,Y,feat=[],[],[],[]
+def vec(r):
+    s=r['sums']; c=r['curve']
+    return dict(base=np.log(r['base']/(1-r['base'])), heroEv=r['heroEv'], rating=r['rating']/10, raw=r['raw']/10, combo=r['combo'],
+                front=s['front'],cc=s['cc'],engage=s['engage'],dps=s['dps'],wave=s['wave'],burst=s['burst'],catchx=s['catchx'],peel=s['peel'],
+                early=c['early']/10,mid=c['mid']/10,late=c['late']/10)
+X=[];y=[];meta=[]
+for g in games:
+    t=df[df.game==g]; a,b=t.iloc[0],t.iloc[1]
+    va,vb=vec(a),vec(b); X.append({k:va[k]-vb[k] for k in va}); y.append(int(a.win)); meta.append((g,a.team,b.team,a.dur))
+X=pd.DataFrame(X); y=np.array(y); n=len(y)
+print('games',n,'| first-listed team won',y.mean().round(3))
+def loo(cols,C):
+    p=np.zeros(n)
+    for i in range(n):
+        tr=np.arange(n)!=i
+        # symmetry: add mirrored rows so there is no order bias, no intercept
+        Xt=np.vstack([X.loc[tr,cols].values,-X.loc[tr,cols].values]); yt=np.concatenate([y[tr],1-y[tr]])
+        m=LogisticRegression(C=C,fit_intercept=False,max_iter=2000).fit(Xt,yt); p[i]=m.predict_proba(X.loc[[i],cols].values)[0,1]
+    return p
+def score(p):
+    p=np.clip(p,1e-4,1-1e-4); return dict(acc=float(np.mean((p&gt;0.5)==(y==1))),brier=float(np.mean((p-y)**2)),ll=float(-np.mean(y*np.log(p)+(1-y)*np.log(1-p))))
+sets={'team record only':['base'],'hero win-rate evidence only':['heroEv'],'composition rating only':['rating'],
+ 'comp pieces (8 features)':['front','cc','engage','dps','wave','burst','catchx','peel'],'power curve only':['early','mid','late'],
+ 'record + hero evidence':['base','heroEv'],'record + hero + rating':['base','heroEv','rating'],'everything':list(X.columns)}
+res={}; P={}
+print('\nmodel'.ljust(32),'C','  acc   Brier  logloss   95% CI of accuracy')
+for name,cols in sets.items():
+    best=None
+    for C in [0.01,0.1,1.0]:
+        p=loo(cols,C); sc=score(p); sc['C']=C
+        if best is None or sc['ll']&lt;best[0]['ll']: best=(sc,p)
+    sc,p=best; P[name]=p; k=int(round(sc['acc']*n)); lo,hi=stats.beta.ppf([.025,.975],[k,k+1],[n-k+1,n-k])
+    res[name]=dict(sc,ci=[float(lo),float(hi)])
+    print(name.ljust(31),sc['C'],f"{sc['acc']*100:5.1f}%  {sc['brier']:.3f}  {sc['ll']:.3f}   [{lo*100:.0f}%, {hi*100:.0f}%]")
+print('coin flip: acc 50%  Brier 0.250  logloss 0.693')
+# significance vs coin
+for name in ['team record only','composition rating only','record + hero + rating','everything']:
+    k=int(round(res[name]['acc']*n)); print(f"binomial test vs 50% ({name}): p = {stats.binomtest(k,n,0.5).pvalue:.2f}")
+# Brier difference vs coin, paired bootstrap
+def boot(p,B=4000):
+    d=[]; 
+    for _ in range(B):
+        ix=rng.integers(0,n,n); d.append(np.mean((0.5-y[ix])**2)-np.mean((np.clip(p[ix],1e-4,1-1e-4)-y[ix])**2))
+    return np.percentile(d,[2.5,50,97.5])
+print('\nBrier gain over coin flip (positive = better), paired bootstrap 95% interval:')
+for name in ['team record only','composition rating only','record + hero + rating','everything']:
+    lo,m,hi=boot(P[name]); res[name]['brier_gain']=[float(lo),float(m),float(hi)]; print(' ',name.ljust(26),f"{m:+.4f}  [{lo:+.4f}, {hi:+.4f}]")
+# power: games needed to separate true accuracy a from 50% with 80% power
+def need(a,al=.05,pw=.8):
+    z1,z2=stats.norm.ppf(1-al/2),stats.norm.ppf(pw); return int(np.ceil(((z1*.5+z2*np.sqrt(a*(1-a)))/(a-.5))**2))
+pw={a:need(a) for a in [.55,.57,.60,.65]}; print('\ngames needed to prove true accuracy beats 50% (80% power):',pw); res['power']=pw
+# calibration of the best honest model (record+hero+rating), 4 bins
+p=P['record + hero + rating']; q=np.quantile(p,[0,.25,.5,.75,1]); print('\ncalibration (record+hero+rating): predicted vs actual win share per quartile (n≈13 each)')
+for i in range(4):
+    m=(p&gt;=q[i])&amp;(p&lt;=q[i+1]) if i==3 else (p&gt;=q[i])&amp;(p&lt;q[i+1]); print(f"  predicted {p[m].mean():.2f}  actual {y[m].mean():.2f}  n={m.sum()}")
+# short vs long games
+dur=np.array([m[3] for m in meta]); short=dur&lt;15*60
+for nm in ['team record only','composition rating only']:
+    pp=P[nm]; print(f"{nm}: accuracy short(&lt;15m) {np.mean(((pp&gt;.5)==(y==1))[short])*100:.0f}% of {short.sum()}, long {np.mean(((pp&gt;.5)==(y==1))[~short])*100:.0f}% of {(~short).sum()}")
+json.dump(res,open('s1_results.json','w'),indent=1)
+</pre></details><details><summary>s2_strength_series.py <span class="dim" style="font-weight:400">· 61 lines</span></summary><p class="dim">Bayesian Bradley-Terry team strength with a blue-side bonus, and best-of-5 / best-of-7 series odds with uncertainty.</p><pre class="code">"""Part 2: team strength (Bradley-Terry with side advantage, Bayesian), head-to-head, and Bo5/Bo7 series odds with honest uncertainty."""
+import json, numpy as np, pandas as pd
+from scipy import stats, special
+rng=np.random.default_rng(11)
+N='research_notes/BTR vs TLID Season 18 drafts/'
+d=pd.read_csv(N+'btr_tlid_drafts_v2.csv')
+g=d.drop_duplicates('game_id')[['game_id','date','stage','blue_team','red_team','winner']].dropna(subset=['blue_team','red_team','winner']).copy()
+g=g[g.winner.isin(g.blue_team)|g.winner.isin(g.red_team)]
+print('games with both teams and a winner:',len(g)); print(g[['blue_team','red_team']].stack().value_counts().to_dict())
+g['blue_won']=(g.winner==g.blue_team).astype(int)
+k=g.blue_won.sum(); n=len(g)
+lo,hi=stats.beta.ppf([.025,.975],[k,k+1],[n-k+1,n-k])
+print(f"blue side won {k}/{n} = {k/n:.1%}, 95% CI [{lo:.0%}, {hi:.0%}], binomial test vs 50% p={stats.binomtest(int(k),n,.5).pvalue:.2f}")
+teams=sorted(set(g.blue_team)|set(g.red_team)); T={t:i for i,t in enumerate(teams)}
+print('teams:',teams)
+bt=g[((g.blue_team=='BTR')&amp;(g.red_team=='TLID'))|((g.blue_team=='TLID')&amp;(g.red_team=='BTR'))]
+tl=(bt.winner=='TLID').sum(); print(f"BTR vs TLID games in the table: {len(bt)}, TLID won {tl}")
+rec={}
+for t in ['BTR','TLID']:
+    m=g[(g.blue_team==t)|(g.red_team==t)]; rec[t]=(int((m.winner==t).sum()),len(m)); 
+print('records inside this table:',rec)
+# Bayesian Bradley-Terry: logit P(blue wins)=s_blue - s_red + h ; s_t ~ N(0, tau^2), h ~ N(0,1). Random-walk Metropolis.
+bi=g.blue_team.map(T).values; ri=g.red_team.map(T).values; yb=g.blue_won.values; K=len(teams)
+def logpost(th,tau=1.0):
+    s=th[:K]; h=th[K]; z=s[bi]-s[ri]+h
+    ll=np.sum(yb*z-np.logaddexp(0,z)); return ll-0.5*np.sum(s**2)/tau**2-0.5*h**2
+th=np.zeros(K+1); lp=logpost(th); draws=[]; acc=0
+for it in range(60000):
+    prop=th+rng.normal(0,0.12,K+1); lq=logpost(prop)
+    if np.log(rng.random())&lt;lq-lp: th,lp=prop,lq; acc+=1
+    if it&gt;10000 and it%10==0: draws.append(th.copy())
+D=np.array(draws); print('acceptance',round(acc/60000,2),'draws',len(D))
+S=D[:,:K]; H=D[:,K]
+print('side advantage (blue) logit: mean %.2f, 95%% [%.2f, %.2f] -&gt; blue win prob %.2f'%(H.mean(),*np.percentile(H,[2.5,97.5]),special.expit(H.mean())))
+print('\nteam strength (logit scale, 0 = average), 95% interval:')
+for t in teams: s=S[:,T[t]]; print(f"  {t:6s} {s.mean():+.2f}  [{np.percentile(s,2.5):+.2f}, {np.percentile(s,97.5):+.2f}]")
+diff=S[:,T['TLID']]-S[:,T['BTR']]; pT=special.expit(diff)
+print(f"\nP(TLID beats BTR in one game, neutral side): mean {pT.mean():.3f}, 95% [{np.percentile(pT,2.5):.3f}, {np.percentile(pT,97.5):.3f}]; P(TLID is the stronger team)={np.mean(diff&gt;0):.2f}")
+# series probability: games independent with game prob p. Bo5 = first to 3, Bo7 = first to 4
+def series(p,need):
+    tot=0
+    for l in range(need): tot+=special.comb(need-1+l,l)*p**need*(1-p)**l
+    return tot
+res=dict(blue_win=[float(k/n),float(lo),float(hi)],pT_mean=float(pT.mean()),pT_ci=[float(x) for x in np.percentile(pT,[2.5,97.5])],pTstronger=float(np.mean(diff&gt;0)))
+for nm,need in [('Bo5',3),('Bo7',4)]:
+    sp=series(pT,need); print(f"{nm}: P(TLID wins series) mean {sp.mean():.3f}, 95% [{np.percentile(sp,2.5):.3f}, {np.percentile(sp,97.5):.3f}]"); res[nm]=[float(sp.mean()),*[float(x) for x in np.percentile(sp,[2.5,97.5])]]
+# state update: TLID led 1-0 (MLBBHub, 18:20 WIB). Bo5 from 1-0: TLID needs 2 more, BTR 3
+def from_state(p,wa,wb,need):
+    tot=0; a=need-wa; b=need-wb
+    for l in range(b): tot+=special.comb(a-1+l,l)*p**a*(1-p)**l
+    return tot
+sp=from_state(pT,1,0,3); print(f"Bo5 from TLID 1-0: P(TLID wins) mean {sp.mean():.3f}, 95% [{np.percentile(sp,2.5):.3f}, {np.percentile(sp,97.5):.3f}]"); res['Bo5_from_1_0']=[float(sp.mean())]
+# how much does a model with a 'real' edge matter? series amplification table
+print('\nsingle-game p -&gt; Bo5 / Bo7 series win probability')
+for p in [.50,.52,.55,.57,.60,.65,.70]: print(f"  {p:.2f} -&gt; {series(p,3):.3f} / {series(p,4):.3f}")
+# game-dependence: beta-binomial style momentum (games correlated through a shared team-form effect, rho)
+print('\nBo5 with correlated games (shared form shock, sd on logit scale), p=0.60:')
+for sd in [0,0.3,0.6]:
+    z=rng.normal(0,sd,200000)+special.logit(.60); print(f"  sd {sd}: {series(special.expit(z),3).mean():.3f}")
+json.dump(res,open('s2_results.json','w'),indent=1)
+</pre></details><details><summary>s3_ban_models.py <span class="dim" style="font-weight:400">· 85 lines</span></summary><p class="dim">Compares ban-forecast recipes out-of-sample: each game predicted only from earlier games.</p><pre class="code">"""Part 3: which ban-forecast recipe is best, judged out-of-sample? Rolling origin: each game is predicted only from earlier games."""
+import json, itertools, numpy as np, pandas as pd
+rng=np.random.default_rng(5)
+N='research_notes/BTR vs TLID Season 18 drafts/'; R='research_notes/MLBB draft simulator/'
+d=pd.read_csv(N+'btr_tlid_drafts_v2.csv'); d=d[d.action=='ban']
+hs=pd.read_csv(R+'hero_stats_id_s18.csv'); heroes=sorted(set(hs.hero)|set(d.hero)); H=len(heroes); hi={h:i for i,h in enumerate(heroes)}
+bans=hs.set_index('hero').bans.reindex(heroes).fillna(0).values.astype(float)
+prior=(bans+0.5)/(bans+0.5).sum()
+print('heroes',H,'| league ban rows with data',int((bans&gt;0).sum()))
+# games in time order with complete 10-ban lists and known sides
+G=[]
+for gid,x in d.groupby('game_id'):
+    if len(x)!=10: continue
+    x=x.sort_values('step_no'); b=x.iloc[0]
+    G.append(dict(id=gid,date=x.date.iloc[0],blue=x.blue_team.iloc[0],red=x.red_team.iloc[0],seq=[(r.side,hi[r.hero]) for r in x.itertuples()]))
+G.sort(key=lambda g:(g['date'],g['id'])); print('complete games',len(G),G[0]['date'],'-&gt;',G[-1]['date'])
+def lists(g,side): return [h for s,h in g['seq'] if s==side]
+# build instances: one per (game, team in {BTR,TLID})
+inst=[]
+for t,g in enumerate(G):
+    for side in ['blue','red']:
+        team=g[side]; opp=g['red' if side=='blue' else 'blue']
+        if team not in ('BTR','TLID'): continue
+        hist=[]
+        for u in range(t):
+            gu=G[u]
+            for s2 in ['blue','red']:
+                if gu[s2]==team: hist.append((u,s2,gu['red' if s2=='blue' else 'blue'],lists(gu,s2)))
+        steps=[]; used=set()
+        for s,h in g['seq']:
+            if s==side: steps.append((len(steps),h,frozenset(used)))
+            used.add(h)
+        inst.append(dict(t=t,team=team,side=side,opp=opp,hist=hist,steps=steps))
+print('instances',len(inst),'steps',sum(len(i['steps']) for i in inst))
+def predict(I,par):
+    decay,alpha,sideW,h2hW,posW=par; n=len(I['hist'])
+    over=np.zeros(H); pos=np.zeros((5,H)); wsum=0; wpos=np.zeros(5)
+    for k,(u,s2,opp,l) in enumerate(I['hist']):
+        w=decay**(n-1-k)*(1 if s2==I['side'] else sideW)*(h2hW if opp==I['opp'] else 1); wsum+=w
+        for j,h in enumerate(l): over[h]+=w; pos[j,h]+=w
+    P=(over+alpha*prior*1.0)/(wsum+alpha)   # per-ban chance a hero appears in a list: counts out of games (each game gives 5 bans), shrunk to league
+    out=[]
+    for j,h,used in I['steps']:
+        pp=(1-posW)*P + posW*((pos[j]+alpha*prior)/(wsum+alpha))
+        pp=pp.copy()
+        for u_ in used: pp[u_]=0
+        pp/=pp.sum(); out.append(pp)
+    return out
+def evaluate(idx,par):
+    ll=[];h1=[];h3=[];h5=[]
+    for I in [inst[i] for i in idx]:
+        pr=predict(I,par)
+        for (j,h,used),pp in zip(I['steps'],pr):
+            ll.append(np.log(max(pp[h],1e-6))); r=(pp&gt;pp[h]).sum(); h1.append(r&lt;1);h3.append(r&lt;3);h5.append(r&lt;5)
+    return dict(ll=float(np.mean(ll)),h1=float(np.mean(h1)),h3=float(np.mean(h3)),h5=float(np.mean(h5)),n=len(ll),_ll=ll,_h5=h5)
+cut=int(0.6*len(G)); tune=[i for i,I in enumerate(inst) if I['t']&lt;cut and I['t']&gt;=8]; test=[i for i,I in enumerate(inst) if I['t']&gt;=cut]
+print('tune instances',len(tune),'(games 9-%d) | untouched test instances'%cut,len(test))
+# recipes
+cur=(0.95,4.0,0.6,1.5,0.35)
+recipes={'league ban rate only':(1,1e9,1,1,0),'team history, no decay, no extras':(1,4,1,1,0),'+ recency decay 0.95':(.95,4,1,1,0),'+ side &amp; head-to-head weights':(.95,4,.6,1.5,0),'+ position (current app settings)':cur}
+print('\nrecipe'.ljust(42),'avg log-prob of actual ban   hit@1  hit@3  hit@5   (untouched test)'); res={}
+for k,par in recipes.items():
+    r=evaluate(test,par); res[k]={x:r[x] for x in ['ll','h1','h3','h5','n']}; print(k.ljust(41),f"{r['ll']:.3f}".rjust(10),f"{r['h1']*100:12.0f}%{r['h3']*100:6.0f}%{r['h5']*100:6.0f}%")
+print('random guess among ~%d heroes: log-prob %.2f, hit@5 %.1f%%'%(H,np.log(1/H),500/H))
+# tune on earlier games only, test on later
+grid=list(itertools.product([1,.97,.93,.88,.8],[.5,1,2,4,8,16],[1,.6,.3],[1,1.5,2.5],[0,.2,.4,.6]))
+sc=[(evaluate(tune,p)['ll'],p) for p in grid]; sc.sort(reverse=True); best=sc[0][1]
+print('\nbest settings on earlier games (decay, shrink, side, h2h, position):',best,' tuning log-prob',round(sc[0][0],3))
+r=evaluate(test,best); res['tuned on earlier games']={x:r[x] for x in ['ll','h1','h3','h5','n']}; res['tuned_params']=list(best)
+print('tuned recipe on untouched later games'.ljust(41),f"{r['ll']:.3f}".rjust(10),f"{r['h1']*100:12.0f}%{r['h3']*100:6.0f}%{r['h5']*100:6.0f}%")
+# bootstrap CI of hit@5 for current vs league-only, paired
+rc=evaluate(test,cur); rl=evaluate(test,recipes['league ban rate only'])
+a=np.array(rc['_ll'])-np.array(rl['_ll']); bs=[a[rng.integers(0,len(a),len(a))].mean() for _ in range(4000)]
+print('\nlog-prob gain of current app recipe over league-only, test steps n=%d: %+.3f, 95%% [%+.3f, %+.3f]'%(len(a),a.mean(),*np.percentile(bs,[2.5,97.5])))
+b5=np.array(rc['_h5'],float); bb=[b5[rng.integers(0,len(b5),len(b5))].mean() for _ in range(4000)]; print('hit@5 of current recipe: %.0f%%, 95%% interval [%.0f%%, %.0f%%]'%(b5.mean()*100,*np.percentile(bb,[2.5,97.5])*100))
+# ban #1 only
+first=[i for i in test]; 
+def first_only(par):
+    out=[]
+    for I in [inst[i] for i in first]:
+        pp=predict(I,par)[0]; h=I['steps'][0][1]; out.append((pp&gt;pp[h]).sum()&lt;1)
+    return np.mean(out)
+print('first ban of a team, top-1 hit: current %.0f%%, league-only %.0f%%'%(first_only(cur)*100,first_only(recipes['league ban rate only'])*100))
+json.dump(res,open('s3_results.json','w'),indent=1)
+</pre></details><details><summary>s3b_ban_tune.py <span class="dim" style="font-weight:400">· 19 lines</span></summary><p class="dim">Wider tuning search; tunes on early games and looks at later games once.</p><pre class="code">"""Part 3b: widen the search because the best settings sat on the edge of the first grid. Tune on early games only; look at the later games once."""
+import json, itertools, numpy as np, pandas as pd, importlib.util, sys, io, contextlib
+spec=importlib.util.spec_from_file_location('s3','s3_ban_models.py'); m=importlib.util.module_from_spec(spec)
+with contextlib.redirect_stdout(io.StringIO()): spec.loader.exec_module(m)
+inst,tune,test,evaluate,predict=m.inst,m.tune,m.test,m.evaluate,m.predict
+grid=list(itertools.product([.8,.7,.6,.5,.4],[4,8,16,32],[.6,.3],[1.5,2.5,4],[.4,.6,.8,1.0]))
+sc=sorted(((evaluate(tune,p)['ll'],p) for p in grid),reverse=True)
+print('top 5 on early games:'); [print('  ',round(a,3),p) for a,p in sc[:5]]
+best=sc[0][1]; cur=(0.95,4.0,0.6,1.5,0.35)
+for nm,par in [('current app settings',cur),('tuned on early games (wider grid)',best)]:
+    r=evaluate(test,par); print(nm.ljust(36),f"log-prob {r['ll']:.3f}  hit@1 {r['h1']*100:.0f}%  hit@3 {r['h3']*100:.0f}%  hit@5 {r['h5']*100:.0f}%  (n={r['n']})")
+# robustness: how flat is the optimum? tuned-on-early score ranks of nearby configs on the test games
+tops=[evaluate(test,p)['ll'] for _,p in sc[:20]]; print('test log-prob of the 20 best early configs: min %.3f median %.3f max %.3f'%(min(tops),np.median(tops),max(tops)))
+# reverse direction as a stability check: tune on the later games, test on the earlier ones
+late=[i for i,I in enumerate(inst) if I['t']&gt;=m.cut]; early=[i for i,I in enumerate(inst) if 8&lt;=I['t']&lt;m.cut]
+sc2=sorted(((evaluate(late,p)['ll'],p) for p in grid),reverse=True); b2=sc2[0][1]
+print('reverse check: best settings on later games',b2,'| on early games: %.3f vs current %.3f'%(evaluate(early,b2)['ll'],evaluate(early,cur)['ll']))
+json.dump(dict(best=list(best),cur=list(cur),test_best=evaluate(test,best)|{},test_cur=evaluate(test,cur)|{}),open('s3b_results.json','w'),default=lambda o:None)
+</pre></details><details><summary>s4_pick_models.py <span class="dim" style="font-weight:400">· 85 lines</span></summary><p class="dim">Scores pick models by probability: each game removed from its own evidence.</p><pre class="code">"""Part 4: pick model scored with a proper probability score. For every team lineup (54 games x 2 teams), predict each hero's chance of being in the five.
+Each game is removed from its own evidence. Compare: league pick rate, team pool with different shrinkage K, and the ban-substitution shift."""
+import json, numpy as np, pandas as pd
+rng=np.random.default_rng(3)
+R='research_notes/MLBB draft simulator/'; N='research_notes/BTR vs TLID Season 18 drafts/'
+sb=pd.read_csv(R+'game_scoreboards.csv'); pools=pd.read_csv(R+'player_hero_pools.csv'); pools=pools[pools.season=='S18']
+hs=pd.read_csv(R+'hero_stats_id_s18.csv'); dr=pd.read_csv(N+'btr_tlid_drafts_v2.csv'); roles=pd.read_csv(R+'hero_roles.csv')
+heroes=sorted(set(hs.hero)|set(pools.hero)|set(sb.hero)); H=len(heroes); hi={h:i for i,h in enumerate(heroes)}
+lp=np.zeros(H); 
+for r in hs.itertuples(): lp[hi[r.hero]]=r.picks
+nL=lp.sum()/10
+laneof={}
+for r in roles.itertuples():
+    if isinstance(r.lanes,str) and 'UNKNOWN' not in r.lanes and 'low' not in str(r.confidence).lower(): laneof[r.hero]=[x.replace('?','').strip() for x in r.lanes.split('|')]
+bans={}
+for gid,x in dr[dr.action=='ban'].groupby('game_id'): bans[(str(gid.split('-')[1]),int(x.game_no.iloc[0]))]=set(x.hero)
+teamN={'BTR':53,'TLID':46}
+inst=[]
+for (mid,gno),x in sb.groupby(['match_id','game_no']):
+    for team,y in x.groupby('team'):
+        if team not in teamN: continue
+        inst.append(dict(key=(str(mid),int(gno)),team=team,five=[(r.player,r.hero) for r in y.itertuples()],banned=bans.get((str(mid),int(gno)))))
+print('lineups',len(inst),'| with known bans',sum(i['banned'] is not None for i in inst))
+P=pools.copy()
+def loo_probs(I,K,shift,lanew=0.35):
+    team=I['team']; five={h for _,h in I['five']}
+    cnt=np.zeros(H); byP={}
+    for r in P[P.team==team].itertuples():
+        g=r.games - (1 if (r.player,r.hero) in set(I['five']) else 0)
+        cnt[hi[r.hero]]+=g; byP.setdefault(r.player,{})[r.hero]=g
+    L=lp.copy()
+    for h in five: L[hi[h]]-=1
+    pi=L/(2*(nL-1)); N=teamN[team]-1
+    rate=(cnt+K*pi)/(N+K)
+    if shift&gt;0 and I['banned']:
+        add=np.zeros(H)
+        for b in I['banned']:
+            if b not in hi: continue
+            mass=rate[hi[b]]*shift
+            if mass&lt;=0.002: continue
+            sc=np.zeros(H); users=[(pl,d[b]) for pl,d in byP.items() if d.get(b,0)&gt;0]; tg=sum(g for _,g in users)
+            for pl,g in users:
+                oth={h:v for h,v in byP[pl].items() if h!=b and h not in I['banned'] and v&gt;0}; tot=sum(oth.values())
+                for h,v in oth.items(): sc[hi[h]]+=(g/tg)*(v/tot)
+            bl=laneof.get(b)
+            if bl:
+                mates=[h for h in heroes if h!=b and h not in I['banned'] and laneof.get(h) and set(laneof[h])&amp;set(bl)]
+                tr=sum(rate[hi[h]] for h in mates)
+                for h in mates: sc[hi[h]]+=lanew*rate[hi[h]]/(tr or 1)
+            if sc.sum()&gt;0: add+=mass*sc/sc.sum()
+        rate=rate+add
+    if I['banned']:
+        for b in I['banned']:
+            if b in hi: rate[hi[b]]=0
+    return np.clip(rate,1e-4,0.95), five
+def score(K,shift,subset=None):
+    ll=[];br=[];h10=[]
+    for I in inst:
+        if subset=='banned' and I['banned'] is None: continue
+        rate,five=loo_probs(I,K,shift)
+        y=np.zeros(H); 
+        for h in five: y[hi[h]]=1
+        ok=np.ones(H,bool)
+        if I['banned']:
+            for b in I['banned']:
+                if b in hi: ok[hi[b]]=False
+        r=rate[ok]; yy=y[ok]
+        ll.append(-np.mean(yy*np.log(r)+(1-yy)*np.log(1-r))); br.append(np.mean((r-yy)**2))
+        top=np.argsort(-rate)[:10]; h10.append(sum(y[t] for t in top))
+    return np.array(ll),np.array(br),np.array(h10)
+print('\nonly lineups with known bans (n=%d):'%sum(i['banned'] is not None for i in inst))
+print('variant'.ljust(44),'log-loss  Brier  real picks in top 10 (of 5)')
+res={}
+base=None
+for nm,K,sh in [('league pick rate only (K=very large)',1e9,0),('team pool, K=3',3,0),('team pool, K=10 (current app)',10,0),('team pool, K=25',25,0),('team pool, K=60',60,0),('K=10 + ban shift 0.7 (current app)',10,.7),('K=10 + ban shift 1.0',10,1.0),('K=25 + ban shift 0.7',25,.7)]:
+    ll,br,h=score(K,sh,'banned'); res[nm]=dict(ll=float(ll.mean()),brier=float(br.mean()),top10=float(h.mean()))
+    if base is None: base=ll
+    print(nm.ljust(43),f"{ll.mean():.4f}  {br.mean():.5f}  {h.mean():.2f}")
+a=score(10,0,'banned')[0]; b=score(10,.7,'banned')[0]; d=a-b
+bs=[d[rng.integers(0,len(d),len(d))].mean() for _ in range(4000)]
+print('\nlog-loss gain from the ban shift (K=10): %+.5f, 95%% [%+.5f, %+.5f]  (positive = shift helps)'%(d.mean(),*np.percentile(bs,[2.5,97.5])))
+l0=score(1e9,0,'banned')[0]; l1=score(10,0,'banned')[0]; d2=l0-l1; bs2=[d2[rng.integers(0,len(d2),len(d2))].mean() for _ in range(4000)]
+print('log-loss gain of team pool (K=10) over league-only: %+.5f, 95%% [%+.5f, %+.5f]'%(d2.mean(),*np.percentile(bs2,[2.5,97.5])))
+json.dump(res,open('s4_results.json','w'),indent=1)
+</pre></details><details><summary>s5_logistic_winmodel.py <span class="dim" style="font-weight:400">· 38 lines</span></summary><p class="dim">Logistic regression (cross-entropy plus L2, exact gradient) for the win model; each series tested by a model that never saw it.</p><pre class="code">"""Logistic regression (BCE + L2, exact gradient) for the simulator's win model, on the 54 real games with lineups.
+Leave-one-series-out test: every series is predicted by a model that never saw it."""
+import json, sys
+import numpy as np
+sys.path.insert(0, "mlbb_engine")
+from mlbb_draft.logistic import LogisticL2
+from scipy.special import expit
+
+rows = json.load(open("tool2/reg_rows.json"))
+F = ["team", "hero", "comp", "style"]
+X = np.array([[r[f] for f in F] for r in rows]); y = np.array([r["y"] for r in rows], float)
+series = np.array([r["series"] for r in rows])
+ll = lambda y, p: float(-np.mean(y * np.log(np.clip(p, 1e-9, 1)) + (1 - y) * np.log(np.clip(1 - p, 1e-9, 1))))
+W = np.array([0.8, 6.0, 0.02, 0.12]); p_cur = np.clip(expit(0.4 * X @ W), 0.35, 0.65)
+print(f"games {len(y)}, series {len(set(series))}, first-listed team won {y.mean():.2f}")
+print(f"coin flip          log-loss {np.log(2):.4f}  accuracy 50%")
+print(f"current app model  log-loss {ll(y, p_cur):.4f}  accuracy {np.mean((p_cur &gt; .5) == y):.1%}  (weights were set using these games)")
+out = {"n": len(y), "coin": float(np.log(2)), "current": {"ll": ll(y, p_cur), "acc": float(np.mean((p_cur &gt; .5) == y))}, "fits": []}
+def mirror(X, y): return np.vstack([X, -X]), np.concatenate([y, 1 - y])   # which team is listed first carries no meaning
+sd = X.std(axis=0)
+for cols, name in [([0, 1, 2, 3], "all four"), ([0], "team record only"), ([1, 2], "hero + composition")]:
+    for l2 in [1.0, 10.0, 100.0]:
+        p = np.zeros(len(y))
+        for s in set(series):
+            te = series == s; Xm, ym = mirror(X[~te][:, cols] / sd[cols], y[~te])
+            m = LogisticL2(l2=l2).fit(Xm, ym); p[te] = m.predict_proba(X[te][:, cols] / sd[cols])
+        boot = np.random.default_rng(0); us = sorted(set(series)); d = []
+        for _ in range(2000):
+            pick = boot.choice(us, len(us)); idx = np.concatenate([np.where(series == s)[0] for s in pick])
+            d.append(ll(y[idx], p[idx]) - np.log(2))
+        lo, hi = np.percentile(d, [2.5, 97.5])
+        print(f"logistic {name:20} L2 {l2:5g}  log-loss {ll(y, p):.4f}  accuracy {np.mean((p &gt; .5) == y):.1%}  vs coin flip {ll(y, p) - np.log(2):+.4f} (95% {lo:+.3f} to {hi:+.3f})")
+        out["fits"].append({"name": name, "l2": l2, "ll": ll(y, p), "acc": float(np.mean((p &gt; .5) == y)), "lo": float(lo), "hi": float(hi)})
+Xm, ym = mirror(X / sd, y); m = LogisticL2(l2=10.0).fit(Xm, ym)
+print("fitted weights per raw unit (all games, L2 10):", dict(zip(F, np.round(m.coef_ / (sd * m._scale), 4))), "| app:", dict(zip(F, 0.4 * W)))
+out["weights"] = dict(zip(F, (m.coef_ / (sd * m._scale)).tolist()))
+json.dump(out, open("tool2/regression_results.json", "w"))
+</pre></details><details><summary>s5_phase_shift.py <span class="dim" style="font-weight:400">· 40 lines</span></summary><p class="dim">Do playoff drafts differ from regular-season drafts?</p><pre class="code">"""Do playoff drafts differ from regular-season drafts? Compare hero ban and pick rates for BTR and TLID."""
+import pandas as pd, numpy as np
+from collections import Counter
+N='research_notes/BTR vs TLID Season 18 drafts/'; R='research_notes/MLBB draft simulator/'
+d=pd.read_csv(N+'btr_tlid_drafts_v2.csv',dtype=str); d=d[d.action=='ban']
+d['playoff']=d.stage.str.contains('Playoff',na=False)
+d['team']=d.action_team
+sb=pd.read_csv(R+'game_scoreboards.csv',dtype=str); sb['playoff']=sb.series.str.contains('Playoff',na=False)
+def rates(df,col='hero',teams=('BTR','TLID'),per='game_id'):
+    df=df[df.team.isin(teams)]; games=df.groupby('team')[per].nunique().sum()
+    c=Counter(df[col]); return {h:v/games for h,v in c.items()}, games
+# bans
+reg,gr=rates(d[~d.playoff]); po,gp=rates(d[d.playoff])
+print('ban lists (BTR+TLID): regular season team-games',gr,'| playoffs team-games',gp)
+hs=sorted(set(reg)|set(po)); P=np.array([reg.get(h,0) for h in hs]); Q=np.array([po.get(h,0) for h in hs])
+def jsd(p,q):
+    p=p/p.sum(); q=q/q.sum(); m=.5*(p+q); k=lambda a,b:np.sum(np.where(a&gt;0,a*np.log(a/np.where(b&gt;0,b,1)),0)); return .5*k(p,m)+.5*k(q,m)
+print('Jensen-Shannon divergence reg vs playoff ban rates: %.3f (0 = identical, 0.69 = nothing in common)'%jsd(P,Q))
+# permutation baseline: random split of the same team-games with the same sizes
+rng=np.random.default_rng(1); keys=d[d.team.isin(['BTR','TLID'])].groupby(['game_id','team']).hero.apply(list).reset_index(); n=len(keys); k=gp
+base=[]
+for _ in range(1000):
+    idx=rng.permutation(n); a=Counter(); b=Counter()
+    for i in idx[:k]: a.update(keys.hero.iloc[i])
+    for i in idx[k:]: b.update(keys.hero.iloc[i])
+    A=np.array([a.get(h,0)/k for h in hs]); B=np.array([b.get(h,0)/(n-k) for h in hs]); base.append(jsd(B,A))
+print('same measure for random splits of the same size: mean %.3f, 95th pct %.3f  -&gt; real split %s'%(np.mean(base),np.percentile(base,95),'DIFFERENT (above 95th)' if jsd(P,Q)&gt;np.percentile(base,95) else 'within random noise'))
+diff=sorted(((po.get(h,0)-reg.get(h,0),h) for h in hs),reverse=True)
+print('\nbans MORE in playoffs (share of team-games): ',', '.join(f"{h} {reg.get(h,0)*100:.0f}%-&gt;{po.get(h,0)*100:.0f}%" for v,h in diff[:8]))
+print('bans LESS in playoffs: ',', '.join(f"{h} {reg.get(h,0)*100:.0f}%-&gt;{po.get(h,0)*100:.0f}%" for v,h in diff[-8:]))
+# picks (scoreboards)
+sb=sb[sb.team.isin(['BTR','TLID'])]; sb['gid']=sb.match_id+'|'+sb.game_no
+def prates(df):
+    g=df.groupby('team').gid.nunique().sum(); c=Counter(df.hero); return {h:v/g for h,v in c.items()},g
+pr,gr2=prates(sb[~sb.playoff]); pp,gp2=prates(sb[sb.playoff])
+print('\npicks (BTR+TLID lineups): regular',gr2,'| playoffs',gp2)
+hs2=sorted(set(pr)|set(pp)); d2=sorted(((pp.get(h,0)-pr.get(h,0),h) for h in hs2),reverse=True)
+print('picked MORE in playoffs: ',', '.join(f"{h} {pr.get(h,0)*100:.0f}%-&gt;{pp.get(h,0)*100:.0f}%" for v,h in d2[:8]))
+print('picked LESS in playoffs: ',', '.join(f"{h} {pr.get(h,0)*100:.0f}%-&gt;{pp.get(h,0)*100:.0f}%" for v,h in d2[-8:]))
+</pre></details><h2>Tests of the simulator (Node.js)</h2><div class="sc"><table><thead><tr><th>Program</th><th>What it does</th><th>Data</th><th>Main result</th></tr></thead><tbody><tr><td>bantest_all.js</td><td>Step-by-step ban backtest for all nine teams with the simulator's own engine, including the playoff prior.</td><td>ID Season 18, 198 games</td><td>Top-1 / top-3 / top-5 hit rates and log-score</td></tr><tr><td>daytest.js</td><td>Does the day-based decay (half-life) help?</td><td>Same games</td><td>No measurable gain</td></tr><tr><td>regtest.js</td><td>Does adding PH and MY playoff games to the playoff prior help predict ID playoff bans?</td><td>ID playoffs, PH, MY</td><td>−3.520 → −3.365 → −3.317 log-score</td></tr><tr><td>habtest.js</td><td>How often do teams repeat their bans from the previous game of a series, after a win or a loss?</td><td>ID + MY games</td><td>About 45% after a win, 38% after a loss, 18% by chance</td></tr><tr><td>habfit.js</td><td>Does an extra repeat push improve ban prediction? Fitted on ID, checked on MY.</td><td>ID + MY games</td><td>No real gain; push left at zero</td></tr><tr><td>mytest.js</td><td>Does a team's own MPL MY history beat the MY league average?</td><td>MY Season 18, 105 games</td><td>Top-5 hit rate 48% to 51%</td></tr><tr><td>evalcomp.js</td><td>Tests the composition and win model on 54 games.</td><td class="n">54 games</td><td>Between 30 and 34 of 54 right for every version</td></tr><tr><td>picktest.js</td><td>How many of a team's real five picks sit in its top 10 list?</td><td class="n">62 lineups</td><td>About 1.74 vs 1.73 for league-only</td></tr></tbody></table></div><details><summary>bantest_all.js <span class="dim" style="font-weight:400">· 54 lines</span></summary><p class="dim">Step-by-step ban backtest for all nine teams with the simulator's own engine, including the playoff prior.</p><pre class="code">// All-team step-by-step ban backtest with the simulator engine. Run: node bantest_all.js
+const fs = require('fs');
+global.DraftModel = require('../tool/model.js');
+const S = require('./sim.js'); const M = global.DraftModel;
+const ALL = JSON.parse(fs.readFileSync('allteams/allteams.json'));
+const games = ALL.games, PO = JSON.parse(fs.readFileSync('playoff/playoff_bans.json'));
+const RG = JSON.parse(fs.readFileSync('regions/regions.json'));
+const steps = S.parseOrder(S.DEFAULT_ORDER);
+const rankOf = (list, hero) =&gt; { const i = list.findIndex(x =&gt; x.hero === hero); return i &lt; 0 ? 999 : i + 1; };
+const patch = JSON.parse(fs.readFileSync('patch.json'));
+function run(par0, posWeight, from, to, o) {
+  o = o || {}; const res = { n: 0, h1: 0, h3: 0, h5: 0, ll: 0 };
+  games.forEach((g, idx) =&gt; {
+    if (idx &lt; from || idx &gt;= to) return;
+    if (o.playoffOnly &amp;&amp; g.stage !== 'Playoffs') return;
+    const hist = games.slice(0, idx); const par = Object.assign({}, par0);
+    par.patchDate = patch.date; par.curDate = g.date; par.phaseW = o.noPatch ? 1 : patch.phaseW;
+    if (o.beta) { const gs = PO.ph.slice(); PO.id_all = PO.id_all || null; games.forEach((h, j) =&gt; { if (j &lt; idx &amp;&amp; h.stage === 'Playoffs' &amp;&amp; h.date &lt; g.date) gs.push({ b1: h.bans.blue, b2: h.bans.red }); }); if (o.my) RG.my.forEach(function (h) { if (h.date &lt; g.date) gs.push(h); }); par.extra = M.playoffPrior(gs, o.aggW ? Object.keys(RG.agg).map(function (k) { return RG.agg[k]; }) : null, o.aggW); par.extraBeta = o.beta; if (o.k) par.k = o.k; }
+    const d = S.newDraft(steps, { blue: g.blue, red: g.red }); let pi = 0;
+    while (!S.done(d)) {
+      const st = d.steps[d.idx]; const team = d.teams[st.side];
+      if (st.type === 'pick') { S.apply(d, 'PICK' + (pi++)); continue; }
+      const j = d.bans[st.side].length, actual = g.bans[st.side][j];
+      const prior = hist.filter(x =&gt; M.teamSide(x, team)).length;
+      if (prior &gt;= 8) {
+        const list = S.predictBan(d, { history: hist, par, posWeight, nLeagueGames: 200 });
+        const r = rankOf(list, actual); const x = list.find(z =&gt; z.hero === actual);
+        res.n++; if (r &lt;= 1) res.h1++; if (r &lt;= 3) res.h3++; if (r &lt;= 5) res.h5++; res.ll += Math.log(Math.max(x ? x.p : 0, 1e-6));
+      }
+      S.apply(d, actual);
+    }
+  });
+  return res;
+}
+module.exports = { run, games };
+if (require.main === module) {
+  const f = (r, k) =&gt; (100 * r[k] / r.n).toFixed(1) + '%';
+  const show = (nm, r) =&gt; console.log(nm.padEnd(46), 'steps', r.n, '| log-prob', (r.ll / r.n).toFixed(3), '| hit@1', f(r, 'h1'), 'hit@3', f(r, 'h3'), 'hit@5', f(r, 'h5'));
+  const CUT = Math.floor(0.6 * games.length);
+  const t0 = Date.now(); const cur = { decay: 0.7, sideW: 0.6, h2hW: 4, k: 4 };
+  show('current settings, all games', run(cur, 0.35, 0, 999)); console.log('one full run took', Date.now() - t0, 'ms');
+  const grid = []; [0.95, 0.85, 0.7].forEach(dc =&gt; [2, 4, 8, 16].forEach(k =&gt; [1.5, 4].forEach(h =&gt; [0.2, 0.35, 0.5].forEach(pw =&gt; grid.push({ par: { decay: dc, sideW: 0.6, h2hW: h, k }, pw })))));
+  const scored = grid.map(c =&gt; { const r = run(c.par, c.pw, 0, CUT); return { c, ll: r.ll / r.n, h5: r.h5 / r.n }; }).sort((a, b) =&gt; b.ll - a.ll);
+  console.log('best 4 on EARLIER 60% (log-prob):'); scored.slice(0, 4).forEach(x =&gt; console.log(' ', JSON.stringify(x.c), x.ll.toFixed(3), 'hit@5', (100 * x.h5).toFixed(0) + '%'));
+  const best = scored[0].c;
+  console.log('\nLATER 40% (looked at once):');
+  const A = run(cur, 0.35, CUT, 999), B = run(best.par, best.pw, CUT, 999);
+  show('current app settings', A); show('tuned on earlier games', B);
+  const P = run(best.par, best.pw, CUT, 999, { beta: 0.5, k: Math.max(best.par.k, 8) }); show('tuned + playoff prior (beta .5)', P);
+  const Q = run(best.par, best.pw, 0, 999, { playoffOnly: true }), Q2 = run(best.par, best.pw, 0, 999, { playoffOnly: true, beta: 0.5, k: Math.max(best.par.k, 8) });
+  console.log('\nPLAYOFF games only (all teams, walk-forward):'); show('tuned, no playoff prior', Q); show('tuned + playoff prior', Q2);
+  fs.writeFileSync('bantest_all_results.json', JSON.stringify({ best, later: { cur: A, tuned: B, tunedPlayoff: P }, playoff: { off: Q, on: Q2 } }));
+}
+</pre></details><details><summary>daytest.js <span class="dim" style="font-weight:400">· 11 lines</span></summary><p class="dim">Does the day-based decay (half-life) help?</p><pre class="code">const B = require('./bantest_all.js'); const games = B.games; const CUT = Math.floor(0.6 * games.length);
+const f = (r, k) =&gt; (100 * r[k] / r.n).toFixed(1) + '%';
+const out = [];
+[0, 180, 90, 45, 21].forEach(hl =&gt; { [0.7, 0.85, 1].forEach(dc =&gt; {
+  const par = { decay: dc, sideW: 0.6, h2hW: 4, k: 4, lambda: hl ? Math.LN2 / hl : 0 };
+  const a = B.run(par, 0.35, 0, CUT, { beta: 0.5, k: 8 }), b = B.run(par, 0.35, CUT, 999, { beta: 0.5, k: 8 });
+  out.push({ hl, dc, early: a.ll / a.n, later: b.ll / b.n, h5: b.h5 / b.n, n: b.n });
+  console.log('half-life', String(hl || 'off').padEnd(4), 'game-decay', dc, '| earlier', (a.ll / a.n).toFixed(4), '| later', (b.ll / b.n).toFixed(4), 'hit@5', f(b, 'h5'));
+}); });
+require('fs').writeFileSync('daytest_results.json', JSON.stringify(out));
+</pre></details><details><summary>regtest.js <span class="dim" style="font-weight:400">· 8 lines</span></summary><p class="dim">Does adding PH and MY playoff games to the playoff prior help predict ID playoff bans?</p><pre class="code">const B = require('./bantest_all.js'); const par = { decay: 0.7, sideW: 0.6, h2hW: 4, k: 4, lambda: Math.LN2 / 45 };
+const f = (r, k) =&gt; (100 * r[k] / r.n).toFixed(1) + '%'; const out = {};
+[['no playoff prior', null], ['PH + ID playoffs (before)', { beta: 0.5, k: 8 }], ['PH + ID + MY playoffs (now)', { beta: 0.5, k: 8, my: 1 }]].forEach(([nm, o]) =&gt; {
+  const r = B.run(par, 0.35, 0, 999, Object.assign({ playoffOnly: true }, o || {})); out[nm] = { n: r.n, ll: r.ll / r.n, h5: r.h5 / r.n, h1: r.h1 / r.n };
+  console.log(nm.padEnd(34), 'steps', r.n, 'log-prob', (r.ll / r.n).toFixed(4), 'hit@1', f(r, 'h1'), 'hit@5', f(r, 'h5'));
+});
+require('fs').writeFileSync('regtest_results.json', JSON.stringify(out));
+</pre></details><details><summary>habtest.js <span class="dim" style="font-weight:400">· 28 lines</span></summary><p class="dim">How often do teams repeat their bans from the previous game of a series, after a win or a loss?</p><pre class="code">// Do teams repeat their own bans from the previous game of the same series? Split by whether they won that game. Run: node habtest.js
+const fs = require('fs');
+const ALL = JSON.parse(fs.readFileSync('allteams/allteams.json'));
+const myRows = fs.readFileSync('regions/my_all.txt', 'utf8').split('\n').filter(l =&gt; l &amp;&amp; l[0] !== '#').map(l =&gt; l.split('|'));
+function seriesOf(games) { // games: [{series,t1,l1,t2,l2,winner}] in order -&gt; flat team-game rows with previous-game link
+  const rows = [];
+  games.forEach((g, i) =&gt; { [[g.t1, g.l1, g.t2, g.l2], [g.t2, g.l2, g.t1, g.l1]].forEach(([t, l, o, ol]) =&gt; rows.push({ k: g.sid, t, l, o, ol, won: g.winner === t, i, lg: g.lg })); });
+  return rows;
+}
+const idG = ALL.games.map(g =&gt; ({ sid: g.date + g.series, t1: g.blue, l1: g.bans.blue, t2: g.red, l2: g.bans.red, winner: g.winner, lg: 'ID' }));
+let sid = 0, last = ''; const myG = myRows.map(r =&gt; { const key = r[0] + [r[1], r[3]].sort().join('/'); if (key !== last) { sid++; last = key; } return { sid: 'MY' + sid, t1: r[1], l1: r[2].split(','), t2: r[3], l2: r[4].split(','), winner: r[5], lg: 'MY' }; });
+function analyse(games, nm) {
+  const rows = seriesOf(games), bySid = {}; rows.forEach(r =&gt; { (bySid[r.k + '|' + r.t] = bySid[r.k + '|' + r.t] || []).push(r); });
+  const ov = (a, b) =&gt; a.filter(x =&gt; b.includes(x)).length / 5;
+  const adj = { win: [], loss: [] }, base = [], byTeam = {}; rows.forEach(r =&gt; { (byTeam[r.t] = byTeam[r.t] || []).push(r); });
+  Object.values(bySid).forEach(s =&gt; { for (let n = 1; n &lt; s.length; n++) { const p = s[n - 1], c = s[n]; const o = ov(c.l, p.l); (p.won ? adj.win : adj.loss).push(o);
+    // baseline: same team's lists from OTHER series
+    const others = byTeam[c.t].filter(x =&gt; x.k !== c.k); if (others.length) base.push({ won: p.won, b: others.reduce((a, x) =&gt; a + ov(c.l, x.l), 0) / others.length, o }); } });
+  const mean = a =&gt; a.reduce((x, y) =&gt; x + y, 0) / (a.length || 1);
+  const bw = base.filter(x =&gt; x.won), bl = base.filter(x =&gt; !x.won);
+  const diff = (b) =&gt; b.map(x =&gt; x.o - x.b);
+  const boot = (d) =&gt; { const m = []; for (let i = 0; i &lt; 2000; i++) { let s = 0; for (let j = 0; j &lt; d.length; j++) s += d[Math.floor(Math.random() * d.length)]; m.push(s / d.length); } m.sort((a, b) =&gt; a - b); return [m[50], m[1949]]; };
+  const out = { n_after_win: bw.length, n_after_loss: bl.length, overlap_after_win: mean(bw.map(x =&gt; x.o)), baseline_win: mean(bw.map(x =&gt; x.b)), excess_win: mean(diff(bw)), ci_win: boot(diff(bw)), overlap_after_loss: mean(bl.map(x =&gt; x.o)), baseline_loss: mean(bl.map(x =&gt; x.b)), excess_loss: mean(diff(bl)), ci_loss: boot(diff(bl)) };
+  const dd = bw.length &amp;&amp; bl.length ? mean(diff(bw)) - mean(diff(bl)) : 0; out.win_minus_loss = dd; console.log(nm, JSON.stringify(out, (k, v) =&gt; typeof v === 'number' ? Math.round(v * 1000) / 1000 : v)); return out;
+}
+const res = { ID: analyse(idG, 'ID S18'), MY: analyse(myG, 'MY S18'), ALL: analyse(idG.concat(myG), 'ID+MY') };
+fs.writeFileSync('habtest_results.json', JSON.stringify(res));
+</pre></details><details><summary>habfit.js <span class="dim" style="font-weight:400">· 41 lines</span></summary><p class="dim">Does an extra repeat push improve ban prediction? Fitted on ID, checked on MY.</p><pre class="code">// Does a "repeat last game's bans" habit improve walk-forward ban prediction? Fit on ID S18, check on MPL MY S18 (a different league). Run: node habfit.js
+const fs = require('fs'); global.DraftModel = require('../tool/model.js');
+const S = require('./sim.js'), M = global.DraftModel;
+const ALL = JSON.parse(fs.readFileSync('allteams/allteams.json'));
+const myRows = fs.readFileSync('regions/my_all.txt', 'utf8').split('\n').filter(l =&gt; l &amp;&amp; l[0] !== '#').map(l =&gt; l.split('|'));
+const MY = myRows.map((r, i) =&gt; ({ id: 'MY-' + i, date: r[0], blue: r[1], red: r[3], winner: r[5], bans: { blue: r[2].split(','), red: r[4].split(',') } })).reverse().reverse();
+// my file is newest-first: sort oldest-first by date, keeping the file order inside one day (series are already in game order)
+const MYs = MY.map((g, i) =&gt; ({ g, i })).sort((a, b) =&gt; (a.g.date &lt; b.g.date ? -1 : a.g.date &gt; b.g.date ? 1 : a.i - b.i)).map(x =&gt; x.g);
+const steps = S.parseOrder(S.DEFAULT_ORDER); const patch = JSON.parse(fs.readFileSync('patch.json'));
+function run(games, par0, habit, opt) {
+  opt = opt || {}; const res = { n: 0, ll: 0, h5: 0, nRep: 0, llRep: 0 };
+  games.forEach((g, idx) =&gt; {
+    const hist = games.slice(0, idx); const par = Object.assign({}, par0); par.curDate = g.date; if (opt.patch) { par.patchDate = patch.date; par.phaseW = patch.phaseW; } else par.phaseW = 1;
+    const d = S.newDraft(steps, { blue: g.blue, red: g.red }); let pi = 0;
+    const isRep = hist.some(x =&gt; x.date === g.date &amp;&amp; ((x.blue === g.blue &amp;&amp; x.red === g.red) || (x.blue === g.red &amp;&amp; x.red === g.blue)));
+    while (!S.done(d)) {
+      const st = d.steps[d.idx]; const team = d.teams[st.side];
+      if (st.type === 'pick') { S.apply(d, 'PICK' + (pi++)); continue; }
+      const j = d.bans[st.side].length, actual = g.bans[st.side][j];
+      if (hist.filter(x =&gt; M.teamSide(x, team)).length &gt;= 8) {
+        const list = S.predictBan(d, { history: hist, par, posWeight: 0.35, nLeagueGames: 200, habit, laneCheck: false });
+        const x = list.find(z =&gt; z.hero === actual), r = list.findIndex(z =&gt; z.hero === actual) + 1, lp = Math.log(Math.max(x ? x.p : 0, 1e-6));
+        res.n++; res.ll += lp; if (r &gt; 0 &amp;&amp; r &lt;= 5) res.h5++; if (isRep) { res.nRep++; res.llRep += lp; }
+      }
+      S.apply(d, actual);
+    }
+  });
+  return res;
+}
+const par = { decay: 0.7, sideW: 0.6, h2hW: 4, k: 4, lambda: Math.LN2 / 45 };
+const out = { grid: [], note: 'log-prob per ban step; "rep" = steps in games 2+ of a series (the only steps the habit changes)' };
+const fmt = r =&gt; ({ n: r.n, ll: r.ll / r.n, nRep: r.nRep, llRep: r.llRep / (r.nRep || 1), h5: r.h5 / r.n });
+const base = { id: fmt(run(ALL.games, par, null, { patch: true })), my: fmt(run(MYs, par, null)) };
+console.log('no habit  ID', JSON.stringify(base.id), '\n          MY', JSON.stringify(base.my));
+[[0, 0], [0.1, 0], [0.15, -0.15], [0.1, -0.1], [0, -0.15], [0.3, 0.3], [0.6, 0.6], [1, 0.5], [1, 1]].forEach(([rw, rl]) =&gt; {
+  const h = { repeatWin: rw, repeatLoss: rl }; const a = fmt(run(ALL.games, par, h, { patch: true })), b = fmt(run(MYs, par, h));
+  out.grid.push({ rw, rl, id: a, my: b });
+  console.log('win', rw, 'loss', rl, '| ID rep-steps', a.llRep.toFixed(3), 'vs', base.id.llRep.toFixed(3), '| MY rep-steps', b.llRep.toFixed(3), 'vs', base.my.llRep.toFixed(3));
+});
+out.base = base; fs.writeFileSync('habfit_results.json', JSON.stringify(out));
+</pre></details><details><summary>mytest.js <span class="dim" style="font-weight:400">· 22 lines</span></summary><p class="dim">Does a team's own MPL MY history beat the MY league average?</p><pre class="code">// Does a team's own MPL MY ban history help predict its MY bans, compared with league-wide MY bans only? Run: node mytest.js
+const fs = require('fs'); const src = fs.readFileSync('habfit.js', 'utf8');
+global.DraftModel = require('../tool/model.js'); const S = require('./sim.js'), M = global.DraftModel;
+const myRows = fs.readFileSync('regions/my_all.txt', 'utf8').split('\n').filter(l =&gt; l &amp;&amp; l[0] !== '#').map(l =&gt; l.split('|'));
+const MY = myRows.map((r, i) =&gt; ({ date: r[0], blue: r[1], red: r[3], winner: r[5], bans: { blue: r[2].split(','), red: r[4].split(',') }, i })).sort((a, b) =&gt; (a.date &lt; b.date ? -1 : a.date &gt; b.date ? 1 : a.i - b.i));
+const steps = S.parseOrder(S.DEFAULT_ORDER);
+function run(par0, from, only) {
+  const res = { n: 0, ll: 0, h1: 0, h5: 0 };
+  MY.forEach((g, idx) =&gt; { if (idx &lt; from) return; if (only &amp;&amp; !only(g)) return;
+    const hist = MY.slice(0, idx), par = Object.assign({}, par0, { curDate: g.date, phaseW: 1 }); const d = S.newDraft(steps, { blue: g.blue, red: g.red }); let pi = 0;
+    while (!S.done(d)) { const st = d.steps[d.idx], team = d.teams[st.side]; if (st.type === 'pick') { S.apply(d, 'PICK' + (pi++)); continue; }
+      const j = d.bans[st.side].length, actual = g.bans[st.side][j];
+      if (hist.filter(x =&gt; M.teamSide(x, team)).length &gt;= 6) { const list = S.predictBan(d, { history: hist, par, posWeight: 0.35, nLeagueGames: 100, laneCheck: false }); const r = list.findIndex(z =&gt; z.hero === actual) + 1, x = list.find(z =&gt; z.hero === actual); res.n++; res.ll += Math.log(Math.max(x ? x.p : 0, 1e-6)); if (r === 1) res.h1++; if (r &gt; 0 &amp;&amp; r &lt;= 5) res.h5++; }
+      S.apply(d, actual); } });
+  return res;
+}
+const base = { decay: 0.7, sideW: 0.6, h2hW: 4, lambda: Math.LN2 / 45 }; const out = {};
+[['league only (k = 1,000,000)', 1e6], ['team + league (k = 4)', 4], ['team + league (k = 16)', 16]].forEach(([nm, k]) =&gt; { const r = run(Object.assign({}, base, { k }), 30); out[nm] = { n: r.n, ll: r.ll / r.n, h1: r.h1 / r.n, h5: r.h5 / r.n }; console.log(nm.padEnd(30), JSON.stringify(out[nm])); });
+const pm = ['SRG', 'TR']; const r2 = run(Object.assign({}, base, { k: 4 }), 30, g =&gt; pm.includes(g.blue) || pm.includes(g.red)), r1 = run(Object.assign({}, base, { k: 1e6 }), 30, g =&gt; pm.includes(g.blue) || pm.includes(g.red));
+out.m8 = { league: { n: r1.n, ll: r1.ll / r1.n, h5: r1.h5 / r1.n }, team: { n: r2.n, ll: r2.ll / r2.n, h5: r2.h5 / r2.n } }; console.log('games with SRG or TR (M8 teams):', JSON.stringify(out.m8));
+fs.writeFileSync('mytest_results.json', JSON.stringify(out));
+</pre></details><details><summary>evalcomp.js <span class="dim" style="font-weight:400">· 111 lines</span></summary><p class="dim">Tests the composition and win model on 54 games.</p><pre class="code">// Test the composition rating / win model on the 54 Season 18 games with full scoreboards.
+// Hero win rates and team records are computed leaving the tested game out. Run: node evalcomp.js
+const fs = require('fs');
+const C = require('./comp.js');
+const R = 'research_notes/MLBB draft simulator/';
+
+function parseCSV(t) {
+  const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i &lt; t.length; i++) {
+    const c = t[i];
+    if (q) { if (c === '"') { if (t[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+    else if (c === '"') q = true; else if (c === ',') { row.push(f); f = ''; }
+    else if (c === '\n') { row.push(f); rows.push(row); row = []; f = ''; } else if (c !== '\r') f += c;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  const h = rows.shift();
+  return rows.filter(r =&gt; r.length === h.length).map(r =&gt; Object.fromEntries(h.map((k, i) =&gt; [k, r[i].trim()])));
+}
+const read = p =&gt; fs.existsSync(R + p) ? parseCSV(fs.readFileSync(R + p, 'utf8')) : [];
+
+const roles = {}; read('hero_roles.csv').forEach(r =&gt; { roles[r.hero] = { role: r.role }; });
+const traits = {}; read('hero_traits.csv').forEach(r =&gt; {
+  if (!r.hero) return;
+  const u = v =&gt; (/UNKNOWN/i.test(v) ? '' : v);
+  traits[r.hero] = { tags: u(r.specialty_tags) ? r.specialty_tags.split('|').map(x =&gt; x.trim()) : [], dmg: u(r.damage_type), spike: u(r.power_spike), front: u(r.frontline), cc: u(r.hard_cc), engage: u(r.engage), dps: u(r.sustained_dps), wave: u(r.waveclear_push) };
+});
+const OBJ = require('fs').existsSync('research_notes/MLBB patch and matchup knowledge/hero_objective_traits.csv') ? parseCSV(require('fs').readFileSync('research_notes/MLBB patch and matchup knowledge/hero_objective_traits.csv', 'utf8')) : [];
+const num = v =&gt; (/^[0-3]$/.test((v || '').trim()) ? (v || '').trim() : '');
+OBJ.forEach(r =&gt; { if (!r.hero) return; const t = traits[r.hero] || (traits[r.hero] = { tags: [], dmg: '', spike: '', front: '', cc: '', engage: '', dps: '', wave: '' }); t.siege = num(r.turret_push); t.obj = num(r.early_objective); });
+console.log('traits rows:', Object.keys(traits).length, '| roles rows:', Object.keys(roles).length);
+
+const league = {}; read('hero_stats_id_s18.csv').forEach(r =&gt; { league[r.hero] = { picks: +r.picks, wins: Math.round(+r.picks * +r.win_rate / 100) }; });
+const pools = {}; read('player_hero_pools.csv').forEach(r =&gt; { if (r.season !== 'S18') return; const k = r.team + '|' + r.hero; const o = pools[k] || (pools[k] = { g: 0, w: 0 }); o.g += +r.games; o.w += +r.wins; });
+const per = {}; read('player_hero_pools.csv').forEach(r =&gt; { if (r.season !== 'S18') return; const k = r.team + '|' + r.player; const o = per[k] || (per[k] = { g: 0, w: 0 }); o.g += +r.games; o.w += +r.wins; });
+const teamRec = {}; Object.keys(per).forEach(k =&gt; { const t = k.split('|')[0], o = teamRec[t] || (teamRec[t] = { g: 0, w: 0 }); if (per[k].g &gt; o.g) { o.g = per[k].g; o.w = per[k].w; } });
+
+// games from scoreboards
+const rows = read('game_scoreboards.csv'), G = {};
+rows.forEach(r =&gt; { const k = r.match_id + '-' + r.game_no; (G[k] = G[k] || { id: k, date: r.date, dur: r.duration, teams: {} }); (G[k].teams[r.team] = G[k].teams[r.team] || { team: r.team, win: r.team_result === 'W', heroes: [] }).heroes.push(r.hero); });
+const games = Object.values(G).filter(g =&gt; Object.keys(g.teams).length === 2);
+console.log('games:', games.length);
+const secs = d =&gt; { const p = (d || '0:0').split(':'); return (+p[0]) * 60 + (+p[1] || 0); };
+
+function side(g, name, other, opt) {
+  const t = g.teams[name], win = t.win ? 1 : 0;
+  // heroes' evidence leaving this game out
+  let ev = 0;
+  t.heroes.forEach(h =&gt; {
+    const L = league[h] || { picks: 0, wins: 0 };
+    const lp = L.picks - 1, lw = L.wins - win;
+    const lwr = (lw + 10) / (lp + 20);
+    const P = pools[name + '|' + h];
+    let v = lwr;
+    if (P) { const gg = P.g - 1, ww = P.w - win; v = (ww + 5 * lwr) / (gg + 5); }
+    ev += v - 0.5;
+  });
+  ev /= t.heroes.length;
+  const rec = teamRec[name]; let base = 0.5;
+  if (rec) base = (rec.w - win + 5) / (rec.g - 1 + 10);
+  const fs = t.heroes.map(h =&gt; C.feats(traits[h] || null, roles[h] || null, h));
+  return { profile: C.profile(fs), base: base, heroEv: ev, known: rec ? 1 : 0 };
+}
+
+const out = { n: 0, correct: {}, brier: {} };
+const variants = { 'team record only': ['team'], 'hero evidence only': ['hero'], 'composition only': ['comp'], 'composition + style': ['comp', 'style'], 'hero + composition': ['hero', 'comp', 'style'], 'everything': null };
+Object.keys(variants).forEach(k =&gt; { out.correct[k] = 0; out.brier[k] = 0; });
+const detail = [];
+games.forEach(g =&gt; {
+  const names = Object.keys(g.teams), A = names[0], B = names[1];
+  const a = side(g, A, B), b = side(g, B, A), y = g.teams[A].win ? 1 : 0;
+  out.n++;
+  Object.keys(variants).forEach(k =&gt; {
+    const r = C.winProb(a, b, { only: variants[k] || undefined });
+    const p = variants[k] ? r.p : r.raw;
+    if ((p &gt; 0.5 ? 1 : 0) === y || (p === 0.5)) out.correct[k] += (p === 0.5 ? 0.5 : 1);
+    out.brier[k] += (p - y) * (p - y);
+  });
+  detail.push({ id: g.id, A, B, y, compDiff: a.profile.rating - b.profile.rating, dur: secs(g.dur) });
+});
+console.log('--- accuracy (share of games where the favoured side won), n =', out.n);
+Object.keys(variants).forEach(k =&gt; console.log(k.padEnd(24), (100 * out.correct[k] / out.n).toFixed(1) + '%', ' Brier', (out.brier[k] / out.n).toFixed(3)));
+console.log('coin flip Brier = 0.250');
+// short vs long games, composition style
+const early = detail.filter(d =&gt; d.dur &lt; 15 * 60), late = detail.filter(d =&gt; d.dur &gt;= 15 * 60);
+const acc = arr =&gt; arr.length ? (100 * arr.filter(d =&gt; (d.compDiff &gt; 0 ? 1 : 0) === d.y).length / arr.length).toFixed(0) + '% of ' + arr.length : 'n/a';
+console.log('composition rating picks the winner: short games (&lt;15 min):', acc(early), '| long games:', acc(late));
+fs.writeFileSync('tool2/evalcomp_results.json', JSON.stringify({ n: out.n, correct: out.correct, brier: out.brier, traitsRows: Object.keys(traits).length, short: acc(early), long: acc(late) }, null, 1));
+
+// How sure should the model sound? Scan a single shrink factor (temp) for the full model.
+console.log('--- shrink factor scan for the full model (lower = less confident)');
+let bestT = null;
+[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.0].forEach(T =&gt; {
+  C.W.temp = T; let br = 0, ok = 0, n = 0;
+  games.forEach(g =&gt; { const nm = Object.keys(g.teams), a = side(g, nm[0], nm[1]), b = side(g, nm[1], nm[0]), y = g.teams[nm[0]].win ? 1 : 0; const p = C.winProb(a, b, {}).p; br += (p - y) * (p - y); ok += ((p &gt; 0.5 ? 1 : 0) === y) ? 1 : 0; n++; });
+  console.log('temp', T, 'Brier', (br / n).toFixed(4), 'accuracy', (100 * ok / n).toFixed(1) + '%');
+  if (!bestT || br / n &lt; bestT.br) bestT = { T, br: br / n };
+});
+console.log('best temp by Brier:', bestT.T, bestT.br.toFixed(4));
+C.W.temp = 0.4;
+const r = JSON.parse(fs.readFileSync('tool2/evalcomp_results.json', 'utf8')); r.bestTemp = bestT.T; r.bestBrier = bestT.br; fs.writeFileSync('tool2/evalcomp_results.json', JSON.stringify(r, null, 1));
+
+// Reference spread of composition ratings across all real lineups (used to centre the displayed rating).
+const rr = []; games.forEach(g =&gt; { Object.keys(g.teams).forEach(n =&gt; { const t = g.teams[n]; rr.push(C.profile(t.heroes.map(h =&gt; C.feats(traits[h] || null, roles[h] || null, h))).raw); }); });
+const mean = rr.reduce((a, b) =&gt; a + b, 0) / rr.length, sd = Math.sqrt(rr.reduce((a, b) =&gt; a + (b - mean) * (b - mean), 0) / rr.length);
+console.log('raw rating over', rr.length, 'real lineups: mean', mean.toFixed(1), 'sd', sd.toFixed(1), 'min', Math.min(...rr).toFixed(1), 'max', Math.max(...rr).toFixed(1));
+const keys = ['front', 'cc', 'engage', 'dps', 'wave', 'burst', 'catchx', 'peel'], acc2 = {}; keys.forEach(k =&gt; acc2[k] = []);
+const pc = []; games.forEach(g =&gt; Object.keys(g.teams).forEach(n =&gt; { const P = C.profile(g.teams[n].heroes.map(h =&gt; C.feats(traits[h] || null, roles[h] || null, h))); keys.forEach(k =&gt; acc2[k].push(P.sums[k])); pc.push(P.combos.reduce((a, c) =&gt; a + c.v, 0)); }));
+const q = (a, p) =&gt; { const b = a.slice().sort((x, y) =&gt; x - y); return b[Math.floor(p * (b.length - 1))].toFixed(2); };
+keys.forEach(k =&gt; console.log(k.padEnd(7), 'p10', q(acc2[k], .1), 'p50', q(acc2[k], .5), 'p90', q(acc2[k], .9)));
+console.log('combos total p10', q(pc, .1), 'p50', q(pc, .5), 'p90', q(pc, .9));
+</pre></details><details><summary>picktest.js <span class="dim" style="font-weight:400">· 35 lines</span></summary><p class="dim">How many of a team's real five picks sit in its top 10 list?</p><pre class="code">// How many of a team's real five picks sit in its hierarchy top 10 / 15? Each game is left out of its own evidence.
+const fs = require('fs'); global.DraftModel = require('../tool/model.js'); const S = require('./sim.js');
+const R = 'research_notes/MLBB draft simulator/';
+function parseCSV(t){const rows=[];let row=[],f='',q=false;for(let i=0;i&lt;t.length;i++){const c=t[i];if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}else if(c==='"')q=true;else if(c===','){row.push(f);f='';}else if(c==='\n'){row.push(f);rows.push(row);row=[];f='';}else if(c!=='\r')f+=c;}if(f||row.length){row.push(f);rows.push(row);}const h=rows.shift();return rows.filter(r=&gt;r.length===h.length).map(r=&gt;Object.fromEntries(h.map((k,i)=&gt;[k,r[i].trim()])));}
+const read=p=&gt;parseCSV(fs.readFileSync(R+p,'utf8'));
+const stats=read('hero_stats_id_s18.csv'), pools=read('player_hero_pools.csv').filter(r=&gt;r.season==='S18'), sb=read('game_scoreboards.csv');
+const heroes=Array.from(new Set(stats.map(r=&gt;r.hero))).sort();
+const league={}; let tp=0; stats.forEach(r=&gt;{league[r.hero]={picks:+r.picks,winRate:+r.win_rate};tp+=+r.picks;});
+const teamGames={BTR:53,TLID:46};
+const G={}; sb.forEach(r=&gt;{const k=r.match_id+'-'+r.game_no;(G[k]=G[k]||{})[r.team]=(G[k][r.team]||[]);G[k][r.team].push({hero:r.hero,player:r.player});});
+let n=0,h10=0,h15=0,l10=0,l15=0;
+Object.keys(G).forEach(k=&gt;{
+  ['BTR','TLID'].forEach(team=&gt;{
+    const act=G[k][team]; if(!act) return;
+    // leave this game out
+    const P=pools.map(r=&gt;({team:r.team,player:r.player,lane:r.lane,hero:r.hero,games:+r.games,wins:+r.wins}));
+    act.forEach(a=&gt;{const row=P.find(r=&gt;r.team===team&amp;&amp;r.player===a.player&amp;&amp;r.hero===a.hero); if(row) row.games--;});
+    const L={}; Object.keys(league).forEach(h=&gt;L[h]={picks:league[h].picks,winRate:league[h].winRate});
+    Object.keys(G[k]).forEach(t=&gt;G[k][t].forEach(a=&gt;{ if(L[a.hero]) L[a.hero].picks--; }));
+    const data={league:L,nLeagueGames:Math.round(tp/10),pools:P,teamGames:{[team]:teamGames[team]-1}};
+    const hier=S.buildHierarchy(team,data,null,heroes);
+    const top=(m)=&gt;new Set(hier.slice(0,m).map(x=&gt;x.hero));
+    const t10=top(10),t15=top(15);
+    const lg=heroes.slice().sort((a,b)=&gt;L[b].picks-L[a].picks); const l10s=new Set(lg.slice(0,10)),l15s=new Set(lg.slice(0,15));
+    const heroesAct=act.map(a=&gt;a.hero);
+    h10+=heroesAct.filter(h=&gt;t10.has(h)).length; h15+=heroesAct.filter(h=&gt;t15.has(h)).length;
+    l10+=heroesAct.filter(h=&gt;l10s.has(h)).length; l15+=heroesAct.filter(h=&gt;l15s.has(h)).length; n++;
+  });
+});
+const f=x=&gt;(x/n).toFixed(2);
+console.log('team lineups:',n);
+console.log('avg of 5 real picks inside top 10 -&gt; team hierarchy',f(h10),'| league pick rate',f(l10));
+console.log('avg of 5 real picks inside top 15 -&gt; team hierarchy',f(h15),'| league pick rate',f(l15));
+fs.writeFileSync('picktest_results.json',JSON.stringify({n,h10:h10/n,h15:h15/n,l10:l10/n,l15:l15/n}));
+</pre></details><h2>The simulator engine (JavaScript, runs in the page)</h2><details><summary>sim.js <span class="dim" style="font-weight:400">· 337 lines</span></summary><p class="dim">Draft state, ban and pick prediction, lane checks, matchup rules, reasons, habit hooks.</p><pre class="code">// Draft simulator engine for BTR vs TLID (MPL ID Season 18).
+// Depends on DraftModel (model.js) for ban statistics. No other dependencies.
+(function (root) {
+  'use strict';
+  var M = root.DraftModel || (typeof require !== 'undefined' ? require('../tool/model.js') : null);
+
+  // Pro format: 3 bans each, 3 picks each, 2 more bans each, 2 final picks each.
+  // First letter = side (b blue, r red), second = action (B ban, P pick). Exact order is an assumption: editable in the app.
+  var DEFAULT_ORDER = 'bB rB bB rB bB rB | bP rP rP bP bP rP | rB bB rB bB | rP bP bP rP';
+  var LANES = ['EXP', 'Jungle', 'Mid', 'Gold', 'Roam'];
+
+  function parseOrder(str) {
+    var steps = [], phase = 0;
+    String(str).split(/\s+/).filter(Boolean).forEach(function (tok) {
+      if (tok === '|') { phase++; return; }
+      var s = tok[0].toLowerCase(), a = tok[1];
+      if ((s !== 'b' &amp;&amp; s !== 'r') || (a !== 'B' &amp;&amp; a !== 'P')) throw new Error('Bad step "' + tok + '". Use bB, rB, bP or rP.');
+      steps.push({ side: s === 'b' ? 'blue' : 'red', type: a === 'B' ? 'ban' : 'pick', phase: phase });
+    });
+    var c = { 'blue-ban': 0, 'red-ban': 0, 'blue-pick': 0, 'red-pick': 0 };
+    steps.forEach(function (s) { c[s.side + '-' + s.type]++; });
+    if (c['blue-ban'] !== 5 || c['red-ban'] !== 5 || c['blue-pick'] !== 5 || c['red-pick'] !== 5)
+      throw new Error('The order needs 5 bans and 5 picks for each side (found blue ' + c['blue-ban'] + '/' + c['blue-pick'] + ', red ' + c['red-ban'] + '/' + c['red-pick'] + ').');
+    return steps;
+  }
+
+  function newDraft(steps, teams, locked) {
+    return { steps: steps, idx: 0, teams: teams, bans: { blue: [], red: [] }, picks: { blue: [], red: [] }, locked: locked || [], hist: [] };
+  }
+  function done(d) { return d.idx &gt;= d.steps.length; }
+  function usedSet(d) {
+    var u = {}; d.locked.forEach(function (h) { u[h] = 1; });
+    ['blue', 'red'].forEach(function (s) { d.bans[s].forEach(function (h) { u[h] = 1; }); d.picks[s].forEach(function (h) { u[h] = 1; }); });
+    return u;
+  }
+  function apply(d, hero) {
+    if (done(d)) return false;
+    if (usedSet(d)[hero]) return false;
+    var st = d.steps[d.idx];
+    (st.type === 'ban' ? d.bans : d.picks)[st.side].push(hero);
+    d.hist.push(d.idx); d.idx++;
+    return true;
+  }
+  function undo(d) {
+    if (!d.idx) return null;
+    d.idx--; var st = d.steps[d.idx];
+    return (st.type === 'ban' ? d.bans : d.picks)[st.side].pop();
+  }
+  function other(side) { return side === 'blue' ? 'red' : 'blue'; }
+
+  // ---------- ban prediction ----------
+  // Chance that `hero` sits at list position j for `team` (same weighting as DraftModel.teamProbs).
+  function posProbs(history, team, side, opp, par, j) {
+    var mine = (par.teamGames || []).concat(history).filter(function (g) { return M.teamSide(g, team); });
+    var num = {}, den = 0, n = mine.length;
+    mine.forEach(function (g, i) {
+      var s = M.teamSide(g, team);
+      var w = Math.pow(par.decay, n - 1 - i) * (s === side ? 1 : par.sideW) * (M.oppOf(g, team) === opp ? par.h2hW : 1) * M.phaseMult(g, par) * (M.dayMult ? M.dayMult(g, par) : 1);
+      var h = g.bans[s][j]; if (h) num[h] = (num[h] || 0) + w; den += w;
+    });
+    var out = {}; Object.keys(num).forEach(function (h) { out[h] = num[h] / (den || 1); });
+    return out;
+  }
+  function normalise(list) {
+    var t = 0; list.forEach(function (x) { t += x.p; });
+    list.forEach(function (x) { x.p = t &gt; 0 ? x.p / t : 0; });
+    return list;
+  }
+  // ---------- reasons (drafter's view) ----------
+  // Each reason: { k: kind, t: short text, s: strength 0..1 }. Only the strongest two are kept. These explain the odds; they do not add to them.
+  function topPlayer(item) { var best = null; ((item &amp;&amp; item.pool) || []).forEach(function (r) { if (!best || r.games &gt; best.games) best = r; }); return best; }
+  function pc0(x) { return Math.round(x * 100) + '%'; }
+  function banReasons(h, o) {
+    var rs = [], oi = o.oppItem[h], pl = topPlayer(oi), lg = o.lg;
+    if (oi &amp;&amp; pl &amp;&amp; oi.rate &gt;= 0.1 &amp;&amp; pl.games &gt;= 3) rs.push({ k: 'target', t: pl.player + ' plays it (' + pl.games + ' games, ' + Math.round(100 * pl.wins / pl.games) + '% WR)', s: Math.min(1, oi.rate / 0.25) * 0.9 });
+    var L = oi &amp;&amp; oi.league; if (L &amp;&amp; L.bans) { var share = L.bans / lg; if (share &gt;= 0.15) rs.push({ k: 'meta', t: 'banned in ' + pc0(share) + ' of league games', s: Math.min(1, share / 0.6) * 0.8 }); }
+    if (o.overall[h] &gt;= 0.2) rs.push({ k: 'habit', t: o.team + ' bans it in ' + pc0(o.overall[h]) + ' of its lists' + (o.pos[h] &gt; 0.25 ? ', often as ban #' + (o.j + 1) : ''), s: Math.min(1, o.overall[h] / 0.4) });
+    if (o.ex &amp;&amp; o.ex[h] &gt;= 0.25) rs.push({ k: 'playoff', t: 'in ' + pc0(o.ex[h]) + ' of playoff ban lists', s: Math.min(1, o.ex[h] / 0.5) * 0.7 });
+    var pr = (o.why || []).filter(function (t) { return /^counters /.test(t); })[0]; if (pr) rs.push({ k: 'protect', t: pr.replace('counters your ', 'it counters your ').replace(/^counters /, 'it counters '), s: 0.8 });
+    var dn = (o.why || []).filter(function (t) { return /^pairs with their/.test(t); })[0]; if (dn) rs.push({ k: 'deny', t: dn.replace('pairs with their', 'partner of their'), s: 0.6 });
+    rs.sort(function (a, b) { return b.s - a.s; }); return rs.slice(0, 2);
+  }
+  function pickReasons(x, o) {
+    var rs = [], pl = topPlayer(x);
+    if (pl &amp;&amp; pl.games &gt;= 3) rs.push({ k: 'signature', t: pl.player + ' plays it (' + pl.games + ' games, ' + Math.round(100 * pl.wins / pl.games) + '% WR)', s: Math.min(1, pl.games / 10) * 0.9 });
+    var L = x.league; if (L &amp;&amp; L.picks) { var r = L.picks / (2 * o.lg); if (r &gt;= 0.1) rs.push({ k: 'meta', t: 'picked in ' + pc0(r) + ' of league teams' + (L.winRate ? ', ' + L.winRate + '% WR' : ''), s: Math.min(1, r / 0.25) * 0.6 }); }
+    var c = (o.why || []).filter(function (t) { return /^counters /.test(t) &amp;&amp; !/open\)/.test(t); })[0]; if (c) rs.push({ k: 'counter', t: c.replace('counters', 'counter-pick vs'), s: 0.85 });
+    var co = (o.why || []).filter(function (t) { return /^counters .*open\)/.test(t); })[0]; if (co &amp;&amp; !c) rs.push({ k: 'counter', t: co.replace('counters', 'answers').replace(' (still open)', ' if it stays open'), s: 0.5 });
+    var sy = (o.why || []).filter(function (t) { return /^pairs with /.test(t); })[0]; if (sy) rs.push({ k: 'combo', t: sy.replace('pairs with', 'combo with'), s: 0.6 });
+    if (o.up &gt; 0.005 &amp;&amp; o.upFrom.length) rs.push({ k: 'replace', t: 'replaces banned ' + o.upFrom.slice(0, 2).join(', '), s: Math.min(1, o.up / 0.05) * 0.8 });
+    if (o.oppRate &gt; 0.15) rs.push({ k: 'deny', t: 'denies ' + o.opp + ' (' + pc0(o.oppRate) + ' of their games)', s: Math.min(1, o.oppRate / 0.5) * 0.7 });
+    var ln = o.lanes; if (ln &amp;&amp; ln.length &gt;= 2 &amp;&amp; o.m &lt; 3) rs.push({ k: 'flex', t: 'flex: fits ' + ln.slice(0, 3).join('/') + ', hides the lane', s: 0.4 });
+    rs.sort(function (a, b) { return b.s - a.s; }); return rs.slice(0, 2);
+  }
+
+  // Previous game of this same series (same two teams, same date): which bans did `team` use, and did it win?
+  // ctx.habit = { repeatWin, repeatLoss } are the log-boosts for repeating those bans. Off when ctx.habit is missing.
+  function repeatInfo(ctx, team, opp, side) {
+    var hb = ctx.habit, par = ctx.par; if (!hb || !par || !par.curDate) return null;
+    var hist = ctx.history || [];
+    for (var i = hist.length - 1; i &gt;= 0; i--) {
+      var g = hist[i]; if (g.date !== par.curDate) { if (g.date &lt; par.curDate) break; continue; }
+      var s = M.teamSide(g, team); if (!s || M.oppOf(g, team) !== opp) continue;
+      var won = g.winner === team, w = won ? hb.repeatWin : hb.repeatLoss; if (!w) return null;
+      var set = {}; (g.bans[s] || []).forEach(function (h) { set[h] = 1; });
+      return { set: set, w: w, won: won };
+    }
+    return null;
+  }
+  // Hot-hero habit (unvalidated): ctx.habit.hot = { team: { strength, heroes: [..] } }. Returns { hero: log-boost } for that team, scaled by `scale`.
+  function hotFor(ctx, team, scale) {
+    var out = {}, hb = ctx.habit, h = hb &amp;&amp; hb.hot &amp;&amp; hb.hot[team]; if (!h || !h.strength) return out;
+    (h.heroes || []).forEach(function (x) { out[x] = h.strength * scale; }); return out;
+  }
+  function predictBan(d, ctx) {
+    var st = d.steps[d.idx], side = st.side, team = d.teams[side], opp = d.teams[other(side)];
+    var j = d.bans[side].length, par = ctx.par, used = usedSet(d);
+    var overall = M.teamProbs(ctx.history, team, side, opp, par, false);
+    var pos = posProbs(ctx.history, team, side, opp, par, j);
+    var tO = 0, tP = 0; Object.keys(overall).forEach(function (h) { if (!used[h]) tO += overall[h]; });
+    Object.keys(pos).forEach(function (h) { if (!used[h]) tP += pos[h]; });
+    var wp = ctx.posWeight == null ? 0.35 : ctx.posWeight;
+    var oppItem = {}; ((ctx.hier &amp;&amp; ctx.hier[opp]) || []).forEach(function (x) { oppItem[x.hero] = x; });
+    var lgG = ctx.nLeagueGames || 200, exL = par.extra &amp;&amp; par.extraBeta ? par.extra.list : null;
+    var list = [], noLane = [];
+    var rep = repeatInfo(ctx, team, opp, side), hotOpp = hotFor(ctx, opp, 0.6);
+    var oppSets = d.picks[other(side)].map(function (x) { return lanesOf(ctx, x); });
+    var R = ctx.R, mw = ctx.matchW == null ? 1 : ctx.matchW, mineP = d.picks[side], theirP = d.picks[other(side)], myMap = {};
+    if (R &amp;&amp; mw &gt; 0 &amp;&amp; ctx.hier &amp;&amp; ctx.hier[team]) ctx.hier[team].forEach(function (x) { myMap[x.hero] = x.rate; });
+    if (R &amp;&amp; mw &gt; 0) { Object.keys(R.counter).concat(Object.keys(R.syn)).forEach(function (h) { if (!(h in overall) &amp;&amp; !used[h]) overall[h] = 0.004; }); }
+    Object.keys(overall).forEach(function (h) {
+      if (used[h]) return;
+      var a = tO ? overall[h] / tO : 0, b = tP ? (pos[h] || 0) / tP : 0;
+      var p = (1 - wp) * a + wp * b;
+      var why = [], mu = 0;
+      if (R &amp;&amp; mw &gt; 0) { mu = clampMu(MU_GAMMA_BAN * mw * banMatchup(h, mineP, theirP, myMap, R, why)); p *= Math.exp(mu); }
+      // Drafter habit: lean towards the five bans this team used in the previous game of the same series (stronger after a win).
+      if (hotOpp[h]) { p *= Math.exp(hotOpp[h]); why.push(opp + ' is hot on it'); }
+      if (rep &amp;&amp; rep.set[h]) { p *= Math.exp(rep.w); why.push('banned last game' + (rep.won ? ' (won it)' : ' (lost it)')); }
+      // A ban only makes sense if the other team could still play the hero: skip heroes with no free lane left on their side.
+      if (theirP.length &amp;&amp; ctx.laneCheck !== false &amp;&amp; !canFill(oppSets.concat([lanesOf(ctx, h)]))) { noLane.push(h); return; }
+      if (pos[h] &gt; 0.15) why.push('often ' + team + '\'s ban #' + (j + 1));
+      if (overall[h] &gt; 0.3) why.push('in ' + Math.round(overall[h] * 100) + '% of ' + team + ' lists');
+      list.push({ hero: h, p: p, mu: mu, why: why, reasons: banReasons(h, { oppItem: oppItem, lg: lgG, overall: overall, pos: pos, j: j, team: team, ex: exL, why: why }) });
+    });
+    list.sort(function (x, y) { return y.p - x.p; });
+    list = normalise(list); list.noLane = noLane;
+    return list;
+  }
+
+  // ---------- picks: lane feasibility ----------
+  function lanesOf(ctx, hero) { var r = ctx.roles &amp;&amp; ctx.roles[hero]; return r &amp;&amp; r.lanes &amp;&amp; r.lanes.length ? r.lanes : null; }
+  // Can these heroes (each with a set of possible lanes; null = unknown) fill distinct lanes?
+  function canFill(sets) {
+    var taken = {};
+    function go(i) {
+      if (i === sets.length) return true;
+      var s = sets[i] || LANES;
+      for (var k = 0; k &lt; s.length; k++) {
+        var l = s[k]; if (taken[l]) continue;
+        taken[l] = 1; if (go(i + 1)) { delete taken[l]; return true; } delete taken[l];
+      }
+      return false;
+    }
+    return go(0);
+  }
+
+  // ---------- hierarchy ----------
+  // data: { league: {hero:{picks,bans,winRate}}, nLeagueGames, pools: [{team,player,lane,hero,games,wins}], teamGames:{team:N} }
+  // live: { observed: {team:{hero:count}}, games: {team:count}, adjust: {team:{hero:mult}} }
+  function buildHierarchy(team, data, live, heroes) {
+    live = live || { observed: {}, games: {}, adjust: {} };
+    var K = 10, N = (data.teamGames &amp;&amp; data.teamGames[team]) || 0;
+    var counts = {}, byHero = {};
+    (data.pools || []).forEach(function (r) {
+      if (r.team !== team) return;
+      counts[r.hero] = (counts[r.hero] || 0) + (+r.games || 0);
+      (byHero[r.hero] = byHero[r.hero] || []).push({ player: r.player, lane: r.lane, games: +r.games || 0, wins: +r.wins || 0 });
+    });
+    var obs = (live.observed &amp;&amp; live.observed[team]) || {}, og = (live.games &amp;&amp; live.games[team]) || 0;
+    var adj = (live.adjust &amp;&amp; live.adjust[team]) || {};
+    var lg = data.nLeagueGames || 1, out = [];
+    heroes.forEach(function (h) {
+      var L = data.league &amp;&amp; data.league[h];
+      var pi = L &amp;&amp; L.picks ? L.picks / (2 * lg) : 0; // chance the hero is in a given team's five
+      var c = (counts[h] || 0) + (obs[h] || 0);
+      var rate = (c + K * pi) / (N + og + K);
+      var m = adj[h] || 1;
+      out.push({ hero: h, rate: rate * m, rawRate: rate, adj: m, games: N + og, pool: byHero[h] || [], teamPicks: counts[h] || 0, live: obs[h] || 0,
+        league: L || null });
+    });
+    out.sort(function (a, b) { return b.rate - a.rate; });
+    out.forEach(function (x, i) { x.rank = i + 1; x.tier = i &lt; 6 ? 'S' : i &lt; 16 ? 'A' : i &lt; 30 ? 'B' : 'C'; });
+    return out;
+  }
+
+
+
+  // ---------- matchup rules (counters and synergies) ----------
+  // rules: [{t:'counter', a, b, s, off?}] means a counters b; [{t:'syn', a, b, s}] means a and b work well together (both ways). s = 1 minor, 2 solid, 3 hard.
+  // mobility: {hero: {dash: n, punishes: bool}}: heroes that punish dashes become counters of heroes with 2+ dashes.
+  function buildRules(rules, mobility) {
+    var R = { counter: {}, counteredBy: {}, syn: {}, list: [] };
+    function addC(a, b, s, src) { (R.counter[a] = R.counter[a] || {})[b] = Math.max(s, (R.counter[a] || {})[b] || 0); (R.counteredBy[b] = R.counteredBy[b] || {})[a] = Math.max(s, (R.counteredBy[b] || {})[a] || 0); }
+    function addS(a, b, s) { (R.syn[a] = R.syn[a] || {})[b] = Math.max(s, (R.syn[a] || {})[b] || 0); (R.syn[b] = R.syn[b] || {})[a] = Math.max(s, (R.syn[b] || {})[a] || 0); }
+    (rules || []).forEach(function (r) { if (r.off || !r.a || !r.b || !(r.s &gt; 0)) return; if (r.t === 'syn') addS(r.a, r.b, r.s); else addC(r.a, r.b, r.s); R.list.push(r); });
+    if (mobility) Object.keys(mobility).forEach(function (p) {
+      if (!mobility[p].punishes) return;
+      Object.keys(mobility).forEach(function (h) { var m = mobility[h]; if (h === p || !(m.dash &gt;= 2)) return; var s = m.dash &gt;= 3 ? 2 : 1; if (!(R.counter[p] &amp;&amp; R.counter[p][h])) { addC(p, h, s); R.list.push({ t: 'counter', a: p, b: h, s: s, derived: true, why: p + ' punishes dashes; ' + h + ' has ' + m.dash }); } });
+    });
+    return R;
+  }
+  var COUNTER_ADD = 0.012, MU_GAMMA = 0.30, MU_GAMMA_BAN = 0.25, MU_CAP = 1.6;
+  function clampMu(x) { return Math.max(-MU_CAP, Math.min(MU_CAP, x)); }
+  // Picking x for `mine` against `theirs`. oppMap = chance each hero is in the opponent's five. goneSet = banned or picked.
+  function pickMatchup(x, mine, theirs, goneSet, thr, R, oppLeft, why) {
+    var sum = 0, direct = 0;
+    mine.forEach(function (m) { var s = R.syn[m] &amp;&amp; R.syn[m][x]; if (s) { sum += s; why.push('pairs with ' + m); } });
+    theirs.forEach(function (q) {
+      var s1 = R.counter[x] &amp;&amp; R.counter[x][q]; if (s1) { sum += s1; direct += s1; why.push('counters ' + q); }
+      var s2 = R.counter[q] &amp;&amp; R.counter[q][x]; if (s2) { sum -= s2; why.push('weak vs ' + q); }
+    });
+    var ant = Math.min(1, oppLeft / 3), antSum = 0;
+    if (ant &gt; 0) {
+      Object.keys(R.counter[x] || {}).forEach(function (b) { if (goneSet[b]) return; var w = Math.min(1, thr(b) / 0.3); if (w &gt; 0.25) { antSum += R.counter[x][b] * 0.5 * w * ant; why.push('counters ' + b + ' (still open)'); } });
+      Object.keys(R.counteredBy[x] || {}).forEach(function (c) { if (goneSet[c]) return; var w = Math.min(1, thr(c) / 0.3); if (w &gt; 0.25) { antSum -= R.counteredBy[x][c] * 0.35 * w * ant; why.push(c + ' (open) counters it'); } });
+    }
+    sum += Math.max(-1.5, Math.min(1.5, antSum));   // many open heroes can not pile up without limit
+    return { sum: sum, direct: direct };
+  }
+  // Banning c for a team that has `mine` picked, `theirs` is the opponent's picks; myMap = chance each hero is in my five.
+  function banMatchup(c, mine, theirs, myMap, R, why) {
+    var sum = 0;
+    mine.forEach(function (m) { var s = R.counter[c] &amp;&amp; R.counter[c][m]; if (s) { sum += s; why.push('counters your ' + m); } });
+    Object.keys(R.counter[c] || {}).forEach(function (h) { if (mine.indexOf(h) &gt;= 0) return; var w = Math.min(1, (myMap[h] || 0) / 0.3); if (w &gt; 0.25) { sum += R.counter[c][h] * 0.5 * w; why.push('counters ' + h); } });
+    theirs.forEach(function (q) { var s = R.syn[q] &amp;&amp; R.syn[q][c]; if (s) { sum += s * 0.6; why.push('pairs with their ' + q); } });
+    return sum;
+  }
+
+  // ---------- ban effect on picks ----------
+  // When a hero is gone (banned or locked), the team still needs someone in that slot. Part of that hero's pick chance
+  // moves to (1) the other heroes the same player has played and (2) heroes that share its lane.
+  // hier: list from buildHierarchy. gone: heroes that cannot be picked. Returns { add: {hero: amount}, from: {hero: [banned heroes feeding it]} }.
+  var LANE_W = 0.35;
+  function banShift(hier, gone, ctx, strength) {
+    var out = { add: {}, from: {} };
+    if (!strength || !gone || !gone.length) return out;
+    var goneSet = {}; gone.forEach(function (h) { goneSet[h] = 1; });
+    var byHero = {}, byPlayer = {};
+    hier.forEach(function (x) {
+      byHero[x.hero] = x;
+      (x.pool || []).forEach(function (r) { (byPlayer[r.player] = byPlayer[r.player] || []).push({ hero: x.hero, games: r.games }); });
+    });
+    gone.forEach(function (b) {
+      var hb = byHero[b]; if (!hb || !(hb.rate &gt; 0.01)) return;
+      var mass = hb.rate * strength, score = {};
+      // players who use b: their other heroes, weighted by games
+      var tg = 0; (hb.pool || []).forEach(function (r) { tg += r.games; });
+      (hb.pool || []).forEach(function (r) {
+        var others = (byPlayer[r.player] || []).filter(function (o) { return o.hero !== b &amp;&amp; !goneSet[o.hero]; });
+        var tot = 0; others.forEach(function (o) { tot += o.games; });
+        if (!tot) return;
+        others.forEach(function (o) { score[o.hero] = (score[o.hero] || 0) + (tg ? r.games / tg : 1) * (o.games / tot); });
+      });
+      // heroes sharing a lane with b
+      var bl = lanesOf(ctx, b);
+      if (!bl &amp;&amp; hb.pool &amp;&amp; hb.pool.length) bl = hb.pool.map(function (r) { return String(r.lane || '').replace(/^./, function (c) { return c.toUpperCase(); }); }).filter(Boolean);
+      if (bl) {
+        var mates = [], tr = 0;
+        hier.forEach(function (x) {
+          if (x.hero === b || goneSet[x.hero]) return;
+          var xl = lanesOf(ctx, x.hero); if (!xl) return;
+          if (xl.some(function (l) { return bl.indexOf(l) &gt;= 0; })) { mates.push(x); tr += x.rawRate; }
+        });
+        mates.forEach(function (x) { score[x.hero] = (score[x.hero] || 0) + LANE_W * (x.rawRate / (tr || 1)); });
+      }
+      var ts = 0; Object.keys(score).forEach(function (h) { ts += score[h]; });
+      if (!ts) return;
+      Object.keys(score).forEach(function (h) {
+        out.add[h] = (out.add[h] || 0) + mass * score[h] / ts;
+        (out.from[h] = out.from[h] || []).push(b);
+      });
+    });
+    return out;
+  }
+
+  // ---------- pick prediction ----------
+  function predictPick(d, ctx) {
+    var st = d.steps[d.idx], side = st.side, team = d.teams[side], opp = d.teams[other(side)];
+    var used = usedSet(d), mine = d.picks[side], m = mine.length;
+    var hier = ctx.hier[team], oppHier = ctx.hier[opp], oppMap = {};
+    oppHier.forEach(function (x) { oppMap[x.hero] = x.rate; });
+    var picked = mine.map(function (h) { return lanesOf(ctx, h); });
+    var den = ctx.denial == null ? 0.5 : ctx.denial;
+    var list = [];
+    var gone = d.bans.blue.concat(d.bans.red, d.locked || []);
+    var shift = banShift(hier, gone, ctx, ctx.banShift == null ? 0.7 : ctx.banShift);
+    var hotMine = hotFor(ctx, team, 1);
+    var R = ctx.R, mw = ctx.matchW == null ? 1 : ctx.matchW, theirs = d.picks[other(side)], oppLeft = 5 - theirs.length;
+    var thr = function (h) { return Math.max(oppMap[h] || 0, 0.6 * ((ctx.contest &amp;&amp; ctx.contest[h]) || 0)); };
+    hier.forEach(function (x) {
+      if (used[x.hero]) return;
+      var why = [];
+      var feas = canFill(picked.concat([lanesOf(ctx, x.hero)]));
+      var p = x.rate + (shift.add[x.hero] || 0);
+      var mu = 0;
+      if (R &amp;&amp; mw &gt; 0) {
+        var pm = pickMatchup(x.hero, mine, theirs, used, thr, R, oppLeft, why);
+        mu = clampMu(MU_GAMMA * mw * pm.sum); p *= Math.exp(mu);
+        // A direct counter-pick is a reason to leave the usual pool, so it also adds a little chance of its own (less if the team has never shown the hero).
+        if (pm.direct &gt; 0) p += COUNTER_ADD * mw * pm.direct * (x.teamPicks &gt; 0 ? 1 : (x.league &amp;&amp; x.league.picks ? 0.5 : 0.25));
+      }
+      if (shift.add[x.hero] &gt; 0.005) { var fr = shift.from[x.hero]; why.push('up: ' + fr.slice(0, 2).join(', ') + ' gone'); }
+      if (hotMine[x.hero]) { p *= Math.exp(hotMine[x.hero]); why.push('hot hero for ' + team); }
+      if (!feas) { p *= 0.05; why.push('lane already covered'); }
+      var early = m &lt; 3 ? 1 : 0.4;
+      var oppRate = oppMap[x.hero] || 0;
+      if (oppRate &gt; 0.15) { p *= 1 + den * early * Math.min(1, oppRate / 0.5); why.push('denies ' + opp + ' (rank ' + (oppHier.filter(function (z) { return z.rate &gt; oppRate; }).length + 1) + ')'); }
+      if (x.teamPicks &gt; 0) why.push(team + ' picks: ' + x.teamPicks); else if (x.league) why.push('league pick rate');
+      if (x.live) why.push('seen ' + x.live + 'x in your log');
+      var fl = lanesOf(ctx, x.hero);
+      list.push({ hero: x.hero, p: p, mu: mu, why: why, rank: x.rank, tier: x.tier, up: shift.add[x.hero] || 0, upFrom: shift.from[x.hero] || [], reasons: pickReasons(x, { lg: ctx.nLeagueGames || 200, why: why, up: shift.add[x.hero] || 0, upFrom: shift.from[x.hero] || [], oppRate: oppRate, opp: opp, lanes: fl, m: m }) });
+    });
+    list.sort(function (a, b) { return b.p - a.p; });
+    return normalise(list);
+  }
+
+  function predictNext(d, ctx) {
+    if (done(d)) return null;
+    return d.steps[d.idx].type === 'ban' ? predictBan(d, ctx) : predictPick(d, ctx);
+  }
+
+  var api = { DEFAULT_ORDER: DEFAULT_ORDER, LANES: LANES, parseOrder: parseOrder, newDraft: newDraft, done: done, usedSet: usedSet, apply: apply, undo: undo,
+    predictBan: predictBan, predictPick: predictPick, predictNext: predictNext, buildHierarchy: buildHierarchy, banShift: banShift, buildRules: buildRules, canFill: canFill, other: other };
+  if (typeof module !== 'undefined' &amp;&amp; module.exports) module.exports = api; else root.DraftSim = api;
+})(typeof window !== 'undefined' ? window : this);
+</pre></details><details><summary>model.js <span class="dim" style="font-weight:400">· 163 lines</span></summary><p class="dim">Ban frequencies with decay, side, head-to-head, patch and playoff prior.</p><pre class="code">// Draft ban predictor for BTR vs TLID (MPL ID Season 18).
+// Pure functions, no dependencies. Used by build.js (backtest) and by the web page.
+// Data meaning (see draft_semantics.md): each team has a list of 5 bans printed under it
+// on MLBBHub. Blue side = the team printed first. Ownership of the list is inferred.
+(function (root) {
+  'use strict';
+
+  var DEFAULTS = { decay: 0.95, sideW: 0.6, h2hW: 1.5, k: 4 };
+
+  // Turn CSV rows (ban rows only) into a chronological list of games.
+  function buildGames(rows) {
+    var by = {};
+    rows.forEach(function (r) {
+      if (r.action !== 'ban') return;
+      var g = by[r.game_id] || (by[r.game_id] = {
+        id: r.game_id, date: r.date, series: r.series, gameNo: +r.game_no || 0,
+        stage: r.stage, blue: r.blue_team, red: r.red_team, winner: r.winner || '',
+        bans: { blue: [], red: [] }
+      });
+      g.bans[r.side][(+r.step_no) - 1] = r.hero;
+    });
+    var out = Object.keys(by).map(function (k) { return by[k]; })
+      .filter(function (g) { return g.bans.blue.length === 5 &amp;&amp; g.bans.red.length === 5; });
+    out.sort(function (a, b) {
+      if (a.date !== b.date) return a.date &lt; b.date ? -1 : 1;
+      var ma = +(a.id.match(/S18-(\d+)/) || [0, 0])[1], mb = +(b.id.match(/S18-(\d+)/) || [0, 0])[1];
+      if (ma !== mb) return ma - mb;
+      return a.gameNo - b.gameNo;
+    });
+    return out;
+  }
+
+  function teamSide(g, team) { return g.blue === team ? 'blue' : (g.red === team ? 'red' : null); }
+  function oppOf(g, team) { return g.blue === team ? g.red : g.blue; }
+
+  // Recency-weighted league frequency of heroes in lists printed on one side (or both if side null).
+  function leaguePrior(history, side, firstOnly, halfLife) {
+    var n = history.length, tot = 0, p = {};
+    history.forEach(function (g, i) {
+      var w = Math.pow(0.5, (n - 1 - i) / (halfLife || 30));
+      ['blue', 'red'].forEach(function (s) {
+        if (side &amp;&amp; s !== side) return;
+        var list = g.bans[s];
+        if (firstOnly) { p[list[0]] = (p[list[0]] || 0) + w; tot += w; }
+        else { list.forEach(function (h) { p[h] = (p[h] || 0) + w; }); tot += w; }
+      });
+    });
+    Object.keys(p).forEach(function (h) { p[h] /= (tot || 1); });
+    return p;
+  }
+
+  // Probability each hero is in `team`'s list (or is its first ban) for a game on `side` vs `opp`.
+  // Patch awareness: when the game being predicted is on or after par.patchDate, earlier games count only par.phaseW as much.
+  function phaseMult(g, par) {
+    if (!par || par.phaseW == null || !par.patchDate || !par.curDate) return 1;
+    return (par.curDate &gt;= par.patchDate &amp;&amp; g.date &lt; par.patchDate) ? par.phaseW : 1;
+  }
+  // Day-based patch decay: w(t) = exp(-lambda * t), t = age of the game in days (par.lambda per day, par.curDate = today).
+  function dayMult(g, par) {
+    if (!par || !par.lambda || !par.curDate || !g.date) return 1;
+    var t = (Date.parse(par.curDate) - Date.parse(g.date)) / 86400000;
+    return t &gt; 0 ? Math.exp(-par.lambda * t) : 1;
+  }
+  function teamProbs(history, team, side, opp, par, firstOnly) {
+    par = par || DEFAULTS;
+    var mine = (par.teamGames || []).concat(history).filter(function (g) { return teamSide(g, team); });
+    var prior = leaguePrior(history, side, firstOnly);
+    // Playoff-meta prior: blend in how heroes are banned in playoff games of the whole league (par.extra, par.extraBeta).
+    var ex = par.extra &amp;&amp; par.extraBeta ? (firstOnly ? par.extra.first : par.extra.list) : null;
+    if (ex) {
+      var b = par.extraBeta, mixed = {}, ks = {};
+      Object.keys(prior).forEach(function (h) { ks[h] = 1; }); Object.keys(ex).forEach(function (h) { ks[h] = 1; });
+      Object.keys(ks).forEach(function (h) { mixed[h] = (1 - b) * (prior[h] || 0) + b * (ex[h] || 0); });
+      prior = mixed;
+    }
+    var num = {}, den = 0, n = mine.length;
+    mine.forEach(function (g, i) {
+      var s = teamSide(g, team);
+      var w = Math.pow(par.decay, n - 1 - i) * (s === side ? 1 : par.sideW) * (oppOf(g, team) === opp ? par.h2hW : 1) * phaseMult(g, par) * dayMult(g, par);
+      var list = g.bans[s];
+      if (firstOnly) { num[list[0]] = (num[list[0]] || 0) + w; }
+      else { list.forEach(function (h) { num[h] = (num[h] || 0) + w; }); }
+      den += w;
+    });
+    var heroes = {};
+    Object.keys(prior).forEach(function (h) { heroes[h] = 1; });
+    Object.keys(num).forEach(function (h) { heroes[h] = 1; });
+    var out = {};
+    Object.keys(heroes).forEach(function (h) {
+      out[h] = ((num[h] || 0) + par.k * (prior[h] || 0)) / (den + par.k || 1);
+    });
+    return out;
+  }
+
+  function topN(probs, n) {
+    return Object.keys(probs).map(function (h) { return { hero: h, p: probs[h] }; })
+      .sort(function (a, b) { return b.p - a.p || (a.hero &lt; b.hero ? -1 : 1); }).slice(0, n);
+  }
+
+  // Full prediction for one team in one game.
+  function predictTeam(history, team, side, opp, par) {
+    var list = teamProbs(history, team, side, opp, par, false);
+    var first = teamProbs(history, team, side, opp, par, true);
+    var games = history.filter(function (g) { return teamSide(g, team); }).length;
+    return { team: team, side: side, opp: opp, gamesUsed: games, bans: topN(list, 8), first: topN(first, 4) };
+  }
+
+  // Walk-forward backtest. Predict each BTR/TLID list using only earlier games.
+  function backtest(games, teams, par, opts) {
+    opts = opts || {};
+    var minHist = opts.minHist || 8, items = [];
+    games.forEach(function (g, idx) {
+      var hist = games.slice(0, idx);
+      teams.forEach(function (t) {
+        var side = teamSide(g, t);
+        if (!side) return;
+        var prior = hist.filter(function (h) { return teamSide(h, t); }).length;
+        if (prior &lt; minHist) return;
+        items.push({ idx: idx, game: g, team: t, side: side, opp: oppOf(g, t), hist: hist });
+      });
+    });
+    return items;
+  }
+
+  function score(items, predictFn) {
+    var hits = 0, first1 = 0, first3 = 0, n = 0;
+    items.forEach(function (it) {
+      var actual = it.game.bans[it.side];
+      var p = predictFn(it);
+      var top5 = topN(p.list, 5).map(function (x) { return x.hero; });
+      top5.forEach(function (h) { if (actual.indexOf(h) &gt;= 0) hits++; });
+      var f = topN(p.first, 3).map(function (x) { return x.hero; });
+      if (f[0] === actual[0]) first1++;
+      if (f.indexOf(actual[0]) &gt;= 0) first3++;
+      n++;
+    });
+    return { n: n, hit5: hits / (5 * n), first1: first1 / n, first3: first3 / n };
+  }
+
+  // Build the playoff prior from games [{b1:[5 heroes], b2:[5 heroes]}]: share of lists containing each hero, and share of first bans.
+  // agg (optional): [{ n: games covered, bans: {hero: games banned} }] season totals from other regions; each counts as `aggW` ban lists.
+  function playoffPrior(games, agg, aggW) {
+    var list = {}, first = {}, n = 0;
+    games.forEach(function (g) {
+      [g.b1, g.b2].forEach(function (l) {
+        n++; l.forEach(function (h) { list[h] = (list[h] || 0) + 1; }); first[l[0]] = (first[l[0]] || 0) + 1;
+      });
+    });
+    var nFirst = n;
+    (agg || []).forEach(function (r) {
+      var w = aggW == null ? 40 : aggW; if (!r || !r.n || w &lt;= 0) return;
+      Object.keys(r.bans).forEach(function (h) { list[h] = (list[h] || 0) + w * r.bans[h] / (2 * r.n); }); n += w;
+    });
+    Object.keys(list).forEach(function (h) { list[h] /= (n || 1); }); Object.keys(first).forEach(function (h) { first[h] /= (nFirst || 1); });
+    return { list: list, first: first, n: n };
+  }
+
+  var api = { DEFAULTS: DEFAULTS, buildGames: buildGames, teamSide: teamSide, oppOf: oppOf,
+    playoffPrior: playoffPrior, leaguePrior: leaguePrior, phaseMult: phaseMult, dayMult: dayMult, teamProbs: teamProbs, topN: topN, predictTeam: predictTeam,
+    backtest: backtest, score: score };
+  if (typeof module !== 'undefined' &amp;&amp; module.exports) module.exports = api; else root.DraftModel = api;
+})(typeof window !== 'undefined' ? window : this);
+</pre></details><details><summary>comp.js <span class="dim" style="font-weight:400">· 146 lines</span></summary><p class="dim">Composition rating and win model.</p><pre class="code">// Composition rating and win prediction for the draft simulator.
+// Every weight here is a design choice taken from the research rules (see analyst_draft_thinking.md), not a fitted value.
+(function (root) {
+  'use strict';
+
+  // ---------- hero features ----------
+  var SPIKE = { 'early': [1, .6, .1], 'early-mid': [1, 1, .3], 'mid': [.5, 1, .6], 'mid-late': [.2, .9, 1], 'late': [.1, .5, 1] };
+  // Heroes whose skill-triggered enhanced basic attacks now hit turrets (official patch 2.2.16 notes).
+  var TURRET_REGEN = { 'Sun': 1, 'Gusion': 1, 'Thamuz': 1, 'Dyrroth': 1, 'Masha': 1 };
+  var yn = function (v) { v = (v || '').toString().trim().toUpperCase(); return v === 'Y' || v === 'YES' ? 1 : (v === 'N' || v === 'NO' ? 0 : null); };
+
+  // T: traits row {tags:[], dmg, spike, front, cc, engage, dps, wave}, R: roles row {role, lanes}
+  function feats(T, R, name) {
+    var role = (R &amp;&amp; R.role) || '', tags = ((T &amp;&amp; T.tags) || []).map(function (x) { return x.toLowerCase(); });
+    var has = function (t) { return tags.some(function (x) { return x.indexOf(t) &gt;= 0; }); };
+    var known = 0, total = 0;
+    var pick = function (v, fb) { total++; if (v !== null &amp;&amp; v !== undefined) { known++; return v; } return fb; };
+    var f = { name: name || '' };
+    f.front = pick(T ? yn(T.front) : null, role === 'Tank' ? 1 : role === 'Fighter' ? 0.5 : 0);
+    f.cc = pick(T ? yn(T.cc) : null, has('crowd') ? 0.8 : (role === 'Support' || role === 'Tank' ? 0.5 : 0.2));
+    f.engage = pick(T ? yn(T.engage) : null, has('initiator') ? 1 : has('charge') ? 0.5 : (role === 'Tank' ? 0.5 : 0));
+    f.dps = pick(T ? yn(T.dps) : null, role === 'Marksman' ? 1 : (has('damage') ? 0.5 : 0));
+    f.wave = pick(T ? yn(T.wave) : null, has('push') ? 1 : (role === 'Mage' || role === 'Marksman' ? 0.6 : 0.2));
+    f.burst = has('burst') ? 1 : (role === 'Assassin' ? 0.8 : role === 'Mage' ? 0.5 : 0);
+    f.poke = has('poke') ? 1 : 0;
+    f.catchx = (has('chase') || has('reap') || has('finisher') || role === 'Assassin') ? 1 : 0;
+    f.peel = (has('regen') || has('support') || has('guard') || role === 'Support') ? 1 : (role === 'Tank' ? 0.5 : 0);
+    var sp = T &amp;&amp; T.spike ? T.spike.toLowerCase().replace(/\s+/g, '') : '';
+    total++; if (SPIKE[sp]) known++;
+    f.curve = SPIKE[sp] || (role === 'Marksman' ? SPIKE['late'] : role === 'Assassin' ? SPIKE['early-mid'] : role === 'Tank' ? SPIKE['mid'] : SPIKE['mid']);
+    var d = T &amp;&amp; T.dmg ? T.dmg.toLowerCase() : '';
+    total++; if (d) known++;
+    f.dmg = d.indexOf('mixed') === 0 || d.indexOf('true') === 0 ? [0.5, 0.5] : d.indexOf('magic') === 0 ? [0, 1] : d.indexOf('phys') === 0 ? [1, 0] :
+      (role === 'Mage' ? [0, 1] : role === 'Tank' || role === 'Support' ? [0.25, 0.25] : [1, 0]);
+    f.known = total ? known / total : 0;
+    // Map objectives (Golden Turret, Healing Turtle). Sourced scores (0 to 3) where a source described the hero, otherwise a guess from hero class.
+    var sv = T &amp;&amp; T.siege !== undefined &amp;&amp; T.siege !== '' &amp;&amp; T.siege !== null ? +T.siege / 3 : null, ov = T &amp;&amp; T.obj !== undefined &amp;&amp; T.obj !== '' &amp;&amp; T.obj !== null ? +T.obj / 3 : null;
+    f.siege = sv !== null &amp;&amp; !isNaN(sv) ? sv : Math.min(1, (has('push') ? 0.8 : role === 'Marksman' ? 0.6 : role === 'Mage' ? 0.5 : role === 'Fighter' ? 0.4 : role === 'Tank' || role === 'Assassin' ? 0.3 : 0.1) + (TURRET_REGEN[name] ? 0.3 : 0));
+    f.obj = ov !== null &amp;&amp; !isNaN(ov) ? ov : 0.5 * f.burst + 0.5 * f.curve[0];
+    f.objKnown = ((sv !== null &amp;&amp; !isNaN(sv)) || (ov !== null &amp;&amp; !isNaN(ov))) ? 1 : 0;
+    return f;
+  }
+
+  var REF = { mean: 76.7, sd: 5.8 }; // centre and spread of raw ratings over the 108 real Season 18 lineups (set by evalcomp.js)
+  var sat = function (x, t) { return 100 * Math.min(1, x / t); };
+
+
+  // Best role-pattern pairs in a lineup (research rule 15: score patterns, not fixed hero pairs).
+  var PATTERNS = [
+    { id: 'Engage + follow-up', say: function (a, b) { return a + ' starts the fight and ' + b + ' finishes it'; }, s: function (a, b) { return a.engage * Math.max(b.burst, b.catchx); } },
+    { id: 'Lockdown + damage', say: function (a, b) { return a + ' locks targets down so ' + b + ' deals free damage'; }, s: function (a, b) { return Math.min(1, a.cc) * b.dps; } },
+    { id: 'Frontline + carry', say: function (a, b) { return a + ' takes the hits while ' + b + ' fights behind'; }, s: function (a, b) { return a.front * b.dps * 0.85; } },
+    { id: 'Peel + carry', say: function (a, b) { return a + ' protects ' + b; }, s: function (a, b) { return a.peel * b.dps * 0.9; } },
+    { id: 'CC + burst chain', say: function (a, b) { return a + ' sets up ' + b + '\'s burst'; }, s: function (a, b) { return Math.min(1, a.cc) * b.burst * 0.9; } }
+  ];
+  function pairCombos(fs) {
+    var cand = [];
+    for (var i = 0; i &lt; fs.length; i++) for (var j = 0; j &lt; fs.length; j++) {
+      if (i === j) continue;
+      var best = null; PATTERNS.forEach(function (pt) { var v = pt.s(fs[i], fs[j]); if (!best || v &gt; best.v) best = { v: v, id: pt.id, text: pt.say(fs[i].name, fs[j].name) }; });
+      if (best &amp;&amp; best.v &gt; 0.3) cand.push({ a: i, b: j, v: best.v, id: best.id, text: best.text });
+    }
+    cand.sort(function (x, y) { return y.v - x.v; });
+    var used = {}, list = [];
+    cand.forEach(function (c) { if (list.length &gt;= 3) return; var k = Math.min(c.a, c.b) + '-' + Math.max(c.a, c.b); if (used[k]) return; used[k] = 1; list.push(c); });
+    var total = 0; list.forEach(function (c) { total += c.v; });
+    var seen = {}, count = 0;
+    cand.forEach(function (c) { var k = Math.min(c.a, c.b) + '-' + Math.max(c.a, c.b); if (c.v &gt;= 0.6 &amp;&amp; !seen[k]) { seen[k] = 1; count++; } });
+    return { list: list, total: total, count: count };
+  }
+
+  // heroes: array of feature objects for the picked heroes (1 to 5)
+  function profile(fs) {
+    var n = fs.length || 1, S = function (k) { return fs.reduce(function (a, f) { return a + f[k]; }, 0); };
+    var sum = { front: S('front'), cc: S('cc'), engage: S('engage'), dps: S('dps'), wave: S('wave'), burst: S('burst'), poke: S('poke'), catchx: S('catchx'), peel: S('peel'), siege: S('siege'), obj: S('obj') };
+    var curve = [0, 0, 0]; fs.forEach(function (f) { for (var i = 0; i &lt; 3; i++) curve[i] += f.curve[i]; });
+    curve = curve.map(function (x) { return x / n; });
+    var p = 0, m = 0; fs.forEach(function (f) { p += f.dmg[0]; m += f.dmg[1]; });
+    var mix = p + m &gt; 0 ? 100 * Math.min(1, 2 * Math.min(p, m) / (p + m)) : 50;
+    var combos = pairCombos(fs);
+    var full = fs.length &gt;= 5;
+    var scale = full ? 1 : 5 / Math.max(fs.length, 1);
+    var comp = {
+      Frontline: sat(sum.front * scale, 2.2), 'Hard CC': sat(sum.cc * scale, 4), 'Engage or catch': sat(Math.max(sum.engage, sum.catchx) * scale, 3),
+      Burst: sat(sum.burst * scale, 2.5), 'Steady damage': sat(sum.dps * scale, 2.5), 'Wave clear and push': sat(sum.wave * scale, 3.2),
+      'Peel and sustain': sat(sum.peel * scale, 2.5), 'Turret pressure': sat(sum.siege * scale, 2.6), 'Early objectives': sat(sum.obj * scale, 2.4), 'Damage mix': mix,
+      'Teamfight combos': fs.length &lt; 2 ? 0 : sat(combos.count * (10 / (fs.length * (fs.length - 1) / 2)), 6)
+    };
+    if (!full) Object.keys(comp).forEach(function (kk) { if (kk !== 'Damage mix') comp[kk] = Math.min(comp[kk], 100); });
+    var W = { Frontline: .15, 'Hard CC': .15, 'Engage or catch': .12, Burst: .08, 'Steady damage': .15, 'Wave clear and push': .09, 'Peel and sustain': .07, 'Turret pressure': .06, 'Early objectives': .06, 'Damage mix': .09, 'Teamfight combos': .12 };
+    var rating = 0, ws = 0; Object.keys(W).forEach(function (kk) { rating += W[kk] * comp[kk]; ws += W[kk]; });
+    rating = rating / ws;
+    var rel = Math.max(0, Math.min(100, 50 + 18 * (rating - REF.mean) / REF.sd));
+    var early = 100 * curve[0], mid = 100 * curve[1], late = 100 * curve[2];
+    var arch = {
+      'Front-to-back teamfight': 0.35 * comp['Engage or catch'] + 0.3 * comp.Frontline + 0.2 * comp['Hard CC'] + 0.15 * comp['Steady damage'],
+      'Poke and siege': 0.4 * sat(sum.poke * scale, 2) + 0.2 * comp['Wave clear and push'] + 0.2 * comp['Turret pressure'] + 0.1 * comp['Steady damage'] + 0.1 * Math.max(early, mid),
+      'Catch and pick-off': 0.4 * sat(sum.catchx * scale, 1.5) + 0.3 * comp.Burst + 0.2 * comp['Hard CC'] + 0.1 * Math.max(early, mid),
+      'Protect and late scaling': 0.4 * late + 0.3 * comp['Peel and sustain'] + 0.2 * comp.Frontline + 0.1 * comp['Steady damage'],
+      'Early tempo and snowball': 0.4 * early + 0.2 * comp.Burst + 0.2 * sat(sum.catchx * scale, 1.5) + 0.2 * comp['Early objectives']
+    };
+    var archList = Object.keys(arch).map(function (a) { return { name: a, score: arch[a] }; }).sort(function (a, b) { return b.score - a.score; });
+    var known = fs.length ? fs.reduce(function (a, f) { return a + f.known; }, 0) / fs.length : 0;
+    var missing = [];
+    if (full) {
+      if (sum.front &lt; 0.9) missing.push('no real frontline');
+      if (sum.cc &lt; 0.9) missing.push('little hard crowd control');
+      if (Math.max(sum.engage, sum.catchx) &lt; 0.9) missing.push('no engage or catch hero');
+      if (mix &lt; 40) missing.push('almost all one damage type');
+      if (sum.wave &lt; 0.7) missing.push('weak wave clear');
+      if (sum.peel &lt; 0.7) missing.push('little peel or sustain');
+      if (sum.siege &lt; 1.2) missing.push('little turret pressure');
+    }
+    return { rating: rel, raw: rating, combos: combos.list, comp: comp, curve: { early: early, mid: mid, late: late }, arch: archList, missing: missing, known: known, objKnown: fs.reduce(function (a, f) { return a + (f.objKnown || 0); }, 0), n: fs.length, sums: sum };
+  }
+
+  // Lav's matchup table (one analyst, low weight): returns &gt;0 if style A has the edge.
+  var COUNTERS = { 'Front-to-back teamfight': { 'Catch and pick-off': -1, 'Protect and late scaling': -1 }, 'Poke and siege': { 'Protect and late scaling': 1, 'Catch and pick-off': 0.5 } };
+  function styleEdge(a, b) {
+    var x = (COUNTERS[a] &amp;&amp; COUNTERS[a][b]) || 0, y = (COUNTERS[b] &amp;&amp; COUNTERS[b][a]) || 0;
+    return x - y;
+  }
+
+  var logit = function (p) { p = Math.min(0.97, Math.max(0.03, p)); return Math.log(p / (1 - p)); };
+  var expit = function (z) { return 1 / (1 + Math.exp(-z)); };
+  var W = { team: 0.8, hero: 6.0, comp: 0.02, style: 0.12, side: 0.3, temp: 0.4 }; // temp: one shrink factor chosen on 54 games so the model does not overstate (see evalcomp.js)
+
+  // A and B: { profile, base (season win rate), heroEv (mean of shrunk hero win rate minus 0.5) }
+  function winProb(A, B, opt) {
+    opt = opt || {};
+    var parts = {
+      team: W.team * (logit(A.base) - logit(B.base)),
+      hero: W.hero * (A.heroEv - B.heroEv),
+      comp: W.comp * (A.profile.rating - B.profile.rating),
+      style: W.style * 100 / 100 * styleEdge(A.profile.arch[0].name, B.profile.arch[0].name),
+      side: opt.aBlue === true ? W.side : (opt.aBlue === false ? -W.side : 0)
+    };
+    if (opt.only) { var z0 = 0; opt.only.forEach(function (k) { z0 += parts[k]; }); return { p: expit(z0), parts: parts }; }
+    var z = W.temp * (parts.team + parts.hero + parts.comp + parts.style + parts.side);
+    return { p: Math.min(0.65, Math.max(0.35, expit(z))), raw: expit(z), parts: parts };
+  }
+
+  var api = { feats: feats, profile: profile, styleEdge: styleEdge, winProb: winProb, W: W, logit: logit, expit: expit };
+  if (typeof module !== 'undefined' &amp;&amp; module.exports) module.exports = api; else root.DraftComp = api;
+})(typeof window !== 'undefined' ? window : this);
+</pre></details><details><summary>bt.js <span class="dim" style="font-weight:400">· 50 lines</span></summary><p class="dim">Bayesian Bradley-Terry sampler (Metropolis).</p><pre class="code">// Bayesian Bradley-Terry team strength with a blue-side bonus, fitted in the browser by a simple random-walk Metropolis sampler.
+// Mirrors analysis/s2_strength_series.py. results: [{a, b, win: 'a'|'b', blue: 'a'|'b'|null}]
+(function (root) {
+  'use strict';
+  function rng(seed) { var s = seed &gt;&gt;&gt; 0; return function () { s += 0x6D2B79F5; var t = Math.imul(s ^ (s &gt;&gt;&gt; 15), 1 | s); t ^= t + Math.imul(t ^ (t &gt;&gt;&gt; 7), 61 | t); return ((t ^ (t &gt;&gt;&gt; 14)) &gt;&gt;&gt; 0) / 4294967296; }; }
+  function fit(results, opt) {
+    opt = opt || {}; var iters = opt.iters || 36000, burn = opt.burn || 8000, thin = opt.thin || 10, tau = opt.tau || 1, step = opt.step || 0.12;
+    var teams = [], idx = {};
+    results.forEach(function (r) { [r.a, r.b].forEach(function (t) { if (!(t in idx)) { idx[t] = teams.length; teams.push(t); } }); });
+    var K = teams.length, n = results.length, A = new Int16Array(n), B = new Int16Array(n), Y = new Uint8Array(n), SD = new Int8Array(n);
+    results.forEach(function (r, i) { A[i] = idx[r.a]; B[i] = idx[r.b]; Y[i] = r.win === 'a' ? 1 : 0; SD[i] = r.blue === 'a' ? 1 : (r.blue === 'b' ? -1 : 0); });
+    var rand = rng(opt.seed || 12345);
+    function normal() { var u = 1 - rand(), v = rand(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+    function logpost(th) {
+      var ll = 0, h = th[K];
+      for (var i = 0; i &lt; n; i++) { var z = th[A[i]] - th[B[i]] + SD[i] * h; ll += (Y[i] ? z : 0) - (z &gt; 0 ? z + Math.log1p(Math.exp(-z)) : Math.log1p(Math.exp(z))); }
+      var pr = 0; for (var k = 0; k &lt; K; k++) pr += th[k] * th[k]; return ll - 0.5 * pr / (tau * tau) - 0.5 * h * h;
+    }
+    var th = new Float64Array(K + 1), lp = logpost(th), draws = [], prop = new Float64Array(K + 1);
+    for (var it = 0; it &lt; iters; it++) {
+      for (var j = 0; j &lt;= K; j++) prop[j] = th[j] + step * normal();
+      var lq = logpost(prop);
+      if (Math.log(rand()) &lt; lq - lp) { var t = th; th = prop; prop = t; lp = lq; }
+      if (it &gt;= burn &amp;&amp; (it - burn) % thin === 0) draws.push(Float64Array.from(th));
+    }
+    var extra = (opt.teams || []).filter(function (t) { return !(t in idx); });
+    if (extra.length) {
+      draws = draws.map(function (d) { var e = new Float64Array(K + 1 + extra.length); e.set(d); for (var j = 0; j &lt; extra.length; j++) e[K + 1 + j] = tau * normal(); return e; });
+      extra.forEach(function (t, j) { idx[t] = K + 1 + j; });
+    }
+    return { teams: teams, idx: idx, K: K, n: n, draws: draws, noData: extra };
+  }
+  function expit(x) { return 1 / (1 + Math.exp(-x)); }
+  // chance team a beats team b in one game; blue = 'a' | 'b' | null. extra = extra log-odds toward a (optional)
+  function pGame(f, a, b, blue, extra) {
+    var ia = f.idx[a], ib = f.idx[b]; if (ia == null || ib == null) return null;
+    var s = blue === 'a' ? 1 : (blue === 'b' ? -1 : 0), ex = extra || 0;
+    return f.draws.map(function (d) { return expit(d[ia] - d[ib] + s * d[f.K] + ex); });
+  }
+  function comb(n, k) { var r = 1; for (var i = 1; i &lt;= k; i++) r = r * (n - k + i) / i; return r; }
+  // P(a wins series) when a needs na more wins and b needs nb more wins, single game chance p
+  function seriesP(p, na, nb) {
+    if (na &lt;= 0) return 1; if (nb &lt;= 0) return 0;
+    var tot = 0; for (var l = 0; l &lt; nb; l++) tot += comb(na - 1 + l, l) * Math.pow(p, na) * Math.pow(1 - p, l); return tot;
+  }
+  function summarise(arr) { var s = arr.slice().sort(function (x, y) { return x - y; }), n = s.length, m = 0; s.forEach(function (x) { m += x; }); return { mean: m / n, lo: s[Math.floor(0.025 * (n - 1))], hi: s[Math.floor(0.975 * (n - 1))] }; }
+  var api = { fit: fit, pGame: pGame, seriesP: seriesP, summarise: summarise, expit: expit };
+  if (typeof module !== 'undefined' &amp;&amp; module.exports) module.exports = api; else root.DraftBT = api;
+})(typeof window !== 'undefined' ? window : this);
+</pre></details><p class="dim" style="margin-top:2em">StepForward, an MLBB draft simulator built as a vibe-coding project.</p></main></body></html>

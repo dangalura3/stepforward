@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070a12">
+<title>StepForward - MLBB Draft Simulator</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a live draft board. Step ribbon, next-move forecast, blue/red board, hero grid, scorecard, hero hierarchy last. */
+:root {
+  --bg: #f3f5f8; --surface: #ffffff; --surface-2: #e9edf3; --fg: #141b2b; --fg-dim: #566176; --line: #d3dae5;
+  --blue: #1f5fd1; --blue-soft: #dbe7fb; --red: #c8372d; --red-soft: #f7dcd9;
+  --mark: #b7791f; --mark-soft: #f6e7c8; --ok: #1d7a4d; --ok-soft: #d6efe2; --warn: #9a5b00;
+  --f-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1422; --surface: #161e31; --surface-2: #1e2840; --fg: #e8edf7; --fg-dim: #97a3bb; --line: #2a3650;
+    --blue: #6b9bff; --blue-soft: #1b2c52; --red: #ff7d70; --red-soft: #46221f;
+    --mark: #e9b44c; --mark-soft: #3d3016; --ok: #5fd39a; --ok-soft: #14382a; --warn: #f0b45a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1422; --surface: #161e31; --surface-2: #1e2840; --fg: #e8edf7; --fg-dim: #97a3bb; --line: #2a3650;
+  --blue: #6b9bff; --blue-soft: #1b2c52; --red: #ff7d70; --red-soft: #46221f;
+  --mark: #e9b44c; --mark-soft: #3d3016; --ok: #5fd39a; --ok-soft: #14382a; --warn: #f0b45a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.5;
+  padding-block: 20px 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 26px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; letter-spacing: .01em; line-height: 1.05; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(34px, 7vw, 54px); } h2 { font-size: 28px; } h3 { font-size: 21px; }
+p { margin: 0; max-width: 70ch; }
+.dim { color: var(--fg-dim); } .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.eyebrow, .block-label { font-family: var(--f-mono); font-size: 12px; letter-spacing: .07em; text-transform: uppercase; color: var(--fg-dim); }
+.block-label { margin-bottom: 6px; }
+section { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.sechead { display: flex; flex-direction: column; gap: 4px; }
+button, input, select, textarea { font: inherit; color: var(--fg); }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--mark); outline-offset: 2px; }
+.btn { font-weight: 600; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--fg); background: var(--fg); color: var(--bg); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--fg); border-color: var(--line); }
+.btn:disabled { opacity: .45; cursor: default; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { font-weight: 600; padding: 7px 14px; border: 0; background: transparent; color: var(--fg-dim); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+input[type="text"], select, textarea { width: 100%; min-width: 0; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.bar label.chk { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; }
+.pill { font-size: 12.5px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); color: var(--fg-dim); }
+.pill.warn { color: var(--warn); border-color: var(--warn); }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.ribbon { display: flex; flex-wrap: wrap; gap: 6px; }
+.rgroup { display: flex; flex-wrap: wrap; gap: 4px; padding: 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.step { min-width: 46px; padding: 3px 6px; border-radius: 5px; font-size: 11.5px; line-height: 1.25; text-align: center; border: 1.5px solid var(--line); background: var(--surface-2); color: var(--fg-dim); }
+.step b { display: block; font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .04em; }
+.step.blue { border-color: var(--blue); } .step.red { border-color: var(--red); }
+.step.ban b::after { content: " ban"; } .step.pick b::after { content: " pick"; }
+.step.done { color: var(--fg); background: var(--surface); font-weight: 600; }
+.step.ban.done { text-decoration: line-through; text-decoration-thickness: 1px; }
+.step.now { background: var(--mark-soft); color: var(--fg); outline: 2px solid var(--mark); }
+
+.next { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 14px; border-top: 4px solid var(--mark); }
+.next.blue { border-top-color: var(--blue); } .next.red { border-top-color: var(--red); }
+.nexthead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.sidetag { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
+.sidetag.blue { background: var(--blue-soft); color: var(--blue); } .sidetag.red { background: var(--red-soft); color: var(--red); }
+.preds { display: flex; flex-direction: column; gap: 6px; }
+.pred { display: grid; grid-template-columns: 22px minmax(88px, 130px) 1fr 46px; align-items: center; gap: 4px 10px; background: transparent; border: 0; padding: 4px 0; text-align: left; cursor: pointer; border-radius: 6px; }
+.pred:hover { background: var(--surface-2); }
+.pred .rk { font-family: var(--f-mono); font-size: 12px; color: var(--fg-dim); text-align: right; }
+.pred .nm { font-weight: 600; overflow-wrap: anywhere; }
+.pred .why { grid-column: 2 / -1; font-size: 12.5px; color: var(--fg-dim); margin-top: -2px; }
+.track { height: 12px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+.fill { height: 100%; background: var(--mark); border-radius: 3px; display: block; }
+.pred:nth-child(n+4) .fill { background: var(--fg-dim); opacity: .5; }
+.pc { font-family: var(--f-mono); font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
+.alsos { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { padding: 2px 8px; border-radius: 4px; background: var(--surface-2); font-size: 12.5px; white-space: nowrap; }
+.chip.btn-chip { border: 0; cursor: pointer; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.note { font-size: 13px; color: var(--fg-dim); }
+.err { color: var(--red); font-size: 13px; min-height: 1.2em; }
+.winbar.series .wb { background: var(--ok); } .winbar.series .wr { background: var(--mark); }
+.sgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.sctl { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.stepper { display: inline-flex; align-items: center; gap: 6px; } .stepper b { min-width: 22px; text-align: center; font-family: var(--f-display); font-size: 22px; }
+.stepper button { width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface-2); color: var(--fg); font-size: 20px; cursor: pointer; }
+table.mini { border-collapse: collapse; width: 100%; font-size: 13.5px; } table.mini td, table.mini th { padding: 5px 6px; border-bottom: 1px solid var(--line); text-align: left; } table.mini .num { text-align: right; font-family: var(--f-mono); }
+.verdict { padding: 8px 10px; border-radius: 6px; background: var(--surface-2); font-size: 14px; }
+.verdict.hit { background: var(--ok-soft); color: var(--fg); font-weight: 400; } .verdict.miss { background: var(--mark-soft); }
+
+.projection { padding: 10px 12px; border: 1px dashed var(--line); border-radius: 8px; display: flex; flex-direction: column; gap: 8px; }
+.projrow { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 14px; }
+.team { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.team.blue { border-top: 4px solid var(--blue); } .team.red { border-top: 4px solid var(--red); }
+.teamhead { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.slots { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+@media (max-width: 520px) { .slots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.slot { min-height: 46px; padding: 5px 6px; border: 1px dashed var(--line); border-radius: 6px; font-size: 13px; font-weight: 600; display: flex; flex-direction: column; justify-content: center; overflow-wrap: anywhere; }
+.slot small { font-weight: 400; color: var(--fg-dim); font-size: 11px; }
+.slot.filled { border-style: solid; background: var(--surface-2); }
+.slot.ban.filled { text-decoration: line-through; text-decoration-thickness: 1px; color: var(--fg-dim); }
+.slot.now { border: 2px solid var(--mark); background: var(--mark-soft); }
+.lanewarn { font-size: 12.5px; color: var(--warn); }
+
+.herogrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 6px; max-height: 330px; overflow-y: auto; padding: 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.hero { padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface-2); text-align: left; cursor: pointer; font-size: 13px; line-height: 1.25; }
+.hero small { display: block; color: var(--fg-dim); font-size: 11px; }
+.hero:hover:not(:disabled) { border-color: var(--mark); }
+.hero:disabled { opacity: .4; cursor: default; }
+.hero.xb { border-color: var(--blue); } .hero.xr { border-color: var(--red); }
+.hero.sug { background: var(--mark-soft); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters input { flex: 1 1 200px; } .filters select { flex: 0 1 160px; width: auto; }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.statgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 10px; }
+.stat { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; display: flex; flex-direction: column; gap: 2px; }
+.stat b { font-family: var(--f-display); font-size: 28px; line-height: 1; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--fg-dim); font-weight: 500; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.hit { color: var(--ok); font-weight: 600; } .miss { color: var(--fg-dim); }
+
+.hier { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap: 14px; }
+.hcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.hcard.blue { border-top: 4px solid var(--blue); } .hcard.red { border-top: 4px solid var(--red); }
+.tier { display: inline-block; min-width: 22px; text-align: center; font-family: var(--f-mono); font-size: 12px; font-weight: 500; padding: 1px 5px; border-radius: 4px; background: var(--surface-2); }
+.tier.S { background: var(--mark-soft); color: var(--fg); outline: 1px solid var(--mark); } .tier.A { background: var(--blue-soft); }
+.hrow.gone td { opacity: .4; text-decoration: line-through; }
+.adjbtn { padding: 0 7px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); cursor: pointer; line-height: 1.5; }
+.mini { width: 70px; display: inline-block; vertical-align: middle; }
+.evid { font-size: 12.5px; color: var(--fg-dim); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
+summary { cursor: pointer; font-weight: 600; } details[open] summary { margin-bottom: 10px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+ul.limits { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; max-width: 74ch; }
+
+.stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1fr); grid-template-areas: "blue center red"; gap: 12px; align-items: start; }
+#colBlue { grid-area: blue; } #colRed { grid-area: red; } .center { grid-area: center; }
+@media (max-width: 900px) { .stage { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "blue red" "center center"; } }
+.tcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.tcard.blue { border-top: 4px solid var(--blue); } .tcard.red { border-top: 4px solid var(--red); }
+.tcard.active { outline: 2px solid var(--mark); outline-offset: 1px; }
+.tcard .slots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tcard .slot { min-height: 34px; flex-direction: row; align-items: center; gap: 6px; }
+@media (max-width: 520px) { header > p, #pills { display: none; } .step b::after { content: '' !important; } .step { min-width: 40px; } .pred { grid-template-columns: 16px minmax(0, 1fr) 36px; } .pred .track { display: none; } .tcard { padding: 10px; } .pick { padding: 3px 6px; } .pick .pl { display: none; } }
+.tcard.blue .slot.filled { border-color: var(--blue); } .tcard.red .slot.filled { border-color: var(--red); }
+.pickcol { display: flex; flex-direction: column; gap: 5px; }
+.pick { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 6px; min-height: 36px; padding: 4px 8px; border: 1px dashed var(--line); border-radius: 6px; font-size: 14px; }
+.pick .pn { font-family: var(--f-mono); font-size: 11.5px; color: var(--fg-dim); }
+.pick .ph { font-weight: 600; overflow-wrap: anywhere; }
+.pick .pl { font-size: 11.5px; color: var(--fg-dim); text-align: right; }
+.pick.filled { border-style: solid; background: var(--surface-2); }
+.pick.now { border: 2px solid var(--mark); background: var(--mark-soft); }
+.tcard.blue .pick.filled { border-color: var(--blue); } .tcard.red .pick.filled { border-color: var(--red); }
+.top5 { border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.pred.wait { cursor: default; opacity: .75; } .pred.wait:hover { background: transparent; }
+.pred { grid-template-columns: 18px minmax(70px, 1fr) minmax(40px, .8fr) 38px; }
+.pred .why { display: none; }
+.dual { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+.pcol { min-width: 0; display: flex; flex-direction: column; gap: 6px; } .pcol.live { background: var(--mark-soft); border-radius: 8px; padding: 6px; margin: -6px; }
+@media (min-width: 1180px) { .dual { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; } .dual .pred { grid-template-columns: 16px minmax(0, 1fr) 36px; } .dual .pred .track { display: none; } .dual .pred .nm { font-size: 13.5px; } }
+.upm { color: var(--mark); font-size: 10.5px; } .mum { color: var(--ok); font-size: 11px; } .mum.bad { color: var(--warn); } .shiftnote { margin: 0; font-size: 12.5px; }
+.center { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.banner { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 10px; border-top: 4px solid var(--mark); }
+.banner.blue { border-top-color: var(--blue); } .banner.red { border-top-color: var(--red); }
+.center .herogrid { max-height: 520px; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
+.hero { min-height: 50px; padding: 7px 9px; font-size: 14px; }
+.hero .hn { font-weight: 600; }
+.hero.enter { outline: 2px solid var(--mark); }
+.hero.sug .hn::before { content: '\2605 '; color: var(--mark); }
+.filters input { min-height: 44px; font-size: 16px; } .filters select { min-height: 44px; }
+.center .filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 4px; }
+.pickrow { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip.blue { border: 1px solid var(--blue); } .chip.red { border: 1px solid var(--red); }
+
+.winbar { display: flex; height: 38px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.winbar > div { display: flex; align-items: center; padding: 0 12px; font-family: var(--f-display); font-size: 22px; font-weight: 700; color: #fff; min-width: 70px; white-space: nowrap; }
+.winbar .wb { background: var(--blue); } .winbar .wr { background: var(--red); justify-content: flex-end; }
+:root[data-theme="dark"] .winbar > div { color: #0e1422; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .winbar > div { color: #0e1422; } }
+.vgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr)); gap: 14px; }
+.vcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.vcard.blue { border-top: 4px solid var(--blue); } .vcard.red { border-top: 4px solid var(--red); }
+.rating { font-family: var(--f-display); font-size: 40px; line-height: 1; }
+.compbars { display: grid; grid-template-columns: minmax(104px, 150px) 1fr 30px; gap: 5px 8px; align-items: center; font-size: 13px; }
+.compbars .pc { font-size: 12px; }
+.curve { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.curve div { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--fg-dim); }
+.archs { display: flex; flex-wrap: wrap; gap: 6px; }
+.arch { padding: 3px 9px; border-radius: 99px; background: var(--surface-2); font-size: 13px; }
+.arch.top { background: var(--mark-soft); font-weight: 600; }
+.combo { font-size: 13.5px; } .combo b { font-weight: 600; }
+.warnline { font-size: 13px; color: var(--warn); }
+.gain { margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--line); font-size: 12.5px; } .gain .gr { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; } .gain .gr b { font-weight: 600; } .gain .up { color: var(--ok, #2e7d32); font-variant-numeric: tabular-nums; white-space: nowrap; }
+details.why { margin-top: 6px; font-size: 12.5px; } details.why summary { cursor: pointer; color: var(--fg-dim); font-weight: 600; } .wl { padding: 4px 0; border-top: 1px solid var(--line); line-height: 1.45; color: var(--fg-dim); } .wl b { color: var(--fg); font-weight: 600; }
+.tg { display: inline-block; padding: 0 6px; margin-right: 2px; border-radius: 99px; font-size: 11px; font-weight: 600; background: var(--surface-2); color: var(--fg); } .tg-target, .tg-counter, .tg-protect { background: var(--mark-soft); } .tg-meta, .tg-signature { background: var(--surface-2); } .tg-playoff, .tg-deny, .tg-replace { background: var(--surface-2); outline: 1px solid var(--line); }
+.factors td.num { white-space: nowrap; }
+@media (prefers-reduced-motion: no-preference) { .fill { transition: width .2s ease; } }
+
+/* ===== Esports skin: dark arena, neon blue vs red, glass panels ===== */
+html:root[data-theme="dark"] {
+  --bg: #070a12; --surface: rgba(15, 22, 40, .78); --surface-2: rgba(32, 46, 80, .55); --fg: #eaf0ff; --fg-dim: #94a3c6; --line: rgba(120, 150, 230, .2);
+  --blue: #44a6ff; --blue-soft: rgba(68, 166, 255, .16); --red: #ff4f6d; --red-soft: rgba(255, 79, 109, .16);
+  --mark: #ffc94d; --mark-soft: rgba(255, 201, 77, .14); --ok: #3ee6a3; --ok-soft: rgba(62, 230, 163, .14); --warn: #ffb54d;
+  --f-display: "Rajdhani", "Barlow Condensed", "Arial Narrow", system-ui, sans-serif; color-scheme: dark;
+  --glass: blur(12px) saturate(1.2);
+}
+html { background: #070a12; }
+body {
+  background:
+    radial-gradient(900px 480px at 6% -8%, rgba(68, 166, 255, .22), transparent 65%),
+    radial-gradient(900px 480px at 96% -6%, rgba(255, 79, 109, .19), transparent 65%),
+    radial-gradient(700px 400px at 50% 110%, rgba(122, 77, 255, .13), transparent 70%), #070a12;
+  background-attachment: fixed; position: relative;
+}
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .5;
+  background-image: linear-gradient(rgba(120, 150, 230, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(120, 150, 230, .06) 1px, transparent 1px); background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 0%, #000 20%, transparent 75%); }
+.wrap { position: relative; z-index: 1; }
+h1 { text-transform: uppercase; letter-spacing: .04em; background: linear-gradient(95deg, #ffffff 10%, #8cc4ff 45%, #ff7a92 95%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 22px rgba(90, 150, 255, .35)); }
+h1 span { -webkit-text-fill-color: #94a3c6; font-weight: 500; letter-spacing: .08em; }
+h2, h3 { letter-spacing: .03em; text-transform: uppercase; }
+h3 { font-size: 22px; }
+.eyebrow { color: var(--mark); letter-spacing: .18em; font-size: 11.5px; }
+.eyebrow::before { content: "◆ "; }
+#siteNav a { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(68, 166, 255, .35); }
+#siteNav a:hover { color: #fff; border-color: #fff; }
+a { color: var(--blue); }
+
+/* glass cards */
+.bar, .next, .team, .tcard, .panel, .hcard, .vcard, details, .rgroup, .herogrid, .scroll, .stat, .projection, .verdict {
+  background: var(--surface); -webkit-backdrop-filter: var(--glass); backdrop-filter: var(--glass);
+  border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 34px rgba(0, 0, 0, .38), inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+.rgroup, .stat, .verdict, .projection { box-shadow: none; border-radius: 10px; }
+.tcard.blue, .hcard.blue, .vcard.blue, .team.blue { border-top: 1px solid var(--line); box-shadow: inset 0 3px 0 var(--blue), 0 10px 34px rgba(0, 0, 0, .38), 0 0 34px rgba(68, 166, 255, .12); }
+.tcard.red, .hcard.red, .vcard.red, .team.red { border-top: 1px solid var(--line); box-shadow: inset 0 3px 0 var(--red), 0 10px 34px rgba(0, 0, 0, .38), 0 0 34px rgba(255, 79, 109, .12); }
+.next { border-top: 1px solid var(--line); box-shadow: inset 0 3px 0 var(--mark), 0 10px 34px rgba(0, 0, 0, .38); }
+.next.blue { box-shadow: inset 0 3px 0 var(--blue), 0 10px 34px rgba(0, 0, 0, .38), 0 0 34px rgba(68, 166, 255, .14); }
+.next.red { box-shadow: inset 0 3px 0 var(--red), 0 10px 34px rgba(0, 0, 0, .38), 0 0 34px rgba(255, 79, 109, .14); }
+.tcard.active { outline: 0; border-color: var(--mark); }
+details > summary { list-style: none; letter-spacing: .02em; } details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "▸"; color: var(--mark); display: inline-block; margin-right: 8px; transition: transform .15s; } details[open] > summary::before { transform: rotate(90deg); }
+
+/* VS banner */
+.vs { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 14px; padding: 20px clamp(14px, 3vw, 30px); border-radius: 18px; position: relative; overflow: hidden;
+  border: 1px solid var(--line); background: linear-gradient(90deg, rgba(68, 166, 255, .26), rgba(10, 15, 30, .72) 42%, rgba(10, 15, 30, .72) 58%, rgba(255, 79, 109, .26)); box-shadow: 0 14px 44px rgba(0, 0, 0, .45); }
+.vs::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(115deg, transparent 0 22px, rgba(255, 255, 255, .025) 22px 24px); pointer-events: none; }
+.vs-side { display: flex; flex-direction: column; gap: 4px; min-width: 0; position: relative; z-index: 1; }
+.vs-side.red { text-align: right; align-items: flex-end; }
+.vs-tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: .24em; }
+.vs-side.blue .vs-tag { color: var(--blue); } .vs-side.red .vs-tag { color: var(--red); }
+.vs-name { font-family: var(--f-display); font-weight: 700; text-transform: uppercase; line-height: .95; letter-spacing: .02em; font-size: clamp(22px, 5.4vw, 50px); overflow-wrap: anywhere; }
+.vs-side.blue .vs-name { text-shadow: 0 0 26px rgba(68, 166, 255, .6); } .vs-side.red .vs-name { text-shadow: 0 0 26px rgba(255, 79, 109, .6); }
+.vs-mid { display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; }
+.vs-mid span { font-family: var(--f-display); font-weight: 700; font-size: clamp(26px, 5vw, 46px); line-height: 1; color: var(--mark); text-shadow: 0 0 24px rgba(255, 201, 77, .75); }
+.vs-mid small { font-family: var(--f-mono); font-size: 11px; letter-spacing: .1em; color: var(--fg-dim); text-transform: uppercase; white-space: nowrap; }
+
+/* controls */
+.btn { background: linear-gradient(135deg, #2f7bff, #7a4dff); border: 0; color: #fff; border-radius: 10px; letter-spacing: .02em; box-shadow: 0 6px 20px rgba(86, 100, 255, .38); transition: transform .12s, box-shadow .12s, filter .12s; }
+.btn:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.12); box-shadow: 0 10px 26px rgba(86, 100, 255, .5); }
+.btn.ghost { background: rgba(255, 255, 255, .03); border: 1px solid var(--line); color: var(--fg); box-shadow: none; }
+.btn.ghost:hover:not(:disabled) { border-color: var(--blue); box-shadow: 0 0 16px rgba(68, 166, 255, .25); }
+.seg { border-radius: 10px; background: rgba(255, 255, 255, .03); } .seg button[aria-pressed="true"] { background: linear-gradient(135deg, #2f7bff, #7a4dff); color: #fff; }
+input[type="text"], select, textarea, input:not([type]), input[type="search"] { background: rgba(6, 10, 22, .75); border: 1px solid var(--line); border-radius: 10px; color: var(--fg); }
+input:focus, select:focus, textarea:focus { outline: 0; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(68, 166, 255, .22), 0 0 18px rgba(68, 166, 255, .2); }
+input[type="checkbox"] { accent-color: #7a4dff; width: 16px; height: 16px; }
+select option, select optgroup { background: #0f1628; color: var(--fg); }
+.pill { background: rgba(255, 255, 255, .04); border-color: var(--line); backdrop-filter: blur(6px); }
+
+/* draft ribbon */
+.rgroup { background: rgba(10, 16, 32, .6); }
+.step { background: rgba(255, 255, 255, .03); border-radius: 7px; border-width: 1px; }
+.step.blue { border-color: rgba(68, 166, 255, .5); } .step.red { border-color: rgba(255, 79, 109, .5); }
+.step.done { background: rgba(255, 255, 255, .07); }
+.step.blue.done { box-shadow: inset 0 -2px 0 var(--blue); } .step.red.done { box-shadow: inset 0 -2px 0 var(--red); }
+.step.now { background: rgba(255, 201, 77, .16); outline: 0; border-color: var(--mark); box-shadow: 0 0 18px rgba(255, 201, 77, .5); }
+@media (prefers-reduced-motion: no-preference) {
+  .step.now, .slot.now, .pick.now { animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 6px rgba(255, 201, 77, .35); } 50% { box-shadow: 0 0 20px rgba(255, 201, 77, .75); } }
+  .hero { transition: transform .12s, box-shadow .12s, border-color .12s, background .12s; }
+  .tcard, .next, .pred { transition: box-shadow .2s, border-color .2s; }
+}
+
+/* predictions */
+.track { height: 10px; border-radius: 99px; background: rgba(255, 255, 255, .07); }
+.fill { border-radius: 99px; background: linear-gradient(90deg, #ffc94d, #ff8a3d); box-shadow: 0 0 14px rgba(255, 170, 60, .55); }
+.pred:nth-child(n+4) .fill { background: linear-gradient(90deg, #6f84b8, #8aa0d6); box-shadow: none; opacity: .7; }
+.pred { border-radius: 10px; padding: 5px 6px; } .pred:hover { background: rgba(68, 166, 255, .1); }
+.pred .rk { color: var(--mark); font-weight: 600; } .pred:first-child .nm { color: #fff; text-shadow: 0 0 14px rgba(255, 201, 77, .4); }
+.chip { background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .06); border-radius: 99px; }
+.sidetag { border-radius: 99px; letter-spacing: .14em; font-weight: 600; }
+.sidetag.blue { background: rgba(68, 166, 255, .18); box-shadow: 0 0 12px rgba(68, 166, 255, .3); } .sidetag.red { background: rgba(255, 79, 109, .18); box-shadow: 0 0 12px rgba(255, 79, 109, .3); }
+.slot, .pick { border-radius: 9px; }
+.slot.filled, .pick.filled { background: rgba(255, 255, 255, .06); }
+.slot.now, .pick.now { border-color: var(--mark); background: rgba(255, 201, 77, .13); }
+.verdict.hit { background: rgba(62, 230, 163, .14); border: 1px solid rgba(62, 230, 163, .35); } .verdict.miss { background: rgba(255, 201, 77, .1); border: 1px solid rgba(255, 201, 77, .3); }
+.winbar { border-radius: 99px; overflow: hidden; box-shadow: 0 0 20px rgba(0, 0, 0, .4); }
+.winbar .wb { background: linear-gradient(90deg, #2f7bff, #44a6ff); color: #04101f; font-weight: 700; } .winbar .wr { background: linear-gradient(90deg, #ff4f6d, #ff7a92); color: #1d0610; font-weight: 700; }
+.winbar.series .wb { background: linear-gradient(90deg, #1fcf8e, #3ee6a3); color: #02170e; } .winbar.series .wr { background: linear-gradient(90deg, #ffb54d, #ffc94d); color: #1c1200; }
+.stat b { color: #fff; text-shadow: 0 0 18px rgba(68, 166, 255, .45); }
+
+/* hero grid: role-coloured tiles */
+.herogrid { scrollbar-width: thin; scrollbar-color: #3a4d7d transparent; padding: 10px; gap: 8px; }
+.hero { --rc: #8aa0d6; border: 1px solid var(--line); border-left: 3px solid var(--rc); border-radius: 10px; background: linear-gradient(135deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .015)); color: var(--fg); }
+.hero[data-role="Tank"] { --rc: #4da3ff; } .hero[data-role="Fighter"] { --rc: #ff9442; } .hero[data-role="Assassin"] { --rc: #ff4f6d; }
+.hero[data-role="Mage"] { --rc: #a07bff; } .hero[data-role="Marksman"] { --rc: #ffd34d; } .hero[data-role="Support"] { --rc: #3ee6a3; }
+.hero .hn { font-weight: 600; }
+.hero:hover:not(:disabled) { transform: translateY(-2px); border-color: var(--rc); box-shadow: 0 6px 18px rgba(0, 0, 0, .4), 0 0 16px color-mix(in srgb, var(--rc) 45%, transparent); }
+.hero.sug { background: linear-gradient(135deg, rgba(255, 201, 77, .2), rgba(255, 201, 77, .05)); border-color: rgba(255, 201, 77, .6); box-shadow: 0 0 14px rgba(255, 201, 77, .25); }
+.hero.xb { border-color: var(--blue); box-shadow: inset 0 0 0 1px var(--blue); } .hero.xr { border-color: var(--red); box-shadow: inset 0 0 0 1px var(--red); }
+
+/* tables */
+th { color: #9fb2de; background: rgba(255, 255, 255, .03); } td, th { border-bottom-color: rgba(120, 150, 230, .14); }
+tr:hover td { background: rgba(68, 166, 255, .05); }
+.tier.S { background: rgba(255, 201, 77, .2); outline-color: var(--mark); } .tier.A { background: rgba(68, 166, 255, .2); }
+::-webkit-scrollbar { width: 9px; height: 9px; } ::-webkit-scrollbar-thumb { background: #34467a; border-radius: 9px; } ::-webkit-scrollbar-track { background: transparent; }
+::selection { background: rgba(122, 77, 255, .5); }
+#seriesBody table.mini { width: 100%; } #seriesBody table.mini th, #seriesBody table.mini td { overflow-wrap: anywhere; white-space: normal; } #seriesBody table.mini td.num, #seriesBody table.mini th.num { white-space: normal; min-width: 64px; }
+
+/* hero portraits */
+.av { --rc: #8aa0d6; --s: 34px; position: relative; display: inline-block; vertical-align: middle; width: var(--s); height: var(--s); flex: none; border-radius: 10px; overflow: hidden; margin-right: 6px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--rc) 55%, #0b1020), #0b1020); border: 1px solid color-mix(in srgb, var(--rc) 60%, transparent); box-shadow: 0 0 10px color-mix(in srgb, var(--rc) 30%, transparent); }
+.av::before { content: attr(data-i); position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--f-display); font-weight: 700; font-size: calc(var(--s) * .42); letter-spacing: .02em; color: #fff; text-shadow: 0 1px 6px rgba(0, 0, 0, .6); }
+.av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.av[data-role="Tank"] { --rc: #4da3ff; } .av[data-role="Fighter"] { --rc: #ff9442; } .av[data-role="Assassin"] { --rc: #ff4f6d; } .av[data-role="Mage"] { --rc: #a07bff; } .av[data-role="Marksman"] { --rc: #ffd34d; } .av[data-role="Support"] { --rc: #3ee6a3; }
+.slot.filled, .pick .ph { display: flex; flex-direction: row; align-items: center; }
+.slot.filled .av { margin-right: 6px; } .slot .sn, .pick .sn { min-width: 0; overflow-wrap: anywhere; line-height: 1.1; }
+.slot.ban.filled .av img, .slot.ban.filled .av::before { filter: grayscale(1) brightness(.7); }
+.pick .ph { min-width: 0; }
+.hero { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: center; }
+.hero .av { grid-row: 1 / 3; margin: 0; } .hero .hn, .hero small { grid-column: 2; min-width: 0; overflow-wrap: anywhere; }
+.pred .nm .av { margin-right: 6px; border-radius: 7px; }
+
+/* quick-pick tray (opens under the slot that is up next) */
+.qp { margin: 2px 0; padding: 10px; border-radius: 14px; border: 1px solid rgba(255, 201, 77, .55); background: linear-gradient(180deg, rgba(255, 201, 77, .12), rgba(255, 201, 77, .03)); box-shadow: 0 0 26px rgba(255, 201, 77, .18); }
+.qp-h { display: flex; flex-direction: column; gap: 1px; margin-bottom: 8px; } .qp-h b { font-family: var(--f-display); font-size: 17px; letter-spacing: .04em; text-transform: uppercase; color: #fff; } .qp-h span { font-size: 12px; color: var(--mark); font-family: var(--f-mono); letter-spacing: .06em; }
+.qp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; } .qp-grid:empty { display: none; }
+.qpt { --rc: #8aa0d6; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 8px; padding: 6px 8px; text-align: left; border: 1px solid var(--line); border-left: 3px solid var(--rc); border-radius: 10px; background: rgba(8, 12, 26, .7); color: var(--fg); cursor: pointer; min-height: 56px; font: inherit; }
+.qpt .av { margin: 0; grid-row: 1 / 3; } .qpt .qn { font-weight: 600; line-height: 1.1; overflow-wrap: anywhere; align-self: end; } .qpt .qpc { font-family: var(--f-mono); font-size: 12px; color: var(--mark); grid-column: 2; align-self: start; }
+.qpt[data-role="Tank"] { --rc: #4da3ff; } .qpt[data-role="Fighter"] { --rc: #ff9442; } .qpt[data-role="Assassin"] { --rc: #ff4f6d; } .qpt[data-role="Mage"] { --rc: #a07bff; } .qpt[data-role="Marksman"] { --rc: #ffd34d; } .qpt[data-role="Support"] { --rc: #3ee6a3; }
+.qpt:hover, .qpt:focus-visible { background: color-mix(in srgb, var(--rc) 22%, #0b1020); border-color: var(--rc); box-shadow: 0 0 16px color-mix(in srgb, var(--rc) 45%, transparent); outline: 0; transform: translateY(-1px); }
+.qp-in { width: 100%; margin: 8px 0 6px; }
+#qpDock .qp { position: fixed; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); z-index: 60; max-height: 50vh; overflow-y: auto; background: #0d1426; margin: 0; padding: 8px 10px 10px; box-shadow: 0 -10px 40px rgba(0, 0, 0, .65), 0 0 30px rgba(255, 201, 77, .25); }
+#qpDock .qp-h { flex-direction: row; justify-content: space-between; align-items: baseline; margin-bottom: 6px; } #qpDock .qp-h b { font-size: 16px; }
+#qpDock .qp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; } #qpDock .qpt { min-height: 50px; padding: 4px 6px; gap: 6px; } #qpDock .qpt .qn { font-size: 13px; } #qpDock .qp-in { margin: 6px 0 5px; }
+body.hasdock .wrap { padding-bottom: 230px; }
+.center .herogrid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); } .hero .hn, .hero small { overflow-wrap: break-word; } .hero .av { --s: 36px !important; }
+@media (max-width: 520px) { .vs { padding: 14px 12px; gap: 8px; } .vs-mid small { display: none; } }
+</style>
+</head><body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <div class="eyebrow">MPL ID Season 18 data · M8 World Championship teams · any team vs team</div>
+    <h1>StepForward <span style="font-weight:400">· MLBB Draft Simulator</span></h1>
+    <p class="note" id="siteNav"><a href="habits.html">Coach and analyst habits</a> · <a href="formulas.html">Formulas and accuracy</a> · <a href="programs.html">Analysis programs</a></p>
+    <p class="dim">Click each ban and pick as it happens. Each team shows the model's top 5 for its next move, and the scorecard checks the guesses. Use the what-if fill to try drafts.</p>
+    <div class="pills" id="pills"></div>
+  </header>
+
+  <div class="vs" id="vsBanner" aria-live="polite"></div>
+
+  <section id="controls">
+    <div class="bar">
+      <label class="note">Blue side <select id="blueSel" style="width:auto"></select></label> <button class="btn ghost" id="swapSides" type="button" aria-label="Swap sides">⇄ Swap</button> <label class="note">Red side <select id="redSel" style="width:auto"></select></label>
+      <span class="mono dim" id="gameLabel"></span>
+      <label class="chk"><input type="checkbox" id="scoreOn" checked> Score my predictions</label>
+      <label class="chk"><input type="checkbox" id="matchOn" checked> Use hero matchups (counters and combos)</label>
+      <label class="chk"><input type="checkbox" id="phaseOn" checked> Count pre-patch games less</label>
+      <label class="chk"><input type="checkbox" id="playoffOn" checked> Use playoff drafts (MPL ID + PH + MY)</label>
+      <label class="chk"><input type="checkbox" id="habitOn"> Use drafter habits (unproven: you choose the hot heroes)</label>
+      <label class="chk"><input type="checkbox" id="banShiftOn" checked> Shift picks when heroes are banned</label>
+      <label class="chk"><input type="checkbox" id="fearless"> Fearless lock (used heroes stay out)</label>
+      <button class="btn ghost" id="undo" type="button">Undo</button>
+      <button class="btn ghost" id="reset" type="button">Reset draft</button>
+    </div>
+    <details id="playoffBox">
+      <summary>Playoff meta: MPL ID, PH and MY playoff bans, and what other regions have</summary>
+      <p class="note" id="playoffNote"></p>
+      <div class="scroll"><table class="mini" id="playoffTable"></table></div>
+      <div class="block-label" style="margin-top:12px">Regions at M8: what data exists</div>
+      <div class="scroll"><table class="mini" id="regionTable"></table></div>
+    </details>
+    <details id="habitBox">
+      <summary>Drafter habits: hot heroes, repeated bans, who reacts how</summary>
+      <p class="note" id="habitNote"></p>
+      <p class="note" id="habitFit"></p>
+      <div class="block-label" style="margin-top:12px">Hot heroes: you choose (applies only when "Use drafter habits" is on)</div>
+      <div class="sctl" id="hotCtl">
+        <label class="note">Team <select id="hotTeam" style="width:auto"></select></label>
+        <label class="note">Chase strength <select id="hotStr" style="width:auto"><option value="0">0 off</option><option value="0.3">0.3 mild</option><option value="0.6">0.6 medium</option><option value="0.9">0.9 strong</option></select></label>
+        <label class="note">Hot hero <input id="hotHero" list="heroList" placeholder="e.g. Estes" style="width:130px"></label>
+        <button class="btn" id="hotAdd" type="button">Add</button><button class="btn ghost" id="hotClear" type="button">Clear team</button><span class="note" id="hotErr" role="status"></span>
+      </div>
+      <p class="note" id="hotChips"></p>
+    </details>
+    <details id="rulesBox">
+      <summary>Matchup rules (counters and combos) you can edit</summary>
+      <p class="note" id="rulesNote"></p>
+      <div class="sctl" id="ruleAdd">
+        <label class="note">Hero <input id="rA" list="heroList" placeholder="e.g. Gloo" style="width:130px"></label>
+        <label class="note"><select id="rT" style="width:auto"><option value="syn">goes well with</option><option value="counter">counters</option></select></label>
+        <label class="note">Hero <input id="rB" list="heroList" placeholder="e.g. Alice" style="width:130px"></label>
+        <label class="note">Strength <select id="rS" style="width:auto"><option value="1">1 minor</option><option value="2" selected>2 solid</option><option value="3">3 hard</option></select></label>
+        <button class="btn" id="rAdd" type="button">Add rule</button><span class="note" id="rErr"></span>
+      </div>
+      <datalist id="heroList"></datalist>
+      <div class="scroll"><table class="mini" id="rulesTable"></table></div>
+    </details>
+    <details>
+      <summary>Draft order and what-if fill</summary>
+      <div class="grid2">
+        <div><div class="block-label">Draft order (b = blue, r = red, B = ban, P = pick, | = phase break)</div>
+          <input type="text" id="orderIn" aria-label="Draft order">
+          <div class="actions" style="margin-top:8px"><button class="btn ghost" id="orderApply" type="button">Apply order</button><button class="btn ghost" id="orderDefault" type="button">Use default</button></div>
+          <p class="note" style="margin-top:6px">The default is the standard pro order (3 bans each, 3 picks each, 2 bans each, 2 picks each). The official 2026 MPL ID order was not published, so change it here if what you see differs.</p></div>
+        <div><div class="block-label">What-if fill: heroes in draft order, separated by commas (not scored)</div>
+          <textarea id="fillIn" rows="2" placeholder="Fanny, Freya, Marcel, Atlas" aria-label="What-if heroes"></textarea>
+          <div class="actions" style="margin-top:8px"><button class="btn ghost" id="fillApply" type="button">Fill from current step</button></div>
+          <div class="err" id="fillErr" role="status"></div></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="board">
+    <div class="ribbon" id="ribbon" aria-label="Draft steps"></div>
+    <div class="stage">
+      <div id="colBlue"></div>
+      <div class="center">
+        <div id="banner"></div>
+        <div class="filters">
+          <input type="text" id="q" placeholder="Type a hero, press Enter" aria-label="Search hero" autocomplete="off" autocapitalize="off" enterkeyhint="done">
+          <select id="sortF" aria-label="Sort heroes"><option value="likely">Likely first</option><option value="az">A to Z</option></select>
+          <select id="roleF" aria-label="Filter by lane"><option value="">All lanes</option><option>EXP</option><option>Jungle</option><option>Mid</option><option>Gold</option><option>Roam</option></select>
+        </div>
+        <div class="herogrid" id="herogrid"></div>
+        <p class="note"><span id="enterHint"></span> Heroes are sorted by how likely the model thinks they are for this step. Gold ones are its top 5.</p>
+      </div>
+      <div id="colRed"></div>
+    </div>
+    <div id="projWrap"></div>
+  </section>
+
+  <section id="verdict">
+    <div class="sechead"><h2>Draft verdict</h2><p class="dim" id="verdictSub"></p></div>
+    <div id="verdictBody"></div>
+  </section>
+
+  <section id="series">
+    <div class="sechead"><h2>Series odds</h2><p class="dim" id="seriesSub"></p></div>
+    <div class="panel" id="seriesBody"></div>
+  </section>
+
+  <section id="score">
+    <div class="sechead"><h2>Scorecard</h2><p class="dim">Every step you click while "Score my predictions" is on is compared with the model's list for that step. Top 1 means the model's first guess was right.</p></div>
+    <div class="panel">
+      <div class="statgrid" id="stats"></div>
+      <p class="note" id="refnote"></p>
+      <div class="actions"><button class="btn ghost" id="copyLog" type="button">Copy log</button><button class="btn ghost" id="clearLog" type="button">Clear scorecard</button><span class="note" id="copyMsg" role="status"></span></div>
+      <div class="scroll"><table id="logTable"></table></div>
+    </div>
+    <div class="panel">
+      <div class="actions"><b>Finish this game</b>
+        <label class="note">Winner <select id="winner" style="width:auto"></select></label>
+        <button class="btn" id="finish" type="button">Save game and start next</button></div>
+      <p class="note" id="savedNote"></p>
+    </div>
+  </section>
+
+  <section id="hierarchy">
+    <div class="sechead"><h2>Hero hierarchy</h2>
+      <p class="dim">Each team's ranked hero list. Picks are predicted from this list, so a hero a team likes drops out the moment it is banned or taken. Use + and - to move a hero up or down if you know better. Games you save add to it.</p></div>
+    <div class="filters"><label class="note" style="display:inline-flex;align-items:center;gap:6px"><input type="checkbox" id="showAll"> Show all heroes (default shows the top 25)</label></div>
+    <div class="hier" id="hier"></div>
+    <p class="note" id="hierNote"></p>
+  </section>
+
+  <section id="limits">
+    <div class="sechead"><h2>Read this before trusting it</h2></div>
+    <ul class="limits" id="limitList"></ul>
+  </section>
+</div>
+<div id="qpDock"></div>
+
+<script>
+/*MODEL*/
+</script>
+<script>
+/*COMP*/
+</script>
+<script>
+/*BT*/
+</script>
+<script>
+/*SIM*/
+</script>
+<script>
+var APP = /*DATA*/;
+(function () {
+  var S = window.DraftSim, M = window.DraftModel;
+  var PAR = APP.params, BASE_K = APP.params.k;
+  var TODAY = (function () { var d = new Date(), z = function (n) { return (n < 10 ? '0' : '') + n; }; var t = d.getFullYear() + '-' + z(d.getMonth() + 1) + '-' + z(d.getDate()); return t > '2026-11-08' ? t : '2026-11-08'; })();
+  PAR.lambda = Math.LN2 / APP.halfLife; PAR.teamGames = APP.phGames;
+  var POP = M.playoffPrior(APP.playoff.id.concat(APP.playoff.ph, APP.playoff.my || []));
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var pct = function (x) { return Math.round(x * 100) + '%'; };
+  var TEAMS = APP.teams.map(function (t) { return t.code; });
+  var TNAME = {}; APP.teams.forEach(function (t) { TNAME[t.code] = t.name; });
+  var tn = function (t) { return TNAME[t] || t; };
+  var IMG = APP.imgs || {}, HROLE = {}; APP.heroes.forEach(function (x) { HROLE[x.n] = x.role || ''; });
+  function av(name, size) {
+    var parts = String(name).replace(/[^A-Za-z ]/g, '').split(/\s+/).filter(Boolean), ini = (parts.length > 1 ? parts[0][0] + parts[1][0] : String(name).slice(0, 2)).toUpperCase();
+    return '<span class="av" aria-hidden="true" data-role="' + esc(HROLE[name] || '') + '" data-i="' + esc(ini) + '"' + (size ? ' style="--s:' + size + 'px"' : '') + '>' + (IMG[name] ? '<img src="' + esc(IMG[name]) + '" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">' : '') + '</span>';
+  }
+  var keepFocus = false, scrollTray = false, mq = window.matchMedia ? matchMedia('(max-width: 700px)') : { matches: false };
+  var emptyAdj = function () { var o = {}; TEAMS.forEach(function (t) { o[t] = {}; }); return o; };
+
+  var heroNames = APP.heroes.map(function (h) { return h.n; });
+  var roles = {}; APP.heroes.forEach(function (h) { roles[h.n] = h; });
+  var lcMap = {}; heroNames.forEach(function (h) { lcMap[h.toLowerCase()] = h; });
+
+  var st = { winLog: [], sort: 'likely', blue: 'NAVI', red: 'BTR', order: S.DEFAULT_ORDER, score: true, fearless: false, log: [], saved: [], adjust: emptyAdj(), locked: [], gameNo: 1, series: { fmt: 7, lean: false }, matchOn: true, phaseOn: true, playoffOn: true, habitOn: false, hot: {}, rules: { off: {}, added: [] } };
+  var other = function (t) { return t === st.blue ? st.red : st.blue; };
+  try { var raw = JSON.parse(localStorage.getItem('mlbb-sim-v2') || 'null'); if (raw) Object.keys(raw).forEach(function (k) { if (k in st) st[k] = raw[k]; }); } catch (e) {}
+  function save() { try { localStorage.setItem('mlbb-sim-v2', JSON.stringify(st)); } catch (e) {} }
+
+  var steps, draft, showAll = false, projection = null, lastVerdict = null, lastPred = null;
+  function newDraft() {
+    try { steps = S.parseOrder(st.order); } catch (e) { steps = S.parseOrder(S.DEFAULT_ORDER); st.order = S.DEFAULT_ORDER; }
+    if (!TNAME[st.blue] || !TNAME[st.red] || st.blue === st.red) { st.blue = 'NAVI'; st.red = 'BTR'; }
+    draft = S.newDraft(steps, { blue: st.blue, red: st.red }, st.fearless ? st.locked.slice() : []);
+    projection = null; lastVerdict = null; lastPred = null;
+  }
+  newDraft();
+
+  function history() {
+    var live = st.saved.filter(function (g) { return g.bans.blue.length === 5 && g.bans.red.length === 5; }).map(function (g, i) {
+      return { id: 'LIVE-' + i, date: g.date || '2026-11-08', series: 'live', gameNo: i + 1, blue: g.blue, red: g.red, winner: g.winner || '', bans: g.bans };
+    });
+    return APP.games.concat(live);
+  }
+  function liveObs() {
+    var o = { observed: {}, games: {}, adjust: st.adjust }; TEAMS.forEach(function (t) { o.observed[t] = {}; o.games[t] = 0; });
+    st.saved.forEach(function (g) {
+      ['blue', 'red'].forEach(function (s) {
+        var team = g[s]; if (!o.observed[team]) return; o.games[team]++;
+        (g.picks[s] || []).forEach(function (h) { o.observed[team][h] = (o.observed[team][h] || 0) + 1; });
+      });
+    });
+    return o;
+  }
+  function hierarchies() {
+    var live = liveObs(), out = {};
+    TEAMS.forEach(function (t) { out[t] = S.buildHierarchy(t, APP.pick, live, heroNames); });
+    return out;
+  }
+  var HIER = hierarchies();
+  var CONTEST = {}; heroNames.forEach(function (h) { var L = APP.pick.league[h]; if (L) CONTEST[h] = ((L.picks || 0) + (L.bans || 0)) / (2 * APP.pick.nLeagueGames); });
+  function ruleKey(r) { return r.t + '|' + r.a + '|' + r.b; }
+  function allRules() { return APP.rules.map(function (r) { return Object.assign({ id: ruleKey(r) }, r); }).concat((st.rules.added || []).map(function (r) { return Object.assign({ id: ruleKey(r), mine: true }, r); })); }
+  var RIDX = null;
+  function ruleOff(r) { var v = st.rules.off[r.id]; return v === 1 ? true : (v === 0 ? false : !!r.defaultOff); }
+  function rebuildRules() { RIDX = S.buildRules(allRules().map(function (r) { return Object.assign({}, r, { off: ruleOff(r) }); }), APP.mobility); }
+  rebuildRules();
+  function ctx() {
+    PAR.patchDate = APP.patch.date; PAR.curDate = TODAY; PAR.phaseW = st.phaseOn === false ? 1 : APP.patch.phaseW;
+    if (st.playoffOn === false) { PAR.extra = null; PAR.extraBeta = 0; PAR.k = BASE_K; }
+    else { PAR.extra = POP; PAR.extraBeta = APP.playoff.beta; PAR.k = APP.playoff.k; }
+    return { habit: st.habitOn ? { repeatWin: 0, repeatLoss: 0, hot: hotMap() } : null, history: history(), par: PAR, hier: HIER, roles: roles, denial: 0.5, banShift: st.banShift === false ? 0 : 0.7, R: RIDX, matchW: st.matchOn === false ? 0 : 1, contest: CONTEST, nLeagueGames: APP.pick.nLeagueGames };
+  }
+
+  function nowStep() { return S.done(draft) ? null : draft.steps[draft.idx]; }
+  function stepLabel(i) {
+    var s = draft.steps[i], n = 0; for (var k = 0; k <= i; k++) if (draft.steps[k].side === s.side && draft.steps[k].type === s.type) n++;
+    return { n: n, side: s.side, type: s.type, team: draft.teams[s.side] };
+  }
+
+  // ---- rendering ----
+  function renderPills() {
+    var p = ['<span class="pill">' + APP.games.length + ' past games with ban lists</span>'];
+    p.push('<span class="pill ' + (APP.pickNotes.poolRows ? '' : 'warn') + '">' + (APP.pickNotes.poolRows ? APP.pickNotes.poolRows + ' player hero-pool rows' : 'No player hero pools found') + '</span>');
+    p.push('<span class="pill warn">Pick predictions are not validated yet</span>');
+    p.push('<span class="pill warn">Draft order is assumed</span>');
+    if (NODATA[st.blue] || NODATA[st.red]) p.push('<span class="pill warn">' + [st.blue, st.red].filter(function (t) { return NODATA[t]; }).map(function (t) { return esc(NODATA[t].name); }).join(' and ') + ': little or no data, guesses lean on the league meta</span>');
+    $('pills').innerHTML = p.join('');
+  }
+  function renderRibbon() {
+    var groups = [], cur = null, ph = -1;
+    draft.steps.forEach(function (s, i) {
+      if (s.phase !== ph) { cur = []; groups.push(cur); ph = s.phase; }
+      var info = stepLabel(i), hero = (s.type === 'ban' ? draft.bans : draft.picks)[s.side][info.n - 1];
+      var cls = 'step ' + s.side + ' ' + s.type + (i < draft.idx ? ' done' : '') + (i === draft.idx ? ' now' : '');
+      cur.push('<div class="' + cls + '"><b>' + (s.side === 'blue' ? 'B' : 'R') + info.n + '</b>' + (hero ? esc(hero) : '&nbsp;') + '</div>');
+    });
+    $('ribbon').innerHTML = groups.map(function (g) { return '<div class="rgroup">' + g.join('') + '</div>'; }).join('');
+  }
+  function nextIdx(side, type) { for (var i = draft.idx; i < draft.steps.length; i++) if (draft.steps[i].side === side && (!type || draft.steps[i].type === type)) return i; return -1; }
+  function predictAt(i) { return S.predictNext(Object.assign({}, draft, { idx: i }), ctx()); }
+  function verdictHTML() {
+    if (!lastVerdict) return '';
+    return '<div class="verdict ' + (lastVerdict.rank <= 5 ? 'hit' : 'miss') + '">' + esc(lastVerdict.text) + '</div>';
+  }
+  function topRows(list, live) {
+    return list.slice(0, 5).map(function (x, i) {
+      var up = x.up > 0.005, tip = (x.why || []).join(' · '), mu = x.mu || 0;
+      return '<button type="button" class="pred' + (live ? '' : ' wait') + (up ? ' upd' : '') + '"' + (live ? ' data-hero="' + esc(x.hero) + '" title="' + esc(tip) + ' (click if this is what happened)"' : ' disabled title="' + esc(tip) + '"') + '><span class="rk">' + (i + 1) + '</span><span class="nm">' + av(x.hero, 24) + esc(x.hero) + (up ? ' <span class="upm" aria-label="moved up because of bans">▲</span>' : '') + (mu > 0.12 ? ' <span class="mum" aria-label="helped by a matchup or combo">⚔</span>' : (mu < -0.12 ? ' <span class="mum bad" aria-label="hurt by a matchup">⚠</span>' : '')) +
+        '</span><span class="track"><span class="fill" style="width:' + Math.min(100, Math.round(x.p * 100 * 2.2)) + '%"></span></span><span class="pc">' + pct(x.p) + '</span></button>';
+    }).join('');
+  }
+  function shiftNote(list) {
+    var ups = list.slice(0, 8).filter(function (x) { return x.up > 0.005; }).slice(0, 3);
+    if (!ups.length) return '';
+    var gone = {}; ups.forEach(function (x) { x.upFrom.forEach(function (b) { gone[b] = 1; }); });
+    return '<div class="note shiftnote">▲ ' + Object.keys(gone).slice(0, 3).map(esc).join(', ') + ' gone, so ' + ups.map(function (x) { return esc(x.hero); }).join(', ') + ' move' + (ups.length === 1 ? 's' : '') + ' up.</div>';
+  }
+  function matchNote(list) {
+    var rows = list.slice(0, 5).filter(function (x) { return Math.abs(x.mu || 0) > 0.12 && x.why; }).slice(0, 3).map(function (x) {
+      var w = x.why.filter(function (t) { return /pairs with|counters|weak vs|open\)/.test(t); }).slice(0, 1).join(', ');
+      return w ? esc(x.hero) + ': ' + esc(w) : '';
+    }).filter(Boolean);
+    return rows.length ? '<div class="note shiftnote">⚔ ' + rows.join(' · ') + '.</div>' : '';
+  }
+  var TAGS = { target: 'Target', meta: 'Meta', habit: 'Habit', playoff: 'Playoff', protect: 'Protect', deny: 'Deny', signature: 'Signature', counter: 'Counter', combo: 'Combo', replace: 'Replaces', flex: 'Flex' };
+  function whyList(list, live) {
+    var rows = list.slice(0, 5).map(function (x, i) {
+      if (!x.reasons || !x.reasons.length) return '';
+      return '<div class="wl"><b>' + (i + 1) + '. ' + esc(x.hero) + '</b> ' + x.reasons.map(function (r) { return '<span class="tg tg-' + r.k + '">' + TAGS[r.k] + '</span> ' + esc(r.t); }).join(' · ') + '</div>';
+    }).filter(Boolean).join('');
+    return rows ? '<details class="why"' + (live ? ' open' : '') + '><summary>Why these five?</summary>' + rows + '</details>' : '';
+  }
+  function panel(side, type, active, now) {
+    var team = draft.teams[side], i = nextIdx(side, type);
+    var label = type === 'ban' ? 'Bans' : 'Picks';
+    if (i < 0) return '<div class="pcol"><div class="block-label">Top 5 ' + label.toLowerCase() + '</div><p class="note">All ' + type + 's done.</p></div>';
+    var list = predictAt(i), info = stepLabel(i), live = !!(active && now.type === type && i === draft.idx);
+    if (live) lastPred = { step: draft.idx, list: list.slice(0, 10).map(function (x) { return x.hero; }), full: list.map(function (x) { return x.hero; }), side: side, type: type, team: team, n: info.n, p: {} };
+    if (live) list.slice(0, 10).forEach(function (x) { lastPred.p[x.hero] = x.p; });
+    return '<div class="pcol' + (live ? ' live' : '') + '"><div class="block-label">' + (live ? 'Top 5 ' + type + ' now' : 'Top 5 ' + type + ' ' + info.n + ' next') + '</div><div class="preds">' + topRows(list, live) + '</div>' +
+      (type === 'pick' ? shiftNote(list) : '') + matchNote(list) + (type === 'ban' && list.noLane && list.noLane.length ? '<div class="note shiftnote">Left out, because ' + esc(tn(draft.teams[side === 'blue' ? 'red' : 'blue'])) + ' has no free lane for them: ' + list.noLane.slice(0, 6).map(esc).join(', ') + (list.noLane.length > 6 ? ' and ' + (list.noLane.length - 6) + ' more' : '') + '.</div>' : '') + whyList(list, live) + (type === 'pick' ? gainHTML(side, list) : '') + '</div>';
+  }
+  function qpTile(h, p) {
+    return '<button type="button" class="qpt" data-hero="' + esc(h) + '" data-role="' + esc(HROLE[h] || '') + '">' + av(h, 44) + '<span class="qn">' + esc(h) + '</span>' + (p != null ? '<span class="qpc">' + pct(p) + '</span>' : '') + '</button>';
+  }
+  function tray(side) {
+    if (!lastPred || lastPred.side !== side) return '';
+    var isBan = lastPred.type === 'ban', used = S.usedSet(draft);
+    var tiles = lastPred.list.filter(function (h) { return !used[h]; }).slice(0, 6).map(function (h) { return qpTile(h, lastPred.p[h]); }).join('');
+    return '<div class="qp ' + side + '" id="qpBox"><div class="qp-h"><b>' + esc(tn(lastPred.team)) + ' ' + lastPred.type + ' ' + lastPred.n + '</b><span>' + (isBan ? 'Suggested bans' : 'Suggested picks') + ' · tap one</span></div>' +
+      '<div class="qp-grid">' + tiles + '</div>' +
+      '<input type="search" id="qpIn" class="qp-in" placeholder="Not listed? Type a hero name, then Enter" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Search any hero">' +
+      '<div class="qp-grid" id="qpRes"></div></div>';
+  }
+  function qpSearch(q) {
+    q = q.trim().toLowerCase(); var used = S.usedSet(draft);
+    if (!q) return { html: '', first: null };
+    var hits = APP.heroes.map(function (x) { return { n: x.n, m: matchScore(x.n, q) }; }).filter(function (x) { return x.m >= 0 && !used[x.n]; }).sort(function (a, b) { return a.m - b.m || (a.n < b.n ? -1 : 1); }).slice(0, 8);
+    return { html: hits.length ? hits.map(function (x) { return qpTile(x.n); }).join('') : '<span class="note">No hero matches.</span>', first: hits.length ? hits[0].n : null };
+  }
+  function teamCol(side) {
+    var team = draft.teams[side], now = nowStep(), active = !!(now && now.side === side);
+    var bl = draft.bans[side], pl = draft.picks[side], bans = '', picks = '';
+    for (var k = 0; k < 5; k++) {
+      var bn = active && now.type === 'ban' && bl.length === k;
+      bans += '<div class="slot ban' + (bl[k] ? ' filled' : '') + (bn ? ' now' : '') + '">' + (bl[k] ? av(bl[k], 30) + '<span class="sn">' + esc(bl[k]) + '</span>' : '<small>ban ' + (k + 1) + '</small>') + '</div>';
+      var pn = active && now.type === 'pick' && pl.length === k;
+      var lane = pl[k] && roles[pl[k]] && roles[pl[k]].lanes && roles[pl[k]].lanes.length ? roles[pl[k]].lanes.join('/') : '';
+      picks += '<div class="pick' + (pl[k] ? ' filled' : '') + (pn ? ' now' : '') + '"><span class="pn">P' + (k + 1) + '</span><span class="ph">' + (pl[k] ? av(pl[k], 30) + '<span class="sn">' + esc(pl[k]) + '</span>' : '') + '</span><span class="pl">' + esc(lane) + '</span></div>';
+    }
+    var sets = pl.map(function (h) { return roles[h] && roles[h].lanes && roles[h].lanes.length ? roles[h].lanes : null; });
+    var warn = pl.length && !S.canFill(sets) ? '<div class="lanewarn">These picks leave a lane uncovered by their usual lanes.</div>' : '';
+    var top = '<div class="dual">' + panel(side, 'ban', active, now) + panel(side, 'pick', active, now) + '</div>' + (active ? '' : '<div class="note">Previews assume it were this team\'s turn now.</div>');
+    return '<article class="tcard ' + side + (active ? ' active' : '') + '"><div class="teamhead"><h3>' + esc(tn(team)) + '</h3><span class="sidetag ' + side + '">' + side + '</span></div>' +
+      '<div><div class="block-label">Bans</div><div class="slots">' + bans + '</div></div>' + (active && now.type === 'ban' && !mq.matches ? tray(side) : '') +
+      '<div><div class="block-label">Picks</div><div class="pickcol">' + picks + '</div></div>' + (active && now.type === 'pick' && !mq.matches ? tray(side) : '') + warn +
+      '<div class="top5">' + top + '</div></article>';
+  }
+  function renderProjection() {
+    $('projWrap').innerHTML = projection ? '<div class="projection"><div class="block-label">Projected draft if each team follows the model\'s first guess (one path, not a promise)</div><div class="pickrow">' +
+      projection.map(function (p) { return '<span class="chip ' + p.side + '"><span class="mono dim">' + (p.side === 'blue' ? 'B' : 'R') + (p.type === 'ban' ? ' ban ' : ' pick ') + p.n + '</span> ' + av(p.hero, 20) + esc(p.hero) + '</span>'; }).join('') + '</div></div>' : '';
+  }
+  function renderStage() {
+    lastPred = null;
+    $('colBlue').innerHTML = teamCol('blue'); $('colRed').innerHTML = teamCol('red');
+    var b;
+    if (S.done(draft)) b = '<div class="banner"><div class="nexthead"><h2>Draft complete</h2></div>' + verdictHTML() + '<p class="note">All 20 steps are filled. Choose the winner under the scorecard and save the game, or undo to change a step.</p></div>';
+    else {
+      var s = nowStep(), info = stepLabel(draft.idx);
+      b = '<div class="banner ' + s.side + '"><div class="nexthead"><h2>' + esc(tn(info.team)) + ' ' + s.type + ' ' + info.n + '</h2><span><span class="sidetag ' + s.side + '">' + s.side + '</span> <span class="mono dim">step ' + (draft.idx + 1) + ' of ' + draft.steps.length + '</span></span></div>' + verdictHTML() +
+        '<div class="actions"><button class="btn ghost" id="undo2" type="button"' + (draft.idx ? '' : ' disabled') + '>Undo</button><button class="btn ghost" id="simStep" type="button">Play top guess (not scored)</button><button class="btn ghost" id="project" type="button">Project the rest</button></div></div>';
+    }
+    $('banner').innerHTML = b; renderProjection();
+    $('qpDock').innerHTML = mq.matches && lastPred ? tray(lastPred.side) : ''; document.body.classList.toggle('hasdock', !!($('qpDock').innerHTML));
+  }
+  var gridFirst = null;
+  function matchScore(name, q) {
+    var n = name.toLowerCase();
+    if (n.indexOf(q) === 0) return 0;
+    if (n.split(/[\s'.-]+/).some(function (w) { return w.indexOf(q) === 0; })) return 1;
+    if (n.indexOf(q) > 0) return 2;
+    var i = 0; for (var k = 0; k < n.length && i < q.length; k++) if (n[k] === q[i]) i++;
+    return i === q.length ? 3 : -1;
+  }
+  function renderGrid() {
+    var q = $('q').value.trim().toLowerCase(), lane = $('roleF').value, used = S.usedSet(draft), sug = {}, mode = $('sortF').value;
+    if (lastPred && !S.done(draft)) lastPred.list.slice(0, 5).forEach(function (h) { sug[h] = 1; });
+    var rank = {}; if (lastPred && lastPred.full) lastPred.full.forEach(function (h, i) { rank[h] = i; });
+    var blueUsed = {}, redUsed = {};
+    draft.bans.blue.concat(draft.picks.blue).forEach(function (h) { blueUsed[h] = 1; }); draft.bans.red.concat(draft.picks.red).forEach(function (h) { redUsed[h] = 1; });
+    var items = [];
+    APP.heroes.forEach(function (x) {
+      var ms = q ? matchScore(x.n, q) : 0; if (q && ms < 0) return;
+      var ls = x.lanes && x.lanes.length ? x.lanes : (x.guess || []);
+      if (lane && ls.indexOf(lane) < 0) return;
+      items.push({ x: x, ms: ms, ls: ls, r: rank[x.n] != null ? rank[x.n] : 9999, u: !!(used[x.n] || S.done(draft)) });
+    });
+    items.sort(function (a, b) {
+      if (a.u !== b.u) return a.u ? 1 : -1;
+      if (q && a.ms !== b.ms) return a.ms - b.ms;
+      if (mode === 'likely' && a.r !== b.r) return a.r - b.r;
+      return a.x.n < b.x.n ? -1 : 1;
+    });
+    var first = items.filter(function (i) { return !i.u; })[0];
+    gridFirst = first ? first.x.n : null;
+    var h = '';
+    items.forEach(function (it, idx) {
+      var x = it.x, ls = it.ls;
+      h += '<button type="button" data-role="' + esc(x.role || '') + '" class="hero' + (blueUsed[x.n] ? ' xb' : '') + (redUsed[x.n] ? ' xr' : '') + (sug[x.n] ? ' sug' : '') + (q && first && x.n === first.x.n ? ' enter' : '') + '" data-hero="' + esc(x.n) + '"' + (it.u ? ' disabled' : '') + '>' + av(x.n, 40) + '<span class="hn">' + esc(x.n) + '</span>' +
+        '<small>' + esc((x.role || '') + (ls.length ? ' · ' + ls.join('/') + (x.lanes && x.lanes.length ? '' : '?') : '')) + '</small></button>';
+    });
+    $('herogrid').innerHTML = h || '<span class="note">No hero matches.</span>';
+    $('enterHint').textContent = q && gridFirst ? 'Press Enter to record ' + gridFirst : (q ? '' : 'Type a name, then press Enter.');
+  }
+
+  // ---- composition rating and win edge ----
+  var C = window.DraftComp;
+  var leagueWins = {}; heroNames.forEach(function (h) { var L = APP.pick.league[h]; if (L && L.picks) leagueWins[h] = { p: L.picks, w: Math.round(L.picks * (L.winRate == null ? 50 : L.winRate) / 100) }; });
+  var poolMap = {}; APP.pick.pools.forEach(function (r) { var k = r.team + '|' + r.hero; var o = poolMap[k] || (poolMap[k] = { g: 0, w: 0 }); o.g += r.games; o.w += r.wins; });
+  function heroEvidence(team, heroes) {
+    if (!heroes.length) return 0; var ev = 0;
+    heroes.forEach(function (h) {
+      var L = leagueWins[h] || { p: 0, w: 0 }, lwr = (L.w + 10) / (L.p + 20), P = poolMap[team + '|' + h];
+      ev += (P ? (P.w + 5 * lwr) / (P.g + 5) : lwr) - 0.5;
+    });
+    return ev / heroes.length;
+  }
+  function teamEval(team, heroes) {
+    var fs = heroes.map(function (h) { return C.feats(APP.traits[h] || null, roles[h] ? { role: roles[h].role } : null, h); });
+    return { team: team, heroes: heroes, profile: C.profile(fs), base: APP.base[team] || 0.5, heroEv: heroEvidence(team, heroes) };
+  }
+  function verdictNow() {
+    var bt = draft.teams.blue, rt = draft.teams.red;
+    var A = teamEval(bt, draft.picks.blue), B = teamEval(rt, draft.picks.red);
+    var w = C.winProb(A, B, { aBlue: true });
+    return { A: A, B: B, w: w, bt: bt, rt: rt };
+  }
+  function barRow(label, v) { return '<span>' + esc(label) + '</span><span class="track"><span class="fill" style="width:' + Math.round(v) + '%"></span></span><span class="pc mono">' + Math.round(v) + '</span>'; }
+  function lenText(sec) { return sec ? Math.floor(sec / 60) + ':' + ('0' + (sec % 60)).slice(-2) : null; }
+  function compCard(E, side) {
+    var P = E.profile;
+    if (!E.heroes.length) return '<article class="vcard ' + side + '"><div class="teamhead"><h3>' + esc(tn(E.team)) + '</h3><span class="sidetag ' + side + '">' + side + '</span></div><p class="note">No picks yet.</p></article>';
+    var top = P.arch[0], second = P.arch[1];
+    var bars = Object.keys(P.comp).map(function (k) { return barRow(k, P.comp[k]); }).join('');
+    var curve = ['early', 'mid', 'late'].map(function (k) { return '<div><span>' + k + '</span><span class="track"><span class="fill" style="width:' + Math.round(P.curve[k]) + '%"></span></span></div>'; }).join('');
+    var combos = P.combos.length ? P.combos.map(function (c) { return '<div class="combo"><b>' + esc(c.id) + ':</b> ' + esc(c.text) + '</div>'; }).join('') : '<div class="note">No clear teamfight combo yet.</div>';
+    var archs = P.arch.slice(0, 3).map(function (a, i) { return '<span class="arch' + (i === 0 ? ' top' : '') + '">' + esc(a.name) + ' ' + Math.round(a.score) + '</span>'; }).join('');
+    return '<article class="vcard ' + side + '"><div class="teamhead"><h3>' + esc(tn(E.team)) + '</h3><span class="sidetag ' + side + '">' + side + '</span></div>' +
+      '<div style="display:flex;align-items:baseline;gap:10px"><span class="rating">' + Math.round(P.rating) + '</span><span class="dim">composition rating (50 = a typical Season 18 lineup)' + (P.n < 5 ? ' (provisional, ' + P.n + ' of 5 picks)' : '') + '</span></div>' +
+      '<div><div class="block-label">Plays like</div><div class="archs">' + archs + '</div></div>' +
+      '<div><div class="block-label">Power through the game</div><div class="curve">' + curve + '</div></div>' +
+      '<div><div class="block-label">Ratings</div><div class="compbars">' + bars + '</div></div>' +
+      '<div><div class="block-label">Teamfight combos</div>' + combos + '</div>' +
+      (P.missing.length ? '<div class="warnline">Weak spots: ' + esc(P.missing.join(', ')) + '.</div>' : '') +
+      (P.known < 0.6 ? '<div class="note">Some hero traits are missing, so this rating leans on hero class only.</div>' : '') +
+      (P.n >= 3 && P.objKnown < Math.ceil(P.n / 2) ? '<div class="note">Turret pressure and early objectives are mostly guessed from hero class. Only ' + P.objKnown + ' of ' + P.n + ' heroes have a sourced score.</div>' : '') + '</article>';
+  }
+  function timingText(v) {
+    var a = v.A.profile, b = v.B.profile, out = [];
+    if (!a.n || !b.n) return '';
+    var de = a.curve.early - b.curve.early, dl = a.curve.late - b.curve.late;
+    var early = de > 12 && dl < 0 ? v.bt : (de < -12 && dl > 0 ? v.rt : null), late = early ? (early === v.bt ? v.rt : v.bt) : null;
+    if (early) out.push(early + ' is stronger early and ' + late + ' scales better, so ' + early + ' wants to close the game before the late power spike and ' + late + ' wants it longer.');
+    else out.push('Neither side has a clear timing edge, so the fight comes down to execution and objectives.');
+    var la = lenText(APP.avgLen[v.bt]), lb = lenText(APP.avgLen[v.rt]);
+    var oa = (a.comp['Turret pressure'] + a.comp['Early objectives']) / 2, ob = (b.comp['Turret pressure'] + b.comp['Early objectives']) / 2;
+    if (Math.abs(oa - ob) >= 10) out.push('Map objectives: since the 28 Sep map change, turrets give more team gold (Golden Turret) and the Turtle now pushes a lane and heals (Healing Turtle). ' + (oa > ob ? v.bt : v.rt) + ' has the stronger turret and early-objective tools (' + Math.round(Math.max(oa, ob)) + ' vs ' + Math.round(Math.min(oa, ob)) + '). This is partly guessed from hero class.');
+    if (la && lb) out.push('Season 18 average game length: ' + v.bt + ' ' + la + ', ' + v.rt + ' ' + lb + '.');
+    var sa = a.arch[0].name, sb2 = b.arch[0].name, edge = C.styleEdge(sa, sb2);
+    if (edge) out.push('Style matchup (one analyst\'s table, low weight): ' + (edge > 0 ? v.bt : v.rt) + '\'s ' + (edge > 0 ? sa : sb2) + ' style has the edge over ' + (edge > 0 ? sb2 : sa) + '.');
+    return out.join(' ');
+  }
+  function renderVerdict() {
+    var v = verdictNow(), el = $('verdictBody');
+    var nb = draft.picks.blue.length, nr = draft.picks.red.length;
+    $('verdictSub').textContent = nb + nr === 0 ? 'Pick heroes to see each side\'s composition and the draft edge.' : (nb >= 5 && nr >= 5 ? 'Final draft. Both teams have all five picks.' : 'Provisional. It updates after every pick.');
+    if (!nb && !nr) { el.innerHTML = ''; return; }
+    var pb = Math.round(v.w.p * 100), pr = 100 - pb, ec = APP.evalcomp;
+    var parts = v.w.parts, nm = { team: 'Season record', hero: 'Hero win rates (league and team)', comp: 'Composition rating', style: 'Style matchup', side: 'Blue side' };
+    var rows = Object.keys(nm).map(function (k) {
+      var pts = Math.round((C.expit(parts[k]) - 0.5) * 100);
+      return '<tr><td>' + nm[k] + '</td><td class="num">' + (pts === 0 ? '0' : (pts > 0 ? '+' : '') + pts) + ' pts toward ' + (pts >= 0 ? v.bt : v.rt).toString().replace(/^/, '') + '</td></tr>';
+    }).join('');
+    var acc = ec ? 'A second check in Python on the same ' + ec.n + ' games, with a fair leave-one-game-out test, found the same thing: about ' + Math.round(100 * ec.correct['composition only'] / ec.n) + '% right for the composition rating, with a 95% range of roughly 44% to 70%. That cannot be told apart from a coin flip, and it would take about 400 games to prove a real 57% skill. ' + 'On ' + ec.n + ' Season 18 games with known lineups, the composition rating alone picked the winner ' + Math.round(100 * ec.correct['composition only'] / ec.n) + '% of the time and the full model ' + Math.round(100 * ec.correct['everything'] / ec.n) + '% (a coin flip is 50%). Those same games were used to set the rating scale and the confidence level, so even these numbers are optimistic. Treat the percentage as a light lean, and use the ratings, combos and weak spots as a checklist.' : '';
+    el.innerHTML = '<div class="panel">' +
+      '<div class="winbar" role="img" aria-label="Draft edge ' + v.bt + ' ' + pb + ' percent, ' + v.rt + ' ' + pr + ' percent"><div class="wb" style="flex:' + pb + '">' + v.bt + ' ' + pb + '%</div><div class="wr" style="flex:' + pr + '">' + pr + '% ' + v.rt + '</div></div>' +
+      '<p class="note"><b>Draft edge, not a forecast.</b> It mixes season record, hero win rates, composition rating, style matchup and blue side. The weights are my own choices, not fitted. Its confidence is shrunk and held between 35% and 65% on purpose. ' + esc(acc) + '</p>' +
+      '<p>' + esc(timingText(v)) + '</p>' +
+      '<div class="scroll factors"><table><thead><tr><th>What moved it</th><th class="num">Effect</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
+      '<div class="vgrid">' + compCard(v.A, 'blue') + compCard(v.B, 'red') + '</div>';
+    lastVerdict2 = v;
+  }
+  var lastVerdict2 = null;
+  function agg(type) {
+    var rows = st.log.filter(function (l) { return l.type === type; }), n = rows.length, o = { n: n, h1: 0, h3: 0, h5: 0, sum: 0 };
+    rows.forEach(function (l) { if (l.rank <= 1) o.h1++; if (l.rank <= 3) o.h3++; if (l.rank <= 5) o.h5++; o.sum += Math.min(l.rank, 30); if (l.p != null) { o.np = (o.np || 0) + 1; o.lp = (o.lp || 0) + Math.log(Math.max(l.p, 0.001)); } });
+    return o;
+  }
+  function renderScore() {
+    var b = agg('ban'), p = agg('pick');
+    var card = function (title, a) {
+      return '<div class="stat"><span class="block-label" style="margin:0">' + title + ' · ' + a.n + ' scored</span>' + (a.n ? '<b>' + pct(a.h1 / a.n) + ' top 1</b><span class="dim">' + pct(a.h3 / a.n) + ' in top 3 · ' + pct(a.h5 / a.n) + ' in top 5 · avg rank ' + (a.sum / a.n).toFixed(1) + (a.np ? ' · the real hero got ' + (Math.exp(a.lp / a.np) * 100).toFixed(1) + '% chance on average (a blind guess is about 1%)' : '') + '</span>' : '<b>no data yet</b><span class="dim">Click steps as they happen</span>') + '</div>';
+    };
+    var wl = st.winLog || [], wn = wl.length, wc = wl.filter(function (x) { return (x.pBlue >= 0.5 ? x.blue : x.red) === x.winner; }).length;
+    var wcard = '<div class="stat"><span class="block-label" style="margin:0">Draft edge vs real winner · ' + wn + ' scored</span>' + (wn ? '<b>' + wc + ' of ' + wn + ' right</b><span class="dim">Choose the winner when you save a game</span>' : '<b>no data yet</b><span class="dim">Choose the winner when you save a game</span>') + '</div>';
+    $('stats').innerHTML = card('Ban guesses', b) + card('Pick guesses', p) + wcard;
+    var r = APP.bantest;
+    $('refnote').textContent = 'For comparison: each ban was predicted using only the games before it, for all nine teams, on the last ' + r.n + ' ban steps of Season 18 (regular season and playoffs). The real hero was first ' + pct(r.h1 / r.n) + ' of the time, in the top 3 ' + pct(r.h3 / r.n) + ' and in the top 5 ' + pct(r.h5 / r.n) + '. Random guessing across about 100 heroes would be near 1%, 3% and 5%. With this few steps the real value could be about 4 points higher or lower. Pick guesses are scored by the scorecard above.';
+    var rows = st.log.slice(-14).reverse();
+    $('logTable').innerHTML = '<thead><tr><th>Game</th><th>Step</th><th>Model top 3</th><th>Actual</th><th class="num">Rank</th></tr></thead><tbody>' + (rows.length ? rows.map(function (l) {
+      return '<tr><td class="num">' + l.game + '</td><td>' + esc(l.team) + ' ' + l.type + ' ' + l.n + ' <span class="dim">(' + l.side + ')</span></td><td>' + esc(l.top.slice(0, 3).join(', ')) + '</td><td>' + esc(l.actual) + '</td><td class="num ' + (l.rank <= 3 ? 'hit' : 'miss') + '">' + (l.rank > 30 ? '30+' : l.rank) + '</td></tr>';
+    }).join('') : '<tr><td colspan="5" class="dim">Nothing scored yet.</td></tr>') + '</tbody>';
+    $('savedNote').textContent = st.saved.length ? st.saved.length + ' game' + (st.saved.length > 1 ? 's' : '') + ' saved this session. Saved bans feed the ban model and saved picks feed the hierarchy.' : 'Saving a game adds its bans to the ban model and its picks to the hierarchy.';
+  }
+  function renderHier() {
+    var used = S.usedSet(draft), out = '';
+    ['blue', 'red'].forEach(function (side) {
+      var team = draft.teams[side], list = HIER[team], shown = showAll ? list : list.slice(0, 25);
+      var max = list[0] ? list[0].rate : 1;
+      out += '<article class="hcard ' + side + '"><div class="teamhead"><h3>' + esc(tn(team)) + '</h3><span class="sidetag ' + side + '">' + side + '</span></div><div class="scroll"><table><thead><tr><th class="num">#</th><th>Hero</th><th>Tier</th><th>Score</th><th>Evidence</th><th>Adjust</th></tr></thead><tbody>' +
+        shown.map(function (x) {
+          var pool = x.pool.map(function (p) { return p.player + ' ' + p.games; }).join(', ');
+          var ev = [];
+          if (pool) ev.push(pool + ' games');
+          if (x.league && x.league.picks) ev.push('league ' + x.league.picks + ' picks' + (x.league.winRate != null && x.league.winRate !== '' ? ', ' + x.league.winRate + '% WR' : ''));
+          if (x.live) ev.push('your log ' + x.live + 'x');
+          var lanes = roles[x.hero] && roles[x.hero].lanes ? roles[x.hero].lanes.join('/') : '';
+          return '<tr class="hrow' + (used[x.hero] ? ' gone' : '') + '"><td class="num">' + x.rank + '</td><td><b>' + esc(x.hero) + '</b><div class="evid">' + esc(lanes) + '</div></td><td><span class="tier ' + x.tier + '">' + x.tier + '</span></td>' +
+            '<td><span class="track mini"><span class="fill" style="width:' + Math.round(x.rate / (max || 1) * 100) + '%"></span></span> <span class="mono">' + pct(x.rate) + '</span></td>' +
+            '<td class="evid">' + esc(ev.join(' · ') || 'no direct data') + '</td>' +
+            '<td><button class="adjbtn" data-adj="up" data-team="' + team + '" data-hero="' + esc(x.hero) + '" aria-label="Move ' + esc(x.hero) + ' up">+</button> <button class="adjbtn" data-adj="down" data-team="' + team + '" data-hero="' + esc(x.hero) + '" aria-label="Move ' + esc(x.hero) + ' down">-</button>' + (x.adj !== 1 ? ' <span class="mono dim">×' + x.adj.toFixed(2) + '</span>' : '') + '</td></tr>';
+        }).join('') + '</tbody></table></div></article>';
+    });
+    $('hier').innerHTML = out;
+    $('hierNote').textContent = 'Score is the chance the hero is in that team\'s five in a game: the team\'s own picks and its players\' pools, mixed with league pick rates. Struck-through heroes are banned or taken in the current draft. ' + APP.pickNotes.text;
+  }
+  function renderLimits() {
+    var RG = APP.regression, rb = RG ? RG.fits.filter(function (x) { return x.name === 'hero + composition' && x.l2 === 10; })[0] : null;
+    var L = ['<b>New: Malaysia data, drafter habits and a formulas page.</b> Selangor Red Giants and Team Rey now have their MPL Malaysia S18 ban lists (' + (APP.playoff.myReg + APP.playoff.myPo) + ' games); on a walk-forward test inside MY, a team\'s own history lifted the top-5 hit rate from ' + (APP.habit && APP.habit.my ? Math.round(100 * APP.habit.my['league only (k = 1,000,000)'].h5) + '% to ' + Math.round(100 * APP.habit.my['team + league (k = 4)'].h5) + '%' : 'a little') + '. Türkiye, CIS and Myanmar have results only, no draft lists, so they are not modelled. The "Drafter habits" panel shows that teams repeat bans after a win but that the model already captures it; hot-hero chasing cannot be tested from ban lists, so it is a manual, unproven switch. <a href="formulas.html">All formulas and every accuracy test are on a separate page</a>, and <a href="programs.html">the analysis programs</a> too.',
+      '<b>M8 teams.</b> The team lists now include the 17 teams known to be at the M8 World Championship (6 more slots are decided in December). Only BTR and NAVI have full data. Aurora Gaming PH and Team Falcons PH have their MPL PH playoff ban lists only. Every other team starts from the MPL ID league meta and is treated as an average-strength team with a very wide range, because no games link the leagues. Save M8 games here as they happen and the model learns each team: saved games now stay when you switch teams.',
+      '<b>Bans now check the other team\'s lanes.</b> A hero is left out of the ban guesses when the other team\'s picks leave no free lane for it. Example: after Khufra (Roam) and Rafaela (Roam or Mid), Roam and Mid are both taken, so Marcel (Roam only) is no longer a ban target. Lanes come from Season 18 pick data. Heroes with no confirmed lane are never left out, and a team that flexes a hero into a lane it never played this season will fool the check.',
+      '<b>Best 3 for win chance.</b> For each pick the page tries every likely hero, recalculates the draft edge, and lists the three that raise it most (gain = edge with the hero minus edge without). It ranks heroes by the same unproven edge model as the Draft verdict, so it is a hint, not a proven recommendation.',
+      (RG && rb ? '<b>Regression check on the win model.</b> I fitted a logistic regression (cross-entropy loss with an L2 penalty, exact gradient) on the ' + RG.n + ' real games with known lineups, testing each series with a model that never saw it. Best version: log-loss ' + rb.ll.toFixed(3) + ' against ' + RG.coin.toFixed(3) + ' for a coin flip, and the 95% range of that gap (' + rb.lo.toFixed(2) + ' to +' + rb.hi.toFixed(2) + ') includes zero. So the regression cannot beat a coin flip with this little data, and I kept the current weights. The fitted weights point the same way as the current ones. ' : '') +
+      '<b>Older games fade by age.</b> A game\'s weight in the ban model is now multiplied by exp(-λ × days old), with a half-life of ' + APP.halfLife + ' days. On the Season 18 test this changed the score by less than 0.01, so it is not a proven gain. Its job is M8: by January the MPL games are two months old, so games you save then count much more.',
+      '<b>Pick guesses are a starting point.</b> ' + (APP.picktest ? ('A test on ' + APP.picktest.n + ' real team lineups (each game left out of its own evidence) found about ' + APP.picktest.h10.toFixed(1) + ' of a team\'s 5 picks inside its top 10 list. Just using the league\'s most-picked heroes finds ' + APP.picktest.l10.toFixed(1) + '. So the team lists are about as good as the league pick rate, not clearly better. ') : 'There is no past pick data to test them on. ') + 'The scorecard above builds more evidence as you watch.',
+      '<b>Pick shift after bans.</b> When a hero is banned, part of its pick chance moves to the same player\'s other heroes and to heroes in the same lane. ' + (APP.shifttest ? ('On ' + APP.shifttest.n + ' real lineups with known bans, this moved the real picks into the top 10 from ' + APP.shifttest.off.t10.toFixed(2) + ' to ' + APP.shifttest.on.t10.toFixed(2) + ' of 5. That is a tiny gain, too small to call proof. ') : '') + 'Turn it off with the box at the top to compare.',
+      '<b>Playoff drafts from both leagues.</b> The model now also uses every MPL ID and MPL PH playoff game I could read (' + (APP.playoff.id.length + APP.playoff.ph.length) + ' games). Playoff bans really are different: Masha was banned in 82% of PH playoff games against 28% before, Esmeralda 68% against 20%, Fanny 21% against 66%. It helps the odds a little and the top-5 hit rate slightly, and it rests on ' + APP.playoff.id.length + ' ID and ' + APP.playoff.ph.length + ' PH games, with PH picks and stats not available. <b>Patch and playoff meta.</b> No public patch was found between 14 Oct (2.2.16a, a hero-only hotfix: Kalea up; Aulus, Hirara, Eudora, Rafaela down) and the 4 Nov playoffs, and no source says which version the league ran. Still, playoff bans do differ from the regular season by more than chance (Kalea 5% to 41%, Esmeralda 12% to 45%, Rafaela 17% to 0%). The model counts games before 14 Oct at half weight. On the later games this changed the ban score by less than 0.01, because the model already forgets older games fast, so treat it as a safety net, not a gain.',
+      '<b>Map objectives are only roughly modelled.</b> Since 28 Sep the map has a Golden Turret (more team gold per turret) and a Healing Turtle (the allied Turtle pushes the enemy\'s strongest lane and heals nearby allies). The official notes give no numbers, later tuning was only tested on the Advance Server, and no hero list or game-length statistic exists for pro play. So the two new ratings (turret pressure, early objectives) are small in weight and come from hero class unless a source described the hero (9 of 52 so far).',
+      '<b>Matchup rules are knowledge, not test results.</b> Counters and combos come from your examples and the researched table. There is no per-game counter-pick data to check them against, so they nudge the odds and show their reason on each hero. Switch them off with the box at the top to compare.',
+      '<b>Bans after the first three</b> are harder to guess, because teams react to picks and this model does not see why. The past test shows that: the first ban is guessed far better than the fifth.',
+      '<b>Side and owner of each ban list are inferred</b> from MLBBHub, which does not label them. The 2026 draft order and side rule are also unconfirmed.',
+      '<b>Data stops at game 1 of the Lower Bracket Final.</b> All 198 Season 18 games of the nine teams that MLBBHub had listed are in, up to game 1 of TLID vs BTR (7 Nov). Games 2 to 7 of that series and game 3 of AE vs BTR had no published ban lists when I read the page, so they are missing. The Grand Final is not in the data: save its games here and they are added.',
+      '<b>No tool here has a record of predicting every draft.</b> A fair test on later games (all nine teams) found about 1 in 4 top guesses right for a single ban, and about 1 in 2 inside the top five. Wolf\'s claim of 100% is not backed by any evidence I could find.'];
+    $('limitList').innerHTML = L.map(function (x) { return '<li>' + x + '</li>'; }).join('');
+  }
+
+
+  // ---------- series odds (Bayesian team strength) ----------
+  var BTF = null, btKey = '';
+  function btResults() {
+    var r = APP.bt.map(function (x) { return x; });
+    st.saved.forEach(function (g) { if (g.winner && (g.winner === g.blue || g.winner === g.red) && g.blue && g.red) r.push({ a: g.blue, b: g.red, win: g.winner === g.blue ? 'a' : 'b', blue: 'a' }); });
+    return r;
+  }
+  function btFit() {
+    var r = btResults(), key = r.length + '|' + st.saved.length;
+    if (!BTF || btKey !== key) { BTF = window.DraftBT.fit(r, { teams: TEAMS }); btKey = key; }
+    return BTF;
+  }
+  function renderSeries() {
+    var BT = window.DraftBT, TA = st.blue, TB = st.red, NA = tn(st.blue), NB = tn(st.red), sr = st.series || (st.series = { fmt: 7, lean: false });
+    if (sr[TA] == null) sr[TA] = 0; if (sr[TB] == null) sr[TB] = 0;
+    var need = sr.fmt === 5 ? 3 : 4, f = btFit(), blueT = draft.teams.blue, redT = draft.teams.red;
+    var extra = 0, leanTxt = '';
+    if (sr.lean && lastVerdict2 && lastVerdict2.w) {
+      var pa = lastVerdict2.w.parts; var lb = (pa.hero || 0) + (pa.comp || 0) + (pa.style || 0);   // draft-only part, in favour of the blue side
+      extra = lb; leanTxt = ' Includes this game\'s draft lean, which is unproven.';
+    }
+    // chance TLID beats BTR in the next game, for each posterior draw
+    var tIsBlue = blueT === TA;
+    var pg = BT.pGame(f, TA, TB, tIsBlue ? 'a' : 'b', tIsBlue ? extra : -extra);
+    var na = Math.max(0, need - sr[TA]), nb = Math.max(0, need - sr[TB]), over = na === 0 || nb === 0;
+    // Later games: sides are not known, so use the side-neutral chance. Only the next game uses the real side (and the draft lean).
+    var pn = BT.pGame(f, TA, TB, null, 0);
+    var ser = pg.map(function (p, i) { return over ? BT.seriesP(pn[i], na, nb) : p * BT.seriesP(pn[i], na - 1, nb) + (1 - p) * BT.seriesP(pn[i], na, nb - 1); });
+    var ifW = pn.map(function (p) { return BT.seriesP(p, Math.max(0, na - 1), nb); }), ifL = pn.map(function (p) { return BT.seriesP(p, na, Math.max(0, nb - 1)); });
+    var S1 = BT.summarise(ser), G1 = BT.summarise(pg), W1 = BT.summarise(ifW), L1 = BT.summarise(ifL);
+    var pc = function (x) { return Math.round(x * 100) + '%'; }, rng = function (o) { return pc(o.lo) + ' to ' + pc(o.hi); };
+    var tl = Math.round(S1.mean * 100), bt = 100 - tl;
+    var sT = BT.summarise(f.draws.map(function (d) { return d[f.idx[TA]]; })), sB = BT.summarise(f.draws.map(function (d) { return d[f.idx[TB]]; }));
+    var stronger = f.draws.filter(function (d) { return d[f.idx[TA]] > d[f.idx[TB]]; }).length / f.draws.length;
+    var blueBonus = BT.summarise(f.draws.map(function (d) { return BT.expit(d[f.K]); }));
+    $('seriesSub').textContent = over ? 'The series is already decided at this score.' : 'Best of ' + sr.fmt + ', first to ' + need + '. Update the score as games finish.';
+    var ctl = '<div class="sctl"><span class="block-label" style="margin:0">Format</span><div class="seg" role="group" aria-label="Series format"><button type="button" data-sfmt="5" aria-pressed="' + (sr.fmt === 5) + '">Best of 5</button><button type="button" data-sfmt="7" aria-pressed="' + (sr.fmt === 7) + '">Best of 7</button></div>' +
+      [TA, TB].map(function (t) { return '<span class="stepper" role="group" aria-label="' + esc(tn(t)) + ' wins"><span class="block-label" style="margin:0">' + esc(tn(t)) + ' wins</span><button type="button" data-sdec="' + t + '" aria-label="Remove a ' + t + ' win">-</button><b>' + sr[t] + '</b><button type="button" data-sinc="' + t + '" aria-label="Add a ' + t + ' win">+</button></span>'; }).join('') +
+      '<button class="btn ghost" id="sReset" type="button">Reset series</button>' +
+      '<label class="chk"><input type="checkbox" id="sLean"' + (sr.lean ? ' checked' : '') + '> Add this game\'s draft lean (unproven)</label></div>';
+    var bar = '<div class="winbar series" role="img" aria-label="Series win chance: ' + esc(NA) + ' ' + tl + ' percent, ' + esc(NB) + ' ' + bt + ' percent"><div class="wb" style="flex:' + Math.max(tl, 1) + '">' + esc(NA) + ' ' + tl + '%</div><div class="wr" style="flex:' + Math.max(bt, 1) + '">' + bt + '% ' + esc(NB) + '</div></div>';
+    var tbl = '<table class="mini"><thead><tr><th></th><th class="num">' + esc(NA) + '</th><th class="num">' + esc(NB) + '</th></tr></thead><tbody>' +
+      '<tr><td>Wins the next game (' + esc(blueT) + ' is blue)</td><td class="num">' + pc(G1.mean) + '</td><td class="num">' + pc(1 - G1.mean) + '</td></tr>' +
+      '<tr><td>Wins the series now</td><td class="num">' + pc(S1.mean) + '</td><td class="num">' + pc(1 - S1.mean) + '</td></tr>' +
+      '<tr><td>Series chance if ' + esc(NA) + ' wins the next game</td><td class="num">' + pc(W1.mean) + '</td><td class="num">' + pc(1 - W1.mean) + '</td></tr>' +
+      '<tr><td>Series chance if ' + esc(NB) + ' wins the next game</td><td class="num">' + pc(L1.mean) + '</td><td class="num">' + pc(1 - L1.mean) + '</td></tr></tbody></table>';
+    var meta = '<p class="note">' + (over ? '' : 'Likely range for the series: ' + esc(NA) + ' ' + rng(S1) + '. For the next game: ' + esc(NA) + ' ' + rng(G1) + '. ') + 'After the next game the model assumes neutral sides, because the real side order is not known. The ranges are wide because the model has only ' + f.n + ' Season 18 games (' + APP.btNoSide + ' without a known side) for ' + f.K + ' teams. ' + esc(NA) + ' is the stronger team in ' + pc(stronger) + ' of the model\'s plausible worlds, but how much stronger is unclear.' + leanTxt + '</p>' +
+      '<p class="note">Team strength is a Bradley-Terry model with a blue-side bonus (about ' + pc(blueBonus.mean) + ', range ' + rng(blueBonus) + '). It treats every game of the season as equal, so it does not know about patch changes or form. It uses game results only, not the draft. Games in a series are treated as separate, but real momentum could shrink a favourite\'s edge a little.</p>';
+    $('seriesBody').innerHTML = ctl + bar + '<div class="sgrid"><div>' + tbl + '</div><div>' + meta + '</div></div>';
+  }
+  $('seriesBody').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return; var sr = st.series;
+    if (b.dataset.sfmt) sr.fmt = +b.dataset.sfmt; else if (b.dataset.sinc) sr[b.dataset.sinc] = Math.min(4, sr[b.dataset.sinc] + 1); else if (b.dataset.sdec) sr[b.dataset.sdec] = Math.max(0, sr[b.dataset.sdec] - 1); else if (b.id === 'sReset') { sr[st.blue] = 0; sr[st.red] = 0; } else return;
+    save(); renderSeries();
+  });
+  $('seriesBody').addEventListener('change', function (e) { if (e.target.id === 'sLean') { st.series.lean = e.target.checked; save(); renderSeries(); } });
+
+  // ---------- drafter habits ----------
+  var PROFILES = [
+    { team: 'FLCP', name: 'Team Falcons PH', habit: 'Chases a hero or player that is hot (signature heroes); the losing side tends to answer the opponent\'s hot hero one game late; bans the enemy star.', conf: 'medium', s: 0.5 },
+    { team: 'RORA', name: 'Aurora Gaming PH', habit: 'Repeats the same plan after a win; switches when a key hero is banned. The model already weights a series\' last game, so nothing extra is applied.', conf: 'medium', s: 0 },
+    { team: 'AUR', name: 'Aurora Gaming (Türkiye)', habit: 'Coached by Master the Basics and DexStar (news report, 2025). Their style is assumed similar to Aurora PH but nobody has tested that.', conf: 'low', s: 0 }
+  ];
+  function profileOf(t) { for (var i = 0; i < PROFILES.length; i++) if (PROFILES[i].team === t) return PROFILES[i]; return null; }
+  function getHot(t) { var h = st.hot && st.hot[t]; if (h) return h; var p = profileOf(t); return { strength: p ? p.s : 0, heroes: [] }; }
+  function hotMap() { var o = {}; [st.blue, st.red].forEach(function (t) { var h = getHot(t); if (h.heroes.length && h.strength > 0) o[t] = { strength: h.strength, heroes: h.heroes }; }); return o; }
+  function renderHabit() {
+    
+    $('habitNote').innerHTML = 'Some drafters chase a hero that is "hot": a player on a streak, or a hero that just won them a game. I looked for this in the real ban lists I can read, and added the habit as a switch you control. <b>The switch is off by default</b> because ban lists alone cannot show who is hot (that needs pick data, which only BTR and TLID have).';
+    $('habitFit').innerHTML = 'Short version: teams really do repeat their bans after a win, but the model already counts that, so no extra push is applied. The hot-hero setting below is <b>unproven</b> because ban lists cannot test it; it only does what you tell it. For a team with a strength above 0 and hot heroes listed, its pick odds for those heroes go up, and the other team\'s ban odds on them go up a little (60% as much). <a href="habits.html">Coach and analyst habits, with the measurements and sources, are on their own page.</a>';
+    $('hotTeam').innerHTML = [st.blue, st.red].map(function (t) { return '<option value="' + esc(t) + '">' + esc(TNAME[t] || t) + '</option>'; }).join('');
+    var cur = $('hotTeam').value || st.blue, h = getHot(cur); $('hotStr').value = String(h.strength);
+    $('hotChips').innerHTML = [st.blue, st.red].map(function (t) { var x = getHot(t); return '<b>' + esc(TNAME[t] || t) + '</b>: strength ' + x.strength + ', hot: ' + (x.heroes.length ? x.heroes.map(esc).join(', ') : 'none set'); }).join(' &nbsp;|&nbsp; ') + (st.habitOn ? '' : ' &nbsp; (habits are switched off at the top)');
+  }
+  function hotAdd() {
+    var t = $('hotTeam').value, raw = $('hotHero').value.trim().toLowerCase(), hero = lcMap[raw];
+    if (!hero) { $('hotErr').textContent = 'Pick a hero name from the list.'; return; }
+    var h = getHot(t); h = { strength: +$('hotStr').value || h.strength, heroes: h.heroes.slice() }; if (h.heroes.indexOf(hero) < 0) h.heroes.push(hero);
+    st.hot[t] = h; $('hotHero').value = ''; $('hotErr').textContent = ''; save(); renderAll();
+  }
+  $('hotAdd').addEventListener('click', hotAdd);
+  $('hotClear').addEventListener('click', function () { var t = $('hotTeam').value; delete st.hot[t]; save(); renderAll(); });
+  $('hotStr').addEventListener('change', function () { var t = $('hotTeam').value, h = getHot(t); st.hot[t] = { strength: +this.value, heroes: h.heroes.slice() }; save(); renderAll(); });
+  $('hotTeam').addEventListener('change', function () { var h = getHot(this.value); $('hotStr').value = String(h.strength); });
+  $('habitOn').addEventListener('change', function () { st.habitOn = this.checked; save(); renderAll(); });
+
+  function renderPlayoff() {
+    var P = APP.playoff, T = P.test, X = T.cross, f2 = function (v) { return (Math.round(v * 100) / 100).toFixed(2); };
+    var RT = P.regtest || {}, a0 = RT['no playoff prior'], a1 = RT['PH + ID playoffs (before)'], a2 = RT['PH + ID + MY playoffs (now)'];
+    $('playoffNote').innerHTML = 'Playoffs are drafted differently from the regular season, so the model also learns from every playoff game it can read: <b>' + P.id.length + ' MPL ID playoff games</b> (4 to 6 Nov), <b>' + P.ph.length + ' MPL PH playoff games</b> (21 to 25 Oct) and now <b>' + P.myPo + ' MPL Malaysia playoff games</b> (28 Oct to 1 Nov, of ' + (P.myPo + P.myReg) + ' MY games read). With the switch on, half of the "what is normally banned" background comes from these playoff games, and a team\'s own history is trusted a bit less (k ' + P.k + ' instead of ' + BASE_K + '). ' +
+      (a0 && a1 && a2 ? 'Evidence: predicting the ' + a0.n + ' ban steps of ID playoff games one step at a time from earlier games only, average log-score was ' + f2(a0.ll) + ' without playoff drafts, ' + f2(a1.ll) + ' with ID + PH, and ' + f2(a2.ll) + ' once MY playoffs were added (higher is better; the share of bans in the top 5 was ' + Math.round(100 * a0.h5) + '%, ' + Math.round(100 * a1.h5) + '% and ' + Math.round(100 * a2.h5) + '%). The MY gain is small and the top-5 share did not move, so treat it as a mild help. ' : '') +
+      'These are bans only: no source gives playoff picks. The table shows the share of ban lists (one team\'s five bans in one game) that contain each hero. MY games come from MLBBHub, which says its verified drafts cover 40 of 64 completed matches and does not mark stages: I count games from 28 Oct as playoffs because they are best-of-5 and best-of-7 series, and I treat the first-listed team as blue because sides alternate each game.';
+    var head = '<thead><tr><th>Hero</th><th class="num">ID regular</th><th class="num">ID playoffs</th><th class="num">PH playoffs</th><th class="num">MY regular</th><th class="num">MY playoffs</th></tr></thead><tbody>';
+    var rows = P.table.map(function (r) { return '<tr><td>' + esc(r.hero) + '</td><td class="num">' + r.reg + '%</td><td class="num">' + r.idp + '%</td><td class="num">' + r.php + '%</td><td class="num">' + r.myr + '%</td><td class="num">' + r.myp + '%</td></tr>'; }).join('');
+    $('playoffTable').innerHTML = head + rows + '</tbody>';
+    var RGN = [
+      ['MPL Indonesia', 'Bigetron, NAVI', 'All 198 S18 games + 27 playoff games (bans, side, winner); pick data for BTR and TLID', 'Yes: full model'],
+      ['MPL Philippines', 'Aurora PH, Falcons PH', '38 playoff games (bans, winner)', 'Yes: team history + playoff meta'],
+      ['MPL Malaysia', 'Selangor Red Giants, Team Rey', P.myReg + P.myPo + ' games (bans, winner); no picks', 'Yes: team history + playoff meta'],
+      ['MPL MENA', 'Team Falcons', 'No per-game drafts I could read', 'No'],
+      ['MTC Türkiye S8', 'Aurora Gaming, FUT Esports (wild card)', 'Results only: Aurora beat FUT 4-3 in the 7 Nov final. No ban lists found', 'No (not guessed)'],
+      ['MCC (CIS) S8', 'Team Spirit, Aurevia (wild card)', 'Results only: Team Spirit beat Aurevia 4-0 in the 31 Oct final; Spirit also won MSC 2026 (KidBomba\'s team). No ban lists found', 'No (not guessed)'],
+      ['Myanmar', 'none confirmed in my list', 'No draft data. Myanmar won the 2026 Asian Games gold (4-0 over Indonesia, 1 Oct); the 2025 SEA Games men\'s MLBB gold went to the Philippines', 'No'],
+      ['Mongolia, Thailand, China', 'MongolZ, Leon, DFYG, GZG', 'No draft data found', 'No']
+    ];
+    $('regionTable').innerHTML = '<thead><tr><th>Region</th><th>M8 teams</th><th>Data found</th><th>Used by the model</th></tr></thead><tbody>' + RGN.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
+    $('playoffTable').insertAdjacentHTML('afterend', '');
+  }
+
+  function renderRules() {
+    $('heroList').innerHTML = heroNames.map(function (h) { return '<option value="' + esc(h) + '">'; }).join('');
+    var rs = allRules();
+    $('rulesNote').textContent = 'These rules nudge the pick and ban odds: a combo partner of a hero already picked, a counter to a hero the other side has picked or may still pick, and heroes that are weak against what is picked. They are expert knowledge and rules of thumb, not tested on results (there are no per-game counter results to test on). Untick a rule to switch it off, or add your own.';
+    var head = '<thead><tr><th>On</th><th>Rule</th><th class="num">Str.</th><th>Why</th><th>Source</th></tr></thead><tbody>';
+    var rows = rs.map(function (r, i) {
+      var txt = r.t === 'syn' ? esc(r.a) + ' goes well with ' + esc(r.b) : esc(r.a) + ' counters ' + esc(r.b);
+      return '<tr><td><input type="checkbox" data-rule="' + esc(r.id) + '"' + (ruleOff(r) ? '' : ' checked') + ' aria-label="Use rule ' + esc(txt) + '"></td><td>' + txt + '</td><td class="num">' + r.s + '</td><td>' + esc(r.why || '') + '</td><td class="dim">' + esc(r.mine ? 'you' : (r.src || '') + (r.conf ? ' (' + r.conf + ')' : '')) + (r.mine ? ' <button type="button" class="adjbtn" data-ruledel="' + esc(r.id) + '" aria-label="Delete rule">x</button>' : '') + '</td></tr>';
+    }).join('');
+    var derived = RIDX.list.filter(function (r) { return r.derived; }).length;
+    $('rulesTable').innerHTML = head + rows + '</tbody>';
+    $('rulesNote').textContent += ' ' + rs.length + ' rules listed' + (derived ? ', plus ' + derived + ' automatic ones: heroes that punish dashes against heroes with 2 or more dashes' : '') + '.';
+  }
+  $('rulesBox').addEventListener('change', function (e) { var id = e.target.getAttribute && e.target.getAttribute('data-rule'); if (id == null) return; st.rules.off[id] = e.target.checked ? 0 : 1; rebuildRules(); save(); renderAll(); });
+  $('rulesBox').addEventListener('click', function (e) {
+    var del = e.target.getAttribute && e.target.getAttribute('data-ruledel');
+    if (del) { st.rules.added = st.rules.added.filter(function (r) { return ruleKey(r) !== del; }); delete st.rules.off[del]; rebuildRules(); save(); renderAll(); return; }
+    if (e.target.id === 'rAdd') {
+      var a = lcMap[$('rA').value.trim().toLowerCase()], b = lcMap[$('rB').value.trim().toLowerCase()], t = $('rT').value, sv = +$('rS').value;
+      if (!a || !b || a === b) { $('rErr').textContent = 'Pick two different heroes from the list.'; return; }
+      var r = { t: t, a: a, b: b, s: sv, why: 'added by you' };
+      if (allRules().some(function (x) { return x.id === ruleKey(r); })) { $('rErr').textContent = 'That rule is already in the list.'; return; }
+      st.rules.added.push(r); $('rErr').textContent = ''; $('rA').value = ''; $('rB').value = ''; rebuildRules(); save(); renderAll();
+    }
+  });
+  $('matchOn').addEventListener('change', function () { st.matchOn = this.checked; save(); renderAll(); });
+  $('phaseOn').addEventListener('change', function () { st.phaseOn = this.checked; save(); renderAll(); });
+  $('playoffOn').addEventListener('change', function () { st.playoffOn = this.checked; save(); renderAll(); });
+
+  function renderAll() {
+    renderTeamSel(); renderPills(); renderVS();
+    $('gameLabel').textContent = 'Game ' + st.gameNo;
+    $('sortF').value = st.sort || 'likely'; $('scoreOn').checked = st.score; $('fearless').checked = st.fearless; $('banShiftOn').checked = st.banShift !== false; $('matchOn').checked = st.matchOn !== false; $('phaseOn').checked = st.phaseOn !== false; $('playoffOn').checked = st.playoffOn !== false; $('habitOn').checked = !!st.habitOn; $('orderIn').value = st.order;
+    renderRibbon(); renderStage(); renderGrid(); renderVerdict(); renderSeries(); renderScore(); renderHier(); renderRules(); renderPlayoff(); renderHabit();
+    $('undo').disabled = !draft.idx;
+    var qi = document.getElementById('qpIn');
+    if (keepFocus && qi) { qi.focus({ preventScroll: true }); }
+    if (scrollTray) { var qb = document.getElementById('qpBox'); if (qb && qb.scrollIntoView) qb.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+    keepFocus = false; scrollTray = false;
+  }
+
+  // ---- actions ----
+  function record(hero, scored) {
+    if (S.done(draft) || S.usedSet(draft)[hero]) return false;
+    var s = nowStep(), info = stepLabel(draft.idx), pred = lastPred;
+    if (scored && st.score && pred) {
+      var idx = pred.list.indexOf(hero), rank = idx >= 0 ? idx + 1 : null;
+      var full = S.predictNext(draft, ctx()), pAct = 0; for (var i = 0; i < full.length; i++) if (full[i].hero === hero) { pAct = full[i].p; if (rank == null) rank = i + 1; break; } if (rank == null) rank = 99;
+      st.log.push({ p: pAct, game: st.gameNo, step: draft.idx, side: s.side, type: s.type, team: info.team, n: info.n, top: pred.list.slice(0, 5), actual: hero, rank: rank });
+      lastVerdict = { rank: rank, text: tn(info.team) + ' ' + s.type + ' ' + info.n + ': you recorded ' + hero + '. The model ranked it ' + (rank > 30 ? 'below 30th' : '#' + rank) + (rank <= 1 ? '. Right on the top guess.' : rank <= 5 ? '. Inside its top 5.' : '. Outside its top 5.') };
+    } else lastVerdict = null;
+    S.apply(draft, hero); projection = null; scrollTray = true; save(); renderAll();
+    return true;
+  }
+  function simulateTop() {
+    if (S.done(draft)) return;
+    var list = S.predictNext(draft, ctx()); if (!list.length) return;
+    S.apply(draft, list[0].hero); lastVerdict = null; projection = null; renderAll();
+  }
+  function project() {
+    var d = JSON.parse(JSON.stringify(draft)), out = [], g = 0;
+    while (!S.done(d) && g++ < 30) {
+      var s = d.steps[d.idx], n = (s.type === 'ban' ? d.bans : d.picks)[s.side].length + 1, list = S.predictNext(d, ctx());
+      if (!list.length) break; out.push({ side: s.side, type: s.type, n: n, hero: list[0].hero }); S.apply(d, list[0].hero);
+    }
+    projection = out; renderProjection();
+  }
+  function fill() {
+    var names = $('fillIn').value.split(',').map(function (x) { return x.trim(); }).filter(Boolean), err = '', ok = 0;
+    for (var i = 0; i < names.length; i++) {
+      var h = lcMap[names[i].toLowerCase()];
+      if (!h) { err = 'Unknown hero "' + names[i] + '". Check the spelling.'; break; }
+      if (S.done(draft) || !S.apply(draft, h)) { err = h + ' is already used or the draft is full.'; break; } ok++;
+    }
+    $('fillErr').textContent = err; lastVerdict = null; projection = null; if (ok && !err) $('fillIn').value = ''; renderAll();
+  }
+  $('board').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-hero]'); if (b && !b.disabled) { record(b.getAttribute('data-hero'), true); return; }
+    var id = e.target.id; if (id === 'simStep') simulateTop(); else if (id === 'project') project(); else if (id === 'undo2') $('undo').click();
+  });
+  $('qpDock').addEventListener('click', function (e) { var b = e.target.closest('[data-hero]'); if (b && !b.disabled) record(b.getAttribute('data-hero'), true); });
+  document.addEventListener('input', function (e) {
+    if (e.target.id !== 'qpIn') return;
+    $('qpRes').innerHTML = qpSearch(e.target.value).html;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.target.id !== 'qpIn') return;
+    if (e.key === 'Enter') { var f = qpSearch(e.target.value).first; if (f) { e.preventDefault(); keepFocus = true; if (!record(f, true)) keepFocus = false; } }
+    else if (e.key === 'Escape') { e.target.value = ''; $('qpRes').innerHTML = ''; }
+  });
+  if (mq.addEventListener) mq.addEventListener('change', function () { renderAll(); });
+  $('hier').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-adj]'); if (!b) return;
+    var t = b.getAttribute('data-team'), h = b.getAttribute('data-hero'), cur = st.adjust[t][h] || 1;
+    cur = b.getAttribute('data-adj') === 'up' ? cur * 1.5 : cur / 1.5; if (Math.abs(cur - 1) < 0.05) cur = 1;
+    if (cur === 1) delete st.adjust[t][h]; else st.adjust[t][h] = cur;
+    HIER = hierarchies(); save(); renderAll();
+  });
+  function opts(sel, cur, not) {
+    var one = function (t) { return '<option value="' + t.code + '"' + (t.code === cur ? ' selected' : '') + (t.code === not ? ' disabled' : '') + '>' + esc(t.name) + '</option>'; };
+    return '<optgroup label="MPL Indonesia Season 18 (full data)">' + APP.teams.filter(function (t) { return t.w != null; }).map(one).join('') + '</optgroup><optgroup label="Other M8 teams (little or no data yet)">' + APP.teams.filter(function (t) { return t.w == null; }).map(one).join('') + '</optgroup>';
+  }
+  var NODATA = {}; APP.teams.forEach(function (t) { if (t.w == null) NODATA[t.code] = t; });
+  // Marginal gain of each candidate pick: dP_k = P(win | lineup + k) - P(win | lineup), from the draft-edge model (unclamped).
+  function gainList(side, list) {
+    var other = side === 'blue' ? 'red' : 'blue', team = draft.teams[side], mine = draft.picks[side], B = teamEval(draft.teams[other], draft.picks[other]);
+    if (mine.length >= 5) return [];
+    var p0 = C.winProb(teamEval(team, mine), B, { aBlue: side === 'blue' }).raw;
+    var all = list.slice(0, 40).map(function (x) { return { hero: x.hero, d: C.winProb(teamEval(team, mine.concat([x.hero])), B, { aBlue: side === 'blue' }).raw - p0 }; })
+      .sort(function (a, b) { return b.d - a.d; });
+    var top = all.slice(0, 3); top.typical = all.length ? all[Math.floor(all.length / 2)].d : 0; return top;
+  }
+  function gainHTML(side, list) {
+    var g = gainList(side, list); if (!g.length) return '';
+    return '<div class="gain"><div class="block-label">Best 3 for win chance</div>' + g.map(function (x) { return '<div class="gr"><b>' + esc(x.hero) + '</b><span class="up">' + (x.d >= 0 ? '+' : '') + (x.d * 100).toFixed(1) + ' pts</span></div>'; }).join('') + '<div class="note">Gain in draft edge if picked now, among this team\'s 40 most likely picks. A typical one adds ' + (g.typical >= 0 ? '+' : '') + (g.typical * 100).toFixed(1) + ' pts, so compare against that. The edge model is unproven: use it as a hint.</div></div>';
+  }
+  function renderVS() {
+    var sr = st.series || {}, sa = sr[st.blue] || 0, sb = sr[st.red] || 0;
+    $('vsBanner').innerHTML = '<div class="vs-side blue"><span class="vs-tag">BLUE SIDE</span><span class="vs-name">' + esc(tn(st.blue)) + '</span></div><div class="vs-mid"><span>VS</span><small>Game ' + st.gameNo + (sa || sb ? ' · ' + sa + '-' + sb : '') + '</small></div><div class="vs-side red"><span class="vs-tag">RED SIDE</span><span class="vs-name">' + esc(tn(st.red)) + '</span></div>';
+  }
+  function renderTeamSel() {
+    $('blueSel').innerHTML = opts('blueSel', st.blue, st.red); $('redSel').innerHTML = opts('redSel', st.red, st.blue);
+    var w = $('winner'), v = w.value; w.innerHTML = '<option value="">Unknown</option><option value="' + st.blue + '">' + esc(tn(st.blue)) + '</option><option value="' + st.red + '">' + esc(tn(st.red)) + '</option>'; w.value = (v === st.blue || v === st.red) ? v : '';
+  }
+  function setTeams(b, r) { st.blue = b; st.red = r; st.series = { fmt: st.series && st.series.fmt || 7, lean: false }; st.gameNo = 1; HIER = hierarchies(); newDraft(); save(); renderAll(); }
+  $('blueSel').addEventListener('change', function () { setTeams(this.value, this.value === st.red ? st.blue : st.red); });
+  $('redSel').addEventListener('change', function () { setTeams(this.value === st.blue ? st.red : st.blue, this.value); });
+  $('swapSides').addEventListener('click', function () { st.blue = [st.red, st.red = st.blue][0]; newDraft(); save(); renderAll(); });
+  $('undo').addEventListener('click', function () { S.undo(draft); var last = st.log[st.log.length - 1]; if (last && last.game === st.gameNo && last.step === draft.idx) st.log.pop(); lastVerdict = null; projection = null; save(); renderAll(); });
+  $('reset').addEventListener('click', function () { newDraft(); renderAll(); });
+  $('scoreOn').addEventListener('change', function () { st.score = this.checked; save(); });
+  $('banShiftOn').addEventListener('change', function () { st.banShift = this.checked; save(); renderAll(); });
+  $('fearless').addEventListener('change', function () { st.fearless = this.checked; if (!st.fearless) draft.locked = []; else draft.locked = st.locked.slice(); save(); renderAll(); });
+  $('orderApply').addEventListener('click', function () { try { S.parseOrder($('orderIn').value); st.order = $('orderIn').value; newDraft(); save(); renderAll(); $('fillErr').textContent = ''; } catch (e) { $('fillErr').textContent = e.message; } });
+  $('orderDefault').addEventListener('click', function () { st.order = S.DEFAULT_ORDER; newDraft(); save(); renderAll(); });
+  $('fillApply').addEventListener('click', fill);
+  $('q').addEventListener('input', renderGrid); $('roleF').addEventListener('change', renderGrid);
+  $('sortF').addEventListener('change', function () { st.sort = this.value; save(); renderGrid(); });
+  $('q').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && gridFirst) { e.preventDefault(); var h = gridFirst; $('q').value = ''; record(h, true); $('q').focus(); }
+    else if (e.key === 'Escape') { $('q').value = ''; renderGrid(); }
+  });
+  $('showAll').addEventListener('change', function () { showAll = this.checked; renderHier(); });
+  $('finish').addEventListener('click', function () {
+    var rec = { date: TODAY, blue: draft.teams.blue, red: draft.teams.red, bans: { blue: draft.bans.blue.slice(), red: draft.bans.red.slice() }, picks: { blue: draft.picks.blue.slice(), red: draft.picks.red.slice() }, winner: $('winner').value };
+    if (!rec.bans.blue.length && !rec.bans.red.length && !rec.picks.blue.length && !rec.picks.red.length) return;
+    st.saved.push(rec);
+    if (rec.winner && lastVerdict2 && draft.picks.blue.length >= 3 && draft.picks.red.length >= 3) {
+      st.winLog = st.winLog || [];
+      st.winLog.push({ game: st.gameNo, blue: rec.blue, red: rec.red, pBlue: lastVerdict2.w.p, winner: rec.winner });
+    }
+    if (rec.winner && st.series && (rec.winner === st.blue || rec.winner === st.red)) st.series[rec.winner] = Math.min(4, (st.series[rec.winner] || 0) + 1);
+    if (st.fearless) st.locked = st.locked.concat(rec.picks.blue, rec.picks.red);
+    st.gameNo++; $('winner').value = ''; HIER = hierarchies(); newDraft(); save(); renderAll();
+  });
+  $('clearLog').addEventListener('click', function () { st.log = []; lastVerdict = null; save(); renderAll(); });
+  $('copyLog').addEventListener('click', function () {
+    var csv = 'game,step,team,side,type,n,actual,rank,model_top5\n' + st.log.map(function (l) { return [l.game, l.step + 1, l.team, l.side, l.type, l.n, l.actual, l.rank, '"' + l.top.join('; ') + '"'].join(','); }).join('\n');
+    function ok() { $('copyMsg').textContent = 'Copied ' + st.log.length + ' rows.'; }
+    function fail() { $('copyMsg').textContent = 'Copy was blocked. Select the table and copy it by hand.'; }
+    try { navigator.clipboard.writeText(csv).then(ok, fail); } catch (e) { fail(); }
+  });
+  renderPills(); renderLimits(); renderAll();
+})();
+</script>
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StepForward - formulas and accuracy checks</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1c1c1a;--dim:#5d5d58;--line:#dcdcd4;--card:#fff;--acc:#1f4fd1;--soft:#eef2fd}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ececE6;--dim:#a2a29a;--line:#34342f;--card:#1e1e1b;--acc:#8fb0ff;--soft:#232a3d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:20px 16px 60px}h1{font-size:26px;margin:.2em 0}h2{font-size:20px;margin:1.8em 0 .4em;padding-top:.6em;border-top:1px solid var(--line)}h3{font-size:16px;margin:1.3em 0 .3em}
+p,li{max-width:70ch}.dim{color:var(--dim)}.nav{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:10px}.nav a{color:var(--acc);text-decoration:none}.nav a.on{font-weight:700;text-decoration:underline}.kid{background:var(--soft);border-left:3px solid var(--acc);padding:8px 12px;border-radius:4px;margin:.6em 0}
+pre.eq{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 12px;overflow-x:auto;font:13.5px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:.5em 0}
+.sc{overflow-x:auto;margin:.6em 0}table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--soft);font-weight:600}td.n{text-align:right;white-space:nowrap}
+code{font:13px ui-monospace,Menlo,Consolas,monospace;background:var(--soft);padding:1px 4px;border-radius:3px}.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:0 8px;font-size:12px}
+nav a{margin-right:12px;color:var(--acc)}
+
+html:root{--bg:#070a12;--fg:#eaf0ff;--dim:#94a3c6;--line:rgba(120,150,230,.22);--card:rgba(15,22,40,.8);--acc:#6db6ff;--soft:rgba(68,166,255,.13);color-scheme:dark}html{background:#070a12}body{background:radial-gradient(900px 460px at 6% -8%,rgba(68,166,255,.22),transparent 65%),radial-gradient(900px 460px at 96% -6%,rgba(255,79,109,.18),transparent 65%),#070a12;background-attachment:fixed;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}h1,h2,h3{font-family:"Rajdhani","Barlow Condensed","Arial Narrow",system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em}h1{font-size:clamp(28px,6vw,44px);background:linear-gradient(95deg,#fff 10%,#8cc4ff 50%,#ff7a92 95%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 20px rgba(90,150,255,.3))}h2{border-top:1px solid var(--line);color:#fff}.nav{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:10px 14px;backdrop-filter:blur(10px)}.nav a{color:var(--acc);border-bottom:1px solid transparent}.nav a:hover{color:#fff}.nav a.on{color:#ffc94d;text-decoration:none;border-bottom:2px solid #ffc94d;font-weight:700}.kid{background:var(--soft);border-left:3px solid #ffc94d;border-radius:8px}details,pre.eq,pre.code,.sc,table{border-radius:10px}details,pre.eq,pre.code{background:var(--card);border:1px solid var(--line);box-shadow:0 8px 26px rgba(0,0,0,.35)}table{background:var(--card)}th{background:rgba(255,255,255,.04);color:#9fb2de}th,td{border-color:rgba(120,150,230,.16)}summary::marker{color:#ffc94d}code{background:rgba(122,77,255,.18);color:#d8ccff}a{color:var(--acc)}.tag{border-color:rgba(255,201,77,.4);color:#ffc94d}::selection{background:rgba(122,77,255,.5)}</style></head><body><main><div class="nav"><a href="index.html">Simulator</a><a href="habits.html">Coach and analyst habits</a><a href="formulas.html" class="on">Formulas and accuracy</a><a href="programs.html">Analysis programs</a></div>
+<h1>Formulas and accuracy checks</h1>
+<p class="dim">Companion page to the StepForward simulator. The measured drafter habits are on the <a href="habits.html">habits page</a> and the code is on the <a href="programs.html">programs page</a>. Every formula the page uses, then every test I ran on it, with the real numbers and what they do and do not prove. Data: MPL ID Season 18 (198 games), MPL PH playoffs (38), MPL MY Season 18 (105), read up to 14 Nov 2026.</p>
+<nav><a href="#f1">1 Formulas</a><a href="#f2">2 Accuracy tests</a><a href="#f3">3 What it means</a></nav>
+<div class="kid"><b>In plain words.</b> The simulator guesses what a team will ban or pick, and who wins. To know if a guess method is any good, I hide the answer, let the model guess, then check. I did that thousands of times. The ban guesses are clearly better than luck. The winner guesses are not better than a coin flip yet.</div>
+
+<h2 id="f1">1. Formulas</h2>
+<h3>1.1 Ban model: how likely is a team to ban hero h</h3>
+<p>Each earlier game <i>i</i> of the team (oldest to newest, <i>n</i> games) gets a weight, then the team's ban frequency is mixed with a league-wide background so small samples do not mislead.</p>
+<pre class="eq">w_i = decay^(n-1-i) × (1 if same side, else sideW) × (h2hW if same opponent, else 1)
+        × (phaseW if game is before the patch, else 1) × exp(−λ · days_old)
+
+p_team(h) = ( Σ_i w_i · [h in game i's ban list]  +  k · prior(h) ) / ( Σ_i w_i + k )
+
+prior(h)  = (1 − β) · league_ban_share(h)  +  β · playoff_ban_share(h)      (β = 0.5, playoff switch on)
+
+Position blend:   p(h) = (1 − wp) · p_team(h)  +  wp · p_team,ban#j(h)        (wp = 0.35)
+Matchup nudge:    p(h) ← p(h) · exp(μ),  μ = clamp(0.25 · Σ rule strengths, ±1.6)
+Lane check:       skip h if opponent's picks + h cannot fill distinct lanes
+Finally:          normalise so the list sums to 1</pre>
+<div class="sc"><table><thead><tr><th>Setting</th><th>Value</th><th>Where it came from</th></tr></thead><tbody><tr><td>decay</td><td class="n">0.7</td><td>tuned on the earlier 60% of S18 games</td></tr><tr><td>sideW</td><td class="n">0.6</td><td>tuned</td></tr><tr><td>h2hW</td><td class="n">4</td><td>tuned</td></tr><tr><td>k</td><td class="n">4 (8 with playoff prior; MY k=4/16 tested)</td><td>tuned; playoff prior needs a larger k</td></tr><tr><td>wp</td><td class="n">0.35</td><td>tuned</td></tr><tr><td>β (playoff prior)</td><td class="n">0.5</td><td>chosen by cross-checking prior mixes on ID playoffs</td></tr><tr><td>λ</td><td>ln 2 / 45 per day (half-life 45 days)</td><td>chosen so M8 in January counts MPL games as old; tests show no difference</td></tr><tr><td>phaseW</td><td class="n">0.5 (patch 2.2.16a, 14 Oct)</td><td>safety net; effect below 0.01</td></tr><tr><td>matchup γ</td><td class="n">0.25 for bans, 0.30 for picks</td><td>judgement; rules are knowledge, not tested</td></tr></tbody></table></div>
+<h3>1.2 Pick model</h3>
+<pre class="eq">rate(h) = ( team_count(h) + live_count(h) + K · league_pick_rate(h) ) / ( N_games + K ),  K = 10
+p(h) = rate(h) + banShift(h)                       (part of a banned hero's chance moves to same player's other heroes and same-lane heroes, strength 0.7)
+p(h) ← p(h) · exp(0.30 · Σ combo/counter strengths)  + small direct counter bonus
+p(h) ← p(h) · (1 + 0.5 · early · min(1, opp_rate/0.5))    (denial: taking what the other team needs)
+p(h) ← p(h) · 0.05 if the hero cannot fit any free lane</pre>
+<h3>1.3 Win model (Draft verdict) and series odds</h3>
+<pre class="eq">z = temp · ( team + hero + comp + style + side )         temp = 0.4,  P(win) = clamp( 1/(1+e^−z), 0.35, 0.65 )
+team  = 0.8 · ( logit(team record) difference )
+hero  = 6.0 · ( hero evidence difference )
+comp  = 0.02 · ( composition rating difference )     style = 0.12 · ( style rating difference )     side = 0.3 for blue
+
+Series (Bayesian Bradley-Terry):  P(a beats b) = 1 / (1 + exp(−(θ_a − θ_b + β_blue·side)))
+θ ~ Normal(0, τ=1), blue-side bonus β_blue, sampled by random-walk Metropolis (36,000 steps, burn 8,000, thin 10);
+teams with no games get fresh draws from the prior (very wide range).</pre>
+<h3>1.4 Python engine (CatBoost / NumPy / SciPy package)</h3>
+<pre class="eq">z_i = w0 + Σ_j w_j · x_ij                    ŷ_i = σ(z_i) = 1 / (1 + e^−z_i)
+L(w) = −(1/N) Σ_i [ y_i·log ŷ_i + (1 − y_i)·log(1 − ŷ_i) ]  +  (l2/2) · ||w||²
+∂L/∂w_j = Σ_i ( σ(z_i) − y_i ) · x_ij  (+ l2 · w_j)          solved with L-BFGS (SciPy)
+patch weight: w_patch(t) = e^(−λ t)      features: 2N-dim multi-hot of heroes, smoothed target encoding,
+synergy and counter matrices (leave-one-out), role-balance indices
+best pick:  ΔP_k = P(win | draft + hero k) − P(win | draft), top 3 reported</pre>
+<p class="dim">The CatBoost backend is wired in but I could not train or test it here (no package installs). The logistic backend has 22 passing unit tests.</p>
+<h3>1.5 Drafter-habit hooks (new)</h3>
+<pre class="eq">repeat push (OFF):   p(h) ← p(h) · exp(w)   for heroes this team banned last game of the same series; w = 0 in the app
+hot hero (OFF by default, you set it):
+   own pick:      p(h) ← p(h) · exp(s)          for each hot hero h of the team,  s = chase strength 0 to 0.9
+   opponent ban:  p(h) ← p(h) · exp(0.6 · s)    ban the other team's hot hero</pre>
+<h3>1.6 How accuracy is measured</h3>
+<ul><li><b>Walk-forward:</b> each game is predicted using only games played before it.</li><li><b>hit@k:</b> share of real bans found in the model's top k (random is about k%, since there are about 100 heroes).</li><li><b>log-score:</b> average of ln(probability given to the real hero). Higher (closer to 0) is better; guessing evenly over 100 heroes scores −4.6.</li><li><b>Log-loss and Brier</b> (winner guesses): lower is better; a coin flip scores 0.693 log-loss.</li><li><b>95% range:</b> bootstrap, resampling series.</li></ul>
+
+<h2 id="f2">2. Accuracy tests</h2>
+<h3>2.1 Ban guesses</h3>
+<div class="sc"><table><thead><tr><th>Test</th><th>Data</th><th>Result</th><th>Verdict</th></tr></thead><tbody><tr><td>Ban walk-forward, BTR and TLID</td><td class="n">360 ban steps, S18</td><td>top 1: 27%, top 3: 43%, top 5: 52% (just repeating the past gets 8%, 22%, 33%)</td><td>Clearly better than the simple baseline</td></tr><tr><td>Ban #1 to #5 by position</td><td class="n">72 steps each</td><td class="n">1: 49%, 2: 33%, 3: 29%, 4: 13%, 5: 13% top-1</td><td>First ban is easy, last bans depend on picks the model cannot read</td></tr><tr><td>All 9 teams, later 40%, current settings</td><td class="n">800 steps</td><td>top 1 22.9%, top 3 39.1%, top 5 49.3%, log-score -3.377</td><td>Honest out-of-sample number. About ±4 points of noise</td></tr><tr><td>Same, settings tuned on the earlier 60%</td><td class="n">800 steps</td><td>top 5 51.0%, log-score -3.328</td><td>Small gain</td></tr><tr><td>Same, plus playoff prior</td><td class="n">800 steps</td><td>top 5 51.1%, log-score -3.241</td><td>Log-score gain, top-5 unchanged</td></tr><tr><td>ID playoff games only (all teams)</td><td class="n">270 steps</td><td>without playoff prior: top 5 50.0%, log-score -3.459. With: 52.6%, -3.343</td><td>Real but small gain</td></tr><tr><td>Playoff prior sources (ID playoffs)</td><td class="n">270 steps</td><td>none -3.520 → ID+PH -3.365 → ID+PH+MY -3.317 (top 5: 50%, 51%, 51%)</td><td>Adding MY playoffs helps the log-score a little; top-5 did not move</td></tr><tr><td>Team history inside MPL MY</td><td class="n">735 steps</td><td>league only: top 5 48.4%, log-score -3.735. Team + league (k 4): 50.5%, -3.647. (k 16): 50.7%, -3.616</td><td>A team's own bans help a bit; this is why SRG and Team Rey now use their MY games</td></tr><tr><td>Day-based decay (half-life 45 d)</td><td class="n">800 steps</td><td>later-games log-score -3.248 vs -3.250 with no day decay (decay 0.7)</td><td>No measurable gain; kept for M8 because January games will be old</td></tr><tr><td>Lane check (Khufra + Rafaela vs Marcel)</td><td>unit test + UI test</td><td>Marcel no longer suggested when no lane is free</td><td>Logic test, not a statistic</td></tr></tbody></table></div>
+<h3>2.2 Drafter habits</h3>
+<div class="sc"><table><thead><tr><th>Check</th><th>Data</th><th>Result</th><th>Verdict</th></tr></thead><tbody><tr><td>Do teams repeat their bans after a win?</td><td class="n">119 ID + 65 MY team-games (games 2+ of a series)</td><td>same bans as last game: after a win ID 46%, MY 42%; after a loss ID 38%, MY 36%; chance level about 18%</td><td>Yes, strongly. 95% range of the excess over chance after a win: ID 0.25 to 0.32</td></tr><tr><td>Does an extra "repeat" push improve predictions?</td><td>same games, walk-forward</td><td>log-score on those steps: ID -3.232 with no push, -3.227 with a small push, -3.391 with a big one. MY: -3.301, -3.300, -3.456</td><td>No. The model already counts a series' earlier games (h2hW = 4). Push left at 0</td></tr><tr><td>Hot-hero chasing (Falcons PH style)</td><td>cannot be tested</td><td>needs who picked what and when; only BTR and TLID have pick data</td><td>Unproven. Manual switch, off by default</td></tr></tbody></table></div>
+<h3>2.3 Winner guesses</h3>
+<div class="sc"><table><thead><tr><th>Test</th><th>Data</th><th>Result</th><th>Verdict</th></tr></thead><tbody><tr><td>Logistic regression with L2 penalty</td><td class="n">54 real games with lineups</td><td>best (hero + composition, L2 10): log-loss 0.676 vs coin flip 0.693; 95% range of the gap -0.077 to +0.039</td><td>Cannot beat a coin flip. Range includes zero</td></tr><tr><td>Current win model (Draft verdict)</td><td class="n">54 games</td><td>log-loss 0.668, 57% right</td><td>About a coin flip; shown as unproven</td></tr><tr><td>Parts of the win model</td><td class="n">54 games</td><td>games right: team record only 33, hero evidence only 30, composition only 31, composition + style 31, hero + composition 34, everything 31</td><td>All between 30 and 34 of 54; nothing stands out</td></tr><tr><td>Series odds (Bradley-Terry)</td><td>S18 results</td><td>shows a range, not one number; no-data teams get a very wide range</td><td>Method is sound; accuracy not testable on M8 yet</td></tr></tbody></table></div>
+<h3>2.4 Picks</h3>
+<div class="sc"><table><thead><tr><th>Test</th><th>Data</th><th>Result</th><th>Verdict</th></tr></thead><tbody><tr><td>Team pick list vs league-only list</td><td class="n">62 real lineups</td><td>real picks inside top 10 (of 5): team list 1.74 vs league-only 1.73; top 15: 2.68 vs 2.42</td><td>Team list is about as good as the league pick rates. A starting point</td></tr><tr><td>Pick shift after bans</td><td class="n">51 lineups</td><td>picks in top 10 (of 5): 2.35 off → 2.39 at strength 0.7</td><td>Tiny gain</td></tr></tbody></table></div>
+
+<h2 id="f3">3. What this means</h2>
+<ul><li>Ban guesses are real: about 1 in 4 first guesses and 1 in 2 within five picks, against about 1% and 5% for luck.</li>
+<li>Playoff drafts differ from the regular season, and using them helps a little. Malaysia's playoffs add a small further gain.</li>
+<li>Winner guesses are not better than a coin flip with the data I have. Treat the verdict and Best-3 gains as hints.</li>
+<li>Regional gaps: Türkiye, CIS and Myanmar have results but no readable draft lists, so those teams start from the league average with a wide range.</li>
+<li>Drafter habits: teams do repeat bans, but that is already modelled; "hot hand" is a story I could not test.</li></ul>
+<p class="dim">Sources for data: mlbbhub.com (MPL ID, PH and MY draft pages; draft data there credits Liquipedia, CC BY-SA 3.0), Moonton news, esports.ru, Red Bull Türkiye, RRI and Bernama (results).</p>
+</main></body></html>
