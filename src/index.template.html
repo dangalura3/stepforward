@@ -360,6 +360,9 @@ tr:hover td { background: rgba(68, 166, 255, .05); }
 body.hasdock .wrap { padding-bottom: 230px; }
 .center .herogrid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); } .hero .hn, .hero small { overflow-wrap: break-word; } .hero .av { --s: 36px !important; }
 @media (max-width: 520px) { .vs { padding: 14px 12px; gap: 8px; } .vs-mid small { display: none; } }
+#aiCap { margin: 0; } #aiCap b { color: var(--fg); }
+#accBox { font-size: 14px; } #accBody p { margin: 6px 0; line-height: 1.5; } #accBody .acc-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0; } #accBody .acc-stat { flex: 1 1 130px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; } #accBody .acc-stat b { display: block; font-size: 20px; } #accBody .acc-stat span { font-size: 12.5px; color: var(--fg-dim); }
+.explain { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-left: 3px solid var(--mark); border-radius: 8px; font-size: 14px; line-height: 1.55; } .explain small { display: block; margin-top: 6px; color: var(--fg-dim); font-size: 12px; }
 </style>
 </head><body>
 <div class="wrap">
@@ -368,7 +371,12 @@ body.hasdock .wrap { padding-bottom: 230px; }
     <h1>StepForward <span style="font-weight:400">· MLBB Draft Simulator</span></h1>
     <p class="note" id="siteNav"><a href="habits.html">Coach and analyst habits</a> · <a href="formulas.html">Formulas and accuracy</a> · <a href="programs.html">Analysis programs</a></p>
     <p class="dim">Click each ban and pick as it happens. Each team shows the model's top 5 for its next move, and the scorecard checks the guesses. Use the what-if fill to try drafts.</p>
+    <p class="note" id="aiCap"><b>AI capability:</b> classification and ranking. Given the current draft, it ranks the most likely next ban or pick and gives a win chance for each side.</p>
     <div class="pills" id="pills"></div>
+    <details id="accBox">
+      <summary>How accurate is it?</summary>
+      <div id="accBody"></div>
+    </details>
   </header>
 
   <div class="vs" id="vsBanner" aria-live="polite"></div>
@@ -508,6 +516,9 @@ body.hasdock .wrap { padding-bottom: 230px; }
 /*SIM*/
 </script>
 <script>
+/*EXPLAIN*/
+</script>
+<script>
 var APP = /*DATA*/;
 (function () {
   var S = window.DraftSim, M = window.DraftModel;
@@ -538,7 +549,7 @@ var APP = /*DATA*/;
   try { var raw = JSON.parse(localStorage.getItem('mlbb-sim-v2') || 'null'); if (raw) Object.keys(raw).forEach(function (k) { if (k in st) st[k] = raw[k]; }); } catch (e) {}
   function save() { try { localStorage.setItem('mlbb-sim-v2', JSON.stringify(st)); } catch (e) {} }
 
-  var steps, draft, showAll = false, projection = null, lastVerdict = null, lastPred = null;
+  var steps, draft, showAll = false, projection = null, lastVerdict = null, lastPred = null, explainOn = false;
   function newDraft() {
     try { steps = S.parseOrder(st.order); } catch (e) { steps = S.parseOrder(S.DEFAULT_ORDER); st.order = S.DEFAULT_ORDER; }
     if (!TNAME[st.blue] || !TNAME[st.red] || st.blue === st.red) { st.blue = 'NAVI'; st.red = 'BTR'; }
@@ -692,6 +703,15 @@ var APP = /*DATA*/;
     $('projWrap').innerHTML = projection ? '<div class="projection"><div class="block-label">Projected draft if each team follows the model\'s first guess (one path, not a promise)</div><div class="pickrow">' +
       projection.map(function (p) { return '<span class="chip ' + p.side + '"><span class="mono dim">' + (p.side === 'blue' ? 'B' : 'R') + (p.type === 'ban' ? ' ban ' : ' pick ') + p.n + '</span> ' + av(p.hero, 20) + esc(p.hero) + '</span>'; }).join('') + '</div></div>' : '';
   }
+  function explainHTML() {
+    if (!explainOn) return '';
+    var pBlue = null;
+    if (draft.picks.blue.length && draft.picks.red.length) { try { pBlue = verdictNow().w.p; } catch (e) { pBlue = null; } }
+    var top = lastPred ? lastPred.list.slice(0, 3).map(function (h) { return { hero: h, p: lastPred.p[h] }; }) : [];
+    var s = nowStep(), info = s ? stepLabel(draft.idx) : null;
+    var text = window.DraftExplain.explain({ done: S.done(draft), team: info ? tn(info.team) : '', type: info ? info.type : '', n: info ? info.n : 0, top: top, blueTeam: tn(draft.teams.blue), redTeam: tn(draft.teams.red), pBlue: pBlue });
+    return '<div class="explain" id="explainOut" role="status">' + esc(text) + '<small>Auto-written from the numbers on this page. It is not a chatbot.</small></div>';
+  }
   function renderStage() {
     lastPred = null;
     $('colBlue').innerHTML = teamCol('blue'); $('colRed').innerHTML = teamCol('red');
@@ -700,7 +720,7 @@ var APP = /*DATA*/;
     else {
       var s = nowStep(), info = stepLabel(draft.idx);
       b = '<div class="banner ' + s.side + '"><div class="nexthead"><h2>' + esc(tn(info.team)) + ' ' + s.type + ' ' + info.n + '</h2><span><span class="sidetag ' + s.side + '">' + s.side + '</span> <span class="mono dim">step ' + (draft.idx + 1) + ' of ' + draft.steps.length + '</span></span></div>' + verdictHTML() +
-        '<div class="actions"><button class="btn ghost" id="undo2" type="button"' + (draft.idx ? '' : ' disabled') + '>Undo</button><button class="btn ghost" id="simStep" type="button">Play top guess (not scored)</button><button class="btn ghost" id="project" type="button">Project the rest</button></div></div>';
+        '<div class="actions"><button class="btn ghost" id="undo2" type="button"' + (draft.idx ? '' : ' disabled') + '>Undo</button><button class="btn ghost" id="simStep" type="button">Play top guess (not scored)</button><button class="btn ghost" id="project" type="button">Project the rest</button><button class="btn ghost" id="explainBtn" type="button" aria-expanded="' + (explainOn ? 'true' : 'false') + '">' + (explainOn ? 'Hide explanation' : 'Explain this draft') + '</button></div>' + explainHTML() + '</div>';
     }
     $('banner').innerHTML = b; renderProjection();
     $('qpDock').innerHTML = mq.matches && lastPred ? tray(lastPred.side) : ''; document.body.classList.toggle('hasdock', !!($('qpDock').innerHTML));
@@ -1074,7 +1094,7 @@ var APP = /*DATA*/;
   }
   $('board').addEventListener('click', function (e) {
     var b = e.target.closest('[data-hero]'); if (b && !b.disabled) { record(b.getAttribute('data-hero'), true); return; }
-    var id = e.target.id; if (id === 'simStep') simulateTop(); else if (id === 'project') project(); else if (id === 'undo2') $('undo').click();
+    var id = e.target.id; if (id === 'simStep') simulateTop(); else if (id === 'project') project(); else if (id === 'undo2') $('undo').click(); else if (id === 'explainBtn') { explainOn = !explainOn; renderStage(); }
   });
   $('qpDock').addEventListener('click', function (e) { var b = e.target.closest('[data-hero]'); if (b && !b.disabled) record(b.getAttribute('data-hero'), true); });
   document.addEventListener('input', function (e) {
@@ -1158,7 +1178,18 @@ var APP = /*DATA*/;
     function fail() { $('copyMsg').textContent = 'Copy was blocked. Select the table and copy it by hand.'; }
     try { navigator.clipboard.writeText(csv).then(ok, fail); } catch (e) { fail(); }
   });
-  renderPills(); renderLimits(); renderAll();
+  function renderAcc() {
+    var r = APP.bantest, g = APP.regression, h = '';
+    h += '<div class="acc-row"><div class="acc-stat"><b>' + pct(r.h1 / r.n) + '</b><span>real ban was its #1 guess<br>(random guessing: about 1%)</span></div>' +
+      '<div class="acc-stat"><b>' + pct(r.h5 / r.n) + '</b><span>real ban was in its top 5<br>(random guessing: about 5%)</span></div>' +
+      (g ? '<div class="acc-stat"><b>' + Math.round(g.current.acc * g.n) + ' of ' + g.n + '</b><span>winners called right<br>(a coin flip gets about half)</span></div>' : '') + '</div>';
+    h += '<p><b>Next ban:</b> each ban was guessed using only the games before it, on the last ' + r.n + ' ban steps of Season 18. The real value could be about 3 to 4 points higher or lower.</p>';
+    if (g) h += '<p><b>Winner:</b> only a little better than a coin flip, tested on ' + g.n + ' games, so treat it as a rough guide. With so few games the result could easily be a few games better or worse by luck. Win chances are limited to 35% to 65% on purpose.</p>';
+    h += '<p><b>Picks:</b> pick guesses have not been tested the same way yet.</p>';
+    h += '<p class="note">Measured on past games. It is not a guarantee. Drafts are human choices.</p>';
+    $('accBody').innerHTML = h;
+  }
+  renderAcc(); renderPills(); renderLimits(); renderAll();
 })();
 </script>
 </body></html>

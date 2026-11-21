@@ -45,3 +45,10 @@ test('no secrets are hardcoded in the repository', () => {
   })(ROOT);
   assert.deepEqual(hits, []);
 });
+
+test('built site has the AI-capability line, accuracy box and explain button', () => {
+  const html = fs.readFileSync(path.join(ROOT, 'site/index.html'), 'utf8');
+  assert.ok(html.includes('id="aiCap"') && html.includes('classification and ranking'));
+  assert.ok(html.includes('id="accBox"') && html.includes('How accurate is it?'));
+  assert.ok(html.includes('Explain this draft') && html.includes('DraftExplain'));
+});
