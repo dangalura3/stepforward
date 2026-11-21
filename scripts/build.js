@@ -155,6 +155,7 @@ html = html.replace('/*MODEL*/', () => fs.readFileSync(ROOT + '/src/model.js', '
   .replace('/*COMP*/', () => fs.readFileSync(ROOT + '/src/comp.js', 'utf8'))
   .replace('/*BT*/', () => fs.readFileSync(ROOT + '/src/bt.js', 'utf8'))
   .replace('/*SIM*/', () => fs.readFileSync(ROOT + '/src/sim.js', 'utf8'))
+  .replace('/*EXPLAIN*/', () => fs.readFileSync(ROOT + '/src/explain.js', 'utf8'))
   .replace('/*DATA*/', () => JSON.stringify(app));
 fs.mkdirSync(ROOT + '/site', { recursive: true });
 fs.writeFileSync(ROOT + '/site/index.html', html);
