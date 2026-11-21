@@ -1,0 +1,19 @@
+[project]
+name = "mlbb-draft"
+version = "0.1.0"
+description = "MLBB draft win-probability and pick recommendation engine"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy"]
+
+[project.optional-dependencies]
+catboost = ["catboost"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["mlbb_draft*"]
+
+[tool.setuptools.package-data]
+mlbb_draft = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
