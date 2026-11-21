@@ -1,0 +1,14 @@
+{
+  "name": "stepforward",
+  "version": "1.0.0",
+  "description": "StepForward: predicts the next ban and pick in Mobile Legends (MLBB) pro drafts, built for the M8 World Championship.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/*.test.js",
+    "test:py": "cd engine && python -m pytest -q",
+    "serve": "npx serve site"
+  },
+  "engines": { "node": ">=20" }
+}

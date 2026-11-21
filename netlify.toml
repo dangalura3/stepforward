@@ -1,0 +1,9 @@
+# Netlify settings: publish the prebuilt static site. No build step runs on Netlify.
+[build]
+  publish = "site"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
