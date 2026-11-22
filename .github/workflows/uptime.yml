@@ -1,0 +1,29 @@
+# Basic monitoring: every 6 hours, check that the live site answers and is really StepForward.
+# If it fails, GitHub marks the run red and emails the repo owner (Settings -> Notifications).
+# The URL is public, so it is not a secret. To use another URL, add a repository variable LIVE_URL.
+name: uptime
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-live-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      LIVE_URL: ${{ vars.LIVE_URL || 'https://stepforward-mlbb-draft-simulator.netlify.app/' }}
+    steps:
+      - name: Site answers with HTTP 200
+        run: |
+          code=$(curl -sS -L --retry 3 --retry-delay 5 -o page.html -w '%{http_code}' "$LIVE_URL")
+          echo "HTTP $code from $LIVE_URL"
+          test "$code" = "200"
+      - name: Page is really StepForward
+        run: grep -q "StepForward" page.html
+      - name: Accuracy box and explain button are present
+        run: grep -q 'id="accBox"' page.html && grep -q 'Explain this draft' page.html
