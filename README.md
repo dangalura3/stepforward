@@ -1,6 +1,6 @@
 # StepForward · MLBB Draft Predictor
 
-[![CI/CD](https://github.com/YOUR-USERNAME/stepforward/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/stepforward/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/dangalura3/stepforward/actions/workflows/ci.yml/badge.svg)](https://github.com/dangalura3/stepforward/actions/workflows/ci.yml)
 
 **Live app: https://stepforward-mlbb-draft-simulator.netlify.app/**
 
@@ -36,7 +36,7 @@ Details, formulas and confidence ranges: `site/formulas.html`. The AI is statist
 ## Run it
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/stepforward.git
+git clone https://github.com/dangalura3/stepforward.git
 cd stepforward
 npm test            # 26 unit tests, no packages to install (Node 20+)
 npm run build       # rebuilds site/index.html from src/ and data/
