@@ -4,6 +4,8 @@
 
 **Live app: https://dangalura3.github.io/stepforward/**
 
+**Demo video (2 min): https://drive.google.com/file/d/1ETHGOGcTAkjYtsfzWfsyQ_NOj_MDCLJA/view?usp=sharing**
+
 StepForward guesses what a **Mobile Legends: Bang Bang (MLBB)** pro team will **ban or pick next**, explains why, and scores itself against what really happened. Built for the **M8 World Championship** (Wild Card in Bangkok from 17 Dec 2026, Main Stage in Istanbul to 23 Jan 2027).
 
 > **Explain it like I'm 12:** before each pro game, the two teams take turns banning and choosing heroes, like picking players before a match. Fans like to guess the next move. StepForward learns each team's habits from its past games and ranks the most likely heroes for the next turn.

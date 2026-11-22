@@ -1,6 +1,6 @@
 # Product Requirements Document - StepForward (one page)
 
-**Owner:** Danilo S. Galura Jr. · **Version 1.0** · 21 Nov 2026 · **Status:** v1 built, user testing pending
+**Owner:** Danilo S. Galura Jr. · **Version 1.1** · 22 Nov 2026 · **Status:** v1 live on GitHub Pages; 3 user interviews done; 5-person phone test is the next step
 **Technical detail:** see `spec.md` and `docs/ARCHITECTURE.md` · **Research:** `docs/IDEA_VALIDATION.md`
 
 ## 1. Problem and opportunity
@@ -18,9 +18,9 @@ Fans, casters and amateur coaches who watch Mobile Legends (MLBB) pro matches ca
 |---|---|---|---|
 | Useful predictions | Real ban in model's top 5 (walk-forward, held-out games) | ≥ 40% | ~49% 🧪 |
 | Honest product | Win-prediction shown with a "about a coin flip" warning | 100% of places | done |
-| Easy to use | Strangers who finish 3 bans unaided (5 testers) | ≥ 4 of 5 | **to test** |
+| Easy to use | Strangers who finish 3 bans unaided (5 testers) | ≥ 4 of 5 | not measured yet |
 | Works on phones | Sideways scroll at 400 px wide | none | none |
-| Reliable | CI green on every push; unit tests | 16 JS + 22 Python | 38 passing |
+| Reliable | CI green on every push; all unit tests pass | All pass | 48 passing (26 JS + 22 Python) |
 | Safe | Secrets in repo | 0 | 0 |
 
 ## 4. Features and acceptance criteria
@@ -47,13 +47,15 @@ Fans, casters and amateur coaches who watch Mobile Legends (MLBB) pro matches ca
 |---|---|
 | No readable draft data for Türkiye, CIS, Myanmar, MENA | Label "little or no data"; add data when it appears |
 | Meta shifts (new patch, rule changes) | Patch discount, playoff prior, editable order |
-| No real-user evidence yet | Interviews + 5 usability tests (Validation Report steps 1, 2, 6) |
+| Little real-user evidence (3 informal interviews so far) | 5 usability tests on phones (Validation Report step 6, Test B) |
 | Competitor adds a similar mode | Stay team-specific, explained and self-scoring |
 
 | Milestone | Date |
 |---|---|
-| v1 built, tested, deployed | 21 Nov 2026 ✅ |
-| Real-user interviews + usability test, fixes | by 28 Nov 2026 |
-| Demo video, README, reflection submitted | per course deadline |
+| v1 built and tested | 21 Nov 2026 ✅ |
+| Deployed to GitHub Pages; v2 issue (#1) opened | 22 Nov 2026 ✅ |
+| 3 user interviews, 2-minute demo video, reflection written | 22 Nov 2026 ✅ |
+| 5-person phone usability test, then fixes | by 28 Nov 2026 |
+| Final check and submission | per course deadline |
 | M8 Wild Card (Bangkok) begins - promote the tool | 17 Dec 2026 |
 | M8 Main Stage and final (Istanbul) | to 23 Jan 2027 |

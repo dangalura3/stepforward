@@ -1,5 +1,7 @@
 # 2-minute demo script
 
+**Recorded 22 Nov 2026:** https://drive.google.com/file/d/1ETHGOGcTAkjYtsfzWfsyQ_NOj_MDCLJA/view?usp=sharing (linked from the README)
+
 **Goal:** show the core AI feature working: pick two teams → tap suggested bans/picks → see reasons and the scorecard.
 **Record:** phone-sized or desktop window at 1280×720 on the live URL. Use QuickTime (Mac), Win+G (Windows) or Loom. Speak slowly, plain English. Rehearse once; keep under 2:00.
 

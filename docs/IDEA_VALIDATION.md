@@ -1,12 +1,12 @@
 # Idea Validation Report - StepForward
 
-**Project:** StepForward, an MLBB pro-draft predictor and simulator · **Author:** Danilo S. Galura Jr. · **Date:** 21 Nov 2026
+**Project:** StepForward, an MLBB pro-draft predictor and simulator · **Author:** Danilo S. Galura Jr. · **Date:** 21 Nov 2026 (interviews added 22 Nov 2026)
 **Framework:** the 7-step validation framework from Week 4A (Define the problem → Profile the customer → Size the market → Map the competition → Define your edge → Design a cheap test → Stress-test the idea).
 
 **How to read the evidence tags**
 - ✅ **Sourced** - found online; the link is in the list at the bottom.
 - 🧪 **Measured** - I tested it myself on real match data (walk-forward tests in `data/results/`, shown on `site/formulas.html`).
-- ✍️ **Your turn** - needs real people. These cannot be written by an AI; fill them in before submitting (grading rewards "real evidence").
+- ✍️ **Needs real people** - an item marked this way is an assumption or a test I still have to run with real people. The 3 interviews are done (Step 1); the phone test (Test B) is not.
 
 ---
 
@@ -25,14 +25,33 @@
 | 3 | A press article titled "AI Predicts the MPL ID S17 Champion" exists, so there is an audience for AI predictions about MPL. | ✅ [10] |
 | 4 | In another game (League of Legends) a hobbyist's "predict the match from the draft" AI got a Reddit thread with 2,310 upvotes and 420+ comments. This suggests the *idea* attracts people, though it is a different game. | ✅ [13] |
 | 5 | Students and hobbyists write papers and portfolio projects on MLBB draft recommendation and win prediction (graph-based draft recommender; Naive Bayes win predictor). | ✅ [9, 11] |
-| 6 | **Direct interviews:** how many people told me they have this problem, in their own words? | ✍️ see box below |
+| 6 | **Direct interviews:** how many people told me they have this problem, in their own words? | 3 of 3 interviewees (see box below) |
 
-> ✍️ **Your turn - Problem interviews (do 3-5, 10 minutes each, in person or Messenger/Discord).** Ask: *"When you watch MPL, do you try to guess the bans? How? What do you wish you could see?"* Do not describe my app first. Paste real quotes (with their permission, first name only):
-> 1. "…" - name, role (fan / caster / coach)
-> 2. "…"
-> 3. "…"
+> **Interviews (n = 3, informal, conducted by message on 22 Nov 2026).** Questions asked: (1) Do you try to predict bans or picks while watching or playing? How? (2) What do you wish you could see before a draft? (3) Have you used any draft tool, tier list or statistics page? What did you dislike? (4) Would you use a free tool that suggests the next ban or pick? Responses are paraphrased; the original messages are in the Appendix at the end of this report.
+>
+> 1. **Dada, MLBB fan.** Tries to predict drafts and chooses based on a player's strongest hero. Said he looks for heroes outside the current meta. Has used a draft tool before, but could not recall its name and found it full of bugs. Would use a free tool every time there is a match.
+> 2. **David, MLBB fan.** Predicts drafts every match, guessing which heroes are strongest in the current patch or banning a pro player's signature hero. After three picks he checks which role the team is missing. Before a draft he wants to see his team's real win rates, to avoid banning the opponent's main hero or being left with weak picks. Has tried the official statistics page and TikTok tier lists, and found them unusable mid-draft because the 20-second timer leaves no time to type, and 1v1 counter information is not useful without a tank. Would "100%" use a free tool that shows quick icons, especially during the second ban phase, when picking last (slot 5), and while watching MPL playoffs.
+> 3. **Chris, MLBB fan.** Sometimes tries to predict drafts, based on heroes that have been troublesome in his own ranked games or on the role a professional team still lacks. Before a draft he wants to see which lanes each player prefers and a quick summary of recent buffs and nerfs. Has used YouTube tier lists and the official hero rankings, and found them too complicated (too many percentages), suggesting heroes he cannot play, and too slow to check under a fast timer. Would definitely use a free, simple tool when it is his turn to ban and he cannot decide, or when forced to play an unfamiliar role.
 
-**Verdict:** The problem is real but *indirectly* evidenced until the interviews are added.
+**Summary of interview findings (n = 3).**
+
+| Finding | Evidence |
+|---|---|
+| All three interviewees try to predict drafts, with no tool support | 3 of 3 (Dada: yes; David: every match; Chris: sometimes) |
+| All three have already tried an existing tool or ranking | 3 of 3 (a buggy draft tool; official stats page and TikTok tier lists; YouTube tier lists and official rankings) |
+| Existing tools are too slow or too complicated during a live draft | 2 of 3 (David, Chris), citing the 20-second timer and too many percentages; 1 of 3 (Dada) reported bugs |
+| All three said they would use a free, simple tool | 3 of 3 |
+| Stated moments of use | Second ban phase, last pick (slot 5), forced off-role picks, and when blanking on a ban (David, Chris) |
+
+**Limitations.** The sample is three people, recruited informally, so it likely leans positive. Two of three described their own ranked drafts rather than professional matches. These interviews show that the problem is real for some players and fans; they do not show how many people would use the app, or pay for it.
+
+**Verdict:** Three of three interviewees confirmed that they try to predict drafts without good tool support and said they would use a free, simple tool. The evidence is still small and informal (n = 3), so I treat it as an early signal, not proof of demand.
+
+**Implications for StepForward.**
+- Already addressed: speed. The quick-pick box under the active slot lets a user record a suggestion with one tap.
+- Partly addressed: simplicity and quick icons. The app currently uses coloured initial badges instead of real hero pictures, and it shows percentages, which Chris found complicated. Both are v2 candidates.
+- Not yet built (v2 candidates): a view of a team's recent win rates (David), a short buff and nerf summary (Chris), and lane preferences (Chris).
+- Scope note: two interviewees spoke about their own ranked games, so the primary target stays pro-draft followers, with ranked players as a secondary user.
 
 ---
 
@@ -49,7 +68,10 @@
 
 **Willingness to pay:** *Unproven.* Every competing tool I found is free, so I assume users expect free. The project goal is a useful free tool and a portfolio piece, not revenue.
 
-> ✍️ **Your turn - persona with real quotes.** Take 3 of the people from Step 1 and write one line each: what they use today, what annoys them, and where you would find 10 more like them (which group chat, Discord, Facebook group or TikTok community).
+> **Personas (from the interviews in Step 1).**
+> 1. **Dada:** today he picks by a player's strongest hero and has used a draft tool he found buggy. He wants dependable suggestions. *Where to find 10 more: the MLBB group chats and community groups the interviewees belong to (each can share my link).*
+> 2. **David:** today he guesses from patch strength and the opponent's signature heroes, using the official stats page and TikTok tier lists. He is annoyed that they cannot be used under the 20-second timer. *Where to find 10 more: the same MLBB communities, and the comment sections of MPL watch streams.*
+> 3. **Chris:** today he relies on YouTube tier lists and the official hero rankings. He is annoyed that they are complicated and suggest heroes he cannot play. *Where to find 10 more: the same MLBB communities, and the comment sections of MPL watch streams.*
 
 ---
 
@@ -61,7 +83,7 @@
 | **Total**: people who play MLBB each month | **110 million** monthly active users, 1.5 billion installs | ✅ [1] (Moonton, Sep 2026) |
 | **Engaged with the pro scene**: peak concurrent viewers of the M7 final | **5.68 million** (record for mobile esports; 4th most-watched esports event ever) | ✅ [2, 12] |
 | **Reachable in my launch markets**: monthly players in Indonesia + Philippines + Malaysia | **≈ 60 million** (35M + 15M + 10M) | ✅ [3] |
-| **Realistic first-year target** (my assumption, not data) | **5,000 - 30,000 visitors around M8** (17 Dec 2026 - 23 Jan 2027), i.e. roughly 0.1% - 0.5% of the 5.68M peak audience | ✍️ assumption: replace after a real launch (see Step 6) |
+| **Realistic first-year target** (my assumption, not data) | **5,000 - 30,000 visitors around M8** (17 Dec 2026 - 23 Jan 2027), i.e. roughly 0.1% - 0.5% of the 5.68M peak audience | assumption: replace after a real launch (see Step 6) |
 
 **What it means:** the audience is very large, so an "attention" opportunity exists, especially because **M8 (17 Dec 2026 - 23 Jan 2027, US$1,000,000 prize pool, first time in Europe)** is the next big moment. ✅ [6, 7] *Monetisation is weak*: free competitors, price-sensitive audience. A sustainable business would need a B2B angle (teams, media, sponsors) which is unvalidated. **For this course the right goal is a high-quality portfolio product with an honest market note, not a venture business.**
 
@@ -114,7 +136,7 @@
 Source: `data/results/*.json`, `site/formulas.html`.
 **Pass line:** top-5 ≥ 40% → **passed** (about 49%). *Honest note: I chose the 40% line after seeing earlier results, so treat it as a sanity floor, not a pre-registered test.*
 
-**Test B - Can a stranger use it? ✍️ (do this)** Ask 5 people (fans) to open the live link on their phone and, without help, record 3 bans. Watch, do not explain.
+**Test B - Can a stranger use it? ✍️ (not done yet)** Ask 5 people (fans) to open the live link on their phone and, without help, record 3 bans. Watch, do not explain.
 | Tester | Finished 3 bans without help? | Time | What confused them | Quote |
 |---|---|---|---|---|
 | 1 | | | | |
@@ -139,7 +161,7 @@ Source: `data/results/*.json`, `site/formulas.html`.
 | **A bigger tool adds the same feature** | MLBBHub already has an AI assistant. | ✅ [4, 5] | Stay specific: team-specific, explained, self-scoring; this is a portfolio product not a business. | Accepted |
 | **Data rights / terms of use** | Copying or scraping a data site could be a violation. | Project rule: no scraping, single pages read by hand, sources recorded. | Keep rule; cite sources; use initials badges instead of copied art. | Managed |
 | **Overstating results** (small samples) | Loses trust. | 🧪 bootstrap intervals on `formulas.html`. | Show ranges; say "measured on N games". | Managed |
-| **No evidence from real users yet** | Could be a solution nobody asked for. | Steps 1, 2, 6B are ✍️ | Do the interviews and tests before submitting. | **Open - the biggest risk** |
+| **Little evidence from real users** | Could be a solution nobody asked for. | 3 informal interviews (Step 1); usability test (6B) still to do | Run the 5-person usability test before submitting. | **Partly open - the biggest risk** |
 
 **Kill criteria:** if 5 interviews show *nobody* tries to predict drafts, or fewer than 3 of 5 testers can use the tool unaided after two rounds of fixes, stop adding features and reposition the project as a learning/portfolio piece only.
 
@@ -165,3 +187,22 @@ Source: `data/results/*.json`, `site/formulas.html`.
 15. arXiv 1701.03162, prior-information prediction ~71% with hero + player features - https://arxiv.org/pdf/1701.03162
 16. Springer review of ML methods for Dota 2 drafts (accuracy depends on skill level) - https://rd.springer.com/chapter/10.1007/978-3-319-52920-2_3
 17. IDN Times on global ban/fearless draft in MLBB tournaments - https://www.idntimes.com/tech/games/turnamen-mlbb-terapkan-global-ban-pick-fearless-draft-c1c2-01-zr123-lzhs9k
+
+---
+
+## Appendix: original interview responses (22 Nov 2026, first names only)
+
+**Dada**
+
+1.Yes, I choose based on a player’s strongest hero.
+2. Choosing heroes that aren’t in the meta.
+3. Yes, but I can’t remember which one. It’s full of bugs.
+4. Yes, every time there’s a match.
+
+**David**
+
+bro yeah every match lol, i just guess whoever is broken this patch or ban the pro player's signature hero, and after 3 picks i just see what role they're missing. before draft i just wanna see my team's real win rates so i don't ban their main or get stuck with trolls. i tried the official stats page and random tiktok tier lists before, but they're useless mid-draft cuz the 20-second timer is way too fast to type everything in, plus 1v1 counters mean nothing without a tank. i'd 100% use a free tool if it just shows quick icons—especially during second bans so we don't panic, when i'm S5 last pick with a fried brain, or while watching MPL playoffs.
+
+**Chris**
+
+Sometimes, yeah, mostly just guessing based on whichever heroes have been annoying in my own ranked games or filling in whatever role a pro team is still missing. Before a draft starts, I really just wish I could see what lanes everyone actually wants to play and a quick heads-up on who got buffed or nerfed so I don't pick someone weak. I’ve checked a few YouTube tier lists and the official hero rankings, but they feel way too complicated with all the percentages, suggest heroes I don't even know how to play, and take too long to check during a fast timer. I'd definitely use a free, simple tool when it's my turn to ban and I'm blanking, or whenever I get forced into filling a role I don't normally play.

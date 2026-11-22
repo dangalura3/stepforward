@@ -54,8 +54,8 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 | AC-13 | No sideways scrolling on a 400 px wide phone screen. | Manual (Playwright check on the original build) |
 | AC-14 | The app never claims more accuracy than measured: the win model is labelled "about a coin flip". | Manual review of `formulas.html` and the verdict text |
 | AC-15 | The main page states the AI capability ("classification and ranking") and has a collapsible "How accurate is it?" box whose numbers are read from `data/results/` (not typed by hand) and which says picks are not yet tested. | `tests/data.test.js` (built page contains both), manual look at the box |
-| AC-17 | **Input validation:** the draft-order box rejects empty text, junk and HTML; an order without 5 bans and 5 picks per side is refused; a used hero or a full draft is refused without changing anything; typed text is shown with `textContent` (never as HTML). | `tests/input.test.js` |
 | AC-16 | **Explain this draft:** the button shows a short paragraph built only from the on-screen numbers, ends with "This is a prediction, not a promise.", says "Start the draft first." when there is no prediction, and updates after every ban, pick or Undo. | `tests/explain.test.js` (text rules), Playwright run at 1280 px and 375 px |
+| AC-17 | **Input validation:** the draft-order box rejects empty text, junk and HTML; an order without 5 bans and 5 picks per side is refused; a used hero or a full draft is refused without changing anything; typed text is shown with `textContent` (never as HTML). | `tests/input.test.js` |
 
 ## 5. Architecture (summary - full notes in `docs/ARCHITECTURE.md`)
 
