@@ -8,9 +8,9 @@ Legend: ✅ done in this repo · 🟡 done as a draft, you must review/add · �
 |---|---|---|---|
 | **Problem & Validation** | All 7 steps with real evidence; clear "why now"; specific user | `docs/IDEA_VALIDATION.md` (7 steps, 17 sources, measured results) | 🟡 add real interview quotes (step 1, 2) and 5-person test (step 6B) |
 | **PRD Quality** | All 6 components; specific features with testable acceptance criteria | `docs/PRD.md` (problem, users, goals/metrics, features + AC, scope, risks/timeline) | 🟡 compare with your course's PRD template and rename sections if its 6 components differ |
-| **Spec & Architecture** | All 5 spec elements; testable criteria; `CLAUDE.md` and `.cursorrules` present | `spec.md` (capability, inputs, outputs, 14 acceptance criteria, architecture), `docs/ARCHITECTURE.md`, `CLAUDE.md`, `.cursorrules` | ✅ |
+| **Spec & Architecture** | All 5 spec elements; testable criteria; `CLAUDE.md` and `.cursorrules` present | `spec.md` (capability, inputs, outputs, 17 acceptance criteria, architecture, revision log), `docs/ARCHITECTURE.md`, `CLAUDE.md`, `.cursorrules` | ✅ |
 | **Working Application** | Live URL; core AI feature works; clean UI; no broken flows | https://stepforward-mlbb-draft-simulator.netlify.app/ | 🟡 redeploy the new version, then open it on a phone and run section C |
-| **CI/CD & Engineering Quality** | GitHub Actions; no hardcoded secrets; meaningful commits; README complete | `.github/workflows/ci.yml`, secret-scan test, 12 commits, `README.md` | ⬜ push the repo, add the two Netlify secrets, confirm green check |
+| **CI/CD & Engineering Quality** | GitHub Actions; no hardcoded secrets; meaningful commits; README complete | `.github/workflows/ci.yml`, `uptime.yml`, secret-scan test, 16+ commits, `README.md` | ⬜ push the repo, add the two Netlify secrets, confirm green check |
 
 ## B. Core deliverables
 
@@ -54,3 +54,30 @@ Legend: ✅ done in this repo · 🟡 done as a draft, you must review/add · �
 - Record the demo video or log in to GitHub / Netlify for you.
 - Verify the live site from my side: my last attempt to open the Netlify URL failed, so check it yourself.
 - Hero pictures: the badges are placeholders; real pictures need an image source (see the note in `README.md`).
+
+## F. Graded Assignment 4.2 brief - phase by phase
+
+| Phase / task | Where | Status |
+|---|---|---|
+| **1** All 7 validation steps; user, problem, market evidence; differentiating angle | `docs/IDEA_VALIDATION.md` | 🟡 add your real interviews and 5-person test |
+| **1** 1-page PRD | `docs/PRD.md` | 🟡 trim to one page if your template needs it |
+| **2** Architecture notes | `docs/ARCHITECTURE.md` | ✅ |
+| **2** `spec.md` | `spec.md` | ✅ |
+| **2** `CLAUDE.md` / `agents.md` | `CLAUDE.md` | ✅ |
+| **2** `.cursorrules` | `.cursorrules` | ✅ |
+| **2** Revise the spec after review | `spec.md` section 8 (v1.1) | 🟡 add one line for any feedback from a classmate or teacher |
+| **3** Scaffold the application | `src/`, `scripts/build.js`, `site/` | ✅ |
+| **3** Core AI feature | ban / pick / win models in `src/` | ✅ |
+| **3** At least 5 meaningful commits | `git log --oneline` (16+) | ✅ |
+| **3** At least 3 unit tests | `tests/` (26 tests) | ✅ |
+| **3** Check secrets and input validation | gitleaks job, `tests/data.test.js`, `tests/input.test.js` (AC-10, AC-17) | ✅ |
+| **4** Configure GitHub Actions | `.github/workflows/ci.yml` | ⬜ push and see it go green |
+| **4** Deploy to a live host | Netlify | ⬜ redeploy |
+| **4** Set environment variables | none needed to run; `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` as GitHub secrets for the deploy job | ⬜ add the two secrets |
+| **4** Test the live app | section C above | ⬜ |
+| **4** Basic monitoring or analytics | `.github/workflows/uptime.yml` | ⬜ run it once from the Actions tab |
+| **5** Complete README | `README.md` | 🟡 replace `YOUR-USERNAME` |
+| **5** 2-minute demo | `docs/DEMO_SCRIPT.md` | ⬜ record |
+| **5** 1-page reflection | `docs/REFLECTION.md` | 🟡 rewrite in your voice |
+| **5** One GitHub issue for a v2 improvement | `docs/GITHUB_ISSUE_V2.md` | ⬜ create it on GitHub |
+| **Before submission** URL works in incognito; repo public; secrets not exposed; demo link works; reflection attached | | ⬜ |

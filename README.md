@@ -38,7 +38,7 @@ Details, formulas and confidence ranges: `site/formulas.html`. The AI is statist
 ```bash
 git clone https://github.com/YOUR-USERNAME/stepforward.git
 cd stepforward
-npm test            # 16 unit tests, no packages to install (Node 20+)
+npm test            # 26 unit tests, no packages to install (Node 20+)
 npm run build       # rebuilds site/index.html from src/ and data/
 npx serve site      # or just open site/index.html in a browser
 ```
@@ -60,8 +60,9 @@ python -m pytest -q                 # 22 tests
 | `scripts/build.js` | Builds `site/index.html` |
 | `data/` | Game records, research notes, tuned parameters, accuracy results |
 | `engine/` | Python logistic regression / CatBoost engine and tests |
-| `tests/` | Node unit tests (draft rules, ban model, statistics, data checks, secret scan) |
+| `tests/` | Node unit tests (draft rules, ban model, statistics, data checks, input validation, explain text, secret scan) |
 | `.github/workflows/ci.yml` | Tests → build check → secret scan → deploy |
+| `.github/workflows/uptime.yml` | Checks the live site every 6 hours |
 | `CLAUDE.md`, `.cursorrules` | Instructions for AI coding assistants |
 
 ## CI/CD and secrets
@@ -73,7 +74,15 @@ On every push GitHub Actions runs the JavaScript tests, rebuilds the site and fa
 | `NETLIFY_AUTH_TOKEN` | Netlify → User settings → Applications → Personal access tokens |
 | `NETLIFY_SITE_ID` | Netlify → Site configuration → Site details → Site ID |
 
-The app itself needs **no** secrets (see `.env.example`). Nothing sensitive is committed.
+The app itself needs **no** secrets or environment variables (see `.env.example`). Nothing sensitive is committed.
+
+**Monitoring:** `uptime.yml` opens the live URL every 6 hours and checks for HTTP 200 and the StepForward page. A failure turns the run red and GitHub emails the owner. Run it by hand from the Actions tab → *uptime* → *Run workflow*. To check another URL, set a repository variable `LIVE_URL`.
+
+**Input validation:** the only free-text inputs are the draft-order box, the what-if hero list and the hero search. Each is checked against a strict format or the fixed hero list, and messages are shown as plain text, never as HTML (`tests/input.test.js`).
+
+## Built with AI-assisted coding
+
+The code, tests and docs were written with Claude (see `CLAUDE.md` and `.cursorrules` for the rules the assistant followed). Commits made with the assistant carry a `Co-Authored-By` line. The models, test results and data are checked by the tests above and by the numbers in `data/results/`.
 
 ## Data and credits
 

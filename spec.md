@@ -1,6 +1,6 @@
 # spec.md - StepForward
 
-**Version 1.0 · 21 Nov 2026 · Owner: Danilo S. Galura Jr.**
+**Version 1.1 · 22 Nov 2026 · Owner: Danilo S. Galura Jr.** (see the revision log in section 8)
 Spec for the AI module and the app around it. The PRD (`docs/PRD.md`) says *what and why*; this file says *exactly how it must behave*.
 
 ## 1. AI capability
@@ -54,6 +54,7 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 | AC-13 | No sideways scrolling on a 400 px wide phone screen. | Manual (Playwright check on the original build) |
 | AC-14 | The app never claims more accuracy than measured: the win model is labelled "about a coin flip". | Manual review of `formulas.html` and the verdict text |
 | AC-15 | The main page states the AI capability ("classification and ranking") and has a collapsible "How accurate is it?" box whose numbers are read from `data/results/` (not typed by hand) and which says picks are not yet tested. | `tests/data.test.js` (built page contains both), manual look at the box |
+| AC-17 | **Input validation:** the draft-order box rejects empty text, junk and HTML; an order without 5 bans and 5 picks per side is refused; a used hero or a full draft is refused without changing anything; typed text is shown with `textContent` (never as HTML). | `tests/input.test.js` |
 | AC-16 | **Explain this draft:** the button shows a short paragraph built only from the on-screen numbers, ends with "This is a prediction, not a promise.", says "Start the draft first." when there is no prediction, and updates after every ban, pick or Undo. | `tests/explain.test.js` (text rules), Playwright run at 1280 px and 375 px |
 
 ## 5. Architecture (summary - full notes in `docs/ARCHITECTURE.md`)
@@ -81,7 +82,8 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 
 ## 6. Non-functional requirements
 
-- **Privacy:** no accounts, no analytics beyond the host's defaults, no personal data stored.
+- **Privacy:** no accounts, no tracking scripts, no personal data stored.
+- **Monitoring:** `.github/workflows/uptime.yml` checks the live URL every 6 hours (HTTP 200, page says StepForward, accuracy box and explain button present); a failure turns the run red and emails the repo owner.
 - **Performance:** a prediction for one step takes well under a second on a phone; the page is a single 0.4 MB file.
 - **Reliability:** deterministic models (the only randomness, the Bradley-Terry sampler, uses a fixed seed).
 - **Honesty:** every accuracy number on the site comes from `data/results/*.json`, produced by walk-forward tests.
@@ -89,3 +91,10 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 ## 7. Out of scope for v1
 
 Live data refresh, user accounts, an LLM explainer (planned for v2, would need a server-side key), copyrighted hero art, in-game overlays.
+
+## 8. Revision log
+
+| Version | Date | What changed and why |
+|---|---|---|
+| 1.0 | 21 Nov 2026 | First spec: capability, inputs, outputs, AC-1 to AC-14, architecture. |
+| 1.1 | 22 Nov 2026 | **Revised after a review of the docs against the data files and the assignment brief.** (1) Ban accuracy corrected from 24% / 51% to **23% / 49%** (last 800 ban steps), because the numbers in `data/results/` did not match the earlier text; AC-4 now says "measured ~49%". (2) Added AC-15 (AI-capability line and "How accurate is it?" box) and AC-16 ("Explain this draft"). (3) Added AC-17 (input validation) and `tests/input.test.js`. (4) Added uptime monitoring (section 6). (5) Clarified that "Explain this draft" is template text, not an LLM; the LLM version stays in v2. |
