@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      LIVE_URL: ${{ vars.LIVE_URL || 'https://stepforward-mlbb-draft-simulator.netlify.app/' }}
+      LIVE_URL: ${{ vars.LIVE_URL || 'https://dangalura3.github.io/stepforward/' }}
     steps:
       - name: Site answers with HTTP 200
         run: |

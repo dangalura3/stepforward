@@ -69,3 +69,26 @@ jobs:
       - name: Skip deploy (secrets not set)
         if: env.NETLIFY_AUTH_TOKEN == '' || env.NETLIFY_SITE_ID == ''
         run: echo "Netlify secrets are not set, so the deploy step was skipped. See README -> Deploy."
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: [test-and-build, test-python, secret-scan]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
