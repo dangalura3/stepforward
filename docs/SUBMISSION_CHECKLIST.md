@@ -8,8 +8,8 @@ Legend: ✅ done · 🟡 done, but you must review or finish a small part · ⬜
 
 | Criterion (4 pts each) | What would score 4 | Where it is | Status |
 |---|---|---|---|
-| **Problem & Validation** | All 7 steps with real evidence; clear "why now"; specific user | `docs/IDEA_VALIDATION.md` (7 steps, 17 sources, measured results, 3 interviews) | 🟡 add the 5-person phone test (Test B) |
-| **PRD Quality** | All 6 components; specific features with testable acceptance criteria | `docs/PRD.md` (problem, users, goals/metrics, features + AC, scope, risks/timeline) | 🟡 compare with your course's PRD template; rename sections if its 6 components differ |
+| **Problem & Validation** | All 7 steps with real evidence; clear "why now"; specific user | `docs/IDEA_VALIDATION.md` (7 steps, 17 sources, measured results, 3 interviews) | ✅ 3 interviews and the 5-person phone test (5 of 5 finished) |
+| **PRD Quality** | All 6 components; specific features with testable acceptance criteria | `docs/PRD.md` (the 6 parts from the Week 4A slides: problem statement, target users, core features with acceptance criteria, out of scope, success metrics, open questions) | ✅ matches the Week 4A template |
 | **Spec & Architecture** | All 5 spec elements; testable criteria; `CLAUDE.md` and `.cursorrules` present | `spec.md` (v1.1: capability, inputs, outputs, 17 acceptance criteria, architecture, revision log), `docs/ARCHITECTURE.md`, `CLAUDE.md`, `.cursorrules` | ✅ |
 | **Working Application** | Live URL; core AI feature works; clean UI; no broken flows | https://dangalura3.github.io/stepforward/ | ✅ tested in a private window and on a phone (22 Nov 2026) |
 | **CI/CD & Engineering Quality** | GitHub Actions; no hardcoded secrets; meaningful commits; README complete | `.github/workflows/ci.yml` (tests, Python tests, secret scan, Pages deploy), `uptime.yml`, 20+ commits, `README.md` | ✅ (the deploy job runs only after the tests and the secret scan pass) |
@@ -18,13 +18,13 @@ Legend: ✅ done · 🟡 done, but you must review or finish a small part · ⬜
 
 | # | Deliverable | File / link | Status |
 |---|---|---|---|
-| 1 | Idea Validation Report (7 steps + evidence) | `docs/IDEA_VALIDATION.md` | 🟡 Test B still to run |
-| 2 | PRD, one page, 6 components | `docs/PRD.md` | 🟡 check against your template |
+| 1 | Idea Validation Report (7 steps + evidence) | `docs/IDEA_VALIDATION.md` | ✅ |
+| 2 | PRD, one page, 6 components | `docs/PRD.md` | ✅ |
 | 3 | `spec.md` + Architecture notes | `spec.md`, `docs/ARCHITECTURE.md` | ✅ |
 | 4 | GitHub repo: public, 5+ commits, README, CI/CD | github.com/dangalura3/stepforward | ✅ |
 | 5 | Live deployed app | GitHub Pages URL above | ✅ |
-| 6 | 2-minute demo recording | Drive link above (also in `README.md`) | 🟡 open the link in a private window to confirm it plays |
-| 7 | 1-page reflection | `docs/REFLECTION.md` | ✅ (update one line after Test B) |
+| 6 | 2-minute demo recording | Drive link above (also in `README.md`) | ✅ plays in a private window (22 Nov 2026) |
+| 7 | 1-page reflection | `docs/REFLECTION.md` | ✅ |
 | 8 | One GitHub issue for a v2 improvement | Issue #1 | ✅ |
 
 ## C. Manual test before you submit (10 minutes, on your phone)
@@ -38,16 +38,15 @@ Legend: ✅ done · 🟡 done, but you must review or finish a small part · ⬜
 
 ## D. Things an AI cannot do for you
 
-- Talk to real people (the 5-person phone test, any community post).
-- Open the Drive demo link as a stranger and confirm it plays.
+- Talk to real people (done for the interviews and the 5-person phone test; a community post is optional).
 - Hero pictures: the badges are placeholders; real pictures need an image source (see the note in `README.md`).
 
 ## E. Graded Assignment 4.2 brief - phase by phase
 
 | Phase / task | Where | Status |
 |---|---|---|
-| **1** All 7 validation steps; user, problem, market evidence; differentiating angle | `docs/IDEA_VALIDATION.md` | 🟡 Test B (5 testers) not run yet |
-| **1** 1-page PRD | `docs/PRD.md` | 🟡 check it fits one page in your template |
+| **1** All 7 validation steps; user, problem, market evidence; differentiating angle | `docs/IDEA_VALIDATION.md` | ✅ interviews and phone test (5 of 5) added |
+| **1** 1-page PRD | `docs/PRD.md` (about 600 words, 6 parts from Week 4A) | ✅ |
 | **2** Architecture notes | `docs/ARCHITECTURE.md` | ✅ |
 | **2** `spec.md` | `spec.md` | ✅ |
 | **2** `CLAUDE.md` / `agents.md` | `CLAUDE.md` | ✅ |
@@ -62,9 +61,9 @@ Legend: ✅ done · 🟡 done, but you must review or finish a small part · ⬜
 | **4** Deploy to a live host | GitHub Pages (`deploy-pages` job in `ci.yml`) | ✅ |
 | **4** Set environment variables | The app needs none. The only setting is the optional repository variable `LIVE_URL` used by `uptime.yml`; Pages needs no secret | ✅ (nothing required) |
 | **4** Test the live app | section C above | ✅ done in a private window and on a phone |
-| **4** Basic monitoring or analytics | `.github/workflows/uptime.yml` | 🟡 run it once from Actions → uptime → Run workflow and confirm green |
+| **4** Basic monitoring or analytics | `.github/workflows/uptime.yml` | ✅ run by hand twice on 22 Nov 2026, both green |
 | **5** Complete README | `README.md` (live link, demo link, tests, CI/CD, monitoring) | ✅ |
-| **5** 2-minute demo | Drive link above | 🟡 confirm it plays in a private window |
+| **5** 2-minute demo | Drive link above | ✅ plays in a private window |
 | **5** 1-page reflection | `docs/REFLECTION.md` | ✅ |
 | **5** One GitHub issue for a v2 improvement | Issue #1 | ✅ |
-| **Before submission** URL works in incognito; repo public; secrets not exposed; demo link works; reflection attached | | 🟡 live app ✅; still confirm the demo link plays in a private window |
+| **Before submission** URL works in incognito; repo public; secrets not exposed; demo link works; reflection attached | | ✅ all checked except your own final read-through |

@@ -1,61 +1,42 @@
 # Product Requirements Document - StepForward (one page)
 
-**Owner:** Danilo S. Galura Jr. · **Version 1.1** · 22 Nov 2026 · **Status:** v1 live on GitHub Pages; 3 user interviews done; 5-person phone test is the next step
-**Technical detail:** see `spec.md` and `docs/ARCHITECTURE.md` · **Research:** `docs/IDEA_VALIDATION.md`
+**Owner:** Danilo S. Galura Jr. · **Version 1.2** · 22 Nov 2026 · **Status:** v1 live at https://dangalura3.github.io/stepforward/
+**Details:** `spec.md`, `docs/ARCHITECTURE.md` · **Evidence:** `docs/IDEA_VALIDATION.md`
 
-## 1. Problem and opportunity
-Fans, casters and amateur coaches who watch Mobile Legends (MLBB) pro matches cannot easily answer "what will this team ban or pick next?" while a draft is live. Existing free tools recommend the best hero from ranked-play data; none that I found predicts a *named pro team's* next move, explains why, and reports its own accuracy. The next big moment is the **M8 World Championship (17 Dec 2026 - 23 Jan 2027)**, after M7 set a mobile-esports record of 5.68M peak viewers.
+## 1. Problem statement
+Fans, casters and amateur coaches who watch Mobile Legends (MLBB) pro matches cannot easily answer "what will this team ban or pick next?" while a draft is live. Free tools suggest heroes from ranked-play data. None that I found predicts a *named pro team's* next move, explains why, and reports its own accuracy. In 3 informal interviews, all 3 people try to guess drafts, and 2 of 3 said existing tools are too slow or complicated under the 20-second timer. **Why now:** the M8 World Championship runs 17 Dec 2026 to 23 Jan 2027, after M7 set a mobile-esports record of 5.68M peak viewers.
 
 ## 2. Target users
-| User | Need | Success looks like |
+| User | Need |
+|---|---|
+| **Draft Watcher** (fan, 16-30, phone, Southeast Asia) | Guess along with the broadcast and understand why |
+| **Caster / creator** | Quick talking points for a team and side |
+| **Amateur coach** | Prepare for a team with public draft history |
+
+## 3. Core features (MVP) and acceptance criteria
+| # | Feature | Acceptance criterion (details: `spec.md` §4) |
 |---|---|---|
-| **Draft Watcher** (fan, 16-30, phone, SEA) | Guess along with the broadcast and understand why | Records a draft in under 2 minutes and sees how often the model was right |
-| **Caster / creator** | Quick talking points per team and side | Finds a team's habit ("bans X first on blue") in two taps |
-| **Amateur coach** | Prepare for a team with public draft history | Sees likely bans/picks and the reasons |
+| 1 | **Ban prediction** for either of 24 teams at any step | Ranked list sums to 100% and never lists a used hero; on the last 40 games the real ban is in the top 5 at least 30% of the time (measured about 49%) |
+| 2 | **Pick prediction** with ban-shift, matchups and a lane check | Lineups that cannot fill five distinct lanes are rejected, and a reason is shown for each suggestion |
+| 3 | **Quick-pick box** under the active slot | One tap records the hero and moves to the next step; typing a name and pressing Enter also works |
+| 4 | **Scorecard** of real picks | After each recorded step the app shows the rank the model gave it and a running hit rate |
+| 5 | **Honest explanation**: "How accurate is it?" box, "Explain this draft" button, win chance labelled low-confidence | Numbers are read from `data/results/`; the explanation ends "This is a prediction, not a promise."; win chance stays between 35% and 65% and is labelled "about a coin flip" |
 
-## 3. Goals and success metrics
-| Goal | Metric | Target | Now |
-|---|---|---|---|
-| Useful predictions | Real ban in model's top 5 (walk-forward, held-out games) | ≥ 40% | ~49% 🧪 |
-| Honest product | Win-prediction shown with a "about a coin flip" warning | 100% of places | done |
-| Easy to use | Strangers who finish 3 bans unaided (5 testers) | ≥ 4 of 5 | not measured yet |
-| Works on phones | Sideways scroll at 400 px wide | none | none |
-| Reliable | CI green on every push; all unit tests pass | All pass | 48 passing (26 JS + 22 Python) |
-| Safe | Secrets in repo | 0 | 0 |
+Data in v1: MPL Indonesia S18 (198 games), MPL Malaysia S18 playoffs (105 games), 135 heroes. AI type: classification and ranking (no LLM).
 
-## 4. Features and acceptance criteria
-| # | Feature | Priority | Acceptance criteria (details: `spec.md` §4) |
-|---|---|---|---|
-| F1 | **Ban prediction** for either team, any step | Must | Ranked list sums to 1; never lists used heroes; top-5 ≥ 30% on last 40 games (AC-3, AC-4) |
-| F2 | **Pick prediction** with ban-shift, matchups, lane check | Must | Lane check rejects impossible lineups; reasons shown (AC-5) |
-| F3 | **Quick-pick box** under the active slot | Must | One tap records and advances; typing + Enter works (AC-12) |
-| F4 | **Scorecard**: record real picks, see model rank and running hit rate | Should | Rank shown after each recorded step |
-| F5 | **Team vs team** setup with 24 teams, full names, VS banner | Must | Any two different teams selectable |
-| F6 | **Draft verdict and series odds** (labelled low-confidence) | Could | Win chance 35-65%, with a credible range (AC-8) |
-| F7 | **Transparency pages**: formulas and accuracy, habits, programs | Should | Every number traceable to `data/results/` |
-| F8 | **Hero pictures** | Could | Pictures load when `data/hero_img.json` is supplied; badges otherwise |
-| F9 | **"How accurate is it?" box** and an **AI capability** line on the main page | Should | Box shows ban top-1 / top-5 and the win result read from `data/results/`; says picks are not yet tested and that win calls are about a coin flip (AC-15) |
-| F10 | **"Explain this draft" button** - a short plain-English paragraph built from the numbers on screen (templates, no LLM, no keys) | Could | Names the top 3 guesses with their percentages, shows the win split when both sides have picks, always ends "This is a prediction, not a promise.", says "Start the draft first." when there is nothing to explain (AC-16) |
+## 4. Out of scope for v1
+Live data feed, accounts, a mobile app, LLM-written explanations (planned for v2, GitHub issue #1), copied game art or hero pictures, and any confident claim about who will win a series.
 
-## 5. Scope
-**In v1:** MPL Indonesia S18 history (198 games), MPL Malaysia S18 playoff prior (105 games), 24 teams, 135 heroes, static site, English UI.
-**Out of v1:** live data feed, accounts, mobile app, LLM explanations (v2), copied game art, any claim about who will win a series with confidence.
-**Assumptions:** public tournament pages stay available to read by hand; the draft order stays 10 bans + 10 picks (editable in the app).
+## 5. Success metrics
+| Metric | Target | Now |
+|---|---|---|
+| Real ban is in the model's top 5 (walk-forward test on the last 800 ban steps) | ≥ 40% | **about 49%** (top-1 about 23%; random is about 5% and 1%) |
+| Phone testers who finish 3 bans without help | ≥ 4 of 5 | **5 of 5** (22 Nov, informal; step order confusing at first) |
+| Quality: tests pass on every push; secrets in the repo | All pass; 0 | **48 tests pass** (26 JS, 22 Python); 0 secrets |
 
-## 6. Risks, dependencies and timeline
-| Risk / dependency | Plan |
-|---|---|
-| No readable draft data for Türkiye, CIS, Myanmar, MENA | Label "little or no data"; add data when it appears |
-| Meta shifts (new patch, rule changes) | Patch discount, playoff prior, editable order |
-| Little real-user evidence (3 informal interviews so far) | 5 usability tests on phones (Validation Report step 6, Test B) |
-| Competitor adds a similar mode | Stay team-specific, explained and self-scoring |
-
-| Milestone | Date |
-|---|---|
-| v1 built and tested | 21 Nov 2026 ✅ |
-| Deployed to GitHub Pages; v2 issue (#1) opened | 22 Nov 2026 ✅ |
-| 3 user interviews, 2-minute demo video, reflection written | 22 Nov 2026 ✅ |
-| 5-person phone usability test, then fixes | by 28 Nov 2026 |
-| Final check and submission | per course deadline |
-| M8 Wild Card (Bangkok) begins - promote the tool | 17 Dec 2026 |
-| M8 Main Stage and final (Istanbul) | to 23 Jan 2027 |
+## 6. Open questions
+1. Can strangers, not only my 5 testers, finish a draft unaided once the step order is clearer? (v1.1: a "whose turn / which step" cue, then retest.)
+2. Pick predictions are not validated yet. Is there enough public pick data to test them?
+3. Where can I find readable draft data for Türkiye, CIS, Myanmar and MENA teams, which M8 will include?
+4. Would an LLM-written explanation help users more than the current template text?
+5. Can the tool cover its running costs without betting links? B2B interest is unvalidated.
