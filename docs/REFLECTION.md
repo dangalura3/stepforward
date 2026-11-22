@@ -1,6 +1,6 @@
 # Reflection (1 page) - DRAFT: rewrite in your own words before you submit
 
-**What I built.** StepForward is a website that guesses what a Mobile Legends pro team will ban or pick next. You choose two teams, tap the heroes as the real draft happens, and it shows its top guesses, the reasons, and how often it was right. It runs fully in the browser, is tested by 16 JavaScript and 22 Python tests, and deploys through GitHub Actions to Netlify.
+**What I built.** StepForward is a website that guesses what a Mobile Legends pro team will ban or pick next. You choose two teams, tap the heroes as the real draft happens, and it shows its top guesses, the reasons, and how often it was right. It runs fully in the browser, is tested by 26 JavaScript and 22 Python tests, and deploys through GitHub Actions to GitHub Pages.
 
 **What I learned**
 1. **Data matters more than clever maths.** One clear improvement came from adding more *real* games (MPL Philippines and Malaysia playoffs), not from a fancier formula: the log-score improved from -3.520 to -3.317.

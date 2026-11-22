@@ -19,7 +19,7 @@ flowchart LR
   end
   subgraph Ship["CI/CD"]
     GH[GitHub push] --> CI[Actions: tests · build check · secret scan]
-    CI --> NL[Netlify deploy]
+    CI --> GP[GitHub Pages deploy]
   end
   H --> GH
 ```
@@ -64,7 +64,7 @@ Draft records come from public tournament pages read by hand (no scraping): MPL 
 
 - Static site: there is no server to attack and no database.
 - No API keys exist in the repo. `tests/data.test.js` and the CI secret-scan job guard against accidents.
-- Deploy credentials (`NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`) live only in GitHub repository secrets, read through `${{ secrets.* }}` in the workflow.
+- GitHub Pages deploys with the workflow's own short-lived token, so no deploy secret is stored. The optional Netlify job reads `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` only from GitHub repository secrets, through `${{ secrets.* }}`.
 - If an LLM feature is added: call it from a serverless function so the key never reaches the browser.
 
 ## 6. Decisions and trade-offs

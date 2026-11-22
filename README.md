@@ -2,7 +2,7 @@
 
 [![CI/CD](https://github.com/dangalura3/stepforward/actions/workflows/ci.yml/badge.svg)](https://github.com/dangalura3/stepforward/actions/workflows/ci.yml)
 
-**Live app: https://stepforward-mlbb-draft-simulator.netlify.app/**
+**Live app: https://dangalura3.github.io/stepforward/**
 
 StepForward guesses what a **Mobile Legends: Bang Bang (MLBB)** pro team will **ban or pick next**, explains why, and scores itself against what really happened. Built for the **M8 World Championship** (Wild Card in Bangkok from 17 Dec 2026, Main Stage in Istanbul to 23 Jan 2027).
 
@@ -67,12 +67,14 @@ python -m pytest -q                 # 22 tests
 
 ## CI/CD and secrets
 
-On every push GitHub Actions runs the JavaScript tests, rebuilds the site and fails if the committed `site/index.html` is out of date, runs the Python tests, and scans for leaked secrets. On `main`, if the two repository secrets below exist, it deploys `site/` to Netlify.
+On every push GitHub Actions runs the JavaScript tests, rebuilds the site and fails if the committed `site/index.html` is out of date, runs the Python tests, and scans for leaked secrets. On `main`, when all of that passes, it publishes `site/` to **GitHub Pages** (free, needs no secrets). One-time setup: GitHub repo → Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+
+Optional Netlify deploy: if the two repository secrets below exist, the pipeline also deploys to Netlify. Without them that job skips itself. (At the time of writing my Netlify team had paused production deploys, so GitHub Pages is the live host.)
 
 | Secret (GitHub → Settings → Secrets and variables → Actions) | Where to get it |
 |---|---|
-| `NETLIFY_AUTH_TOKEN` | Netlify → User settings → Applications → Personal access tokens |
-| `NETLIFY_SITE_ID` | Netlify → Site configuration → Site details → Site ID |
+| `NETLIFY_AUTH_TOKEN` | Netlify → User settings → OAuth → Personal access tokens |
+| `NETLIFY_SITE_ID` | Netlify → Project configuration → Project information → Site ID |
 
 The app itself needs **no** secrets or environment variables (see `.env.example`). Nothing sensitive is committed.
 

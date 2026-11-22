@@ -60,7 +60,7 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
 ## 5. Architecture (summary - full notes in `docs/ARCHITECTURE.md`)
 
 ```
- Browser (static site on Netlify)
+ Browser (static site on GitHub Pages)
  ┌───────────────────────────────────────────────────────────────────────────┐
  │ UI  src/index.template.html   VS banner · team cards · quick-pick box ·    │
  │                               hero list · scorecard · verdict · series      │
@@ -74,7 +74,7 @@ A second, weaker module estimates the **win chance** of a finished draft and of 
  │ Data      games, hero roles/traits, rules, tuned results (baked into page)  │
  └───────────────────────────────────────────────────────────────────────────┘
  Build time: scripts/build.js  (src/ + data/ → site/index.html)
- CI/CD:      GitHub Actions → tests → build check → secret scan → deploy to Netlify
+ CI/CD:      GitHub Actions → tests → build check → secret scan → deploy to GitHub Pages
  Optional:   engine/ (Python: SciPy logistic regression, CatBoost) for retraining on new CSVs
 ```
 

@@ -10,7 +10,7 @@
 | 0:35-1:05 | Quick-pick box under Ban 1 → tap top suggestion; box jumps to next step; tap two more; type "khuf" + Enter | "When it is a team's turn, a box opens right under their slot with the top guesses and the chance of each. One tap records it and moves on. If the hero isn't listed, I type a few letters and press Enter." |
 | 1:05-1:30 | Banner message "model ranked it #1" → scroll to Top-5 panels → open **Why these five?** | "After each step it scores itself: here the real ban was its number-one guess. It also gives reasons - this team bans it often, or it is denying a hero the other side needs." |
 | 1:30-1:45 | Open the **How accurate is it?** box at the top (then click **Explain this draft**) | "It tests honestly: about half of real bans are in its top five, random would be about five percent. And I show that winner prediction is only a coin flip." |
-| 1:45-2:00 | GitHub repo page → Actions tab green check | "The code is on GitHub with 48 tests (26 JavaScript and 22 Python) and an automatic pipeline that tests and deploys to Netlify. Thanks for watching." |
+| 1:45-2:00 | GitHub repo page → Actions tab green check | "The code is on GitHub with 48 tests (26 JavaScript and 22 Python) and an automatic pipeline that tests and publishes the site to GitHub Pages. Thanks for watching." |
 
 **Before recording:** reset the draft, close extra tabs, zoom the browser to 110%, check the live URL loads, turn off notifications.
 **Upload:** YouTube (unlisted) or Google Drive "anyone with the link can view"; open the link in a private window to confirm it plays.
